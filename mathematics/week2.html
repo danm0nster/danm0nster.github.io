@@ -1,0 +1,153 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#432d2524-b471-4491-9e8b-e5ced7b6ca58"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#53a1f24d-f60c-458f-ad49-3968386df7f3">1.1 Readings</a></li><li><a href="week1.html#c2581c4c-f795-4f42-a04c-c5d4fb89b744">1.2 Notes</a></li><li><a href="week1.html#a71520b6-fbcd-4faf-9132-21d46fc2d9cb">1.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#e233e36c-42ab-4af1-87fa-eff724a1a83f"><b>2</b> Course week 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#2d951685-7064-4c81-9eb5-b097c4868bde">2.1 Readings</a></li><li><a href="week2.html#b86704a3-d637-4f48-8f24-d24066852cdc">2.2 Notes</a></li><li><a href="week2.html#f5e247e0-4606-4bf1-a40c-08c2bd32ad31">2.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#3051bda3-f1be-4be5-b261-8ca4abe544b7"><b>4</b> Course week 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#5f0363c8-4219-4c87-bd46-a80dd70d025f">4.1 Readings</a></li><li><a href="week4.html#d0f94b71-3b32-44f2-a653-d7cd10d18d46">4.2 Notes</a></li><li><a href="week4.html#cc3b53d9-ffae-411d-b095-95b4fe23e671">4.3 Exercises</a></li><li><a href="week4.html#2216a2d7-d9d9-4915-8f57-0aa884661b6b">4.4 First mandatory assignment</a></li></ul><li><a class="kap" href="week7.html#f0fef4b7-425a-4af6-af7b-284f0c08ae61"><b>5</b> Mathematics week 7</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week7.html#ef34caa7-c6ac-4dc0-995f-693f5a7c27f0">5.1 Exercises for week 7</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="e233e36c-42ab-4af1-87fa-eff724a1a83f">2<span style="float:right;">Course week 2</span></h1>
+<span id="sec2.1"></span><h2 id="2d951685-7064-4c81-9eb5-b097c4868bde">2.1 Readings</h2><div style="margin-top:20px"></div><span id="sec2.2"></span><h2 id="b86704a3-d637-4f48-8f24-d24066852cdc">2.2 Notes</h2><div style="margin-top:20px"></div><span id="sec2.3"></span><h2 id="f5e247e0-4606-4bf1-a40c-08c2bd32ad31">2.3 Exercises</h2><div style="margin-top:20px"></div><span id="env2.1"></span><div class="exercise" data-count="2.1">      
+  a) Find the slope of the curve at the point <span class="math"></span><script type="math/tex">(3, f(3))</script>.
+  <div class="centerimg"><img src="img/week2/exercise_1.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+    b) Where does the curve have a slope of zero?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <span class="math"></span><script type="math/tex">x = 0</script> and <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script> and <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.2"></span><div class="exercise" data-count="2.2">      
+  A function <span class="math"></span><script type="math/tex">f(x)</script> and its derivative <span class="math"></span><script type="math/tex">f'(x)</script> have the particular values
+  <div class="math"></div><script type="math/tex; mode=display">
+    \begin{array}{rl}
+      f(-1) &=& 0.65 \\
+      f'(-1) &=& 0.45
+    \end{array}
+  </script>
+  What is the equation for the tangent to the graph at the point <span class="math"></span><script type="math/tex">(-1, f(-1))</script> shown in the figure below?
+  <div class="centerimg"><img src="img/week2/exercise_2.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.3"></span><div class="exercise" data-count="2.3">      
+  The tangent to the graph for the function <span class="math"></span><script type="math/tex">f(x)</script> at the point <span class="math"></span><script type="math/tex">(2, f(2))</script> is given by the equation
+  <div class="math"></div><script type="math/tex; mode=display">
+    y = 2.1 x - 3.1
+  </script>
+  What are the values of <span class="math"></span><script type="math/tex">f(2)</script> and <span class="math"></span><script type="math/tex">f'(2)</script>?
+  <div class="centerimg"><img src="img/week2/exercise_3.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><div class="exercise" data-count="2.4">      
+  The plot below shows the graph for a function <span class="math"></span><script type="math/tex">f(x)</script>
+  <div class="centerimg"><img src="img/week2/exercise_4a.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+    Which of the following graphs is a plot of the derivative of <span class="math"></span><script type="math/tex">f(x)</script>?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4c.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <div class="centerimg"><img src="img/week2/exercise_4b.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4e.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4d.png" width="75%"></div>
+    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div></div></body>
