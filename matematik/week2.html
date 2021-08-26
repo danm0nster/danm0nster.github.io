@@ -1,0 +1,160 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#04de816b-245c-4f4d-a8d2-cf989322a02c"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#d6412708-0812-45a3-bc83-28401819b5bc">1.1 Pensum</a></li><li><a href="week1.html#c62ae02c-769f-44b6-865c-cbb73b06eee2">1.2 Noter</a></li><li><a href="week1.html#6634b1b2-5e2a-4133-9388-0b71aa33b63d">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#9dee1f44-7811-4397-a14b-c3aa85e9ac3d"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#fa36f325-40a0-4ba8-9062-1206a6b407e0">2.1 Pensum</a></li><li><a href="week2.html#7b97d344-b26c-48f3-a63b-291de30d7e19">2.2 Noter</a></li><li><a href="week2.html#7bf2df99-ba27-4b15-afe2-fc88054ffc79">2.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#4531901a-cdba-4d65-b55b-2b6479491d46"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#adb9ced6-0024-4f67-9dec-f702b5471937">4.1 Pensum</a></li><li><a href="week4.html#3d8d4462-c23f-4ed1-8e54-83db5d6abe65">4.2 Noter</a></li><li><a href="week4.html#75a3c8da-ab30-42a8-85e4-810a94ca6ceb">4.3 Opgaver</a></li><li><a href="week4.html#569f4b84-632c-4609-9c6b-35ebe21593ed">4.4 Første obligatoriske afleveringsopgave</a></li></ul><li><a class="kap" href="week7.html#d5e5e905-1915-4263-ab70-300829d05f9b"><b>5</b> Matematik uge 7</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week7.html#3ed325ec-46b2-4e4b-8a5c-3535e51ad59c">5.1 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="9dee1f44-7811-4397-a14b-c3aa85e9ac3d">2<span style="float:right;">Kursusuge 2</span></h1>
+<span id="sec2.1"></span><h2 id="fa36f325-40a0-4ba8-9062-1206a6b407e0">2.1 Pensum</h2>
+Læs sektion 6.8 – 6.11 og 7.1 i lærebogen.<div style="margin-top:20px"></div><span id="sec2.2"></span><h2 id="7b97d344-b26c-48f3-a63b-291de30d7e19">2.2 Noter</h2><div style="margin-top:20px"></div><span id="sec2.3"></span><h2 id="7bf2df99-ba27-4b15-afe2-fc88054ffc79">2.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env2.1"></span><div class="exercise" data-count="2.1">     
+  a) Find hældningen af kurven i punktet <span class="math"></span><script type="math/tex">(3, f(3))</script>.
+  <div class="centerimg"><img src="img/week2/exercise_1.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+    b) Hvor har kurven en hældning på nul?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <span class="math"></span><script type="math/tex">x = 0</script> og <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script> og <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.2"></span><div class="exercise" data-count="2.2">     
+  En funktion <span class="math"></span><script type="math/tex">f(x)</script> og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> har funktionsværdierne
+  <div class="math"></div><script type="math/tex; mode=display">
+    \begin{array}{rl}
+      f(-1) &=& 0.65 \\
+      f'(-1) &=& 0.45
+    \end{array}
+  </script>
+  Hvad er ligningen for tangenten til kurven i punktet <span class="math"></span><script type="math/tex">(-1, f(-1))</script>, som er vist i figuren nedenfor?
+  <div class="centerimg"><img src="img/week2/exercise_2.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.3"></span><div class="exercise" data-count="2.3">     
+Tangenten til kurven for funktionen <span class="math"></span><script type="math/tex">f(x)</script> i punktet <span class="math"></span><script type="math/tex">(2, f(2))</script> er givet ved ligningen
+  <div class="math"></div><script type="math/tex; mode=display">
+    y = 2.1 x - 3.1
+  </script>
+  Hvad er værdierne for <span class="math"></span><script type="math/tex">f(2)</script> og <span class="math"></span><script type="math/tex">f'(2)</script>?
+  <div class="centerimg"><img src="img/week2/exercise_3.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><div class="exercise" data-count="2.4">     
+  Grafen nedenfor viser kurven for en funktion <span class="math"></span><script type="math/tex">f(x)</script>.
+  <div class="centerimg"><img src="img/week2/exercise_4a.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+    Hvilken af nedenstående grafer viser differentialkvotienten for <span class="math"></span><script type="math/tex">f(x)</script>?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4c.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <div class="centerimg"><img src="img/week2/exercise_4b.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4e.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4d.png" width="75%"></div>
+    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.5"></span><div class="exercise" data-count="2.5">     
+  Figuren nedenfor viser grafem for en funktion <span class="math"></span><script type="math/tex">f(x)</script> (blå kurve) og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> (stiplet rød kurve).
+  <div class="centerimg"><img src="img/week2/exercise_5.png" width="50%"></div>
+  Find ligningen for tangenten til <span class="math"></span><script type="math/tex">f(x)</script> for <span class="math"></span><script type="math/tex">x = 4</script>.<div style="margin-top:20px"></div><a href="#4e9d3206-ea24-4515-b9c5-8427027810c0" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=4e9d3206-ea24-4515-b9c5-8427027810c0 class = "collapse Hint envbuttons">    
+  Hvad er værdierne af <span class="math"></span><script type="math/tex">f(4)</script> og <span class="math"></span><script type="math/tex">f'(4)</script>?
+    </div>
+</div><div style="margin-top:20px"></div></div></body>

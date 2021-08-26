@@ -1,0 +1,161 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#04de816b-245c-4f4d-a8d2-cf989322a02c"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#d6412708-0812-45a3-bc83-28401819b5bc">1.1 Pensum</a></li><li><a href="week1.html#c62ae02c-769f-44b6-865c-cbb73b06eee2">1.2 Noter</a></li><li><a href="week1.html#6634b1b2-5e2a-4133-9388-0b71aa33b63d">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#9dee1f44-7811-4397-a14b-c3aa85e9ac3d"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#fa36f325-40a0-4ba8-9062-1206a6b407e0">2.1 Pensum</a></li><li><a href="week2.html#7b97d344-b26c-48f3-a63b-291de30d7e19">2.2 Noter</a></li><li><a href="week2.html#7bf2df99-ba27-4b15-afe2-fc88054ffc79">2.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#4531901a-cdba-4d65-b55b-2b6479491d46"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#adb9ced6-0024-4f67-9dec-f702b5471937">4.1 Pensum</a></li><li><a href="week4.html#3d8d4462-c23f-4ed1-8e54-83db5d6abe65">4.2 Noter</a></li><li><a href="week4.html#75a3c8da-ab30-42a8-85e4-810a94ca6ceb">4.3 Opgaver</a></li><li><a href="week4.html#569f4b84-632c-4609-9c6b-35ebe21593ed">4.4 Første obligatoriske afleveringsopgave</a></li></ul><li><a class="kap" href="week7.html#d5e5e905-1915-4263-ab70-300829d05f9b"><b>5</b> Matematik uge 7</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week7.html#3ed325ec-46b2-4e4b-8a5c-3535e51ad59c">5.1 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="4531901a-cdba-4d65-b55b-2b6479491d46">4<span style="float:right;">Kursusuge 4</span></h1>
+<span id="sec4.1"></span><h2 id="adb9ced6-0024-4f67-9dec-f702b5471937">4.1 Pensum</h2><div style="margin-top:20px"></div><span id="sec4.2"></span><h2 id="3d8d4462-c23f-4ed1-8e54-83db5d6abe65">4.2 Noter</h2><div style="margin-top:20px"></div><span id="sec4.3"></span><h2 id="75a3c8da-ab30-42a8-85e4-810a94ca6ceb">4.3 Opgaver</h2><div style="margin-top:20px"></div><span id="sec4.4"></span><h2 id="569f4b84-632c-4609-9c6b-35ebe21593ed">4.4 Første obligatoriske afleveringsopgave</h2>
+Den første obligatoriske afleveringsopgave er vist nedenfor. Husk at du <em>skal</em> aflevere den til din instruktor til øvelsestimen i kursusuge 5.<div style="margin-top:20px"></div><h2>Problem 1</h2>
+Find the derivative for the function <span class="math"></span><script type="math/tex">f(x)</script>, given by
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = \frac{x^2+2}{x^2-2}
+</script><div style="margin-top:20px"></div><h2>Problem 2</h2>
+Find the derivative of the function <span class="math"></span><script type="math/tex">g</script>, given by
+<div class="math"></div><script type="math/tex; mode=display">
+ g(x) = \left( \frac{x^2 + 2e^{2x}}{3x} \right)^{8/7}
+</script><div style="margin-top:20px"></div><h2>Problem 3</h2>
+A function <span class="math"></span><script type="math/tex">y(x)</script> is defined implicitly by the equation
+<div class="math"></div><script type="math/tex; mode=display">
+ 2x^2y - \ln\left( (x-y)^2 \right) = 100
+</script>
+Find <span class="math"></span><script type="math/tex">\frac{\mathrm{d}y}{\mathrm{d}x}</script> expressed by  <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script>. You may assume that <span class="math"></span><script type="math/tex">x-y > 0</script>.<div style="margin-top:20px"></div><h2>Problem 4</h2>
+Find <span class="math"></span><script type="math/tex">\frac{\mathrm{d}f}{\mathrm{d}x}</script> and <span class="math"></span><script type="math/tex">\frac{\mathrm{d}^2f}{\mathrm{d}x^2}</script> where
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = \ln(2x^3-x^5).
+</script><div style="margin-top:20px"></div><h2>Problem 5</h2>
+A function is given by the expression:
+<div class="math"></div><script type="math/tex; mode=display">
+ x(t) = (x_0 + 2t^2)e^{-3t}
+</script>
+where <span class="math"></span><script type="math/tex">x_0</script> is a constant.<div style="margin-top:20px"></div><ol class="number"><li> Determine <span class="math"></span><script type="math/tex">x(0)</script>
+</li><li> Find <span class="math"></span><script type="math/tex">\displaystyle\lim_{t\to\infty} x(t)</script>
+</li><li> Calculate <span class="math"></span><script type="math/tex">\frac{\mathrm{d}x}{\mathrm{d}t}</script> and <span class="math"></span><script type="math/tex">\frac{\mathrm{d}^2x}{\mathrm{d}t^2}</script>.
+</li></ol><div style="margin-top:20px"></div><h2>Problem 6</h2>
+Investigate whether the function <span class="math"></span><script type="math/tex">f(x)</script> is convex or concave, where:
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = 2(x-2)(x+3)
+</script><div style="margin-top:20px"></div><h2>Problem 7 (previous exam problem)</h2>
+Calculate the following limit:
+<div class="math"></div><script type="math/tex; mode=display">
+ \lim_{x\to\infty} \frac{ (2x-5)^2 }{ e^x }
+</script><div style="margin-top:20px"></div><h2>Problem 8 (previous exam problem)</h2>
+Let the functions <span class="math"></span><script type="math/tex">f</script> and <span class="math"></span><script type="math/tex">g</script> be given by:
+<span id="equ4.1"></span><div class="math"></div><script type="math/tex; mode=display">
+\begin{array}{rl}
+ f(x) &=& \left( \tfrac{1}{2} x^2 + 5 \right)^2\\
+ g(x) &=& (x+5)^4
+\end{array}
+\tag{4.1}</script><div style="margin-top:20px"></div><ol class="number"><li> Take the derivative of <span class="math"></span><script type="math/tex">f</script> and <span class="math"></span><script type="math/tex">g</script> with respect to <span class="math"></span><script type="math/tex">x</script>.
+</li></ol>
+Let the function <span class="math"></span><script type="math/tex">h</script> be given by:
+<div class="math"></div><script type="math/tex; mode=display">
+ h(x) = \frac{f(x)}{g(x)}
+</script><div style="margin-top:20px"></div><ol class="number"><li> Find the limit for the function <span class="math"></span><script type="math/tex">h</script> as <span class="math"></span><script type="math/tex">x \to \infty</script>.
+</li></ol><div style="margin-top:20px"></div><h2>Problem 9 (previous exam problem)</h2>
+Let the function <span class="math"></span><script type="math/tex">h</script> be given by:
+<div class="math"></div><script type="math/tex; mode=display">
+ h(x) = \frac{18000 + (x+2)^4}{9000 + (\tfrac{1}{2}x^2 + 2)^2}
+</script><div style="margin-top:20px"></div><ol class="number"><li> Find the limit for the function <span class="math"></span><script type="math/tex">h</script> as <span class="math"></span><script type="math/tex">x \to \infty</script>.
+</li></ol>
+</div></body>
