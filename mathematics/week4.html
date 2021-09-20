@@ -1,0 +1,202 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#4b25ab66-9c07-463f-b0e3-76d08ad92ab9"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#06930856-ff14-4204-acc9-190f05f7a557">1.1 Readings</a></li><li><a href="week1.html#130dd6a7-2fd9-4f34-aeed-8803e822b0e5">1.2 Notes</a></li><li><a href="week1.html#9694194c-6862-4d7e-8bf5-b2be88410565">1.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#15851df8-8405-4336-ab58-f751a4cad515"><b>2</b> Course week 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#535b3b2b-327e-4477-9ab8-9a4a59374123">2.1 Readings</a></li><li><a href="week2.html#0b1c96be-ec69-403a-9832-43681f8f87cf">2.2 Notes</a></li><li><a href="week2.html#198db544-1f09-4aa4-ad44-6ab2cf4b8abf">2.3 Exercises</a></li></ul><li><a class="kap" href="week3.html#1c633fb9-9a79-4c98-bcbf-a85cd38d18ba"><b>3</b> Course week 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#28f10bb1-99f6-42d9-9646-78a5c28a2406">3.1 Readings</a></li><li><a href="week3.html#3bfd32bb-c617-4bbe-aada-568541dfd547">3.2 Notes</a></li><li><a href="week3.html#d1fe0804-50c1-4469-9f07-93096e417a02">3.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#d7b244a9-bfc9-41fa-94cc-520b2f6773d4"><b>4</b> Course week 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#8200d9e7-3436-4f6e-a0b0-04cab24a618e">4.1 Readings</a></li><li><a href="week4.html#2727c73e-41c4-4fa8-9289-3aa74439c2af">4.2 Notes</a></li><li><a href="week4.html#c788b7ed-071a-44a2-bf85-3ecf56ba695b">4.3 Exercises</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="d7b244a9-bfc9-41fa-94cc-520b2f6773d4">4<span style="float:right;">Course week 4</span></h1>
+<span id="sec4.1"></span><h2 id="8200d9e7-3436-4f6e-a0b0-04cab24a618e">4.1 Readings</h2>
+Read sections 14.2-14.3 og 14.6 in the textbook.<div style="margin-top:20px"></div><span id="sec4.2"></span><h2 id="2727c73e-41c4-4fa8-9289-3aa74439c2af">4.2 Notes</h2>
+<b>Differentiation of the inverse function</b>
+<div class="frameit">
+  If <span class="math"></span><script type="math/tex">g(x) = f^{-1}(x)</script> is the inverse function to <span class="math"></span><script type="math/tex">f(x)</script>, its derivative is given by
+  <div class="math"></div><script type="math/tex; mode=display">
+     g'(y_0) =  \frac{1}{f'(x_0)} \qquad \text{where:~} y_0= f(x_0)
+  </script>
+</div><div style="margin-top:20px"></div><b>L'Hôpital's rule</b>
+<div class="frameit">
+  If  <span class="math"></span><script type="math/tex">\lim\limits_{x\to a} f(x) = 0</script>, <span class="math"></span><script type="math/tex">\lim\limits_{x\to a} g(x) = 0</script>,
+  and <span class="math"></span><script type="math/tex">g'(a) \neq 0</script>, then l'Hôpital's rule can be applied:
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim\limits_{x\to a}\frac{f(x)}{g(x)} = \frac{f'(a)}{g'(a)}
+  </script><div style="margin-top:20px"></div>Even if <span class="math"></span><script type="math/tex">f'(x)</script> and <span class="math"></span><script type="math/tex">g'(x)</script> are not defined in <span class="math"></span><script type="math/tex">x=a</script> the general version of
+  l'Hôpital's rule can be applied:
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim\limits_{x\to a}\frac{f(x)}{g(x)} = \lim\limits_{x\to a}\frac{f'(x)}{g'(x)}
+  </script>
+  This is also valid when the limits are <span class="math"></span><script type="math/tex">\pm \infty</script>.
+</div><div style="margin-top:20px"></div><span id="sec4.3"></span><h2 id="c788b7ed-071a-44a2-bf85-3ecf56ba695b">4.3 Exercises</h2>
+
+<span id="env4.1"></span><div class="exercise" data-count="4.1">     
+  A function <span class="math"></span><script type="math/tex">f(x)</script> is given by the expression <span class="math"></span><script type="math/tex">f(x) = 6x^3 - 12x^2 - 54x + 108</script> for <span class="math"></span><script type="math/tex">x > 3</script>.
+  Find the derivative for the inverse function, <span class="math"></span><script type="math/tex">\frac{\mathrm{d} f^{-1}}{\mathrm{d} x}</script> in the point
+  <span class="math"></span><script type="math/tex">x = f(4) = 84</script>.
+</div><div style="margin-top:20px"></div><span id="env4.2"></span><div class="exercise" data-count="4.2">     
+  A function <span class="math"></span><script type="math/tex">f(x)</script> has the graph shown below. In the point <span class="math"></span><script type="math/tex">(x, y) = (5,4)</script> the function
+  has a tangent described by the equation <span class="math"></span><script type="math/tex">y = \frac{5}{4} (x - 5)</script>. Find the value of
+  the derivative of the inverse function at <span class="math"></span><script type="math/tex">x = 4</script>.
+  <div class="centerimg"><img src="img/week4/figure_4_1.png" ></div>
+</div><div style="margin-top:20px"></div><span id="env4.3"></span><div class="exercise" data-count="4.3">     
+  Answer the questions below, given <span class="math"></span><script type="math/tex">f(x) = 2x^3</script>.
+  <ol class="number"><li> Calculate the value of <span class="math"></span><script type="math/tex">\frac{\mathrm{d} f^{-1}}{\mathrm{d} x}</script> for <span class="math"></span><script type="math/tex">x = f(2) = 16</script> using <span class="math"></span><script type="math/tex">f'(x)</script>.
+    </li><li> Find an explicit expression for the inverse function <span class="math"></span><script type="math/tex">g(x) = f^{-1}(x)</script>.
+    </li><li> Find an expression for <span class="math"></span><script type="math/tex">g'(x)</script> and calculate <span class="math"></span><script type="math/tex">g'(16)</script>.
+    </li><li> Did you get the same results in question 1 and 3?
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env4.4"></span><div class="exercise" data-count="4.4">     
+  Use l'Hôpitals' rule to calculate the limits below.
+  <ol class="number"><li> <span class="math"></span><script type="math/tex">\displaystyle\lim_{x\to \infty} \frac{\ln(e^x + 3)}{2x}</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle\lim_{x\to \infty} \frac{\ln x}{\sqrt{x}}</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle\lim_{x\to 2} \frac{x^2 - 4}{x - 2}</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle\lim_{x\to \infty} 2x^{-2}e^{-2x}</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env4.5"></span><div class="exercise" data-count="4.5">     
+  Can l'Hôpital's rule be applied to calculate this limit?
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim_{x\to 2} \frac{e^x - 2}{(x - 2)^3}
+  </script>
+  If yes, find the limit.
+</div><div style="margin-top:20px"></div><span id="env4.6"></span><div class="exercise" data-count="4.6">     
+  Calculate the limit
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim_{x \to 2} \frac{3x^2 - 3x - 6}{2x^2 + 2x - 12}
+  </script>
+</div><div style="margin-top:20px"></div><span id="env4.7"></span><div class="exercise" data-count="4.7">     
+  Show that the amount dough needed for a cylindrical pizza with radius <span class="math"></span><script type="math/tex">z</script> and
+  thickness <span class="math"></span><script type="math/tex">a</script> can be written as the following function of two variables.<div style="margin-top:20px"></div><a href="#24396d97-c952-423a-8b3e-be474f707d0c" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=24396d97-c952-423a-8b3e-be474f707d0c class = "collapse Hint envbuttons">    
+    First, find the area of the circle that is the top and bottom of the pizza.
+    <a href="#da5e89b2-72ee-4f85-a02a-1536b5d94fdb" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=da5e89b2-72ee-4f85-a02a-1536b5d94fdb class = "collapse Hint envbuttons">    
+      Next, multiply by the thickness to obtain the volume.
+      </div>
+    </div>
+  <div class="math"></div><script type="math/tex; mode=display">
+    V(z, a) = \pi z^2 a
+  </script> 
+  <a href="#ef3e9eab-ea1c-48aa-8943-5c92e62d67ea" class ="btn btn-default" data-toggle="collapse">Fun fact</a><div id=ef3e9eab-ea1c-48aa-8943-5c92e62d67ea class="collapse">
+    Note that this formula can be pronounced pizza: <span class="math"></span><script type="math/tex">\pi z^2 a = \pi z z a = pizza</script>.
+  </div><div style="margin-top:20px"></div>Given the function above, answer the following questions:
+  <ol class="number"><li> How much dough is needed for a (Chocago style) pizza with a radius
+      of 10 cm and a thickness of 1 cm?
+    </li><li> How much dough is needed for a pizza (perhaps from New York or Naples)
+      with a radius of 20 cm and a thickness of 2 mm?
+    </li><li> If the thickness is doubled, by what factor is the amount of dough multiplied?
+    </li><li> If the radius is doubled, by what factor is the amount of dough multiplied?
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env4.8"></span><div class="exercise" data-count="4.8">     
+  A function of two variables is given by the expression
+  <div class="math"></div><script type="math/tex; mode=display">
+    f(x, y) = \sqrt{4-x^2-y}.
+  </script>
+  <ol class="number"><li> What is the domoin for <span class="math"></span><script type="math/tex">f(x, y)</script>?
+    </li><li> Sketch the domain.
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env4.9"></span><div class="exercise" data-count="4.9">     
+  A function of two variables is given by the expression
+  <div class="math"></div><script type="math/tex; mode=display">
+    f(x, y) = \frac{\sqrt{6-x-y^2}}{\sqrt{(x^2+y^2) - 1}}
+  </script>
+  <ol class="number"><li> Express the domain for <span class="math"></span><script type="math/tex">f(x, y)</script> using one or more inequalities.
+    </li><li> Sketch the domain.
+  </li></ol>
+</div><div style="margin-top:20px"></div></div></body>
