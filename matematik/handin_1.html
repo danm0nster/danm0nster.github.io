@@ -1,0 +1,182 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#d88c9ad8-874d-4dff-b12c-091e5cbd7426"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#1f57da05-9b3e-4195-9a0a-a4fce83adac4">1.1 Pensum</a></li><li><a href="week1.html#b51f6e09-1638-47a9-aa7b-94324407bac9">1.2 Noter</a></li><li><a href="week1.html#6a5944a5-f739-4357-8019-986f512bfb7b">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#012addbd-9d23-4de6-a6be-27af76b2a25a"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#cd889ea5-0c45-4891-833c-b1fbf016ffad">2.1 Pensum</a></li><li><a href="week2.html#972d8cd2-573f-4b0e-906a-6dc7df8e77ef">2.2 Noter</a></li><li><a href="week2.html#99073fe3-19d9-430d-9255-56b10d855c72">2.3 Opgaver</a></li></ul><li><a class="kap" href="week3.html#4f5d4010-bc6f-4a6f-b742-f2a110a7d4e2"><b>3</b> Kursusuge 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#368c532c-77e1-4021-9822-707701781b59">3.1 Pensum</a></li><li><a href="week3.html#e2a586cf-0227-49a7-b65c-320eae174c60">3.2 Noter</a></li><li><a href="week3.html#00a0d81a-ef7a-4eaa-a30b-ddfbb7195f16">3.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#49db71d7-def0-4e05-835b-2cdda1c5c55d"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#ed249608-6456-4189-97f3-dd0d23fd0498">4.1 Pensum</a></li><li><a href="week4.html#c4698add-e811-4608-b57e-30ee9a57c062">4.2 Noter</a></li><li><a href="week4.html#c5707ca7-0044-4112-b433-ee25c33ee021">4.3 Opgaver</a></li></ul><li><a class="kap" href="handin_1.html#3318d0f9-bdf8-4165-86dc-324f0f50df51"><b>5</b> Obligatorisk afleveringsopgave 1</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="3318d0f9-bdf8-4165-86dc-324f0f50df51">5<span style="float:right;">Obligatorisk afleveringsopgave 1</span></h1>
+For at gå til eksamen i faget Matematik skal mindst 2 ud af de 3 obligatoriske skriftlige
+opgaver afleveres. I hver opgave skal de stillede spørgsmål besvares, og der vil
+efterfølgende være mulighed for feedback fra instruktoren på øvelsesholdet.<div style="margin-top:20px"></div>Hver opgave er en take-home opgave, hvor man vil have god tid til at sætte sig ind i det
+nødvendige stof. Det anbefales at opgaven laves og afleveres som gruppeopgave i
+studiegrupperne (på op til fem personer). Opgaven skal afleveres til instruktoren på det
+tildelte øvelseshold i forbindelse med øvelsestimen. Uanset om opgaven er besvaret
+individuelt eller i gruppe, <em>skal alle navne og studienumre fremgå af besvarelsen,</em>
+og det er ikke tilladt at aflevere i grupper, som går på tværs af øvelsesholdene.<div style="margin-top:20px"></div>For at få mest muligt ud af opgaven, så er det følgende kriterier, som anvendes, når
+eksamensbesvarelser rettes. Forsøg så vidt muligt at få din opgave til at leve op til
+disse kriterier:<div style="margin-top:20px"></div><ol class="number"><li> Metode
+ <ol class="number"><li> Er metoden korrekt?
+  </li><li> Er det klart, hvilken metode/teorem, der anvendes?
+ </li></ol>
+ </li><li> Beregning
+ <ol class="number"><li> Er de relevante beregninger vist, og er de korrekte?
+  </li><li> Er det det nemt at følge beregningen?
+  </li><li> Er den anvendte notation korrekt?
+  </li><li> Er eventuelle forudsætninger tjekket?
+ </li></ol>
+ </li><li> Løsning
+ <ol class="number"><li> Er løsningen korrekt?
+  </li><li> Er der svaret på (alle) spørgsmål i opgaven?
+ </li></ol>
+</li></ol><div style="margin-top:20px"></div><h2>Opgave 1</h2>
+Find differentialkvotienten for funktionen <span class="math"></span><script type="math/tex">f(x)</script>, givet ved
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = \frac{2x^2-3}{2x^2+3}
+</script><div style="margin-top:20px"></div><h2>Opgave 2</h2>
+Find den afledede af funktionen <span class="math"></span><script type="math/tex">g</script>, givet ved
+<div class="math"></div><script type="math/tex; mode=display">
+ g(x) = \left( \frac{x^2 + e^{2x}}{4x} \right)^{8/7}
+</script><div style="margin-top:20px"></div><h2>Opgave 3</h2>
+En funktion <span class="math"></span><script type="math/tex">y(x)</script>, er defineret implicit ved ligningen
+<div class="math"></div><script type="math/tex; mode=display">
+ 4x^{2}2y - \ln\left( (x-y)^2 \right) = 200
+</script>
+Find <span class="math"></span><script type="math/tex">\frac{\mathrm{d}y}{\mathrm{d}x}</script> udtrykt ved <span class="math"></span><script type="math/tex">x</script> og <span class="math"></span><script type="math/tex">y</script>. Det antages at <span class="math"></span><script type="math/tex">x-y > 0</script>.<div style="margin-top:20px"></div><h2>Opgave 4</h2>
+Find <span class="math"></span><script type="math/tex">\frac{\mathrm{d}f}{\mathrm{d}x}</script> og <span class="math"></span><script type="math/tex">\frac{\mathrm{d}^2f}{\mathrm{d}x^2}</script> hvor
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = \ln(6x^3-x^4).
+</script><div style="margin-top:20px"></div><h2>Opgave 5</h2>
+En funktion er givet ved forskriften:
+<div class="math"></div><script type="math/tex; mode=display">
+ x(t) = (x_0 + 3t^2)e^{-4t}
+</script>
+hvor <span class="math"></span><script type="math/tex">x_0</script> er en konstant.<div style="margin-top:20px"></div><ol class="number"><li> Bestem <span class="math"></span><script type="math/tex">x(0)</script>
+ </li><li> Find <span class="math"></span><script type="math/tex">\displaystyle\lim_{t\to\infty} x(t)</script>
+ </li><li> Bestem  <span class="math"></span><script type="math/tex">\frac{\mathrm{d}x}{\mathrm{d}t}</script> og <span class="math"></span><script type="math/tex">\frac{\mathrm{d}^2x}{\mathrm{d}t^2}</script>.
+</li></ol><div style="margin-top:20px"></div><h2>Opgave 6</h2>
+Undersøg om funktionen <span class="math"></span><script type="math/tex">f(x)</script> er konveks eller konkav, hvor:
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x) = 4(x-4)(x+6)
+</script><div style="margin-top:20px"></div><h2>Opgave 7 (tidligere eksamensopgave)</h2>
+Udregn følgende grænseværdi:
+<div class="math"></div><script type="math/tex; mode=display">
+ \lim_{x\to\infty} \frac{ (2x-5)^2 }{ e^x }
+</script><div style="margin-top:20px"></div><h2>Opgave 8 (tidligere eksamensopgave)</h2>
+Lad funktionerne <span class="math"></span><script type="math/tex">f</script> og <span class="math"></span><script type="math/tex">g</script> være givet ved:
+<div class="math"></div><script type="math/tex; mode=display">
+ \begin{array}{rl}
+   f(x) &=& \left( \tfrac{1}{2} x^2 + 5 \right)^2\\
+   g(x) &=& (x+5)^4
+ \end{array}
+</script><div style="margin-top:20px"></div><ol class="number"><li> Differentier <span class="math"></span><script type="math/tex">f</script> og <span class="math"></span><script type="math/tex">g</script> med hensyn til <span class="math"></span><script type="math/tex">x</script>.<div style="margin-top:20px"></div>Lad nu funktionen <span class="math"></span><script type="math/tex">h</script> være givet ved:
+<div class="math"></div><script type="math/tex; mode=display">
+ h(x) = \frac{f(x)}{g(x)}
+</script><div style="margin-top:20px"></div></li><li> Find grænseværdien for funktionen <span class="math"></span><script type="math/tex">h</script> når <span class="math"></span><script type="math/tex">x \to \infty</script>.
+</li></ol><div style="margin-top:20px"></div><h2>Opgave 9 (tidligere eksamensopgave)</h2>
+Lad funktionen <span class="math"></span><script type="math/tex">h</script> være givet ved:
+<div class="math"></div><script type="math/tex; mode=display">
+ h(x) = \frac{18000 + (x+2)^4}{9000 + (\tfrac{1}{2}x^2 + 2)^2}
+</script><div style="margin-top:20px"></div><ol class="number"><li> Find grænseværdien for funktionen <span class="math"></span><script type="math/tex">h</script> når <span class="math"></span><script type="math/tex">x \to \infty</script>.
+</li></ol>
+</div></body>
