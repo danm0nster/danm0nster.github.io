@@ -1,0 +1,193 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#8bd3b98b-60e8-496f-abe1-f5e49751226f"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#8a33c7a3-0d90-4aba-88b8-5f2507d5572b">1.1 Opgaver</a></li></ul><li><a class="kap" href="sandbox.html#fdbe622c-524b-4d0d-9dd2-550f7bb14f5f"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#f4b72be8-8539-48eb-826f-9476a6288de9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="bibliography.html#3ab0ce5f-943b-4032-a268-32d2d2dbb854"><b>3</b> Bibliography test</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="fdbe622c-524b-4d0d-9dd2-550f7bb14f5f">2<span style="float:right;">Sandbox</span></h1><div style="margin-top:20px"></div><span id="sec2.1"></span><h2 id="f4b72be8-8539-48eb-826f-9476a6288de9">2.1 Exercises for week 7</h2><div style="margin-top:20px"></div><span id="env2.1"></span><a class="Quizexerciseno" data-count="2.1"></a><a href="#1141ab5f-d15b-4596-b52b-5889e7ec0e39" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=1141ab5f-d15b-4596-b52b-5889e7ec0e39 class = "collapse Quizexercise envbuttons">  
+<div id="quiz1" style="width:100%;"><div class="row quizquestion">
+  Drag the boxes below to the empty slots to construct a true sentence.<div style="margin-top:20px"></div>The <div class="orderquizanswer empty inlineblock" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions and the <div class="orderquizanswer empty inlineblock" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions.
+  </div><div class="row quizanswers"><div class="orderquizanswer inlineblock" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  first
+  </div><div class="orderquizanswer inlineblock" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  second
+  </div><div class="orderquizanswer inlineblock" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  third
+  </div><div class="orderquizanswer inlineblock" id="dq1_left4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  sufficient
+  </div><div class="orderquizanswer inlineblock" id="dq1_left5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  necessary
+  </div><div class="orderquizanswer inlineblock" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
+  both necessary and sufficient
+  </div></div><div class="row"><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(is 1524)"><b class="correct"></b>  
+  <span style="color:green;"><b>Correct!</b></span>
+  </span><span class="orderquizfeedback hidden" datav="(is 2415)"><b class="correct"></b>  
+  <span style="color:green;"><b>Correct!</b></span>
+  </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong"></b> 
+  <span style="color:red;"><b>Incorrect. Try again!</b></span>
+</span></span></div></div>
+</div><div style="margin-top:20px"></div><span id="env2.2"></span><a class="Quizexerciseno" data-count="2.2"></a><a href="#07d77867-3dcd-43bf-b724-12835fc590da" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=07d77867-3dcd-43bf-b724-12835fc590da class = "collapse Quizexercise envbuttons">  
+<span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+Find the stationary point(s) for the function <span class="math"></span><script type="math/tex">f(x,y) = x^2 + y^2</script>
+</div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+<div class="math"></div><script type="math/tex; mode=display">
+(x_0, y_0) = (\sqrt{2},\sqrt{2})
+</script>
+</div><div class="col-xs-5 quizanswer" datav="F">
+<div class="math"></div><script type="math/tex; mode=display">
+(x_0, y_0) = (\pm\sqrt{2},\pm\sqrt{2})
+</script>
+</div><div class="col-xs-5 quizanswer" datav="T">
+<div class="math"></div><script type="math/tex; mode=display">
+(x_0, y_0) = (0, 0)
+</script>
+</div><div class="col-xs-5 quizanswer" datav="F">
+There are no stationary points since
+<div class="math"></div><script type="math/tex; mode=display">
+x^2 + y^2 > 0
+</script>
+</div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.3"></span><a class="Exerciseno" data-count="2.3"></a><a href="#2b887553-3c34-4d2d-aff2-d5d43ef03282" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=2b887553-3c34-4d2d-aff2-d5d43ef03282 class = "collapse Exercise envbuttons">  
+Find all the maxima and minima of the function
+<div class="math"></div><script type="math/tex; mode=display">
+f(x,y) = x^2 + xy + y^2 + 3x - 3y + 6
+</script>
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><a class="Exerciseno" data-count="2.4"></a><a href="#0ff3dbcb-972d-40a5-9f59-18ff5fa09bd7" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=0ff3dbcb-972d-40a5-9f59-18ff5fa09bd7 class = "collapse Exercise envbuttons">  
+Find all the maxima and minima of the function
+<div class="math"></div><script type="math/tex; mode=display">
+ f(x,y)= -9x^2 -6xy - 2y^2 + 42x - 2y + 6
+</script>
+</div><div style="margin-top:20px"></div><span id="env2.5"></span><a class="Exerciseno" data-count="2.5"></a><a href="#2d06145b-1694-4ca6-befd-141e08d96c1e" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=2d06145b-1694-4ca6-befd-141e08d96c1e class = "collapse Exercise envbuttons">  
+A company produces two types of solar panel, A and B, that sell for EUR 6 million and EUR 4 million per thousand units,
+respectively. The cost of producing <span class="math"></span><script type="math/tex">x</script> thousand of type A and <span class="math"></span><script type="math/tex">y</script> thousand of type B is <span class="math"></span><script type="math/tex">x2 - 2xy + 8y2 + 2x - 20y - 5</script>.
+Find the values of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> that maximize the company's profits. (Note: Profit = (revenue) - (cost).)
+The company will achieve a maximum profit by selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type A and selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type B.<div style="margin-top:20px"></div><span style="color:red;"><b>How to check answer?</b></span>
+</div><div style="margin-top:20px"></div><span id="env2.6"></span><a class="Quizexerciseno" data-count="2.6"></a><a href="#96eadd05-cded-45c5-9b81-4a97e3120145" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=96eadd05-cded-45c5-9b81-4a97e3120145 class = "collapse Quizexercise envbuttons">  
+<span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
+Find the stationary point <span class="math"></span><script type="math/tex">(x_0, y_0)</script> for the function
+<div class="math"></div><script type="math/tex; mode=display">
+f(x, y) = - 2 x^2 - 4 xy + 4 y^2
+</script>
+Then use the second-order test to determine the nature of this point.
+</div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+<span class="math"></span><script type="math/tex">(x_0, y_0)</script> is a local minimum
+</div><div class="col-xs-5 quizanswer" datav="F">
+<span class="math"></span><script type="math/tex">(x_0, y_0)</script> is a local maximum
+</div><div class="col-xs-5 quizanswer" datav="T">
+<span class="math"></span><script type="math/tex">(x_0, y_0)</script> is a saddle point
+</div><div class="col-xs-5 quizanswer" datav="F">
+The second-order test is inconclusive
+</div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz3, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div></div></body>

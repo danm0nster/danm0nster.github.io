@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#8bd3b98b-60e8-496f-abe1-f5e49751226f"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#8a33c7a3-0d90-4aba-88b8-5f2507d5572b">1.1 Opgaver</a></li></ul><li><a class="kap" href="sandbox.html#fdbe622c-524b-4d0d-9dd2-550f7bb14f5f"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#f4b72be8-8539-48eb-826f-9476a6288de9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="bibliography.html#3ab0ce5f-943b-4032-a268-32d2d2dbb854"><b>3</b> Bibliography test</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><br><br><h1 text-align:center;>Example of notes</h1><h2 text-align:center;>Niels Lauritzen</h2><div style="margin-top:20px"></div><p style="margin-bottom: 2cm;"></p><div style="margin-top:20px"></div><p style="margin-left: 3cm; margin-right: 3cm;">
+  Here is an example abstract! Below you should see inclusion of
+  an image file. The burger in the upper left hand corner is the entry
+  to the clickable table of contents. The first and only chapter in the generic notes is the <em>Language of mathematics</em> chapter from  the <a href="https://edtech.dk/IMO" target="_blank">IMO course</a> given in the fall of 2020.
+</p><div style="margin-top:20px"></div><div class="centerimg"><img src="img/lifeguard.png" ></div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
