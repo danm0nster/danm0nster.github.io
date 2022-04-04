@@ -116,7 +116,7 @@
 
 
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#f795d56c-095b-40e2-a971-6555ee79174f"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#5ecb71a2-92b1-4192-970f-423d48685495">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#fdbe622c-524b-4d0d-9dd2-550f7bb14f5f"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#f4b72be8-8539-48eb-826f-9476a6288de9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="bibliography.html#3ab0ce5f-943b-4032-a268-32d2d2dbb854"><b>3</b> Bibliography test</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="f795d56c-095b-40e2-a971-6555ee79174f">1<span style="float:right;">Playground</span></h1><div style="margin-top:20px"></div><span id="sec1.1"></span><h2 id="5ecb71a2-92b1-4192-970f-423d48685495">1.1 Example problems</h2>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#cf988e9b-85fe-40c3-869a-5bab9f030421"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#eaeb4d93-16f0-482e-bbf0-3a8f34ec168a">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#fdbe622c-524b-4d0d-9dd2-550f7bb14f5f"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#f4b72be8-8539-48eb-826f-9476a6288de9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="bibliography.html#3ab0ce5f-943b-4032-a268-32d2d2dbb854"><b>3</b> Bibliography test</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="cf988e9b-85fe-40c3-869a-5bab9f030421">1<span style="float:right;">Playground</span></h1><div style="margin-top:20px"></div><span id="sec1.1"></span><h2 id="eaeb4d93-16f0-482e-bbf0-3a8f34ec168a">1.1 Example problems</h2>
 <span id="env1.1"></span><div class="exercise" data-count="1.1">     
   <ol class="number"><li id="ite1.1"> What is the derivative of <span class="math"></span><script type="math/tex">f(x) = x^2 + \tfrac{1}{2} x + \tfrac{1}{2}</script>?
     </li><li id="ite1.2"> Try to sketch both <span class="math"></span><script type="math/tex">f(x)</script> and <span class="math"></span><script type="math/tex">f'(x)</script> without using a computer.
@@ -167,7 +167,7 @@ c = slider(-10,10, default = 0, step_size = 0.5, label='c')):
       pretty_print(html('<p style="font-family:Arial, sans-serif;color:#000"><span style="color:red;font-weight:bold">Error</span>: %s</p>' % msg))
   
 @interact
-def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2,1e-3)), step_size = 1e-3, default = 2, label='h')):
+def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2,1e-3)), step_size = 1e-3, default = 2, label='h'), auto_update = False):
   x = var('x');
   f = -x^3 + 5*x^2 + 2;
   df = f.derivative();
@@ -180,7 +180,7 @@ def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2
   the_plot.show();
   return
   </script></div>
-  </div><div style="margin-top:20px"></div><span id="env1.4"></span><a class="Quizexerciseno" data-count="1.4"></a><a href="#0b152907-bfe2-4130-b607-0abc980aedd0" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=0b152907-bfe2-4130-b607-0abc980aedd0 class = "collapse Quizexercise envbuttons">  
+  </div><div style="margin-top:20px"></div><span id="env1.4"></span><a class="Quizexerciseno" data-count="1.4"></a><a href="#e2bcb6db-f5d2-47b1-b253-0c699ec6ff11" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=e2bcb6db-f5d2-47b1-b253-0c699ec6ff11 class = "collapse Quizexercise envbuttons">  
 <div id="quiz1" style="width:100%;"><div class="row quizquestion">
   Drag the boxes below to the empty slots to construct a true sentence.<div style="margin-top:20px"></div>The <div class="orderquizanswer empty inlineblock" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions and the <div class="orderquizanswer empty inlineblock" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions.
   </div><div class="row quizanswers"><div class="orderquizanswer inlineblock" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
@@ -202,7 +202,7 @@ def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2
   </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong"></b> 
   <span style="color:red;"><b>Incorrect. Try again!</b></span>
 </span></span></div></div>
-</div><div style="margin-top:20px"></div><span id="env1.5"></span><a class="Quizexerciseno" data-count="1.5"></a><a href="#e388bca5-dee0-4859-af9e-e4dd6ca13567" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=e388bca5-dee0-4859-af9e-e4dd6ca13567 class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env1.5"></span><a class="Quizexerciseno" data-count="1.5"></a><a href="#8f9c8064-73e4-4376-a5be-6b7080927187" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=8f9c8064-73e4-4376-a5be-6b7080927187 class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
 Find the stationary point(s) for the function <span class="math"></span><script type="math/tex">f(x,y) = x^2 + y^2</script>
 </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
@@ -223,22 +223,22 @@ There are no stationary points since
 x^2 + y^2 > 0
 </script>
 </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script>
-</div><div style="margin-top:20px"></div><span id="env1.6"></span><a class="Exerciseno" data-count="1.6"></a><a href="#3ddb0a58-d2d4-4b71-ab12-5faf4f9c68c1" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=3ddb0a58-d2d4-4b71-ab12-5faf4f9c68c1 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env1.6"></span><a class="Exerciseno" data-count="1.6"></a><a href="#e9117582-beb8-4ec5-b299-6cc4a396e842" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=e9117582-beb8-4ec5-b299-6cc4a396e842 class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
 f(x,y) = x^2 + xy + y^2 + 3x - 3y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env1.7"></span><a class="Exerciseno" data-count="1.7"></a><a href="#50917c5d-f633-4f08-9dfe-3dbcad61ca7f" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=50917c5d-f633-4f08-9dfe-3dbcad61ca7f class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env1.7"></span><a class="Exerciseno" data-count="1.7"></a><a href="#5924f331-ccf8-48b9-9de2-a7dada5e3eec" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=5924f331-ccf8-48b9-9de2-a7dada5e3eec class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
  f(x,y)= -9x^2 -6xy - 2y^2 + 42x - 2y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env1.8"></span><a class="Exerciseno" data-count="1.8"></a><a href="#d80dc91c-8b45-4ff6-a43d-fecbd3721f56" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=d80dc91c-8b45-4ff6-a43d-fecbd3721f56 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env1.8"></span><a class="Exerciseno" data-count="1.8"></a><a href="#70775200-0727-4796-9844-818279bca041" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=70775200-0727-4796-9844-818279bca041 class = "collapse Exercise envbuttons">  
 A company produces two types of solar panel, A and B, that sell for EUR 6 million and EUR 4 million per thousand units,
 respectively. The cost of producing <span class="math"></span><script type="math/tex">x</script> thousand of type A and <span class="math"></span><script type="math/tex">y</script> thousand of type B is <span class="math"></span><script type="math/tex">x2 - 2xy + 8y2 + 2x - 20y - 5</script>.
 Find the values of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> that maximize the company's profits. (Note: Profit = (revenue) - (cost).)
 The company will achieve a maximum profit by selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type A and selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type B.<div style="margin-top:20px"></div><span style="color:red;"><b>How to check answer?</b></span>
-</div><div style="margin-top:20px"></div><span id="env1.9"></span><a class="Quizexerciseno" data-count="1.9"></a><a href="#ced5099d-7f9b-447a-b0c9-e618ecf37e4d" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=ced5099d-7f9b-447a-b0c9-e618ecf37e4d class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env1.9"></span><a class="Quizexerciseno" data-count="1.9"></a><a href="#867e0391-cfa4-432c-a5dd-193d8c9bf900" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=867e0391-cfa4-432c-a5dd-193d8c9bf900 class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
 Find the stationary point <span class="math"></span><script type="math/tex">(x_0, y_0)</script> for the function
 <div class="math"></div><script type="math/tex; mode=display">
