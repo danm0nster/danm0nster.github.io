@@ -1,0 +1,134 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#f0c9a5b7-6851-4fd3-bfd3-3c416344b368"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#a22f3b3b-509d-4e25-8be6-b6dadff662bb">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#36a4a4bb-f397-4b2f-9632-33e8776ae7d3"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#96b79ab6-a18e-4d9b-95bc-f52e91b895e9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="limit_slide.html#ef028b9a-8dfc-40e0-b1ef-03b37f697527"><b>3</b> A step toward limits</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="bibliography.html#4b0adaa0-34f5-4d99-a778-fbd140c10e5d"><b>4</b> Bibliography test</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"></ul></ul></div><div class="main normalmargin">
+<h1 id="ef028b9a-8dfc-40e0-b1ef-03b37f697527">3<span style="float:right;">A step toward limits</span></h1>
+<div class="sage"><script type="text/x-sage">
+@interact
+def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=3), srange(5e-4, 2, 1e-4)), step_size = 1e-4, default = 2, label='h'), auto_update = False):
+  x = var('x');
+  f = -x^3 + 5*x^2 + 2;
+  df = f.derivative();
+  x_0 = 2;
+  secant = f(x = x_0) + (x - x_0) * (f(x = x_0 + h) - f(x = x_0)) / h;
+  h_cut = 0.4;
+  xmin = x_0 - 3 * h if h > h_cut else x_0 - 3 * h_cut;
+  xmax = x_0 + 3 * h if h > h_cut else x_0 + 3 * h_cut;
+  the_plot = plot(f, xmin, xmax) + plot(secant, xmin, xmax, linestyle = "dashed") + point((x_0, f(x = x_0)), size = 20, rgbcolor = "black") + point((x_0 + h, f(x = x_0 + h)), size = 20, rgbcolor = "black");
+  the_plot.show();
+  return
+</script></div><div style="margin-top:20px"></div></div></body>}
