@@ -103,10 +103,10 @@
   window.MathJax = 1 /* Disable MathJax */
   sagecell.makeSagecell({
   inputLocation: ".sage",
-  evalButtonText: "Start",
-  linked: true,
+  linked: false,
+  autoeval: true,
   languages : ["sage", "python", "macaulay2"],
-  hide : ["editor", "language", "permalink"]
+  hide : ["evalButton", "editor", "language", "permalink"]
   });
 </script>
 
@@ -115,8 +115,8 @@
 
 
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#f0c9a5b7-6851-4fd3-bfd3-3c416344b368"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#a22f3b3b-509d-4e25-8be6-b6dadff662bb">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#36a4a4bb-f397-4b2f-9632-33e8776ae7d3"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#96b79ab6-a18e-4d9b-95bc-f52e91b895e9">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="limit_slide.html#ef028b9a-8dfc-40e0-b1ef-03b37f697527"><b>3</b> A step toward limits</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="bibliography.html#4b0adaa0-34f5-4d99-a778-fbd140c10e5d"><b>4</b> Bibliography test</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"></ul></ul></div><div class="main normalmargin">
-<h1 id="ef028b9a-8dfc-40e0-b1ef-03b37f697527">3<span style="float:right;">A step toward limits</span></h1>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#8589797c-758c-454d-83e9-58b122847c03"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#e8280f18-5c6f-4847-824f-1193602dbc47">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#16a9e823-0438-49b6-8976-8a16f74ab456"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#1c1737c9-7c3d-47df-b545-9ede8de0b666">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="limit_slide.html#37d1e719-4348-4b58-991e-7cebca29354c"><b>3</b> A step toward limits</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="bibliography.html#c6972f59-20a8-4868-a6bb-45cbe1ecf718"><b>4</b> Bibliography test</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"></ul><li><a class="kap" href="sandbox_5.html#f1912334-a8ca-4c54-8c8c-f28dc40faa3a"><b>5</b> Sandbox</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="sandbox_5.html#c7a4bbbd-b0f8-47d8-a36f-45d88a6494bf">5.1 Exercises for week 7</a></li></ul></ul></div><div class="main normalmargin">
+<h1 id="37d1e719-4348-4b58-991e-7cebca29354c">3<span style="float:right;">A step toward limits</span></h1>
 <div class="sage"><script type="text/x-sage">
 @interact
 def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=3), srange(5e-4, 2, 1e-4)), step_size = 1e-4, default = 2, label='h'), auto_update = False):

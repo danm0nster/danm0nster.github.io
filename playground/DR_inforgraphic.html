@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title>Bookede feriehuse - Infogram</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jifo.co/js/dist/assets-embed_view_polyfills-1a90ead5f0ee41f02fd1-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script>
+        function browserIsIE() {
+            var userAgent = window.navigator.userAgent;
+            return userAgent.indexOf('MSIE ') !== -1 //IE < 11
+                || userAgent.indexOf('Trident/') !== -1 // IE 11
+        }
+
+        if (browserIsIE()) {
+            window.errorLog = [];
+            var newLocation = window.location.toString().split('#');
+            if (newLocation[0].indexOf('&retry=1') < 0) {
+                window.onunhandledrejection = function(event)  {
+                    if (event.reason && event.reason.indexOf && event.reason.indexOf('regeneratorRuntime') > -1) {
+                        console.log('embed known promise rejection');
+                        reload();
+                    }
+                };
+
+                window.onerror = function(msg, url, line, col, error) {
+                    window.errorLog.push({
+                        msg: msg, url: url, line: line, col: col, error: error
+                    });
+
+                    if (msg && (msg.indexOf('Out of memory') > -1 || msg.indexOf('regeneratorRuntime') > -1 || msg.indexOf('load stylesheet failed') > -1)) {
+                        console.log('embed known error reload');
+                        setTimeout(function() {
+                            reload();
+                        }, 0);
+                    }
+                };
+            }
+
+            function reload() {
+                newLocation[0] += '&retry=1';
+                window.location = newLocation.join('#');
+            }
+        }
+        window.loadingLog = [];
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.jifo.co">
+<link rel="preconnect" href="https://cdn.jifo.co" />
+
+    <link rel="preload" href="/api/stylesheets/22951" as="style">
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/bundle_vendor-ed3e692eb3cefc392ce3-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/assets-embed_view_notrack-59c5e91b55be36012307-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="preload" as="script" href="https://cdn.jifo.co/js/dist/embed_viewer-5fefaf2c1e470c0f2625-1-webpack.js" crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://cdn.jifo.co/css/dist/embed_view-96fec60a0a6a71b0e01ebd433ea9a021d3a8e145.css" media="all">
+    <link rel="icon" href="https://cdn.jifo.co/favicon/favicon.ico?v=2" type="image/x-icon">
+    <link rel="canonical" href="https://infogram.com/1p301krkye75lxb03qkkj71dwzhdqykgw56">
+<style>.chart *{line-height:normal}.moveable{margin-bottom:20px!important}.capture-mode .moveable_w:last-child .moveable:last-child,.download-mode .moveable_w:last-child .moveable:last-child,.embed-mode .moveable_w:last-child .moveable:last-child,.web-mode .moveable_w:last-child .moveable:last-child{margin-bottom:0!important}.ig-separator{margin-bottom:0!important;margin-top:-20px;padding-bottom:20px;padding-top:20px}.video{padding-bottom:75%;height:0}.video iframe{border:0;width:100%;height:100%;position:absolute;top:0;left:0}.ig-items{margin:20px;padding-top:0}svg .igc-pie-center-text .igc-pie-center-text-node{font-family:'PT Sans Narrow','Arial Narrow';font-size:24px;fill:#626262;font-weight:400;font-style:normal}svg .igc-wc-node{cursor:default}.igc-treemap-node-text-name{font-family:Publik;font-weight:400}.igc-treemap-node-text-value{font-family:Publik}b{font-weight:600}.embed-mode.ig-container{background:0 0}svg .igc-pie-center-text .igc-pie-center-text-node,svg .igc-semi-pie-center-text .igc-pie-center-text-node{font-family:Publik;font-weight:600;fill:#262626;font-size:14px}.igc-tabs .igc-tab-active{background:#dddddc}.igc-tabs .igc-tab .igc-tab-content,.igc-tabs.igc-tabs-dropdown .igc-tab-name{font-family:Publik;color:#262626}.igc-tab-switcher,.igc-tabs .igc-tab{color:#262626}.igc-textual-figure{font-family:Publik;font-size:14px;font-weight:600}.igc-textual-text.innertext{line-height:17px}.igc-textual-fact{color:#262626;font-family:Publik;font-size:14px;font-weight:400}.innertext .igc-textual-fact{line-height:17px}.igc-textual-icon{padding-right:30px;padding-top:7px}.igc-table .igc-table-cell{font-family:Publik;font-size:12px;font-weight:400}.igc-table .igc-table-header{font-family:Publik;font-size:12px;font-weight:400;padding-left:9px}.ig-container{background:#fff}.headline{font-family:Publik Semibold;font-size:24px;color:#000;text-align:left;line-height:32px}.chart-title{font-family:Publik Semibold;font-size:18px;font-weight:400;color:#000;text-align:left}.chart-title .innertext{line-height:26px}.bodytext{font-family:Publik;font-size:16px;font-weight:400;color:#222;text-align:left}.bodytext .innertext{line-height:24px}.quote{font-family:Publik;font-size:14px;font-weight:300;color:#262626;text-align:left;background:url(https://s3.amazonaws.com/infogram-themes/22951/quote.svg) 30px 2px no-repeat;padding-left:90px}.quote .innertext{line-height:17px}.quotetitle{font-family:Publik;text-transform:uppercase;font-size:11px;font-weight:400;color:#0861ce;margin-top:11px}.quote .quotetitle .innertext{line-height:11px}.tt_tooltip{color:#fff;font-family:Publik;font-size:14px;font-weight:700}.tt_tooltip .tt_value{font-weight:400}.tt_tooltip .tt_body{background:#333}.tt_tooltip .tt_left{border-right:8px solid #333}.tt_tooltip .tt_right{border-left:8px solid #333}.igc-legend-entry{margin-top:15px}.igc-legend{padding-top:10px;padding-bottom:0}.footer-bottom{padding-top:15px;overflow:hidden;margin-bottom:15px}.ig-separator-line{background:rgba(0,0,0,.7)}.heatmap-legend{background:rgba(255,255,255,.7)}.heatmap-label,.heatmap-legend-item{text-transform:uppercase;color:#262626;font-size:12px;font-weight:400;font-family:Publik}.igc-graph-pie-piece{stroke:rgba(255,255,255,0.7)}.captiontext{font-family:Publik;color:#222;font-size:14px;font-weight:400}.captiontext .innertext{line-height:14px;color:#000}.igc-timer span{color:#df2d23!important}.igc-timer+.igc-legend .igc-legend-ico{background:#df2d23!important}.igc-tab-ico svg path{fill:#262626}.igc-tab-switcher-ico svg path{fill:#262626}.igc-table-search{color:#0861ce;font-size:12px;font-weight:400;font-family:Publik}#footer{margin-left:20px;margin-right:20px}.bodytext .innertext a,.bodytext .innertext a:visited{color:#00e}</style>
+
+    
+
+    
+</head>
+<body data-window-graphicID="6a49cb5d-85f9-4bae-95c7-223b9646b8cc" data-window-stylesheet="22951" data-window-ts="NaN"
+      data-window-__viewMode="embed" data-fonts="" data-fullscreen="off" data-aside="on"
+      data-user-status="anonymous" data-password-protected="false"
+      data-user-id="false" >
+<div id="dialog-container"></div>
+<div id="tooltip-container"></div>
+<div id="middle">
+    <div id="embed-loader" style="text-align:center; position: relative; min-width: 130px; min-height: 130px"></div>
+    <script>
+        window.parent.postMessage('frameStart', '*');
+        var initDelayedScripts;
+        var initDelayedScriptsWhenReady = false;
+        var serviceWorkerEnabled = true;
+        window.publicViewConfig = {"cdn":"https:\u002F\u002Fcdn.jifo.co","mapsCDN":"https:\u002F\u002Fmaps.jifo.co","assetsCDN":"","env":"production","atlasURL":"https:\u002F\u002Fatlas.jifo.co"};
+
+        function readyForInitialisation() {
+            if (initDelayedScripts) {
+                initDelayedScripts();
+            } else {
+                initDelayedScriptsWhenReady = true;
+            }
+        }
+
+        if ('serviceWorker' in navigator && serviceWorkerEnabled) {
+            //
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        // Registration was successful
+                        var worker = registration.active || registration.waiting || registration.installing;
+                        if (worker.state === 'activated') {
+                            readyForInitialisation();
+                        } else {
+                            worker.addEventListener('statechange', function(e) {
+                                if (e.target.state === 'activated') {
+                                    readyForInitialisation();
+                                }
+                            });
+                        }
+                    },
+
+                    function(err) {
+                        // registration failed :(
+                        readyForInitialisation();
+                    }
+                );
+            }
+        }
+
+        // Test for animation support
+        var animationPrefix = function() {
+            var domPrefixes = 'Webkit Moz O ms Khtml'.split(' ');
+            var prefix = null;
+            var elm = document.createElement('div');
+
+            if (elm.style.animationName !== undefined) {
+                prefix = '';
+            }
+
+            if (prefix === null) {
+                for (var i = 0; i < domPrefixes.length; i++) {
+                    if (elm.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+                        prefix = '-' + domPrefixes[i].toLowerCase() + '-';
+                        break;
+                    }
+                }
+            }
+
+            return prefix;
+        };
+
+        var loader;
+        var prefix = animationPrefix();
+
+        // If prefix is null, there is no support for CSS animation, fallback to GIF animation
+        if (prefix === null) {
+            var image = 'preloder.gif';
+            if ('devicePixelRatio' in window && window.devicePixelRatio >= 2) {
+                image = 'preloder@x2.gif';
+            }
+
+            loader = document.createElement('IMG');
+            loader.setAttribute('alt', 'Loading infographic');
+            loader.setAttribute('style', 'width:100%;max-width:75px !important;height:auto;margin:0 auto;' +
+                'border:solid #e3e3e3 1px;border-radius: 5px;margin:25px 0px;padding:10px;' +
+                'background-color:#fff;box-sizing:border-box;');
+
+            loader.setAttribute('src', 'https://cdn.jifo.co/i/embed/' + image);
+        } else {
+
+            // Append style to head element if needed
+            var loaderStyle = document.createElement('STYLE');
+            loaderStyle.type = 'text/css';
+
+            var styles = '@' + prefix + 'keyframes infogram-loader { 100% { ' + prefix + 'transform: rotate(360deg); } }';
+
+            if (loaderStyle.styleSheet) {
+                loaderStyle.styleSheet.cssText = styles;
+            } else {
+                loaderStyle.appendChild(document.createTextNode(styles));
+            }
+
+            document.getElementsByTagName("head")[0].appendChild(loaderStyle);
+
+            // Create loader element itself
+            var circle = document.createElement('I');
+            circle.setAttribute('style', 'display: block; width: 40px; height: 40px; margin: -25px; padding: 0; ' +
+                'position: absolute; top: 50%; left: 50%; border: 5px solid; border-top-color: transparent; ' +
+                'border-left-color: transparent; border-radius: 50%; color: #A6A6A6; background-color: transparent; ' +
+                prefix + 'animation: infogram-loader 0.9s linear infinite;');
+
+            loader = document.createElement('DIV');
+            loader.setAttribute('style', 'line-height: 40px; width: 130px; height: 130px; top: 50%; left: 50%; ' +
+                'margin: -65px -65px; display: block; position: absolute;');
+
+            loader.appendChild(circle);
+        }
+
+        var container = document.getElementById('embed-loader');
+        container && container.appendChild(loader);
+    </script>
+</div>
+<script>window.infographicData={"id":291916531,"type":0,"block_id":"6a49cb5d-85f9-4bae-95c7-223b9646b8cc","theme_id":22951,"user_id":4889766,"team_user_id":5333346,"path":"7a00d34b-bdea-4769-a13b-1719d6948345","title":"Bookede feriehuse","description":"","tags":"","public":false,"publicAccess":false,"private_link_enabled":1,"thumb":"https:\u002F\u002Finfogram-thumbs-200.s3-eu-west-1.amazonaws.com\u002F6a49cb5d-85f9-4bae-95c7-223b9646b8cc.jpg","embedImageUrl":"https:\u002F\u002Finfogram.io\u002Fp\u002Fa15996cd383fc22c3f51841a2e0c919a.png","previewImageUrl":"https:\u002F\u002Finfogram.io\u002Fp\u002F964e144ee0986635d4cb297473644444.png","width":550,"copyright":"","properties":{"tabs":true,"embed_button":"none","zeropaddingembed":true,"custom_logo":"none","allowToShare":false,"language":"da","logoName":"Infogram logo","publishType":1,"transparent":false,"rtl":false,"export_settings":{"showGrid":true,"showValues":true},"whitelabel":true,"noTracking":true,"decimal_separator":",","title_link":"infogram","custom_link_url":"","showChartsOnScroll":false,"pro":true},"elements":[{"type":"particle","particle_id":738598411,"object_id":"7a0e185a-69ad-4f15-9551-667343422ad7","particle_type":"maintitle","picture":null,"accessibility":{"enabled":true},"text":"\u003Cp style=\"text-align: center\"\u003E\u003Cspan style=\"font-family: &#34;Publik Semibold&#34;\"\u003EDanske bookinger af feriehuse\u003C\u002Fspan\u003E\u003C\u002Fp\u003E","content_type":"text\u002Fhtml","title":"","shrink":null},{"type":"particle","particle_id":738598441,"object_id":"76a43d25-6ebd-481c-a7e1-500ab56e43fb","particle_type":"bodytext","picture":null,"accessibility":{"enabled":true},"text":"","content_type":"","title":"","shrink":null},{"type":"chart","chart_id":661217221,"object_id":"f52c9d01-0193-441b-8536-29b76e652b5b","chart_type_nr":6,"data":[[[null,"2019","2022"],["Maj","9596","12677"],["Juni","11141","15140"],["Juli","28172","33209"],["August","8968","10790"],["September","3316","5066"],["Oktober","1696","2323"],["November","505","1037"],["December","447","693"]]],"custom":{"categoryLayout":"tilted","axis":{"x":{"grid":false,"affix":true,"decimalPlaces":false,"decimalPlacesValue":2,"decimalSeparator":",","groupingSymbol":"."},"y":{"affix":true,"decimalPlaces":false,"decimalPlacesValue":2,"ticks":10},"alpha":0.2},"labels":{"graph":{"item":{"format":{"affix":true}}},"tooltip":{"format":{"x":{"affix":true},"y":{"affix":true}}}},"decimalSeparator":",","groupingSymbol":".","containsJSON":false,"yminlim":"","ymin":"","ymax":"","yminraw":"","ymaxlim":"","ymaxraw":""},"colors":[],"defaultColors":["#0861CE","#FF001E","#333333","#7F7F7F","#E5E5E5"],"defaultColorsHeatmap":[],"dimensions":[],"modifier":0,"sheetnames":[],"sheets_settings":[],"accessibility":{"enabled":true,"label":"Chart","description":""}},{"type":"particle","particle_id":738598471,"object_id":"b5117bb3-15b5-4527-ba4e-4293fdac8fe3","particle_type":"captiontext","picture":null,"accessibility":{"enabled":true},"text":"\u003Cp style=\"text-align: center\"\u003E\u003Cspan style=\"font-family: Publik\"\u003E\u003Cfont style=\"font-size: 14px\"\u003E\u003Cspan style=\"font-style: normal;font-weight: 400;text-align: start\"\u003ETallene viser \u003C\u002Fspan\u003E\u003Cspan style=\"font-style: inherit;font-weight: inherit;text-align: start\"\u003Efremtidige bookede husuger. Det betyder eks. en booking på 3 dage + en booking på 4 dage =1 uge.\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cp style=\"text-align: center\"\u003E\u003Cspan style=\"font-family: Publik\"\u003E\u003Cfont style=\"font-size: 14px\"\u003E\u003Cbr\u003E\u003C\u002Ffont\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\u003Cp style=\"text-align: center\"\u003E\u003Cfont style=\"font-size: 14px\"\u003E\u003Cspan style=\"font-family: Publik\"\u003EKilde:&nbsp;\u003C\u002Fspan\u003E\u003Cspan style=\"font-family: Publik\"\u003EDanmarks Statistik\u003C\u002Fspan\u003E\u003C\u002Ffont\u003E\u003C\u002Fp\u003E","content_type":"text\u002Fhtml","title":"","shrink":null}],"publishedURLId":"1p301krkye75lxb03qkkj71dwzhdqykgw56","updatedAt":"2022-05-25T12:00:16.000Z","embed_image_data":{"height":602},"privateURL":"MwQ8k7XT24R52GpkIQsG","theme":{"title":"New: Indland\u002Fudland","usergroup":"danish-radio","picture":"https:\u002F\u002Fs3.amazonaws.com\u002Finfogram-themes\u002F22951\u002Fthumb.png","order":0,"public":0,"width":550,"fonts":"","colors":["#0861CE","#FF001E","#333333","#7F7F7F","#E5E5E5"],"logocolor":"0861CE","logoImages":["https:\u002F\u002Fd1m5pq7b4fzvad.cloudfront.net\u002F1956\u002Flogo-1.svg"],"logoUrl":"","showLogo":"none","showEmbed":"enabled","embedButtonText":"Share","top":0,"padding":20,"spacing":20,"shrinkMargin":20,"shrinkPadding":0,"spacingElementMin":null,"spacingElementMax":null,"css":"b {\n\tfont-weight: 600;\n}\n\n.embed-mode.ig-container {\n\tbackground: transparent;\n}\n\nsvg .igc-semi-pie-center-text .igc-pie-center-text-node,\nsvg .igc-pie-center-text .igc-pie-center-text-node {\n\tfont-family: Publik;\n\tfont-weight: 600;\n\tfill: #262626;\n\tfont-size: 14px;\n}\n\n.igc-tabs .igc-tab-active {\n\tbackground: #DDDDDC;\n}\n\n.igc-tabs .igc-tab .igc-tab-content,\n.igc-tabs.igc-tabs-dropdown .igc-tab-name {\n\tfont-family: Publik;\n\tcolor: #262626;\n}\n\n.igc-tabs .igc-tab,\n.igc-tab-switcher {\n\tcolor: #262626;\n}\n\n.igc-textual-figure {\n\tfont-family: Publik;\n\tfont-size: 14px;\n\tfont-weight: 600;\n}\n\n.igc-textual-text.innertext {\n\tline-height: 17px;\n}\n\n.igc-textual-fact {\n\tcolor: #262626;\n\tfont-family: Publik;\n\tfont-size: 14px;\n\tfont-weight: 400;\n}\n\n.innertext .igc-textual-fact {\n\tline-height: 17px;\n}\n\n.igc-textual-icon {\n\tpadding-right: 30px;\n\tpadding-top: 7px;\n}\n\n.igc-table .igc-table-cell {\n\tfont-family: Publik;\n\tfont-size: 12px;\n\tfont-weight: 400;\n}\n\n.igc-table .igc-table-header {\n\tfont-family: Publik;\n\tfont-size: 12px;\n\tfont-weight: 400;\n\tpadding-left: 9px;\n}\n\n.ig-container {\n\tbackground: #fff;\n}\n\n.headline {\n\tfont-family: Publik Semibold;\n\tfont-size: 24px;\n\tcolor: #000;\n\ttext-align: left;\n\tline-height: 32px;\n}\n\n.chart-title {\n\tfont-family: Publik Semibold;\n\tfont-size: 18px;\n\tfont-weight: 400;\n\tcolor: #000;\n\ttext-align: left;\n}\n\n.chart-title .innertext {\n\tline-height: 26px;\n}\n\n.bodytext {\n\tfont-family: Publik;\n\tfont-size: 16px;\n\tfont-weight: 400;\n\tcolor: #222;\n\ttext-align: left;\n}\n\n.bodytext .innertext {\n\tline-height: 24px;\n}\n\n.quote {\n\tfont-family: Publik;\n\tfont-size: 14px;\n\tfont-weight: 300;\n\tcolor: #262626;\n\ttext-align: left;\n\tbackground: url(https:\u002F\u002Fs3.amazonaws.com\u002Finfogram-themes\u002F22951\u002Fquote.svg) 30px 2px no-repeat;\n\tpadding-left: 90px;\n}\n\n.quote .innertext {\n\tline-height: 17px;\n}\n\n.quotetitle {\n\tfont-family: Publik;\n\ttext-transform: uppercase;\n\tfont-size: 11px;\n\tfont-weight: 400;\n\tcolor: #0861CE;\n\tmargin-top: 11px;\n}\n\n.quote .quotetitle .innertext {\n\tline-height: 11px;\n}\n\n.tt_tooltip {\n\tcolor: #FFF;\n\tfont-family: Publik;\n\tfont-size: 14px;\n\tfont-weight: 700;\n}\n\n.tt_tooltip .tt_value {\n\tfont-weight: 400;\n}\n\n.tt_tooltip .tt_body {\n\tbackground: #333;\n}\n\n.tt_tooltip .tt_left {\n\tborder-right: 8px solid #333;\n}\n\n.tt_tooltip .tt_right {\n\tborder-left: 8px solid #333;\n}\n\n.igc-legend-entry {\n\tmargin-top: 15px;\n}\n\n.igc-legend {\n\tpadding-top: 10px;\n\tpadding-bottom: 0;\n}\n\n.footer-bottom {\n\tpadding-top: 15px;\n\toverflow: hidden;\n\tmargin-bottom: 15px;\n}\n\n.ig-separator-line {\n\tbackground: rgba(0,0,0,0.7);\n}\n\n.heatmap-legend {\n\tbackground: rgba(255,255,255,0.7);\n}\n\n.heatmap-legend-item,\n.heatmap-label {\n\ttext-transform: uppercase;\n\tcolor: #262626;\n\tfont-size: 12px;\n\tfont-weight: 400;\n\tfont-family: Publik;\n}\n\n.igc-graph-pie-piece {\n\tstroke: rgba(255,255,255,0.7);\n}\n\n.captiontext {\n\tfont-family: Publik;\n\tcolor: #222;\n\tfont-size: 14px;\n\tfont-weight: 400;\n}\n\n.captiontext .innertext {\n\tline-height: 14px;\n\tcolor: #000;\n}\n\n.igc-timer span {\n\tcolor: #DF2D23 !important;\n}\n\n.igc-timer + .igc-legend .igc-legend-ico {\n\tbackground: #DF2D23 !important;\n}\n\n.igc-tab-ico svg path {\n\tfill: #262626;\n}\n\n.igc-tab-switcher-ico svg path {\n\tfill: #262626;\n}\n\n.igc-table-search {\n\tcolor: #0861CE;\n\tfont-size: 12px;\n\tfont-weight: 400;\n\tfont-family: Publik;\n}\n","charts":{"wordcloud":{"labels":{"fontWeight":"400","fontFamily":"Publik"}},"treemap":{"labels":{"name":{"fontFamily":"Publik","fontWeight":"400"},"value":{"fontFamily":"Publik"}}},"table":{"search":"Søg","shapeFill":"#DF2D23","headerColor":"#262626","cellColor":"#0861CE","headerBackground":"#eee","cellBackground":"#DDDDDC"},"legend":{"color":{"label":{"active":"rgb(38, 38, 38)","hover":"rgba(0, 0, 0, 0.7)","inactive":"rgb(38, 38, 38)"},"icon":{"inactive":"rgba(38, 38, 38, 0.2)"}},"layouts":{"bottom":{"legend":{"entry":{"marginTop":"15px"},"marginTop":"10px","marginBottom":"0"}}}},"sheetSwitch":{"style":{"tab":{"font-family":"Publik","font-weight":500,"font-style":"normal","colors":{"dropdown":{"selectIcon":"#262626","leftSwitcherIcon":"#262626","rightSwitcherIcon":"#262626"}},"font-size":"13px","color":"#262626"}}},"gauge":{"colors":{"background":"#c0c0c0","needle":"#333"}},"waterfall":{"colors":"60ABC0 266D91 183039"},"candle":{"colors":{"up":"#266D91","down":"#60ABC0"}},"barRadial":{"colors":{"background":"#c0c0c0"}},"pictorialBar":{"style":{"graph":{"item":{"value":{"font-family":"PT Sans Narrow, Arial Narrow","font-size":"60px"}}}}},"barProgress":{"colors":{"background":"#c0c0c0"}},"map":{"countryFill":"#c0c0c0","hotColor":"#7EB7CA","coldColor":"#cecece"},"barRace":{"style":{"sheetSwitch":{"style":{"play":{"colors":{"icon":"#ff0000"}}}}}},"tooltip":{"value":{"fontWeight":"400"},"container":{"color":"#FFF","fontFamily":"Publik","fontSize":"14px","fontWeight":"700"},"body":{"background":"#333"},"left":{"borderRight":"8px solid #333"},"right":{"borderLeft":"8px solid #333"}}},"chartOptions":{"gauge":{"gaugeNeedleStyle":{"fill":"#333"},"gaugeFillStyle":{"stroke-width":0},"gaugeStyle":{"fill":"#c0c0c0"},"_gaugeTextOptions":{"labelFontStyle":{"font-family":"Publik","font-size":12,"fill":"#262626","font-weight":400}}},"pictosize":{},"matrix":{},"pictobar":{},"progress":{"backgroundInactive":{"fill":"#c0c0c0"}},"map":{"countryFill":"#c0c0c0","hotColor":"#7EB7CA","coldColor":"#cecece"},"candle":{"colors":"60ABC0 266D91 183039"},"waterfall":{"colors":"60ABC0 266D91 183039"},"common":{"panelMarginY":8,"inTextStyle":{"font-family":"Publik","font-weight":400}},"textual":{"fill":"DF2D23"}},"chartDefaults":{},"color":{"element":{"text":"#262626","bg":"transparent"},"chart":{"text":"#262626","bg":"transparent"},"text":"#262626","bg":"#DDDDDC"},"colorPresets":[],"localFonts":{"google":[],"local":[{"fontFamily":"Publik Semibold","styles":[{"fontWeight":400,"fontStyle":"normal","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-semibold.woff\") format(\"woff\")"]},{"fontWeight":400,"fontStyle":"italic","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-semibolditalic.woff\") format(\"woff\")"]},{"fontWeight":700,"fontStyle":"normal","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-semibold.woff\") format(\"woff\")"]},{"fontWeight":700,"fontStyle":"italic","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-semibolditalic.woff\") format(\"woff\")"]}]},{"fontFamily":"Publik","styles":[{"fontWeight":400,"fontStyle":"normal","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-regular.woff\") format(\"woff\")"]},{"fontWeight":400,"fontStyle":"italic","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-italic.woff\") format(\"woff\")"]},{"fontWeight":700,"fontStyle":"normal","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-bold.woff\") format(\"woff\")"]},{"fontWeight":700,"fontStyle":"italic","src":["url(\"https:\u002F\u002Fthemes.jifo.co\u002F22951\u002Fdrpublik-bolditalic.woff\") format(\"woff\")"]}]}],"typekit":[]},"font":{"label":{"fontSize":12,"fontWeight":400},"common":{"textAlign":"initial","fontSize":12,"fontStyle":"normal","fontWeight":"400","fontFamily":"Publik"},"legend":{"fontWeight":"400","fontSize":"14px","fontFamily":"Publik"}},"fontPresets":[],"fontFamilies":["Publik","Publik Semibold"],"footerOptions":{"common":{"borderColor":"#dadada","borderWidth":0},"copyrightNotice":{"enabled":false,"fontFamily":"PT Sans Narrow","fontSize":14,"color":"#4b4b4b","fontWeight":400,"fontStyle":"normal"},"shareButton":{"enabled":true,"background":"#0861CE","text":"Share","color":"#ffffff","fontFamily":"Roboto, Arial, sans-serif","fontSize":13,"fontWeight":400,"fontStyle":"normal","position":"right"},"logo":{"position":"left","enabled":true,"background":"#0861CE"}},"archived":false,"tabs":true,"zeroPaddingEmbed":true,"freelayoutContents":{"defaults":{"foregroundColor":"#262626","backgroundColor":"#DDDDDC","fontFamily":"Publik","fontSize":12,"lineHeight":1.5,"textAlign":"ALIGN_LEFT"},"fontFamilies":{"font1":"Roboto"},"fontSizes":{"extraLarge":64,"large":48,"medium":18,"small":12},"elements":{"TEXT":{"h1":{"fontSize":"24px","fontFamily":"Publik Semibold","fontWeight":700,"foregroundColor":"#000","lineHeight":1.3},"h2":{"fontSize":"18px","fontFamily":"Publik Semibold","fontWeight":700,"foregroundColor":"#000"},"body":{"fontSize":"16px","fontFamily":"Publik","foregroundColor":"#222"},"caption":{"fontSize":"14px","fontFamily":"Publik","foregroundColor":"#222"}},"SHAPE":{"fillColor":"#0861CE","strokeColor":"#0861CE"},"IMAGE":{"fillColor":"#0861CE"}},"colors":["#0861CE","#FF001E","#333333","#7F7F7F","#E5E5E5"]},"id":22951,"thumb":null,"version":1,"parentId":0,"enabledResponsive":true,"enabledFreeLayout":true,"createdAt":"2019-09-04T06:26:16.000Z","updatedAt":"2022-02-14T14:30:53.000Z","created_at":"2019-09-04T06:26:16.000Z","updated_at":"2022-02-14T14:30:53.000Z"},"embed":"\u003Cscript id=\"infogram_0__\u002FMwQ8k7XT24R52GpkIQsG\" title=\"Bookede feriehuse\" src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed.js?KXx\" type=\"text\u002Fjavascript\"\u003E\u003C\u002Fscript\u003E","embedIframe":"\u003Ciframe src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FMwQ8k7XT24R52GpkIQsG?src=embed\" title=\"Bookede feriehuse\" width=\"550\" height=\"602\" scrolling=\"no\" frameborder=\"0\" style=\"border:none;\" allowfullscreen=\"allowfullscreen\"\u003E\u003C\u002Fiframe\u003E","embedImageResponsive":"\u003Cscript id=\"infogramimg_0__\u002FMwQ8k7XT24R52GpkIQsG\" title=\"Bookede feriehuse\" src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed.js?Xv5\" type=\"text\u002Fjavascript\"\u003E\u003C\u002Fscript\u003E","embedImageIframe":"","embedAMP":"\u003Camp-iframe width=\"550\" height=\"602\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups\" resizable allowfullscreen frameborder=\"0\" src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FMwQ8k7XT24R52GpkIQsG?src=embed\"\u003E\u003Cdiv style=\"visibility: hidden\" overflow tabindex=0 role=button aria-label=\"Loading...\" placeholder\u003ELoading...\u003C\u002Fdiv\u003E\u003C\u002Famp-iframe\u003E","embedAMPImage":"\u003Camp-iframe width=\"550\" height=\"602\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups\" resizable allowfullscreen frameborder=\"0\" src=\"https:\u002F\u002Fe.infogram.com\u002F_\u002FMwQ8k7XT24R52GpkIQsG?src=embed\"\u003E\u003Cdiv style=\"visibility: hidden\" overflow tabindex=0 role=button aria-label=\"Loading...\" placeholder\u003ELoading...\u003C\u002Fdiv\u003E\u003C\u002Famp-iframe\u003E","embedWordpress":"[infogram id=\"_\u002FMwQ8k7XT24R52GpkIQsG\" prefix=\"aGZ\" format=\"interactive\" title=\"Bookede feriehuse\"]","embedWordpressImage":"[infogram id=\"_\u002FMwQ8k7XT24R52GpkIQsG\" prefix=\"59O\" format=\"image\" title=\"Bookede feriehuse\"]","embedAsync":"\u003Cdiv class=\"infogram-embed\" data-id=\"_\u002FMwQ8k7XT24R52GpkIQsG\" data-type=\"interactive\" data-title=\"Bookede feriehuse\"\u003E\u003C\u002Fdiv\u003E\u003Cscript\u003E!function(e,i,n,s){var t=\"InfogramEmbeds\",d=e.getElementsByTagName(\"script\")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement(\"script\");o.async=1,o.id=n,o.src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed-loader-min.js\",d.parentNode.insertBefore(o,d)}}(document,0,\"infogram-async\");\u003C\u002Fscript\u003E","embedImageAsync":"\u003Cdiv class=\"infogram-embed\" data-id=\"_\u002FMwQ8k7XT24R52GpkIQsG\" data-type=\"image\" data-title=\"Bookede feriehuse\"\u003E\u003C\u002Fdiv\u003E\u003Cscript\u003E!function(e,i,n,s){var t=\"InfogramEmbeds\",d=e.getElementsByTagName(\"script\")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement(\"script\");o.async=1,o.id=n,o.src=\"https:\u002F\u002Fe.infogram.com\u002Fjs\u002Fdist\u002Fembed-loader-min.js\",d.parentNode.insertBefore(o,d)}}(document,0,\"infogram-async\");\u003C\u002Fscript\u003E","indexStatus":true};</script>
+
+<script delaysrc="https://cdn.jifo.co/js/dist/bundle_vendor-ed3e692eb3cefc392ce3-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jifo.co/js/dist/assets-embed_view_notrack-59c5e91b55be36012307-1-webpack.js" class="app-bundle" crossorigin="anonymous"></script>
+<script delaysrc="https://cdn.jifo.co/js/dist/embed_viewer-5fefaf2c1e470c0f2625-1-webpack.js" class="app-bundle" async crossorigin="anonymous"></script>
+
+<script>
+    initDelayedScripts = function() {
+        var nodes = document.querySelectorAll('script[delaysrc]');
+        for (var i = 0; i < nodes.length; i++) {
+            var node = nodes[i];
+            node.src = node.attributes.delaysrc.nodeValue;
+            node.attributes.removeNamedItem('delaysrc');
+        }
+    }
+
+    if (initDelayedScriptsWhenReady) {
+        initDelayedScripts();
+    }
+
+    if ('serviceWorker' in navigator) {
+        if (navigator.serviceWorker.controller) {
+            readyForInitialisation();
+
+            if (!serviceWorkerEnabled) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    registrations.forEach(function(registration) {
+                        registration.unregister();
+                    });
+                });
+                readyForInitialisation();
+            }
+        } else if(!serviceWorkerEnabled) {
+            readyForInitialisation();
+        }
+    } else {
+        readyForInitialisation();
+    }
+</script>
+</body>
+</html>
+
