@@ -96,30 +96,14 @@
 <script defer src="js/bubble.js"></script>
 
 
-
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-
-<script>
-  window.MathJax = 1 /* Disable MathJax */
-  sagecell.makeSagecell({
-  inputLocation: ".sage",
-  linked: false,
-  autoeval: true,
-  languages : ["sage", "python", "macaulay2"],
-  hide : ["evalButton", "editor", "language", "permalink"]
-  });
-</script>
-
-
-
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#5a9bd68e-a410-4b9c-a395-26c824341e44"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#8d88b226-f0de-42a2-8dd0-4a62b025fca2">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#624bfa75-a437-4718-8092-566099a019ec"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#989dc69a-6443-4754-9b82-fad95b5f4022">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="limit_slide.html#c99317d9-c3da-4f85-bf95-05d79dcfd75d"><b>3</b> A step toward limits</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="mentimeter.html#6f263d89-2371-4839-be83-d801e1dd83da"><b>4</b> Mentimeter</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"></ul><li><a class="kap" href="bibliography.html#b1981f68-8fb5-4ac5-aa5d-057deb571fff"><b>5</b> Bibliography test</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="624bfa75-a437-4718-8092-566099a019ec">2<span style="float:right;">Sandbox</span></h1><div style="margin-top:20px"></div>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#eace9cb4-259c-4df8-846a-126a669c401a"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#05053b54-cc97-4c9b-92ef-09a2c0595f3c">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#3119e3af-bf7e-4b18-a423-64d0c821a901"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#d83065e3-748b-4d7a-9c32-613422ab952f">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="integration.html#854e5cc3-cdc4-4172-bdac-4e81ee12dea7"><b>3</b> Integration</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="rsage.html#217878dc-fa99-498b-9f59-f2176931da52"><b>4</b> R in sagecell</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="rsage.html#ae06c08a-b1f3-43b2-9a37-1fa7e915a80d">4.1 Potential solution</a></li></ul><li><a class="kap" href="limit_slide.html#348db525-9103-479f-94ee-24fed5d1fd29"><b>5</b> A step toward limits</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"></ul><li><a class="kap" href="mentimeter.html#7f8d8db8-fd69-441b-bb9f-e4fe73864060"><b>6</b> Mentimeter</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"></ul><li><a class="kap" href="bibliography.html#d782b62c-4343-4ea1-a7b7-578c6880444b"><b>7</b> Bibliography test</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="3119e3af-bf7e-4b18-a423-64d0c821a901">2<span style="float:right;">Sandbox</span></h1><div style="margin-top:20px"></div>
 <iframe src="DR_inforgraphic.html" width=100% height=600>
 </iframe>
 <div style="margin-top:20px"></div><div class="sage"><script type="text/x-sage"> 
 f = sin(x) * cos(10 * x);
 plot(f, -10, 10);
-</script></div><div style="margin-top:20px"></div><span id="sec2.1"></span><h2 id="989dc69a-6443-4754-9b82-fad95b5f4022">2.1 Exercises for week 7</h2><div style="margin-top:20px"></div><span id="env2.1"></span><a class="Quizexerciseno" data-count="2.1"></a><a href="#f46dfdc7-116d-4bcb-95ac-0aac20f964c0" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=f46dfdc7-116d-4bcb-95ac-0aac20f964c0 class = "collapse Quizexercise envbuttons">  
+</script></div><div style="margin-top:20px"></div><span id="sec2.1"></span><h2 id="d83065e3-748b-4d7a-9c32-613422ab952f">2.1 Exercises for week 7</h2><div style="margin-top:20px"></div><span id="env2.1"></span><a class="Quizexerciseno" data-count="2.1"></a><a href="#17462018-5764-4533-b83c-e86d7a5cbe20" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=17462018-5764-4533-b83c-e86d7a5cbe20 class = "collapse Quizexercise envbuttons">  
 <div id="quiz1" style="width:100%;"><div class="row quizquestion">
   Drag the boxes below to the empty slots to construct a true sentence.<div style="margin-top:20px"></div>The <div class="orderquizanswer empty inlineblock" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions and the <div class="orderquizanswer empty inlineblock" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> conditions.
   </div><div class="row quizanswers"><div class="orderquizanswer inlineblock" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
@@ -141,7 +125,7 @@ plot(f, -10, 10);
   </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong"></b> 
   \red{Incorrect. Try again!}
 </span></span></div></div>
-</div><div style="margin-top:20px"></div><span id="env2.2"></span><a class="Quizexerciseno" data-count="2.2"></a><a href="#c5b43b5c-620e-4ffa-85ea-60c6b99266a0" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=c5b43b5c-620e-4ffa-85ea-60c6b99266a0 class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env2.2"></span><a class="Quizexerciseno" data-count="2.2"></a><a href="#9b21b968-36e9-4734-9736-0c098a935a33" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=9b21b968-36e9-4734-9736-0c098a935a33 class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
 Find the stationary point(s) for the function <span class="math"></span><script type="math/tex">f(x,y) = x^2 + y^2</script>
 </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
@@ -162,22 +146,22 @@ There are no stationary points since
 x^2 + y^2 > 0
 </script>
 </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script>
-</div><div style="margin-top:20px"></div><span id="env2.3"></span><a class="Exerciseno" data-count="2.3"></a><a href="#2c89d74e-8a86-46c9-abb6-59889116d5d0" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=2c89d74e-8a86-46c9-abb6-59889116d5d0 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env2.3"></span><a class="Exerciseno" data-count="2.3"></a><a href="#8673244b-ea0e-4499-b07e-102ea690c2f4" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=8673244b-ea0e-4499-b07e-102ea690c2f4 class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
 f(x,y) = x^2 + xy + y^2 + 3x - 3y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env2.4"></span><a class="Exerciseno" data-count="2.4"></a><a href="#f04eeb56-d4b1-4012-9713-85bf582853c8" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=f04eeb56-d4b1-4012-9713-85bf582853c8 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><a class="Exerciseno" data-count="2.4"></a><a href="#9598b7e5-7e05-45d4-951e-c2f550fdfc7b" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=9598b7e5-7e05-45d4-951e-c2f550fdfc7b class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
  f(x,y)= -9x^2 -6xy - 2y^2 + 42x - 2y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env2.5"></span><a class="Exerciseno" data-count="2.5"></a><a href="#4dde6294-5468-435e-8087-da9dff170225" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=4dde6294-5468-435e-8087-da9dff170225 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env2.5"></span><a class="Exerciseno" data-count="2.5"></a><a href="#c2a9dcef-6ad5-4e4b-a318-4d35e3fdbb5b" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=c2a9dcef-6ad5-4e4b-a318-4d35e3fdbb5b class = "collapse Exercise envbuttons">  
 A company produces two types of solar panel, A and B, that sell for EUR 6 million and EUR 4 million per thousand units,
 respectively. The cost of producing <span class="math"></span><script type="math/tex">x</script> thousand of type A and <span class="math"></span><script type="math/tex">y</script> thousand of type B is <span class="math"></span><script type="math/tex">x2 - 2xy + 8y2 + 2x - 20y - 5</script>.
 Find the values of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> that maximize the company's profits. (Note: Profit = (revenue) - (cost).)
 The company will achieve a maximum profit by selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type A and selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type B.<div style="margin-top:20px"></div>\red{How to check answer?}
-</div><div style="margin-top:20px"></div><span id="env2.6"></span><a class="Quizexerciseno" data-count="2.6"></a><a href="#758e5bd4-8331-4e5d-b5b2-f5f0e6c73aa1" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=758e5bd4-8331-4e5d-b5b2-f5f0e6c73aa1 class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env2.6"></span><a class="Quizexerciseno" data-count="2.6"></a><a href="#ca5c49bd-23c6-430d-bc37-2c826be3a169" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=ca5c49bd-23c6-430d-bc37-2c826be3a169 class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
 Find the stationary point <span class="math"></span><script type="math/tex">(x_0, y_0)</script> for the function
 <div class="math"></div><script type="math/tex; mode=display">

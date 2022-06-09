@@ -1,0 +1,147 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  linked: false,
+  autoeval: true,
+  languages : ["r"],
+  hide : ["evalButton", "editor", "language", "permalink"]
+  });
+</script>
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="playground.html#eace9cb4-259c-4df8-846a-126a669c401a"><b>1</b> Playground</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="playground.html#05053b54-cc97-4c9b-92ef-09a2c0595f3c">1.1 Example problems</a></li></ul><li><a class="kap" href="sandbox.html#3119e3af-bf7e-4b18-a423-64d0c821a901"><b>2</b> Sandbox</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="sandbox.html#d83065e3-748b-4d7a-9c32-613422ab952f">2.1 Exercises for week 7</a></li></ul><li><a class="kap" href="integration.html#1a959cf5-a42c-4bd0-be30-2f5ceaf47648"><b>3</b> Integration</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"></ul><li><a class="kap" href="rsage.html#217878dc-fa99-498b-9f59-f2176931da52"><b>4</b> R in sagecell</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="rsage.html#ae06c08a-b1f3-43b2-9a37-1fa7e915a80d">4.1 Potential solution</a></li></ul><li><a class="kap" href="limit_slide.html#348db525-9103-479f-94ee-24fed5d1fd29"><b>5</b> A step toward limits</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"></ul><li><a class="kap" href="mentimeter.html#7f8d8db8-fd69-441b-bb9f-e4fe73864060"><b>6</b> Mentimeter</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"></ul><li><a class="kap" href="bibliography.html#d782b62c-4343-4ea1-a7b7-578c6880444b"><b>7</b> Bibliography test</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="1a959cf5-a42c-4bd0-be30-2f5ceaf47648">3<span style="float:right;">Integration</span></h1>
+<span id="env3.1"></span><div class="exercise" data-count="3.1">     
+DR bragte i 2022 <a href="https://www.dr.dk/nyheder/indland/ferievaner-fra-tiden-med-corona-bider-sig-fast-ny-vandrerute-paa-djursland-skal" target="_blank">en nyhed</a>
+om at danskernes ferievaner havde ændret sig som følge af corona pandemien,
+og at der, ifølge tal fra Danmarks Statistik, fra maj til december 2022 var 27 procent flere bookinger
+end for den tilsvarende periode i 2019 (altså før pandemien). Dette er illustreret i nedenstående figur.
+<div style="margin-top:20px"></div><center>
+  
+ <iframe src="./Figures/p1.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center><div style="margin-top:20px"></div>Nu defineres <span class="math"></span><script type="math/tex">x_t</script> og <span class="math"></span><script type="math/tex">y_t</script> til at være antallet af bookede husuger i måned nummer t i hhv. 2019 og 2022,
+således at <span class="math"></span><script type="math/tex">t = 1</script> svarer til januar og <span class="math"></span><script type="math/tex">t = 12</script> svarer til december.<div style="margin-top:20px"></div><span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+<b>a)</b> Hvad er det samlede antal bookede husuger i hele 2019?
+</div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+<div class="math"></div><script type="math/tex; mode=display">\sum_{t = 2019} x_i</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+<div class="math"></div><script type="math/tex; mode=display">\sum_{t = 5}^{12} y_t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="T">
+<div class="math"></div><script type="math/tex; mode=display">\sum_{i = 1}^{12} x_i</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+<div class="math"></div><script type="math/tex; mode=display">\sum_{t = 5}^{12} x_t</script><div style="margin-top:20px"></div></div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script><div style="margin-top:20px"></div>En matematiker finder en funktion <span class="math"></span><script type="math/tex">f(t)</script> der ser ud til at beskrive antal bookede husuger i 2019. Her er <span class="math"></span><script type="math/tex">t</script> en kontinuert variabel,
+som kan antage værdier i intervallet <span class="math"></span><script type="math/tex">[0,12]</script>, hvor værdien 0 svarer til starten af året, og værdien 12 svarer til slutningen af året.
+Nedenfor er vist et plot af denne funktion sammen med data fra 2019 fra figuren ovenfor.<div style="margin-top:20px"></div><center>
+  <div class="centerimg"><img src="img/booked_2019.png" width=50%></div>
+</center><div style="margin-top:20px"></div><span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+  <b>b)</b> Hvordan kan det samlede antal bookede husuger i månederne maj til december udtrykkes ved <span class="math"></span><script type="math/tex">f(t)</script>?
+  </div><div class="row"><div class="col-xs-5 quizanswer" datav="T">
+  <div class="math"></div><script type="math/tex; mode=display">\sum_{t = 5}^{12} f(t)</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+  <div class="math"></div><script type="math/tex; mode=display">f(12) - f(5)</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="T">
+  <div class="math"></div><script type="math/tex; mode=display">\int_{5}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+  <div class="math"></div><script type="math/tex; mode=display">\lim_{b\to\infty}\int_{5}^{b} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script><div style="margin-top:20px"></div>Nedenfor er vist funktionen <span class="math"></span><script type="math/tex">g(x)</script> som beskriver antallet af bookede husuger i 2022.<div style="margin-top:20px"></div><center>
+    <div class="centerimg"><img src="img/booked_2022.png" width=50%></div>
+  </center><div style="margin-top:20px"></div><b>c)</b> Opskriv et udtryk for det samlede antal bookede husuger i perioden maj til december 2022 fraregnet det samlede antal
+  bookede husuger i den tilsvarende periode i 2019 i modellen baseret på <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>.
+  Redegør for at det svarer til det skraverede areal i figuren nedenfor.<div style="margin-top:20px"></div><center>
+    <div class="centerimg"><img src="img/booked_diff.png" width=50%></div>
+  </center>'<div style="margin-top:20px"></div><b>d)</b> Formulér følgende udsagn matematisk, udtrykt ved datapunkterne <span class="math"></span><script type="math/tex">x_t</script> og <span class="math"></span><script type="math/tex">y_t</script>: 
+  <i>fra maj til december 2022 var der 27 procent flere bookinger end for den tilsvarende periode i 2019</i>.<div style="margin-top:20px"></div><b>e)</b> Formulér følgende udsagn matematisk, udtrykt ved bestemte integraler af funktionerne <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>:
+  <i>fra maj til december 2022 var der 27 procent flere bookinger end for den tilsvarende periode i 2019</i>.<div style="margin-top:20px"></div></div><div style="margin-top:20px"></div></div></body>
