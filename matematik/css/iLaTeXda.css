@@ -1,6 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|PT+Serif+Caption|PT+Mono|Source+Sans+Pro:200,400");
 
+.conjecture {
+  display: block;
+  margin: 12px 0;
+/*  background-color: #d4debf; */
+  padding: 10px;
+/*  border-style: solid;
+  border-width: 2px;
+  border-color: #ccc; */
+}
+
+
+.conjecture:before {
+    display:block;
+    content: "(" attr(data-count) ") CONJECTURE.";
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+
 .corollary {
   display: block;
   margin: 12px 0;
@@ -106,7 +126,7 @@
 
 .exercise:before {
     display:block;
-    content: "(" attr(data-count) ") Opgave.";
+    content: "(" attr(data-count) ") Exercise.";
     font-weight: bold;
     font-style: normal;
     margin-bottom: 20px;
@@ -184,7 +204,7 @@ figcaption {
 
 
 .Proofbutton:before {
-    content: "Bevis";
+    content: "Proof";
 }
 		      
 .proof {
@@ -198,7 +218,7 @@ figcaption {
 
 .proof:before {
 
-    content: "Bevis.";
+    content: "Proof.";
     font-style: italic;
 
 }
@@ -252,7 +272,7 @@ figcaption {
 
 
 .Theorembutton:before {
-    content: " Teorem";
+    content: " Theorem";
 }
 
 .Theoremno:before {
@@ -344,7 +364,7 @@ figcaption {
 }
 
 .Remarkbutton:before {
-    content: " Bemærkning";
+    content: " Remark";
 }
 
 .Remarkno:before {
@@ -421,28 +441,11 @@ figcaption {
   border-radius: 8px;
   padding: 20px;
   /*  height: 150px; */
-  /* height: 200px; */
+  height: 200px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   background-color: white; }
-
-  
-  .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    vertical-align: bottom;
-  }
-
-  /*
-  .row > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
-  }
-  */
 
 .quizanswer.toggle {
   background-color: lightgrey; }
@@ -756,7 +759,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "PT Serif Caption", sans-serif; font-weigh
   display: block;
 }
 
-ul {
+div.sidenav ul {
     list-style-type: none;
     text-align: left;
     font-size: 16px;
@@ -788,7 +791,7 @@ li a {
     margin-left: 10%;
     margin-right: 10%;
 }
-
+ 
 .extendedwidth {
     width: 20%;
     }
