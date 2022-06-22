@@ -1,0 +1,257 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#3b2c88be-5947-400f-8b39-00730bea9fc5"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#bb56e68c-2e5e-4a51-b829-47e2fd601f67">1.1 Pensum</a></li><li><a href="week1.html#5015f411-cedf-4b05-8924-82f695b31702">1.2 Noter</a></li><li><a href="week1.html#401f72f8-3c4b-48f0-9201-2691fbc72598">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#74470a16-02b2-4393-9ba7-b7aa8cb5353b"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#e4038325-ef58-4ed9-ab64-f42b9ffff0d0">2.1 Pensum</a></li><li><a href="week2.html#9b65e49b-314f-42c7-a823-c74347f8025c">2.2 Noter</a></li><li><a href="week2.html#ba8f1d97-622a-457d-8b4b-cdbc82a329c6">2.3 Opgaver</a></li></ul><li><a class="kap" href="week3.html#22c9a0ef-d4bd-4a9d-8e0a-55ab6bf35d36"><b>3</b> Kursusuge 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#f8687743-5bcc-475c-b439-eb886a1a2dd5">3.1 Pensum</a></li><li><a href="week3.html#8d1defa0-6b9d-42d6-b1b3-595cdfa8ee27">3.2 Noter</a></li><li><a href="week3.html#5faf49a6-bad8-419a-9d1c-bdea99697076">3.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#65bc62dd-dfa1-4ec2-858f-08c243d48a6a"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#9a716f28-f4e7-4139-88aa-a09487a4861b">4.1 Pensum</a></li><li><a href="week4.html#cd0ab9b0-e69b-4cab-8c04-c7e1d3fae29d">4.2 Noter</a></li><li><a href="week4.html#a8c460ac-3be7-442c-8d4f-99fa83e959a2">4.3 Opgaver</a></li></ul><li><a class="kap" href="week5.html#7a9267ba-d103-4771-8371-d73082ae9587"><b>5</b> Kursusuge 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#6c2a40fd-0c38-49ae-91e3-ee883280b65a">5.1 Pensum</a></li><li><a href="week5.html#15400457-42e6-4396-b735-e41eea9ae517">5.2 Noter</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="74470a16-02b2-4393-9ba7-b7aa8cb5353b">2<span style="float:right;">Kursusuge 2</span></h1>
+<span id="sec2.1"></span><h2 id="e4038325-ef58-4ed9-ab64-f42b9ffff0d0">2.1 Pensum</h2>
+Læs sektion 6.8 – 6.11 og 7.1 i lærebogen.<div style="margin-top:20px"></div><span id="sec2.2"></span><h2 id="9b65e49b-314f-42c7-a823-c74347f8025c">2.2 Noter</h2>
+Nogle vigtige resultater fra sidste uges pensum, som kan være nyttige i forbindelse med denne
+uges opgaver er gengivet nedenfor.<div style="margin-top:20px"></div><b>Regler for grænseværdier</b>
+<div class="frameit">
+  Lad <span class="math"></span><script type="math/tex">\displaystyle A = \lim_{x \to a} f(x)</script> og <span class="math"></span><script type="math/tex">\displaystyle B = \lim_{x \to a} g(x)</script>. Så gælder:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \lim_{x \to a} \left( f(x) \pm g(x) \right) &= A \pm B \\
+        \lim_{x \to a} \left( f(x) g(x) \right) &= AB \\
+        \lim_{x \to a} \frac{f(x)}{g(x)} &= \frac{A}{B}, \quad \text{hvis~} B \neq 0 \\
+        \lim_{x \to a} \left( f(x) \right)^r &= A^r
+      \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Lighed af grænseværdier</b>
+<div class="frameit">
+  Hvis to funktioner <span class="math"></span><script type="math/tex">f(x)</script> og <span class="math"></span><script type="math/tex">g(x)</script> opfylder <span class="math"></span><script type="math/tex">f(x) = g(x)</script> i en omegn af <span class="math"></span><script type="math/tex">a</script>, men ikke nødvendigvis i <span class="math"></span><script type="math/tex">x = a</script>,
+  og en af grænseværdierne for <span class="math"></span><script type="math/tex">x \to a</script> eksisterer, så gælder:
+    <div class="math"></div><script type="math/tex; mode=display">
+      \lim_{x \to a} f(x) = \lim_{x \to a} g(x)
+    </script>
+</div><div style="margin-top:20px"></div><b>Differentialkvotienter af udvalgte funktioner</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \underline{f(x)} \qquad {}& \underline{f'(x)} \qquad {}& \underline{\text{Note}}\\
+        x^a \qquad {}& a x^{a-1} \qquad {}& \\
+        e^x \qquad {}& e^x \quad {}& \\
+        \ln(x) \qquad {}& 1/x \quad {}& x > 0 \\
+        e^{ax} \qquad {}& ae^{ax} \quad {}& \\
+        a^{x} \qquad {}& \ln(a) a^{x} \quad {}& a > 0
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Regneregler for differentialkvotienter</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A + f(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} = f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A \cdot f(x) \right) =  A \frac{\mathrm{d}f}{\mathrm{d}x} = A f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) \pm g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} \pm \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x) \pm g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} g(x) + f(x) \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x)g(x) + f(x)g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( \frac{f(x)}{g(x)}\right) = \frac{\frac{\mathrm{d}f}{\mathrm{d}x} g(x) - f(x) \frac{\mathrm{d}g}{\mathrm{d}x}}{(g(x))^2} = \frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="sec2.3"></span><h2 id="ba8f1d97-622a-457d-8b4b-cdbc82a329c6">2.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env2.1"></span><div class="exercise" data-count="2.1">     
+  a) Find hældningen af kurven i punktet <span class="math"></span><script type="math/tex">(3, f(3))</script>.
+  <div class="centerimg"><img src="img/week2/exercise_1.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+    b) Hvor har kurven en hældning på nul?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <span class="math"></span><script type="math/tex">x = 0</script> og <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script> og <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.2"></span><div class="exercise" data-count="2.2">     
+  En funktion <span class="math"></span><script type="math/tex">f(x)</script> og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> har funktionsværdierne
+  <div class="math"></div><script type="math/tex; mode=display">
+    \begin{array}{rl}
+      f(-1) &=& 0.65 \\
+      f'(-1) &=& 0.45
+    \end{array}
+  </script>
+  Hvad er ligningen for tangenten til kurven i punktet <span class="math"></span><script type="math/tex">(-1, f(-1))</script>, som er vist i figuren nedenfor?
+  <div class="centerimg"><img src="img/week2/exercise_2.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.3"></span><div class="exercise" data-count="2.3">     
+Tangenten til kurven for funktionen <span class="math"></span><script type="math/tex">f(x)</script> i punktet <span class="math"></span><script type="math/tex">(2, f(2))</script> er givet ved ligningen
+  <div class="math"></div><script type="math/tex; mode=display">
+    y = 2.1 x - 3.1
+  </script>
+  Hvad er værdierne for <span class="math"></span><script type="math/tex">f(2)</script> og <span class="math"></span><script type="math/tex">f'(2)</script>?
+  <div class="centerimg"><img src="img/week2/exercise_3.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><div class="exercise" data-count="2.4">     
+  Grafen nedenfor viser kurven for en funktion <span class="math"></span><script type="math/tex">f(x)</script>.
+  <div class="centerimg"><img src="img/week2/exercise_4a.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+    Hvilke(n) af nedenstående grafer viser differentialkvotienten for <span class="math"></span><script type="math/tex">f(x)</script>?
+    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4c.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <div class="centerimg"><img src="img/week2/exercise_4b.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4e.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week2/exercise_4d.png" width="75%"></div>
+    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.5"></span><div class="exercise" data-count="2.5">     
+  Figuren nedenfor viser grafen for en funktion <span class="math"></span><script type="math/tex">f(x)</script> (blå kurve) og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> (stiplet rød kurve).
+  <div class="centerimg"><img src="img/week2/exercise_5.png" width="50%"></div>
+  Find ligningen for tangenten til <span class="math"></span><script type="math/tex">f(x)</script> for <span class="math"></span><script type="math/tex">x = 4</script>.<div style="margin-top:20px"></div><a href="#1d0f26a7-b7ea-4525-b055-e3ba7bef3851" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=1d0f26a7-b7ea-4525-b055-e3ba7bef3851 class = "collapse Hint envbuttons">    
+    Hvad er værdierne af <span class="math"></span><script type="math/tex">f(4)</script> og <span class="math"></span><script type="math/tex">f'(4)</script>?
+    </div>
+</div><div style="margin-top:20px"></div>
+<span id="env2.6"></span><div class="exercise" data-count="2.6">     
+  Find nedenstående grænseværdier
+  <ol class="number"><li> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to -3} \left( x^2 + 4x + 2 \right)</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3/2} \left( (x - \frac{2}{3}) (x + \frac{1}{2}) \right)</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 0} \left( \sqrt{(2-x)(8+x)} + \frac{1}{x-2} \right)</script>
+    </li><li> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3} \frac{2x^2-2x-2}{x+2} </script>
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+<span id="env2.7"></span><div class="exercise" data-count="2.7">     
+  Beregn grænseværdien
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim_{x \to 2} \frac{3x^2 - 3x - 6}{2x^2 + 2x - 12}
+  </script>
+  <a href="#e94f12fe-7412-4d5f-9e55-8a9d569f95a3" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=e94f12fe-7412-4d5f-9e55-8a9d569f95a3 class = "collapse Hint envbuttons">    
+    Er du sikker på at du ikke vil prøve selv, først? Brug hints med omtanke!<div style="margin-top:20px"></div><a href="#c7a47ad6-4c54-466e-8840-91972f5ec2a0" class ="btn btn-default" data-toggle="collapse">Ja, vis mig et hint, jeg sidder fast!</a><div id=c7a47ad6-4c54-466e-8840-91972f5ec2a0 class="collapse">
+      Benyt resultatet <em>lighed af grænseværdier</em> ovenfor.<div style="margin-top:20px"></div><a href="#f52973a3-3a8b-4f46-95c6-17b815b88999" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=f52973a3-3a8b-4f46-95c6-17b815b88999 class = "collapse Hint envbuttons">    
+      Omskriv tæller og nævner ved at faktorisere (se boksen <em>Andengradsligning</em> i afsnit <a href="week1.html#sec1.3.1">1.3.1</a>).
+      </div>
+    </div>
+    </div>
+</div><div style="margin-top:20px"></div>
+
+<span id="env2.8"></span><div class="exercise" data-count="2.8">     
+Differentiér følgende funktioner
+<ol class="number"><li> <span class="math"></span><script type="math/tex">f(x) = 3x^6</script>
+  </li><li> <span class="math"></span><script type="math/tex">g(x) = x^{3/2}</script>
+  </li><li> <span class="math"></span><script type="math/tex">h(y) = \frac{2}{3} y^{-3}</script>
+  </li><li> <span class="math"></span><script type="math/tex">q(x) = 1 / (x^{-7/3})</script>
+  </li><li> <span class="math"></span><script type="math/tex">p(x) = \frac{\sqrt[4]{x}}{7}</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.9"></span><div class="exercise" data-count="2.9">     
+  Udregn differentialkvotienterne af følgende funktioner
+  <ol class="number"><li> <span class="math"></span><script type="math/tex">f(x) = 2ax^3</script>, hvor <span class="math"></span><script type="math/tex">a</script> er en konstant.
+    </li><li> <span class="math"></span><script type="math/tex">f(z) = 2\sqrt{z} - \frac{1}{7}z^5</script>. 
+    </li><li> <span class="math"></span><script type="math/tex">f(x) = ax^2 + bx + c</script>, hvor <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> og <span class="math"></span><script type="math/tex">c</script> er konstanter.
+    </li><li> <span class="math"></span><script type="math/tex">g(y) = 5y^3 - 3y^2</script>.
+    </li><li> <span class="math"></span><script type="math/tex">h(y) = \exp (-10 y)</script>.
+  </li></ol>
+  </div><div style="margin-top:20px"></div>
+<span id="env2.10"></span><div class="exercise" data-count="2.10">     
+Beregn <span class="math"></span><script type="math/tex">y'(x)</script> når <span class="math"></span><script type="math/tex">y</script> er givet ved:
+<ol class="number"><li> <span class="math"></span><script type="math/tex">y = 5x^2 - 3x + 7</script>
+  </li><li> <span class="math"></span><script type="math/tex">y = x^7 + 3 \sqrt{x} + \frac{1}{2 \sqrt{x}}</script>
+  </li><li> <span class="math"></span><script type="math/tex">y = x \cdot (x -2x^{-1})</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.11"></span><div class="exercise" data-count="2.11">     
+  Beregn den afledede af følgende funktioner:
+  <ol class="number"><li> <span class="math"></span><script type="math/tex">f(x) = 10x^3 (1 - \sqrt{x})</script>
+    </li><li> <span class="math"></span><script type="math/tex">g(x) = (2x - x^2)(x^3 + x^2) + 1000</script>
+    </li><li> <span class="math"></span><script type="math/tex">h(x) = (x + 2)\cdot (\sqrt{x} -3x)</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.12"></span><div class="exercise" data-count="2.12">     
+  Beregn differentialkvotienten mht. <span class="math"></span><script type="math/tex">x</script> af nedenstående udtryk:
+  <ol class="number"><li> <span class="math"></span><script type="math/tex"> \frac{\sqrt{x} - 1}{x^2}</script>
+    </li><li> <span class="math"></span><script type="math/tex">\frac{x-2}{x+2}</script>
+        </li><li> <span class="math"></span><script type="math/tex">\frac{2x-3}{5x+4}</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+</div></body>
