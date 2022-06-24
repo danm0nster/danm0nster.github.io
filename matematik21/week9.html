@@ -1,0 +1,195 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  evalButtonText: "Compute",
+  languages : ["sage", "python"],
+  hide : ["permalink"] 
+  });
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#8d2fd097-2aae-4ae9-9f93-2d43ff1943ca"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#396d5a07-7a1a-43ff-9b9c-c5130a699515">1.1 Pensum</a></li><li><a href="week1.html#47f67180-bcc5-464f-baee-b0b01b13c51a">1.2 Noter</a></li><li><a href="week1.html#9616b172-e4c2-4c1b-9baa-d87913be29d5">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#59260b2c-410d-4d01-bc87-df213e970951"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#a5125cf9-2459-4f28-a537-5e637c90b925">2.1 Pensum</a></li><li><a href="week2.html#2197a550-0dcf-4adf-80f1-5ac21b4893ac">2.2 Noter</a></li><li><a href="week2.html#bbf46ed5-789d-492e-9f00-686748a2a36f">2.3 Opgaver</a></li></ul><li><a class="kap" href="week3.html#513b849e-0c3b-4399-9a78-f436638f6f55"><b>3</b> Kursusuge 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#231b8abe-d8aa-48cd-9fd1-90a7d638f5f4">3.1 Pensum</a></li><li><a href="week3.html#205d9530-9b46-4497-a1c9-448b8d654a9f">3.2 Noter</a></li><li><a href="week3.html#b0f19f92-6f92-4ab8-bcdd-d3b1097ee90e">3.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#d38d8d7c-adb2-4206-ab75-9f682530ccda"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#09c063ab-08b1-4f8e-9ed6-ce1ce00e7878">4.1 Pensum</a></li><li><a href="week4.html#7e4b5c75-adae-462b-8267-55a2f0a1c9f1">4.2 Noter</a></li><li><a href="week4.html#6ab4fe5d-f1b0-42b2-b032-4c531c7fab5c">4.3 Opgaver</a></li></ul><li><a class="kap" href="week5.html#cae18d7b-f0e3-406d-8e97-7523d588f92e"><b>5</b> Kursusuge 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#28f630db-9d26-4286-8ff9-b37900f09568">5.1 Pensum</a></li><li><a href="week5.html#cb393f3b-cb80-4dfd-aae7-f2cfefd341d0">5.2 Noter</a></li></ul><li><a class="kap" href="week6.html#a597c0a2-0c69-4b18-afe6-1540891f056b"><b>6</b> Kursusuge 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week6.html#5eedbb64-1a67-44b4-aca4-20b2f10aacc7">6.1 Pensum</a></li><li><a href="week6.html#2d7b6737-1bf1-43ab-978b-6b97411977cd">6.2 Noter</a></li><li><a href="week6.html#a9f30b37-2a6a-46e1-bd5a-cc6b7f05199e">6.3 Opgaver</a></li></ul><li><a class="kap" href="week7.html#c2267023-93b7-4d97-a8fe-880ea04ea27c"><b>7</b> Kursusuge 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week7.html#4e52fef1-3869-4258-bf4d-dec4575b6124">7.1 Pensum</a></li><li><a href="week7.html#de7765c7-7a48-4c92-8120-1f915051a8f8">7.2 Noter</a></li><li><a href="week7.html#de1d1532-2be5-476c-b33a-6de10467a30b">7.3 Opgaver</a></li></ul><li><a class="kap" href="week8.html#c7ae98ac-c3cc-482d-ae54-624b4afc6818"><b>8</b> Kursusuge 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week8.html#1f8b4376-b04a-4529-9d53-5f11d758e20e">8.1 Pensum</a></li><li><a href="week8.html#de147145-982f-4fc0-a8af-77d22aa4ac50">8.2 Noter</a></li><li><a href="week8.html#23be5c95-9c44-4306-bc5b-084950beac91">8.3 Opgaver</a></li></ul><li><a class="kap" href="week9.html#a34769bb-dbd3-4bf3-b6e7-7d86c9277176"><b>9</b> Kursusuge 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week9.html#13ee03ae-1d6a-4ade-8daf-79016578b5e1">9.1 Pensum</a></li><li><a href="week9.html#90cbc285-22c0-4e6b-b6d3-cffbad5f80ee">9.2 Noter</a></li></ul><li><a class="kap" href="week10.html#eeb7a8ed-a448-48cd-ac14-8b41a47b8a55"><b>10</b> Kursusuge 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week10.html#81bed01b-8b59-45ba-9a3f-84782fca47de">10.1 Pensum</a></li><li><a href="week10.html#17bca9b1-cb36-4e26-95a6-ec7b32f793f5">10.2 Noter</a></li><li><a href="week10.html#639ce609-df1c-49c7-a0d4-a742e84b2a30">10.3 Opgaver</a></li></ul><li><a class="kap" href="week11.html#599ba5eb-5e5c-4ca4-b6f7-a0ac7eecfdc4"><b>11</b> Kursusuge 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week11.html#0deace3d-07c9-4b78-b466-23678d38dfee">11.1 Pensum</a></li><li><a href="week11.html#dbdafa56-b57e-4f5a-b979-91d0be6cc0d1">11.2 Opgaver</a></li></ul><li><a class="kap" href="week12.html#35f1ba4f-180c-4567-9d5b-e65a4585118d"><b>12</b> Kursusuge 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week12.html#84f7cf60-0f08-4656-8e5b-b7a4f2d13559">12.1 Pensum</a></li><li><a href="week12.html#88ca6b19-bf71-43c2-a535-996e7474fe97">12.2 Noter</a></li><li><a href="week12.html#2da51b06-d373-4c41-894e-c524cd15483c">12.3 Opgaver</a></li></ul><li><a class="kap" href="week13.html#f8526fc2-14f1-43c0-8a79-3b87a7b406fb"><b>13</b> Kursusuge 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week13.html#e650e211-4d56-479a-ba68-5b224b6e2384">13.1 Pensum</a></li><li><a href="week13.html#10e68bd3-698f-4454-bc63-b31a739d43aa">13.2 Noter</a></li><li><a href="week13.html#3f7819f8-a7f6-4846-b807-71190f9f590f">13.3 Opgaver</a></li></ul><li><a class="kap" href="week14.html#db9c69a6-ef18-4f28-8f6d-79d2886f59d1"><b>14</b> Kursusuge 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week14.html#3b693499-0c0a-4e78-8b1f-bc4d7c8ac0f2">14.1 Pensum</a></li><li><a href="week14.html#532a799f-0fd8-41a8-b530-9f7efac2d684">14.2 Noter</a></li><li><a href="week14.html#2e37a282-63cb-4dd6-bea2-8571be131795">14.3 Opgaver</a></li></ul><li><a class="kap" href="week15.html#cbf6c0f3-7ee1-45d1-87dd-00cf474d4f30"><b>15</b> Kursusuge 15</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week15.html#488ce182-ff85-4e26-b9b7-fba199cb2e7b">15.1 Noter</a></li><li><a href="week15.html#1dede6b6-9aa0-4751-9b9b-9a2e2f328712">15.2 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="a34769bb-dbd3-4bf3-b6e7-7d86c9277176">9<span style="float:right;">Kursusuge 9</span></h1><div style="margin-top:20px"></div><span id="sec9.1"></span><h2 id="13ee03ae-1d6a-4ade-8daf-79016578b5e1">9.1 Pensum</h2>
+Læs afsnittene 18.2-18.5 i bogen.<div style="margin-top:20px"></div><span id="sec9.2"></span><h2 id="90cbc285-22c0-4e6b-b6d3-cffbad5f80ee">9.2 Noter</h2>
+<b>Opskrift på at finde ekstrema (boks side 714)</b>
+<div class="frameit">
+<ol class="number"><li> Find alle kritiske punkter i <span class="math"></span><script type="math/tex">S</script>
+    </li><li> Find maxima og minima på randen af <span class="math"></span><script type="math/tex">S</script>
+    </li><li> Af disse punkter er det med størst funktionsværdi <em>maksimum</em> for <span class="math"></span><script type="math/tex">f</script> i <span class="math"></span><script type="math/tex">S</script>,
+        og det med mindst funktionsværdi er <em>minimum</em> for <span class="math"></span><script type="math/tex">f</script> i <span class="math"></span><script type="math/tex">S.</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><b>Lagrange-multiplikatormetoden</b>
+<div class="frameit">
+For at finde max/min for <span class="math"></span><script type="math/tex">f(x,y)</script> med bibetingelsen <span class="math"></span><script type="math/tex">g(x,y)=c</script>:<div style="margin-top:20px"></div><ol class="number"><li> Opstil <span class="math"></span><script type="math/tex">\LL (x,y) = f(x,y) - \lambda \left( g(x,y)-c \right)</script>
+</li><li> Differentiér <span class="math"></span><script type="math/tex">\LL</script> mht <span class="math"></span><script type="math/tex">x</script> og <span class="math"></span><script type="math/tex">y</script> og sæt <span class="math"></span><script type="math/tex">\LL'_1 = \LL'_2 = 0</script>.
+</li><li> Dette giver de tre ligninger:
+<div class="math"></div><script type="math/tex; mode=display">
+\LL'_1(x,y) = f'_1(x,y) - \lambda g'_1(x,y) = 0
+</script>
+<div class="math"></div><script type="math/tex; mode=display">
+\LL'_2(x,y) = f'_2(x,y) - \lambda g'_2(x,y) = 0
+</script>
+<div class="math"></div><script type="math/tex; mode=display">
+ g(x,y) = c
+</script>
+</li><li> Løs disse for <span class="math"></span><script type="math/tex">(x,y,\lambda)</script>. Disse er løsnings-<em>kandidater</em>.
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env9.1"></span><div class="exercise" data-count="9.1">     
+Betragt de følgende tre sæt:
+<div class="math"></div><script type="math/tex; mode=display">
+    \{(x,y):5x^2+5y^2 \leq 9\}
+</script>
+<div class="math"></div><script type="math/tex; mode=display">
+    \{(x,y):5x+8y>8\}
+</script>
+<div class="math"></div><script type="math/tex; mode=display">
+    \{(x,y):2x+5y\geq8\}
+</script><div style="margin-top:20px"></div>Besvar følgende spørgsmål for hver af sættene:
+<ol class="number"><li> Hvilken form har niveaukurverne?
+    </li><li> Er mængden åben eller lukket (eller hverken eller)?
+    </li><li> Er mængden begrænset?
+    </li><li> Er mængden kompakt?
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env9.2"></span><div class="exercise" data-count="9.2">     
+Find det globale maksimum og minimum af den følgende funktion på den givne definitionsmængde. Vi har:
+<div class="math"></div><script type="math/tex; mode=display">
+    f(x,y) = x^2+5y^2
+</script>
+inden for den lukkede triangulære plade, der er afgrænset af linjerne <span class="math"></span><script type="math/tex">x=0</script>,<span class="math"></span><script type="math/tex">y=0</script> og <span class="math"></span><script type="math/tex">y+2x=2</script> i den første kvadrant.
+Hvor er punkterne, og hvad er værdien i punktet? 
+</div><div style="margin-top:20px"></div><span id="env9.3"></span><div class="exercise" data-count="9.3">     
+Find maksimums- og minimumspunkter for den følgende funktion:
+<div class="math"></div><script type="math/tex; mode=display">
+    f(x,y)=x^3+y^3-9xy+27
+</script>
+der er defineret over <span class="math"></span><script type="math/tex">S=\{(x,y): 0\leq x\leq 4; 0\leq y\leq 4 \}</script>.
+</div><div style="margin-top:20px"></div><span id="env9.4"></span><div class="exercise" data-count="9.4">     
+Brug Lagrange-multiplikatormetoden til at finde den maksimale værdi af <span class="math"></span><script type="math/tex">f(x,y)</script> ift. den givne bibetingelse.
+Vi har således, at:
+<div class="math"></div><script type="math/tex; mode=display">
+    f(x,y) = xy
+</script>
+med bibetingelsen:
+<div class="math"></div><script type="math/tex; mode=display">
+    x+y = 288
+</script>
+</div><div style="margin-top:20px"></div><span id="env9.5"></span><div class="exercise" data-count="9.5">     
+Brug Lagrange-multiplikatormetoden til at finde den maksimale værdi af <span class="math"></span><script type="math/tex">f(x,y)</script> ift. den givne bibetingelse.
+Vi har således, at:
+<div class="math"></div><script type="math/tex; mode=display">
+    f(x,y) = 30-x^2-y^2
+</script>
+med bibetingelsen:
+<div class="math"></div><script type="math/tex; mode=display">
+    x+5y = 26
+</script>
+</div><div style="margin-top:20px"></div><span id="env9.6"></span><div class="exercise" data-count="9.6">     
+Minimér <span class="math"></span><script type="math/tex">f(x,y)=2x^2+4y^2</script> under bibetingelsen <span class="math"></span><script type="math/tex">34-2x-3y=0</script>
+</div><div style="margin-top:20px"></div><span id="env9.7"></span><div class="exercise" data-count="9.7">     
+En studerende har nyttefunktionen <span class="math"></span><script type="math/tex">u(x,y)=100xy+x+2y</script>. Antag at prisen pr. øl <span class="math"></span><script type="math/tex">x</script> er 10 kr. og at prisen på
+et måltid mad <span class="math"></span><script type="math/tex">y</script> er 20 kr. Den studerende kan bruge 2000 kr. om måneden på øl og mad.<div style="margin-top:20px"></div>Løs nyttemaksimeringsproblemet.   
+</div><div style="margin-top:20px"></div><span id="env9.8"></span><div class="exercise" data-count="9.8">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>Et minimeringsproblem med bibetingelse er givet ved:
+<div class="math"></div><script type="math/tex; mode=display">
+    \min f(x,y) = x^2+y^2
+</script>
+hvor
+<div class="math"></div><script type="math/tex; mode=display">
+    x^2y=2000
+</script>
+Find den/de værdi(er) af <span class="math"></span><script type="math/tex">x</script> og <span class="math"></span><script type="math/tex">y</script> der løser problemet.<div style="margin-top:20px"></div><a href="#6d768c24-a7cb-474d-b822-11b9dfe2dabf" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=6d768c24-a7cb-474d-b822-11b9dfe2dabf class = "collapse Hint envbuttons">    
+    Hint: Kig evt. på afsnit 18.3 i bogen.
+  </div><div style="margin-top:20px"></div></div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
