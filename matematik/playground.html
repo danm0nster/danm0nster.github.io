@@ -23,6 +23,9 @@
 
 
 
+
+
+
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
@@ -32,8 +35,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
 
  <script>
     document.addEventListener("DOMContentLoaded", function(){
@@ -67,6 +70,9 @@
 
 
 
+<script defer src="js/search.js"></script>
+
+
 <script async defer src="https://hypothes.is/embed.js"></script>
 
 
@@ -87,6 +93,15 @@
 
 <script defer src="js/orderquiz.js"></script>
  
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
 
 
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
@@ -108,7 +123,61 @@
 
 
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#c18a9ad2-1933-4147-bf60-ac32e5a412f2"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#6410510e-4b0f-4228-a86b-f31924b11a87">1.1 Pensum</a></li><li><a href="week1.html#7b315acd-7967-4796-a14b-af1ff6b938fd">1.2 Noter</a></li><li><a href="week1.html#2476b81a-3f93-42fe-8c84-ebf02f8e168b">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#04357d04-5441-4379-9908-f093d0e4e760"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#ab677726-f242-4b1d-b8df-8e523a9cf381">2.1 Pensum</a></li><li><a href="week2.html#832b7b56-e539-4097-84cb-c20ebd5dcb66">2.2 Noter</a></li><li><a href="week2.html#2107eb6b-42ea-464e-915e-3bc3d01dbb7b">2.3 Opgaver</a></li></ul><li><a class="kap" href="week3.html#b2a49516-1f0a-4ff6-bcde-db7325fe0d71"><b>3</b> Kursusuge 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#96f67d13-4605-4a88-b241-c4de35e19b01">3.1 Pensum</a></li><li><a href="week3.html#d402447e-21f3-454d-8a2c-65795fea1095">3.2 Noter</a></li><li><a href="week3.html#3ce33925-60ab-4013-ba09-afde8f2c88c3">3.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#62149a07-a476-4f9d-bd89-f03ac172be28"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#06bb5afc-7afe-4a51-b640-cfd81c7a1d61">4.1 Pensum</a></li><li><a href="week4.html#eeab8754-6099-4f0a-800b-4adc5d6d63f0">4.2 Noter</a></li><li><a href="week4.html#eeaf836f-9fd8-4500-94f2-8015ed52417c">4.3 Opgaver</a></li></ul><li><a class="kap" href="week5.html#b47e0a14-522c-45bc-80be-675d45aa554f"><b>5</b> Kursusuge 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#8e249491-511a-400c-8e7d-a144313a567d">5.1 Pensum</a></li><li><a href="week5.html#db885f58-2ef4-4eee-ba1b-49b9bf148e12">5.2 Noter</a></li></ul><li><a class="kap" href="week6.html#543ea7ba-c6c8-44a6-a292-e0a3e669a067"><b>6</b> Kursusuge 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week6.html#d4c6b7a7-b5cb-4507-b83b-25a65d83c029">6.1 Pensum</a></li><li><a href="week6.html#a3862794-fa66-4e11-a6de-022e0127214a">6.2 Noter</a></li><li><a href="week6.html#241a8d87-1dae-49e5-b0e6-d8d0d81423b7">6.3 Opgaver</a></li></ul><li><a class="kap" href="week7.html#dec1874c-6af1-4367-9494-c6c04c47922b"><b>7</b> Kursusuge 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week7.html#2d1ea7b8-7859-44b9-88bc-c40a85c726f4">7.1 Pensum</a></li><li><a href="week7.html#8babd5cb-ffa5-4cc2-9a9d-9f81cbaad371">7.2 Noter</a></li><li><a href="week7.html#fc080798-bc07-42ad-8cab-52fd8872fa78">7.3 Opgaver</a></li></ul><li><a class="kap" href="week8.html#fd598a3e-e3f6-4df9-8322-5d437cba6438"><b>8</b> Kursusuge 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week8.html#c38dc81a-c9e0-421f-86c4-1845d5462ec7">8.1 Pensum</a></li><li><a href="week8.html#800b9af7-72e1-466d-ba34-b7a75988c440">8.2 Noter</a></li><li><a href="week8.html#d8564092-77b9-46ad-bdd4-c142dbf4c1b0">8.3 Opgaver</a></li></ul><li><a class="kap" href="week9.html#be4b66e3-688e-47a1-9556-c137024ee0e0"><b>9</b> Kursusuge 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week9.html#046b2cd9-e66f-4402-adb0-b1d3e5ffb443">9.1 Pensum</a></li><li><a href="week9.html#f902199e-38db-44c7-b7f1-b0098839dd8c">9.2 Noter</a></li></ul><li><a class="kap" href="week10.html#299dd681-d432-4338-bfbf-588355111536"><b>10</b> Kursusuge 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week10.html#9f69ac74-2d1e-413a-897c-05877a72eac5">10.1 Pensum</a></li><li><a href="week10.html#4e73c550-f851-46ec-91c1-83adf04f5683">10.2 Noter</a></li><li><a href="week10.html#ea65f819-b18c-42b1-aa39-0d7043139a78">10.3 Opgaver</a></li></ul><li><a class="kap" href="week11.html#d72e1af0-1da4-4f65-8fb9-c730904fc831"><b>11</b> Kursusuge 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week11.html#966fa83f-c0fa-42d1-b337-8656674b3f15">11.1 Pensum</a></li><li><a href="week11.html#7a367fa5-aafb-4dbf-850b-91f272084fcc">11.2 Opgaver</a></li></ul><li><a class="kap" href="week12.html#06f9fa47-674b-4609-adf4-5658d85732a0"><b>12</b> Kursusuge 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week12.html#603eb893-8206-4fb7-a879-3a3603e71ebc">12.1 Pensum</a></li><li><a href="week12.html#d7e33ed6-36dd-4eac-afaa-3b162fd12414">12.2 Noter</a></li><li><a href="week12.html#a601ec10-3daf-4e77-afee-cce0653a5919">12.3 Opgaver</a></li></ul><li><a class="kap" href="week13.html#2d638e59-d45e-4cfe-b0f5-7267a08bac87"><b>13</b> Kursusuge 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week13.html#b0ce0b3d-0181-4295-a000-6b140b041955">13.1 Pensum</a></li><li><a href="week13.html#b812746f-00f5-4a41-84d3-aea3c36deab9">13.2 Noter</a></li><li><a href="week13.html#d9af4fc5-d1e7-4a35-9ce7-48d2ee948455">13.3 Opgaver</a></li></ul><li><a class="kap" href="week14.html#a91e4d3f-d09d-4793-9107-ff0acec5577e"><b>14</b> Kursusuge 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week14.html#f24ff441-8759-4852-ba1b-3e630699ae91">14.1 Pensum</a></li><li><a href="week14.html#dcaed400-5989-4a9a-b880-278b572bfc37">14.2 Noter</a></li><li><a href="week14.html#a3c2b592-6fd1-46e1-9eb4-8e66831e03b2">14.3 Opgaver</a></li></ul><li><a class="kap" href="week15.html#fba3d780-5961-41c8-9785-5789659b1b37"><b>15</b> Kursusuge 15</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week15.html#eeadb7ce-859a-4a7e-bd27-6e848018c208">15.1 Noter</a></li></ul><li><a class="kap" href="playground.html#a20ed03d-88f6-4d66-80de-668ea84a8f78"><b>19</b> Playground</a></li><a href="#kap19" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap19" class="collapse"><li><a href="playground.html#3b6e7d9c-36c6-493c-a089-7a41ea9db02f">19.1 Example problems</a></li></ul><li><a class="kap" href="integration.html#2074726e-6868-4c80-aee1-27ddd95b8952"><b>20</b> Integration</a></li><a href="#kap20" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap20" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="a20ed03d-88f6-4d66-80de-668ea84a8f78">19<span style="float:right;">Playground</span></h1><div style="margin-top:20px"></div><span id="sec19.1"></span><h2 id="3b6e7d9c-36c6-493c-a089-7a41ea9db02f">19.1 Example problems</h2><div style="margin-top:20px"></div><span id="env19.1"></span><div class="exercise" data-count="19.1">     
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#1b5c239c-e702-4c6f-8808-8616f6c234bf"><b>1</b> Kursusuge 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#323ad512-0c39-4db2-aeea-67df06f7431d">1.1 Pensum</a></li><li><a href="week1.html#303abf0b-25ab-45de-9b64-0f81a26753f6">1.2 Noter</a></li><li><a href="week1.html#109ab62c-1b03-49a4-b2c1-f851a625993b">1.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#2462428e-af13-4d16-9721-9e15bb0080ac"><b>2</b> Kursusuge 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#8c6fcb96-d92b-43c8-aa70-768338aa43e7">2.1 Pensum</a></li><li><a href="week2.html#30504fdc-178f-47d5-a58f-743c61f589b3">2.2 Noter</a></li><li><a href="week2.html#036e7f05-735c-4ae0-b464-9220cd2e7c50">2.3 Opgaver</a></li></ul><li><a class="kap" href="week3.html#2475aaf8-a2bb-4cc2-acab-6f65d0483110"><b>3</b> Kursusuge 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#decb149a-6493-4f00-9b0c-17f595a95b05">3.1 Pensum</a></li><li><a href="week3.html#5d2fe042-d8d2-4672-9acb-3aaa509abe1a">3.2 Noter</a></li><li><a href="week3.html#eb3e69d8-7b8b-46bb-a939-ac64533d35a9">3.3 Opgaver</a></li></ul><li><a class="kap" href="week4.html#6acb72d5-e963-4e57-941f-0f5b4bbe0aaf"><b>4</b> Kursusuge 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#52948dbf-2510-4028-92b3-46b369f1d0b0">4.1 Pensum</a></li><li><a href="week4.html#68f3fbae-ce12-4ae5-9a16-1da08f33360a">4.2 Noter</a></li><li><a href="week4.html#f2120a99-6031-4abe-b93a-16250188f1eb">4.3 Opgaver</a></li></ul><li><a class="kap" href="week5.html#26c63bb0-ff1f-42ec-b598-c10303ca9f9a"><b>5</b> Kursusuge 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#dce01bc8-3c59-457f-99f1-f31a33318dc1">5.1 Pensum</a></li><li><a href="week5.html#650b3336-3848-4560-8d5b-34715c74bd44">5.2 Noter</a></li></ul><li><a class="kap" href="week6.html#ee382a82-a887-45e0-95b5-1ad24ae8fc1e"><b>6</b> Kursusuge 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week6.html#a0844bbb-e5ac-4e2a-b15d-a7d791c92569">6.1 Pensum</a></li><li><a href="week6.html#33589c7c-f60b-4847-a6ac-f4c8364a5f8c">6.2 Noter</a></li><li><a href="week6.html#23a0585b-6f0f-459c-b237-5a6d14da51a5">6.3 Opgaver</a></li></ul><li><a class="kap" href="week7.html#3edc5d91-cad0-47ee-bcb7-0dbf18e58e52"><b>7</b> Kursusuge 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week7.html#a638d8b2-4210-4416-8bf4-9250fff898b9">7.1 Pensum</a></li><li><a href="week7.html#55a8d403-af4f-4d33-82d9-f5f8326c06e4">7.2 Noter</a></li><li><a href="week7.html#5f62c08b-e69c-44ca-b480-d4cd29c85e41">7.3 Opgaver</a></li></ul><li><a class="kap" href="week8.html#fd446495-064b-404b-9857-b891ef6b6a3b"><b>8</b> Kursusuge 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week8.html#976c4ba4-669d-4b50-b624-53aa4940b7fc">8.1 Pensum</a></li><li><a href="week8.html#c9c13eb9-037e-469c-8329-7d2e7dfa924d">8.2 Noter</a></li><li><a href="week8.html#1e7244ef-dd16-40a2-845a-e404b7d9a001">8.3 Opgaver</a></li></ul><li><a class="kap" href="week9.html#981f3b98-baf1-4860-87e8-5b8c559fe952"><b>9</b> Kursusuge 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week9.html#3262b713-fb1a-443c-a82d-6d389bd92859">9.1 Pensum</a></li><li><a href="week9.html#be23307c-f26f-46e7-ad66-0cc09896d0b4">9.2 Noter</a></li></ul><li><a class="kap" href="week10.html#03329fc4-f930-41cf-a238-a9231de0d49e"><b>10</b> Kursusuge 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week10.html#922f2aa9-e175-40cf-9931-e7e49d0aebc3">10.1 Pensum</a></li><li><a href="week10.html#61e8c57e-f701-4645-9bf4-55afc36c9a0c">10.2 Noter</a></li><li><a href="week10.html#db2ec4fb-b78a-4e28-9bc1-0403ef87f399">10.3 Opgaver</a></li></ul><li><a class="kap" href="week11.html#11bee4b4-32d3-466f-b05f-a4d459912dbe"><b>11</b> Kursusuge 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week11.html#a9c2bc3c-7de6-4030-9689-44cc5248f2df">11.1 Pensum</a></li><li><a href="week11.html#1aec2f1e-e65b-4637-9a26-29b5290d33f2">11.2 Opgaver</a></li></ul><li><a class="kap" href="week12.html#8377d5ac-5bc5-444a-8745-4550c5b88612"><b>12</b> Kursusuge 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week12.html#01f1ec34-7a92-426a-bce4-401a8745b22b">12.1 Pensum</a></li><li><a href="week12.html#0183245e-1be0-48aa-b37b-5077cdba68aa">12.2 Noter</a></li><li><a href="week12.html#42e3579f-48cb-4199-a1e6-bb0c3ea252ac">12.3 Opgaver</a></li></ul><li><a class="kap" href="week13.html#d5f24da5-9789-424d-add8-1292f529d192"><b>13</b> Kursusuge 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week13.html#d91a4ad3-975c-4a12-b2c7-3bc81463bffe">13.1 Pensum</a></li><li><a href="week13.html#2c58495e-3c83-4a27-bb0d-6ceaa1936e87">13.2 Noter</a></li><li><a href="week13.html#c36f64db-ccfc-4940-9547-00a0a1da0331">13.3 Opgaver</a></li></ul><li><a class="kap" href="week14.html#8ba82eef-59b0-445a-afbc-3880af538a2a"><b>14</b> Kursusuge 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week14.html#961f98d7-4d75-4a81-8b4d-380e0b2f9656">14.1 Pensum</a></li><li><a href="week14.html#2f40b75b-fd4e-4476-a4cc-8e26dec5435c">14.2 Noter</a></li><li><a href="week14.html#1830131c-522c-4aca-bc9b-e0e283dc5bea">14.3 Opgaver</a></li></ul><li><a class="kap" href="week15.html#5e03e0d9-d952-4aa8-9d16-1a1f842dee3c"><b>15</b> Kursusuge 15</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week15.html#af8a4d0b-8502-4552-be5c-7871e648c52a">15.1 Noter</a></li><li><a href="week15.html#ff19e273-1026-4e39-88b8-f5dbaa8af4cf">15.2 Opgaver</a></li></ul><li><a class="kap" href="playground.html#a723bb1d-313d-4af7-8ecb-197846f8d9a2"><b>19</b> Playground</a></li><a href="#kap19" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap19" class="collapse"><li><a href="playground.html#1953df30-025c-403f-9ed9-8c91ce4e88bc">19.1 Example problems</a></li></ul><li><a class="kap" href="integration.html#f66dcbf8-a140-4b97-a797-f379e4f3eeb2"><b>20</b> Integration</a></li><a href="#kap20" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap20" class="collapse"></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="a723bb1d-313d-4af7-8ecb-197846f8d9a2">19<span style="float:right;">Playground</span></h1><div style="margin-top:20px"></div><span id="sec19.1"></span><h2 id="1953df30-025c-403f-9ed9-8c91ce4e88bc">19.1 Example problems</h2><div style="margin-top:20px"></div><div style="margin-top:20px"></div><span id="env19.1"></span><div class="exercise" data-count="19.1">     <div style="margin-top:20px"></div><em>Brøkregning, løsning af ligninger</em><div style="margin-top:20px"></div>Arbitrage er når to identiske produkter har to forskellige priser på forskellige markeder. Så kan man altså købe varen på det ene marked og sælge det videre med profit på det andet marked. Inden for finansiering arbejder man med <em>no arbitrage assumption</em>, dvs. at arbitrage ikke er muligt. <div style="margin-top:20px"></div>Denne antagelse holder dog ikke altid i virkeligheden, f.eks. inden for sportsbetting. Når man <em>oddser</em>, sætter man penge på et udfald, og får et større beløb igen, hvis man gættede udfaldet rigtigt. Man taber ens indsats hvis man gættede forkert.<div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Lad os kigge på tennis, en sport med to udfald. Roger Federer spiller mod Rafael Nadal. Enten vinder Federer (dette giver odds <span class="math"></span><script type="math/tex">x_1</script>), eller også vinder Nadal (dette giver odds <span class="math"></span><script type="math/tex">x_2</script>). Tabellen viser hvilke odds to bookmakere, Bet365 og Danske Spil, giver på de forskellige udfald<div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>          
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-style:solid;border-width:0px;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
+.tg th{border-style:solid;border-width:0px;ffont-weight:normal;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-1268{border-color:inherit;font-family:inherit;font-size:100%;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-1268">Bookmaker</th>
+    <th class="tg-c3ow">Federer vinder</th>
+    <th class="tg-c3ow">Nadal vinder</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Bet365</td>
+    <td class="tg-c3ow">1.5</td>
+    <td class="tg-c3ow">2.5</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Danske Spil</td>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">1.75</td>
+  </tr>
+</tbody>
+</table>
+<div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Beløbet man får, hvis man gætter udfaldet, findes ved at gange indsatsen med oddset. Lad <span class="math"></span><script type="math/tex">y_1</script> betegne beløbet man vædder på at Federer vinder, og lad <span class="math"></span><script type="math/tex">y_2</script> betegne beløbet man vædder på at Nadal vinder. <div style="margin-top:20px"></div>Helt generelt, hvis man har sat <span class="math"></span><script type="math/tex">y_2</script> på at Nadal vinder, og dette sker, vil ens tilbagebetaling være <span class="math"></span><script type="math/tex">x_2 \cdot y_2</script>.<div style="margin-top:20px"></div>Dvs. hvis Nadal vandt kampen, og man havde spillet 100 kroner på dette hos Danske Spil, havde ens tilbagebetaling været:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+  100 \cdot 1.75 = 175 \hspace{2cm} \text{(og altså en profit 75 kroner).}
+  </script><div style="margin-top:20px"></div><ul><li> Federer vinder. Trine satte 1000 kroner hos Bet365 på at Federer ville vinde. Hvor meget får Trine tilbagebetalt? <div style="margin-top:20px"></div></li></ul><div style="margin-top:20px"></div>Et surebet er når man oddser på to forskellige udfald, og er sikker på at vinde penge uanset udfaldet. Ofte, men ikke altid, vil man oddse på det ene udfald hos den ene bookmaker og på det andet udfald hos den anden bookmaker. <div style="margin-top:20px"></div>Betingelsen for et surebet er at <span class="math"></span><script type="math/tex"> \frac{1}{x_1} + \frac{1}{x_2} < 1</script>.<div style="margin-top:20px"></div>At spille på Federer hos Bet365 og også Nadal hos Bet365 er for eksempel <em>ikke</em> et surebet, fordi <span class="math"></span><script type="math/tex">\frac{1}{1.5} + \frac{1}{2.5} = \frac{1}{\frac{3}{2}} + \frac{1}{\frac{2}{5}} = \frac{2}{3} + \frac{2}{5} = \frac{10}{15} + \frac{6}{15} = \frac{16}{15} > 1   </script>.<div style="margin-top:20px"></div><ul><li> Findes der mulighed for et surebet ud fra en kombination af oddsene i tabellen?<div style="margin-top:20px"></div></li></ul><div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Trine har identificeret et surebet, hvis hun spiller på Federer hos Danske Spil og på Nadal hos Bet365. Hun har i alt 100 kroner at spille for, dvs. der gælder at <span class="math"></span><script type="math/tex">y_1 + y_2 = 100</script>.<div style="margin-top:20px"></div><ul><li> Hvis Trine gerne vil have identisk gevinst uanset udfaldet, hvad skal <span class="math"></span><script type="math/tex">y_1</script> og <span class="math"></span><script type="math/tex">y_2</script> så være, altså hvor mange penge skal hun lægge på de forskellige udfald? Hvor stor gevinst er Trine sikret på denne måde?<div style="margin-top:20px"></div></li></ul><div style="margin-top:20px"></div></div><div style="margin-top:20px"></div><span id="env19.2"></span><div class="exercise" data-count="19.2">     
+  
+  <p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Bo er bokser og vejer 80 kg. Han vil dog gerne ned i en anden vægtklasse. Dette kræver at han vejer 75 kg.<div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Bo beslutter sig for fra nu at begynde at løbe 5 km hver dag. Hvis han fastholder sit øvrige kalorieregnskab fra før, vil han nu tabe <span class="math"></span><script type="math/tex">\frac{1}{20}</script> kg om dagen, altså 50 gram (dette skyldes at et kg fedt cirka er 8000 kalorier og man forbrænder ens kropsvægt i kalorier for hver kilometer løb).<div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Hans vægt, <span class="math"></span><script type="math/tex">f(x)</script>, kan altså beskrives som funktion af antal dage, <span class="math"></span><script type="math/tex">x</script>, siden han startede denne slankekur som:<div style="margin-top:20px"></div><span id="equ19.1"></span><div class="math"></div><script type="math/tex; mode=display">
+      f(x) = 80 - \frac{1}{20}x
+  \tag{19.1}</script><div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div><ul><li> Ud fra funktionen <span class="math"></span><script type="math/tex">f(x)</script>, efter hvor mange dage vil Bo veje 75 kg?
+  </li></ul><div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Det viser sig faktisk at <span class="math"></span><script type="math/tex">f(x)</script> ikke beskriver virkeligheden særlig godt. Det skyldes at funktionen ikke tager højde for at 5 kilometers løb giver en mindre forbrænding jo mindre man vejer. Tager man højde for dette, kan Bos vægt bedre beskrives som:<div style="margin-top:20px"></div><span id="equ19.2"></span><div class="math"></div><script type="math/tex; mode=display">
+      g(x) = \frac{80}{1+\frac{x}{1600}}
+  \tag{19.2}</script><div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div><ul><li> Ud fra funktionen <span class="math"></span><script type="math/tex">g(x)</script>, hvor meget længere tid tager det for Bo at komme ned på 75 kg sammenlignet med svaret i a)?
+  </li></ul><div style="margin-top:20px"></div><div class="sage"><script type="text/x-sage">
+a = 1;
+b = 0.5;
+c = 0.5;
+xmin = 0;
+xmax = 100;
+f = 80 - x/20;
+g = 80 / (1 + x/1600);
+plot(f, xmin, xmax) + plot(g, xmin, xmax, linestyle = "dashed");
+  </script></div><div style="margin-top:20px"></div><p style="margin-bottom: \baselineskip;"></p><div style="margin-top:20px"></div>Bo indser at hvis han skal løbe 5 km hver dag, bliver han også nødt til at spise mere, nemlig tre bananer, hvilket cirka er 300 kalorier. Dette gør at funktionen for vægttabet, analogt til ovenfor, bedst kan beskrives som<div style="margin-top:20px"></div><span id="equ19.3"></span><div class="math"></div><script type="math/tex; mode=display">
+      h(x) = \frac{80 + \frac{3x}{80}}{1+\frac{x}{1600}}
+  \tag{19.3}</script><div style="margin-top:20px"></div><ul><li> Hvad bliver Bos vægt på lang sigt? Med andre ord: Hvad er <span class="math"></span><script type="math/tex">\lim h(x)</script>, når <span class="math"></span><script type="math/tex">x \rightarrow \infty</script>
+  </li></ul><div style="margin-top:20px"></div></div><div style="margin-top:20px"></div><span id="env19.3"></span><div class="exercise" data-count="19.3">     
 Try plotting the function <div class="math"></div><script type="math/tex; mode=display">f(x) = ax^2 + bx + c</script> for different values of <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> and <span class="math"></span><script type="math/tex">c</script>.<div style="margin-top:20px"></div>The initial values are  <span class="math"></span><script type="math/tex">a = 1</script>, <span class="math"></span><script type="math/tex">b = \tfrac{1}{2}</script>, <span class="math"></span><script type="math/tex">c = \tfrac{1}{2}</script>.
 <ol class="number"><li id="ite19.1"> Explain, in words, how the values of  <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> and <span class="math"></span><script type="math/tex">c</script> each affect the plot of <span class="math"></span><script type="math/tex">f(x)</script>.
 </li><li id="ite19.2"> Find the set of values for <span class="math"></span><script type="math/tex">a, b, c</script> so that the curve for <span class="math"></span><script type="math/tex">f(x)</script> is a straight
@@ -131,7 +200,7 @@ c = slider(map(lambda c:round(c.n(), 2), srange( -10,10,.1)), default = 0.5, ste
   the_plot.show();
   return
 </script></div>
-</div><div style="margin-top:20px"></div><span id="env19.2"></span><div class="exercise" data-count="19.2">     
+</div><div style="margin-top:20px"></div><span id="env19.4"></span><div class="exercise" data-count="19.4">     
  The tangent is the limit of the secant for <span class="math"></span><script type="math/tex">h \to 0</script>.<div style="margin-top:20px"></div>We know from the definition of the derivative that we get <span class="math"></span><script type="math/tex">f'(x_0)</script> by evaluating the limit
  <div class="math"></div><script type="math/tex; mode=display">
     f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
@@ -163,7 +232,7 @@ def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2
   the_plot.show();
   return
 </script></div>
-</div><div style="margin-top:20px"></div><span id="env19.3"></span><div class="quizexercise" data-count="19.3">     
+</div><div style="margin-top:20px"></div><span id="env19.5"></span><div class="quizexercise" data-count="19.5">     
   <div class="centerimg"><img src="img/integral.png" ></div>
   <div id="quiz1" style="width:100%;"><div class="row quizquestion">
     Drag the boxes below to the empty slots to construct an integral that is equal to the area coloured in the plot.<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">\int_\alpha^\beta h(x)\, \mathrm{d}x</script><div style="margin-top:20px"></div>where <span class="math"></span><script type="math/tex">\alpha = </script> <div class="orderquizanswer empty inlineblock" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div>, <span class="math"></span><script type="math/tex">\beta =</script> <div class="orderquizanswer empty inlineblock" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div> and <span class="math"></span><script type="math/tex">h(x) =</script> <div class="orderquizanswer empty inlineblock" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div>.<div style="margin-top:20px"></div></div><div class="row quizanswers"><div class="orderquizanswer inlineblock" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
@@ -179,19 +248,19 @@ def interactive_2d_plotter(h = slider(map(lambda h:h.n(digits=2), srange( 2e-3,2
     </div><div class="orderquizanswer inlineblock" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
     <span class="math"></span><script type="math/tex">f(x) + g(x)</script>
     </div><div class="orderquizanswer inlineblock" id="dq1_left7" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">
-    <span class="math"></span><script type="math/tex">\sqrt{( f(x) - g(x) )^2}</script><div style="margin-top:20px"></div></div></div><div class="row"><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(is 345)"><b class="correct"></b> 
+    <span class="math"></span><script type="math/tex">\sqrt{( f(x) - g(x) )^2}</script><div style="margin-top:20px"></div></div></div><div class="row"><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(is 345)"><b class="correct">Korrekt!</b> 
     <span style="color:green;"><b>Correct!</b></span>
-    </span><span class="orderquizfeedback hidden" datav="(is 347)"><b class="correct"></b> 
+    </span><span class="orderquizfeedback hidden" datav="(is 347)"><b class="correct">Korrekt!</b> 
     <span style="color:green;"><b>Correct!</b></span>
-    </span><span class="orderquizfeedback hidden" datav="(is 43*)"><b class="wrong"></b> 
+    </span><span class="orderquizfeedback hidden" datav="(is 43*)"><b class="wrong">Forkert.</b> 
     <span style="color:red;"><b>Incorrect. Remember that the limits affect the sign.</b></span>
-    </span><span class="orderquizfeedback hidden" datav="(or (is **1) (is **2))"><b class="wrong"></b> 
+    </span><span class="orderquizfeedback hidden" datav="(or (is **1) (is **2))"><b class="wrong">Forkert.</b> 
     <span style="color:red;"><b>Incorrect. Remember that the integral is the <em>signed</em> area.</b></span>
-    </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong"></b> 
+    </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
     <span style="color:red;"><b>Incorrect. Try again!</b></span>
   </span></span></div></div>
   There is more than one correct solution. How many can you find?
-  </div><div style="margin-top:20px"></div><span id="env19.4"></span><div class="exercise" data-count="19.4">     
+  </div><div style="margin-top:20px"></div><span id="env19.6"></span><div class="exercise" data-count="19.6">     
   <ol class="number"><li id="ite19.5"> What is the derivative of <span class="math"></span><script type="math/tex">f(x) = x^2 + \tfrac{1}{2} x + \tfrac{1}{2}</script>?
     </li><li id="ite19.6"> Try to sketch both <span class="math"></span><script type="math/tex">f(x)</script> and <span class="math"></span><script type="math/tex">f'(x)</script> without using a computer.
   </li></ol>
@@ -206,7 +275,7 @@ f = a*x^2 + b*x + c;
 df = f.derivative();
 plot(f, xmin, xmax) + plot(df, xmin, xmax, linestyle = "dashed");
   </script></div>
-  </div><div style="margin-top:20px"></div><span id="env19.5"></span><a class="Quizexerciseno" data-count="19.5"></a><a href="#2509ebe2-3301-4863-9536-fb2c7d04a7e7" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=2509ebe2-3301-4863-9536-fb2c7d04a7e7 class = "collapse Quizexercise envbuttons">  
+  </div><div style="margin-top:20px"></div><span id="env19.7"></span><a class="Quizexerciseno" data-count="19.7"></a><a href="#44c2b3b3-409b-4eff-b320-e536dd28b01c" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=44c2b3b3-409b-4eff-b320-e536dd28b01c class = "collapse Quizexercise envbuttons">  
 <div id="quiz2" style="width:100%;"><div class="row quizquestion">
   Drag the boxes below to the empty slots to construct a true sentence.<div style="margin-top:20px"></div>The <div class="orderquizanswer empty inlineblock" id="dq2_right1" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq2_right2" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)"></div> conditions and the <div class="orderquizanswer empty inlineblock" id="dq2_right3" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)"></div> order conditions are the <div class="orderquizanswer empty inlineblock" id="dq2_right4" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)"></div> conditions.
   </div><div class="row quizanswers"><div class="orderquizanswer inlineblock" id="dq2_left1" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)">
@@ -221,17 +290,17 @@ plot(f, xmin, xmax) + plot(df, xmin, xmax, linestyle = "dashed");
   necessary
   </div><div class="orderquizanswer inlineblock" id="dq2_left6" draggable="true" ondragstart="orderQuizStartDrag(2, event)" ondragover="orderQuizAllowDrop(2, event)" ondrop="orderQuizDrop(2, event)">
   both necessary and sufficient
-  </div></div><div class="row"><span class="orderquizresult" id="dq2_result"><span class="orderquizfeedback hidden" datav="(is 1524)"><b class="correct"></b> 
+  </div></div><div class="row"><span class="orderquizresult" id="dq2_result"><span class="orderquizfeedback hidden" datav="(is 1524)"><b class="correct">Korrekt!</b> 
   <span style="color:green;"><b>Correct!</b></span>
-  </span><span class="orderquizfeedback hidden" datav="(is 2415)"><b class="correct"></b> 
+  </span><span class="orderquizfeedback hidden" datav="(is 2415)"><b class="correct">Korrekt!</b> 
   <span style="color:green;"><b>Correct!</b></span>
-  </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong"></b> 
+  </span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
   <span style="color:red;"><b>Incorrect. Try again!</b></span>
 </span></span></div></div>
-</div><div style="margin-top:20px"></div><span id="env19.6"></span><a class="Quizexerciseno" data-count="19.6"></a><a href="#6dae9735-a8c7-497b-a6a3-4da761dc69ec" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=6dae9735-a8c7-497b-a6a3-4da761dc69ec class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env19.8"></span><a class="Quizexerciseno" data-count="19.8"></a><a href="#e81a3459-e4ee-4464-adac-e7b1e7cde1f6" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=e81a3459-e4ee-4464-adac-e7b1e7cde1f6 class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
 Find the stationary point(s) for the function <span class="math"></span><script type="math/tex">f(x,y) = x^2 + y^2</script>
-</div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+</div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
 <div class="math"></div><script type="math/tex; mode=display">
 (x_0, y_0) = (\sqrt{2},\sqrt{2})
 </script>
@@ -249,29 +318,29 @@ There are no stationary points since
 x^2 + y^2 > 0
 </script>
 </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz3, quizbutton1);});</script>
-</div><div style="margin-top:20px"></div><span id="env19.7"></span><a class="Exerciseno" data-count="19.7"></a><a href="#5aaaf721-cfd2-46d3-8f5e-56ef23e5e3d7" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=5aaaf721-cfd2-46d3-8f5e-56ef23e5e3d7 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env19.9"></span><a class="Exerciseno" data-count="19.9"></a><a href="#40d4ac85-d280-4bf6-a4ff-427e007bc0e0" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=40d4ac85-d280-4bf6-a4ff-427e007bc0e0 class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
 f(x,y) = x^2 + xy + y^2 + 3x - 3y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env19.8"></span><a class="Exerciseno" data-count="19.8"></a><a href="#84e7f66d-144c-4592-8cbb-139b241aa742" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=84e7f66d-144c-4592-8cbb-139b241aa742 class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env19.10"></span><a class="Exerciseno" data-count="19.10"></a><a href="#5fc0eabf-3f77-4658-a15d-a21923f1a8ca" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=5fc0eabf-3f77-4658-a15d-a21923f1a8ca class = "collapse Exercise envbuttons">  
 Find all the maxima and minima of the function
 <div class="math"></div><script type="math/tex; mode=display">
  f(x,y)= -9x^2 -6xy - 2y^2 + 42x - 2y + 6
 </script>
-</div><div style="margin-top:20px"></div><span id="env19.9"></span><a class="Exerciseno" data-count="19.9"></a><a href="#4cb2fe0c-7c7b-452b-aff8-9261eac8d69c" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=4cb2fe0c-7c7b-452b-aff8-9261eac8d69c class = "collapse Exercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env19.11"></span><a class="Exerciseno" data-count="19.11"></a><a href="#888acf7c-7054-4669-86f7-316effbb823b" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=888acf7c-7054-4669-86f7-316effbb823b class = "collapse Exercise envbuttons">  
 A company produces two types of solar panel, A and B, that sell for EUR 6 million and EUR 4 million per thousand units,
 respectively. The cost of producing <span class="math"></span><script type="math/tex">x</script> thousand of type A and <span class="math"></span><script type="math/tex">y</script> thousand of type B is <span class="math"></span><script type="math/tex">x2 - 2xy + 8y2 + 2x - 20y - 5</script>.
 Find the values of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> that maximize the company's profits. (Note: Profit = (revenue) - (cost).)
 The company will achieve a maximum profit by selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type A and selling <span class="math"></span><script type="math/tex">\square</script> solar panels of type B.<div style="margin-top:20px"></div><span style="color:red;"><b>How to check answer?</b></span>
-</div><div style="margin-top:20px"></div><span id="env19.10"></span><a class="Quizexerciseno" data-count="19.10"></a><a href="#ff8af6b4-6d3c-4f4f-ba0d-8ec198c5b535" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=ff8af6b4-6d3c-4f4f-ba0d-8ec198c5b535 class = "collapse Quizexercise envbuttons">  
+</div><div style="margin-top:20px"></div><span id="env19.12"></span><a class="Quizexerciseno" data-count="19.12"></a><a href="#0607fff0-4949-411d-8f09-ff82a4335c9f" class ="btn btn-default Quizexercisebutton" data-toggle="collapse"></a><div id=0607fff0-4949-411d-8f09-ff82a4335c9f class = "collapse Quizexercise envbuttons">  
 <span id="{labelname}"></span><div id="quiz4" style="width:100%;"><div class="row quizquestion">
 Find the stationary point <span class="math"></span><script type="math/tex">(x_0, y_0)</script> for the function
 <div class="math"></div><script type="math/tex; mode=display">
 f(x, y) = - 2 x^2 - 4 xy + 4 y^2
 </script>
 Then use the second-order test to determine the nature of this point.
-</div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
+</div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
 <span class="math"></span><script type="math/tex">(x_0, y_0)</script> is a local minimum
 </div><div class="col-xs-5 quizanswer" datav="F">
 <span class="math"></span><script type="math/tex">(x_0, y_0)</script> is a local maximum
