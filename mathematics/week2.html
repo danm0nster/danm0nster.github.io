@@ -81,7 +81,28 @@
   inputLocation: ".sage",
   evalButtonText: "Compute",
   linked: true,
-  languages : ["sage", "python", "macaulay2"],
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
   hide : ["permalink"]
   });
 </script>
@@ -114,150 +135,117 @@
 
 
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#ade9fdde-1585-4b9f-a293-245fe9a0c30a"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#3e8f9d6a-3570-4601-8c38-6385855399b2">1.1 Readings</a></li><li><a href="week1.html#fbfcc6a3-0a49-46fc-b195-12168f68a714">1.2 Notes</a></li><li><a href="week1.html#b4aa27c2-c576-45f6-bda2-7e6db655cb6a">1.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#5cf5c7c3-a221-4422-943a-023acc4b9dcf"><b>2</b> Course week 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#3b061581-d36c-4420-888d-d6a11bb110ea">2.1 Readings</a></li><li><a href="week2.html#d1f80e84-7ae3-4032-a10a-e05a1d1adca0">2.2 Notes</a></li><li><a href="week2.html#826e37d4-276b-41a8-b0a8-09e18c8d4742">2.3 Exercises</a></li></ul><li><a class="kap" href="week3.html#c6b3aff3-a65c-4744-baea-a80a863660ed"><b>3</b> Course week 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#e7e50ff9-53dc-4efc-bb07-eb2a1dbb08f5">3.1 Readings</a></li><li><a href="week3.html#d8723e4d-81a6-4067-b72f-b167db4477a3">3.2 Notes</a></li><li><a href="week3.html#064ffbf3-3f29-4ec1-835e-7b0a0e168224">3.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#1cab76df-6c1f-4269-97d3-913bd9e644e3"><b>4</b> Course week 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#e9e3f107-9353-463e-8f1f-90d8701a2e42">4.1 Readings</a></li><li><a href="week4.html#e2b13c57-125a-4b49-b7ae-f1dadc1aab14">4.2 Notes</a></li><li><a href="week4.html#e9125768-4c42-4aa9-b513-a48379376255">4.3 Exercises</a></li></ul><li><a class="kap" href="week5.html#31447400-27fd-4e0a-a936-9c426c4e6150"><b>5</b> Course week 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#2ce57338-0ab8-4e51-b08a-9dfc14d9bb57">5.1 Readings</a></li><li><a href="week5.html#60d0f788-a28e-4e0e-9327-a532af384d7f">5.2 Notes</a></li><li><a href="week5.html#dd466ea5-61fb-4f89-92a1-1ec213627a27">5.3 Problems</a></li></ul><li><a class="kap" href="week6.html#84794e13-345a-4a67-a7ae-a7a9f2957e4a"><b>6</b> Course week 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week6.html#5e8a55bc-803f-456a-ab1e-e255424d3de6">6.1 Readings</a></li><li><a href="week6.html#35236a36-20aa-45cb-ab7a-d1f1f46554b6">6.2 Notes</a></li><li><a href="week6.html#5437230b-1b3f-44df-a713-c8f7dff773fe">6.3 Problems</a></li></ul><li><a class="kap" href="week7.html#7a0c3419-2033-4ce4-8561-0c5890ac3cd7"><b>7</b> Course week 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week7.html#d8454813-a7a5-4977-837e-9d8382a1040d">7.1 Readings</a></li><li><a href="week7.html#ba52119d-7914-4c5a-8caa-d13683596e97">7.2 Notes</a></li><li><a href="week7.html#39bdf93d-3aa0-457d-a829-854463c948b5">7.3 Problems</a></li></ul><li><a class="kap" href="week8.html#49e213be-2913-4afa-b7b2-ea04f67ea89c"><b>8</b> Course week 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week8.html#b1e14976-1fcb-4270-b5fb-347583d1c2f2">8.1 Readings</a></li><li><a href="week8.html#272c17a8-c212-469d-842b-a9e894dca522">8.2 Notes</a></li><li><a href="week8.html#2f4084a5-e1f5-42ec-a4e8-816e55f67622">8.3 Problems</a></li></ul><li><a class="kap" href="week9.html#6517137a-c4e4-4c2b-b92c-de3c3db12ab4"><b>9</b> Course week 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week9.html#a60083f0-748e-42a0-9aba-9d1e491a7c09">9.1 Readings</a></li><li><a href="week9.html#76531cf8-843d-4cdc-ba33-706a04d3a439">9.2 Notes</a></li><li><a href="week9.html#6807aabe-0b51-4bd8-a408-cd5ad883324e">9.3 Problems</a></li></ul><li><a class="kap" href="week10.html#c81373a9-2039-4028-b05a-da8bdecca3b5"><b>10</b> Course week 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week10.html#41a16482-80a2-4034-a7ac-be925fe75b9b">10.1 Readings</a></li><li><a href="week10.html#8c03b83c-6f24-43a1-97ac-bc913e6ad0ad">10.2 Notes</a></li><li><a href="week10.html#327d913c-ccd8-4496-8cfb-3cc8c146f536">10.3 Problems</a></li></ul><li><a class="kap" href="week11.html#2b15962b-3b74-47ef-a261-d949374e9f5f"><b>11</b> Course week 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week11.html#bd3fa005-75a5-4896-b686-4aa858f6e20d">11.1 Readings</a></li><li><a href="week11.html#466c9810-ae81-4d49-90be-07b1ff06618a">11.2 Notes</a></li><li><a href="week11.html#a5339f3f-b11c-42cc-b13d-a866cdbdd1da">11.3 Problems</a></li></ul><li><a class="kap" href="week12.html#bd434007-7626-4ad3-a484-7a61df60ff22"><b>12</b> Course week 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week12.html#a238fe24-fe02-4cd3-b068-ea96d14ee154">12.1 Readings</a></li><li><a href="week12.html#6be39035-ac32-419c-89fe-4706f191932b">12.2 Notes</a></li><li><a href="week12.html#d5dcc183-139e-40be-935d-ad5136c52b89">12.3 Problems</a></li></ul><li><a class="kap" href="week13.html#3c22a0f6-fd4d-4578-96b6-09f919ed39b6"><b>13</b> Course week 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week13.html#842c295e-d46f-4777-bd11-76f95fb787d1">13.1 Readings</a></li><li><a href="week13.html#5ab885ae-05b4-4ccb-a35c-f176134b17e6">13.2 Notes</a></li><li><a href="week13.html#df558661-7a19-4f6e-8a74-e5762d9f0b86">13.3 Problems</a></li></ul><li><a class="kap" href="week14.html#50a0cba7-209f-42dd-8220-c56fc06d93e0"><b>14</b> Course week 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week14.html#b3006160-9d82-4697-8851-d585c3f026f4">14.1 Readings</a></li><li><a href="week14.html#1f5509c4-635f-44f3-8642-d76c3888eadc">14.2 Notes</a></li><li><a href="week14.html#1e8b7ad4-b844-4026-bd0b-470e6d479294">14.3 Problems</a></li></ul><li><a class="kap" href="week15.html#1cbc5649-3c69-4d4b-bf4d-b4f63072f3a1"><b>15</b> Course week 15</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week15.html#be9c784b-de99-48be-a939-26aa26c5dc43">15.1 Readings</a></li><li><a href="week15.html#c3c9f638-0a97-41ac-b116-eb251629edd4">15.2 Notes</a></li><li><a href="week15.html#9a187305-b39d-4caf-8139-78c766d46ed9">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="5cf5c7c3-a221-4422-943a-023acc4b9dcf">2<span style="float:right;">Course week 2</span></h1>
-<span id="sec2.1"></span><h2 id="3b061581-d36c-4420-888d-d6a11bb110ea">2.1 Readings</h2>
-Read sections 6.8 – 6.11 and 7.1 in the textbook.<div style="margin-top:20px"></div><span id="sec2.2"></span><h2 id="d1f80e84-7ae3-4032-a10a-e05a1d1adca0">2.2 Notes</h2>
-Below, you will find some important results from last week's curriculum which
-might prove useful when you work on this week's problems (further below).<div style="margin-top:20px"></div><b>Rules for limits</b>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#adb4c6a5-642f-4a05-b2af-b2d148402401"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#b5a476a4-c095-4cb9-81c3-b5c0ef87657c">1.1 Readings</a></li><li><a href="introduction.html#636f678c-0d2a-439f-95e4-b5a1760999c4">1.2 Notes</a></li><li><a href="introduction.html#ac88c764-cbdc-4a40-94ea-289b94a37e53">1.3 Exercises</a></li></ul><li><a class="kap" href="week1.html#a0c39654-e1d3-47fd-9e9d-1b54ea8a7ca2"><b>2</b> Course week 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#02b15ef4-5795-4deb-8b47-ebe6628efd71">2.1 Readings</a></li><li><a href="week1.html#219a783e-eae8-4bcf-ba90-a8bcac536d42">2.2 Notes</a></li><li><a href="week1.html#06c7526b-8569-4e81-9a94-e5f3a7fac811">2.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#0120fed8-1a40-43ba-b412-eefba6d6b990"><b>3</b> Course week 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#bc79b158-c50c-42c8-a122-b9fd08aec1fe">3.1 Readings</a></li><li><a href="week2.html#fe8c2e6b-94ef-4bb7-9692-0103a6c66c33">3.2 Notes</a></li><li><a href="week2.html#af99bf75-129f-476d-af92-f38fe8e68a71">3.3 Exercises</a></li></ul><li><a class="kap" href="week3.html#21e818a8-af15-48b0-905f-e78ca76d6c67"><b>4</b> Course week 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#7032b66b-4422-452e-a4fc-57444c502273">4.1 Readings</a></li><li><a href="week3.html#0157e14b-87a8-4554-9509-5c930edc7911">4.2 Notes</a></li><li><a href="week3.html#67b43382-a733-4641-9395-e8164396446e">4.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#110e3cc4-9600-4493-9de7-2c27599a76c0"><b>5</b> Course week 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#fdf7f223-6785-49f8-902c-d714419432a9">5.1 Readings</a></li><li><a href="week4.html#e9643acd-552d-4023-be18-ddd68b0b5685">5.2 Notes</a></li><li><a href="week4.html#2aa7673a-ee38-48f9-b612-ec86f6822f2f">5.3 Problems</a></li></ul><li><a class="kap" href="week5.html#94f5aef0-2e5f-4edc-a3ec-8e9b8d4e68d9"><b>6</b> Course week 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#76e5c44f-5be8-4e54-aad3-4ea138cda96c">6.1 Readings</a></li><li><a href="week5.html#0e7fb3c4-ac67-45b7-b201-7babf72d542e">6.2 Notes</a></li><li><a href="week5.html#b0ca638d-2345-4128-aba3-ab781ecc405d">6.3 Problems</a></li></ul><li><a class="kap" href="week6.html#84e67c0a-3b2f-41a9-8efe-eca54b64defe"><b>7</b> Course week 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#7ae43de3-2e5e-4d9c-b6e8-c441631620db">7.1 Readings</a></li><li><a href="week6.html#d376aff4-14fa-4236-ad1c-0855f4518a93">7.2 Notes</a></li><li><a href="week6.html#84eb9656-f409-40e5-81e2-044e0bac2715">7.3 Problems</a></li></ul><li><a class="kap" href="week7.html#09836f72-60d6-4e4c-8174-737c43904e2d"><b>8</b> Course week 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#bbb23f8a-bc7e-4411-816b-405a59a9d88c">8.1 Readings</a></li><li><a href="week7.html#0616fcf8-0ed8-4bb1-ac38-c96c1d54eebb">8.2 Notes</a></li><li><a href="week7.html#28480a56-85f3-478f-9ef3-becfaa493fe6">8.3 Problems</a></li></ul><li><a class="kap" href="week8.html#5bed6df8-1e80-4f55-8840-70e1d345c4b7"><b>9</b> Course week 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#5432ed01-a884-4823-8e66-d908ba46f643">9.1 Readings</a></li><li><a href="week8.html#3a53af4d-7b93-458c-9cb3-a2cab57490b0">9.2 Notes</a></li><li><a href="week8.html#4574537a-4964-466a-9240-ca6429905e03">9.3 Problems</a></li></ul><li><a class="kap" href="week9.html#d044b7b3-a138-4828-866e-6cbb6ab84268"><b>10</b> Course week 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#2213dfe9-a4c6-4778-a0cb-723de1560dcf">10.1 Readings</a></li><li><a href="week9.html#6c721f74-bc2f-47db-a24c-b38da8b22807">10.2 Notes</a></li><li><a href="week9.html#ca426ad5-f021-4f0a-a8cf-9c8fd407eb17">10.3 Problems</a></li></ul><li><a class="kap" href="week10.html#4695c819-63dd-40f5-8066-f97ff8255488"><b>11</b> Course week 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#f576973a-7804-4d9c-b26d-37607d4abe0d">11.1 Readings</a></li><li><a href="week10.html#e4f580c1-63c2-42ab-adfd-daa1930e0b93">11.2 Notes</a></li><li><a href="week10.html#179eee3b-7899-4d2e-abb3-3dbb58f9bbfe">11.3 Problems</a></li></ul><li><a class="kap" href="week11.html#2b84f827-149d-423a-9e34-32750b1581e0"><b>12</b> Course week 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#1f127011-6b88-40bb-a050-bc45439290eb">12.1 Readings</a></li><li><a href="week11.html#b983468b-18d7-4f0f-9320-969a054d448f">12.2 Notes</a></li><li><a href="week11.html#cf5f3030-94bb-478f-a79c-3bb99de00467">12.3 Problems</a></li></ul><li><a class="kap" href="week12.html#817f0a2d-a5fa-42e7-a335-66147c5fe722"><b>13</b> Course week 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#d1e1ee1d-0e09-42c4-b449-f3b04850d5e2">13.1 Readings</a></li><li><a href="week12.html#b652c0ae-f654-4cd8-8f31-d49777981daa">13.2 Notes</a></li><li><a href="week12.html#c5ff3abf-23ed-418b-b182-bccc9d85dc29">13.3 Problems</a></li></ul><li><a class="kap" href="week13.html#d2868791-e317-4196-a6d7-05ccccb58f13"><b>14</b> Course week 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#526e2d8a-abd4-46fc-8ce3-dd33ea6cf946">14.1 Readings</a></li><li><a href="week13.html#a36d28a1-d375-4dd5-8d42-a7a6dc02c64a">14.2 Notes</a></li><li><a href="week13.html#9d52b8b6-0c3e-4e7d-a97a-7585e6b00f6f">14.3 Problems</a></li></ul><li><a class="kap" href="week14.html#c9b32c60-cb50-461b-bc86-d1f493dfc75f"><b>15</b> Course week 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#099c0ba8-242a-4206-b771-1115d88c80ac">15.1 Readings</a></li><li><a href="week14.html#764563a0-bfc5-4489-a9d5-981a9b62a609">15.2 Notes</a></li><li><a href="week14.html#0288e6ef-a5e0-41c4-9047-e57dab927d49">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="0120fed8-1a40-43ba-b412-eefba6d6b990">3<span style="float:right;">Course week 2</span></h1>
+<span id="sec3.1"></span><h2 id="bc79b158-c50c-42c8-a122-b9fd08aec1fe">3.1 Readings</h2>
+Read sections 7.3, 7.12 and 14.1 in the textbook.<div style="margin-top:20px"></div><span id="sec3.2"></span><h2 id="fe8c2e6b-94ef-4bb7-9692-0103a6c66c33">3.2 Notes</h2>
+<b>Leibniz's notation</b>
 <div class="frameit">
-  If <span class="math"></span><script type="math/tex">\displaystyle A = \lim_{x \to a} f(x)</script> and <span class="math"></span><script type="math/tex">\displaystyle B = \lim_{x \to a} g(x)</script>, then the following rules apply:
-    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
-        \lim_{x \to a} \left( f(x) \pm g(x) \right) &= A \pm B \\
-        \lim_{x \to a} \left( f(x) g(x) \right) &= AB \\
-        \lim_{x \to a} \frac{f(x)}{g(x)} &= \frac{A}{B}, \quad \text{if~} B \neq 0 \\
-        \lim_{x \to a} \left( f(x) \right)^r &= A^r
-      \end{aligned}</script>
-</div><div style="margin-top:20px"></div><b>Equality of limits</b>
-<div class="frameit">
-  If two functions <span class="math"></span><script type="math/tex">f(x)</script> and <span class="math"></span><script type="math/tex">g(x)</script> satisfy <span class="math"></span><script type="math/tex">f(x) = g(x)</script> for <span class="math"></span><script type="math/tex">x</script> close to <span class="math"></span><script type="math/tex">a</script>, but not necessarily at <span class="math"></span><script type="math/tex">x=a</script>,
-  and if one of the limits exist, then:
-    <div class="math"></div><script type="math/tex; mode=display">
-      \lim_{x \to a} f(x) = \lim_{x \to a} g(x)
-    </script>
-</div><div style="margin-top:20px"></div><b>Derivatives of selected functions</b>
-<div class="frameit">
-    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
-        \underline{f(x)} \qquad {}& \underline{f'(x)} \qquad {}& \underline{\text{Note}}\\
-        x^a \qquad {}& a x^{a-1} \qquad {}& \\
-        e^x \qquad {}& e^x \quad {}& \\
-        \ln(x) \qquad {}& 1/x \quad {}& x > 0 \\
-        e^{ax} \qquad {}& ae^{ax} \quad {}& \\
-        a^{x} \qquad {}& \ln(a) a^{x} \quad {}& a > 0
-    \end{aligned}</script>
-</div><div style="margin-top:20px"></div><b>Rules for derivatives</b>
-<div class="frameit">
-    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
-      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A + f(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} = f'(x)\\[3ex]
-      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A \cdot f(x) \right) =  A \frac{\mathrm{d}f}{\mathrm{d}x} = A f'(x)\\[3ex]
-      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) \pm g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} \pm \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x) \pm g'(x)\\[3ex]
-      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} g(x) + f(x) \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x)g(x) + f(x)g'(x)\\[3ex]
-      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( \frac{f(x)}{g(x)}\right) = \frac{\frac{\mathrm{d}f}{\mathrm{d}x} g(x) - f(x) \frac{\mathrm{d}g}{\mathrm{d}x}}{(g(x))^2} = \frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}
-    \end{aligned}</script>
-</div><div style="margin-top:20px"></div><span id="sec2.3"></span><h2 id="826e37d4-276b-41a8-b0a8-09e18c8d4742">2.3 Exercises</h2><div style="margin-top:20px"></div><span id="env2.1"></span><div class="exercise" data-count="2.1">     
-  a) Find the slope of the curve at the point <span class="math"></span><script type="math/tex">(3, f(3))</script>.
-  <div class="centerimg"><img src="img/week2/exercise_1.png" width="50%"></div>
-  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
-    b) Where does the curve have a slope of zero?
-    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
-    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
-    </div><div class="col-xs-5 quizanswer" datav="F">
-    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
-    </div><div class="col-xs-5 quizanswer" datav="T">
-    <span class="math"></span><script type="math/tex">x = 0</script> and <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
-    </div><div class="col-xs-5 quizanswer" datav="F">
-    <span class="math"></span><script type="math/tex">x \approx -1.72</script> and <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
-    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
-</div><div style="margin-top:20px"></div><span id="env2.2"></span><div class="exercise" data-count="2.2">     
-  A function <span class="math"></span><script type="math/tex">f(x)</script> and its derivative <span class="math"></span><script type="math/tex">f'(x)</script> have the particular values
+  In Leibniz's notation the derivative <span class="math"></span><script type="math/tex">f'(x)</script> of a 
+  function <span class="math"></span><script type="math/tex">y = f(x)</script> is written in one of the following ways:
   <div class="math"></div><script type="math/tex; mode=display">
-    \begin{array}{rl}
-      f(-1) &=& 0.65 \\
-      f'(-1) &=& 0.45
-    \end{array}
+    f'(x) = \frac{\mathrm{d}f}{\mathrm{d}x} =  \frac{\mathrm{d}y}{\mathrm{d}x}
   </script>
-  What is the equation for the tangent to the graph at the point <span class="math"></span><script type="math/tex">(-1, f(-1))</script> shown in the figure below?
-  <div class="centerimg"><img src="img/week2/exercise_2.png" width="50%"></div>
-</div><div style="margin-top:20px"></div><span id="env2.3"></span><div class="exercise" data-count="2.3">     
-  The tangent to the graph for the function <span class="math"></span><script type="math/tex">f(x)</script> at the point <span class="math"></span><script type="math/tex">(2, f(2))</script> is given by the equation
-  <div class="math"></div><script type="math/tex; mode=display">
-    y = 2.1 x - 3.1
-  </script>
-  What are the values of <span class="math"></span><script type="math/tex">f(2)</script> and <span class="math"></span><script type="math/tex">f'(2)</script>?
-  <div class="centerimg"><img src="img/week2/exercise_3.png" width="50%"></div>
-</div><div style="margin-top:20px"></div><span id="env2.4"></span><div class="exercise" data-count="2.4">     
-  The plot below shows the graph for a function <span class="math"></span><script type="math/tex">f(x)</script>
-  <div class="centerimg"><img src="img/week2/exercise_4a.png" width="50%"></div>
-  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
-    Which of the following graphs shows a plot of the derivative of <span class="math"></span><script type="math/tex">f(x)</script>?
-    </div><div class="row"><div class="col-xs-5 quizanswer" datav="F">
-    <div class="centerimg"><img src="img/week2/exercise_4c.png" width="75%"></div>
-    </div><div class="col-xs-5 quizanswer" datav="T">
-    <div class="centerimg"><img src="img/week2/exercise_4b.png" width="75%"></div>
-    </div><div class="col-xs-5 quizanswer" datav="F">
-    <div class="centerimg"><img src="img/week2/exercise_4e.png" width="75%"></div>
-    </div><div class="col-xs-5 quizanswer" datav="F">
-    <div class="centerimg"><img src="img/week2/exercise_4d.png" width="75%"></div>
-    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
-</div><div style="margin-top:20px"></div><span id="env2.5"></span><div class="exercise" data-count="2.5">     
-  The figure below shows the graphs for a function <span class="math"></span><script type="math/tex">f(x)</script> (solid blue) and its derivative <span class="math"></span><script type="math/tex">f'(x)</script> (dashed red).
-  <div class="centerimg"><img src="img/week2/exercise_5.png" width="50%"></div>
-  Find the equation for the tangent to <span class="math"></span><script type="math/tex">f(x)</script> for <span class="math"></span><script type="math/tex">x = 4</script>.<div style="margin-top:20px"></div><a href="#68033d5f-4c22-463d-83a9-c03b6a637392" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=68033d5f-4c22-463d-83a9-c03b6a637392 class = "collapse Hint envbuttons">    
-    What are the values of <span class="math"></span><script type="math/tex">f(4)</script> and <span class="math"></span><script type="math/tex">f'(4)</script>?
-    </div>
-</div><div style="margin-top:20px"></div><span id="env2.6"></span><div class="exercise" data-count="2.6">     
-  Find the limits below.
-  <ol class="number"><li id="ite2.1"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to -3} \left( x^2 + 4x + 2 \right)</script>
-    </li><li id="ite2.2"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3/2} \left( (x - \frac{2}{3}) (x + \frac{1}{2}) \right)</script>
-    </li><li id="ite2.3"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 0} \left( \sqrt{(2-x)(8+x)} + \frac{1}{x-2} \right)</script>
-    </li><li id="ite2.4"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3} \frac{2x^2-2x-2}{x+2} </script>
+</div><div style="margin-top:20px"></div><b>Rules for differentiation</b>
+<div class="frameit">
+  In Leibniz's notation the rules for the derivatives of a sum/difference, a product and
+  a quotient of two functions are expressed like this:
+  <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+    {}& \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x)\pm g(x) \right) =
+      \frac{\mathrm{d}f}{\mathrm{d}x} \pm
+      \frac{\mathrm{d}g}{\mathrm{d}x} \\[3ex]
+    {}& \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x)\cdot g(x) \right) =
+      \frac{\mathrm{d}f}{\mathrm{d}x} \cdot g(x) + f(x)\cdot
+      \frac{\mathrm{d}g}{\mathrm{d}x} \\[3ex]
+    {}& \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( \frac{f(x)}{g(x)} \right) =
+      \frac{      \frac{\mathrm{d}f}{\mathrm{d}x} \cdot g(x) - f(x)\cdot \frac{\mathrm{d}g}{\mathrm{d}x}}
+      {\left( g(x) \right)^2}
+\end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Chain rule</b>
+<div class="frameit">
+  For a composite function <span class="math"></span><script type="math/tex">F(x) = f(g(x))</script>, and with <span class="math"></span><script type="math/tex">y=f(u)</script> and <span class="math"></span><script type="math/tex">u=g(x),</script> the chain rule
+  can be written as:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+      F'(x) &= f'(g(x)) \, g'(x) \\[3ex]
+      \frac{\mathrm{d}y}{\mathrm{d}x} &=
+        \frac{\mathrm{d}y}{\mathrm{d}u}\frac{\mathrm{d}u}{\mathrm{d}x}
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Higher order derivatives</b>
+<div class="frameit"><div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+      f''(x) &= \frac{\mathrm{d}^2f}{\mathrm{d} x^2} \\
+      f^{(3)}(x) &= \frac{\mathrm{d}^3f}{\mathrm{d} x^3} \\
+      & \dots \\
+      f^{(n)}(x) &= \frac{\mathrm{d}^nf}{\mathrm{d} x^n}
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="sec3.3"></span><h2 id="af99bf75-129f-476d-af92-f38fe8e68a71">3.3 Exercises</h2><div style="margin-top:20px"></div><span id="env3.1"></span><div class="exercise" data-count="3.1">     
+  Calculate the derivatives below:
+  <ol class="number"><li id="ite3.1"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \frac{\exp(x) - 1}{x^2} </script>
+    </li><li id="ite3.2"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( x^2 + \ln(x^2) \right)</script>
+    </li><li id="ite3.3"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x}  \frac{\ln x}{x} </script>
+    </li><li id="ite3.4"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \frac{x}{\ln x} </script>
+    </li><li id="ite3.5"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{y}}{\mathrm{d}y} \left( e^{y} \cdot \ln y \right)</script>
+    </li><li id="ite3.6"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} e^{-2x^3-4x} </script>
   </li></ol>
 </div><div style="margin-top:20px"></div>
-<span id="env2.7"></span><div class="exercise" data-count="2.7">     
-  Calculate the limit
-  <div class="math"></div><script type="math/tex; mode=display">
-    \lim_{x \to 2} \frac{3x^2 - 3x - 6}{2x^2 + 2x - 12}
-  </script>
-  <a href="#7de9ca8e-861b-4bf3-9f89-d2d5d8ad1f74" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=7de9ca8e-861b-4bf3-9f89-d2d5d8ad1f74 class = "collapse Hint envbuttons">    
-    Are you sure you don't want to think about it first? Use hints only when you need them!<div style="margin-top:20px"></div><a href="#b69aa5ab-4f80-433d-8c93-9e6efdbd4f49" class ="btn btn-default" data-toggle="collapse">Yes, I'm stuck. Show me the hint!</a><div id=b69aa5ab-4f80-433d-8c93-9e6efdbd4f49 class="collapse">
-      Use the result <em>equality of limits</em> above.<div style="margin-top:20px"></div><a href="#17106776-18e8-4817-88cb-34981f9e8e6b" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=17106776-18e8-4817-88cb-34981f9e8e6b class = "collapse Hint envbuttons">    
-      Rewrite both the numerator and the denominator by factorising (see the box <em>Quadratic Equations</em> in section <a href="week1.html#sec1.3.1">1.3.1</a>).
-      </div>
-    </div>
-    </div>
+<span id="env3.2"></span><div class="exercise" data-count="3.2">     
+  Find the derivative of the functions below, <em>both with and without</em> using the chain rule.
+  <ol class="number"><li id="ite3.7"> <span class="math"></span><script type="math/tex">f(x) = \ln(x^5)</script>
+    </li><li id="ite3.8"> <span class="math"></span><script type="math/tex">g(x) = (x^2-2)^2</script> 
+  </li></ol>
+  In each case, which method is easier?
+</div><div style="margin-top:20px"></div><span id="env3.3"></span><div class="exercise" data-count="3.3">     
+  Calculate <span class="math"></span><script type="math/tex">\frac{\mathrm{d}y}{\mathrm{d}x}</script> where <span class="math"></span><script type="math/tex">y = \sqrt{u}</script> and <span class="math"></span><script type="math/tex">u = 3x^2 + \tfrac{1}{2}x</script>.
+</div><div style="margin-top:20px"></div><span id="env3.4"></span><div class="exercise" data-count="3.4">     
+  Use the chain rule to calculate the derivatives below.
+  <ol class="number"><li id="ite3.9"> <span class="math"></span><script type="math/tex">\displaystyle\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} (-x^3 + 7x + 5)^9</script>.
+    </li><li id="ite3.10"> <span class="math"></span><script type="math/tex">\displaystyle\frac{\mathrm{d}\phantom{t}}{\mathrm{d}t} 5(-3t^3 + 7t)^{-5}</script>. 
+    </li><li id="ite3.11"> <span class="math"></span><script type="math/tex">\displaystyle\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \frac{-3}{(x-3x^2)^3}</script>.
+  </li></ol>
 </div><div style="margin-top:20px"></div>
-
-<span id="env2.8"></span><div class="exercise" data-count="2.8">     
-Calculate the derivatives of the following functions:
-<ol class="number"><li id="ite2.5"> <span class="math"></span><script type="math/tex">f(x) = 3x^6</script>
-  </li><li id="ite2.6"> <span class="math"></span><script type="math/tex">g(x) = x^{3/2}</script>
-  </li><li id="ite2.7"> <span class="math"></span><script type="math/tex">h(y) = \frac{2}{3} y^{-3}</script>
-  </li><li id="ite2.8"> <span class="math"></span><script type="math/tex">q(x) = 1 / (x^{-7/3})</script>
-</li></ol>
-</div><div style="margin-top:20px"></div><span id="env2.9"></span><div class="exercise" data-count="2.9">     
-  Calculate the derivatives of the following functions:
-  <ol class="number"><li id="ite2.9"> <span class="math"></span><script type="math/tex">f(x) = 2ax^3</script>, where <span class="math"></span><script type="math/tex">a</script> is a constant.
-    </li><li id="ite2.10"> <span class="math"></span><script type="math/tex">f(z) = 2\sqrt{z} - \frac{1}{7}z^5</script>. 
-    </li><li id="ite2.11"> <span class="math"></span><script type="math/tex">f(x) = ax^2 + bx + c</script>, where <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> and <span class="math"></span><script type="math/tex">c</script> are constants.
-    </li><li id="ite2.12"> <span class="math"></span><script type="math/tex">g'(y)</script>, where <span class="math"></span><script type="math/tex">g(y) = 5y^3 - 3y^2</script>.
-    </li><li id="ite2.13"> <span class="math"></span><script type="math/tex">h(y) = \exp (-10 y)</script>.
+<span id="env3.5"></span><div class="exercise" data-count="3.5">     
+  Find <span class="math"></span><script type="math/tex">f'(x)</script>, <span class="math"></span><script type="math/tex">f''(x)</script> and <span class="math"></span><script type="math/tex">f^{(3)}(x)</script> for the function
+  <span class="math"></span><script type="math/tex">f(x) = 3x^3 - 5x^2 + 27.</script>
+</div><div style="margin-top:20px"></div><span id="env3.6"></span><div class="exercise" data-count="3.6">     
+  <ol class="number"><li id="ite3.12"> Find the 2nd derivative of <span class="math"></span><script type="math/tex">f(x) = -3x^2 + 7x -12</script>
+    </li><li id="ite3.13"> Find the 3rd derivative of <span class="math"></span><script type="math/tex">g(x) = (x-7)^3</script>
+    </li><li id="ite3.14"> For a polynomial of degree <span class="math"></span><script type="math/tex">p</script>, i.e., <span class="math"></span><script type="math/tex">f(x) = a_0 + a_1 x + a_2 x^2 + \dots +  a_{p-1}x^{p-1} + a_p x^p,</script>
+      what is the lowest value of <span class="math"></span><script type="math/tex">n</script> where <span class="math"></span><script type="math/tex">f^{(n)}(x) = 0</script> for all <span class="math"></span><script type="math/tex">x \in \mathbb{R}</script>, where <span class="math"></span><script type="math/tex">p \in \mathbb{N}</script>?
+    </li><li id="ite3.15"> How would you answer the preceeding question if <span class="math"></span><script type="math/tex">f(x) = ax^p</script> where <span class="math"></span><script type="math/tex">p \notin \mathbb{N}</script> (i.e., if <span class="math"></span><script type="math/tex">p</script> is not a positive integer)?
   </li></ol>
-  </div><div style="margin-top:20px"></div>
-<span id="env2.10"></span><div class="exercise" data-count="2.10">     
-Calculate <span class="math"></span><script type="math/tex">y'(x)</script> when <span class="math"></span><script type="math/tex">y</script> is given by:
-<ol class="number"><li id="ite2.14"> <span class="math"></span><script type="math/tex">y = 5x^2 - 3x + 7</script>
-  </li><li id="ite2.15"> <span class="math"></span><script type="math/tex">y = x^7 + 3 \sqrt{x} + \frac{1}{2 \sqrt{x}}</script>
-  </li><li id="ite2.16"> <span class="math"></span><script type="math/tex">y = x \cdot (x -2x^{-1})</script>
-</li></ol>
-</div><div style="margin-top:20px"></div><span id="env2.11"></span><div class="exercise" data-count="2.11">     
-  Calculate the derivative of the following functions:
-  <ol class="number"><li id="ite2.17"> <span class="math"></span><script type="math/tex">f(x) = 10x^3 (1 - \sqrt{x})</script>
-    </li><li id="ite2.18"> <span class="math"></span><script type="math/tex">f(x) = (2x - x^2)(x^3 + x^2) + 1000</script>
-    </li><li id="ite2.19"> <span class="math"></span><script type="math/tex">f(x) = (x + 2)\cdot (\sqrt{x} -3x)</script>
+</div><div style="margin-top:20px"></div><span id="env3.7"></span><div class="exercise" data-count="3.7">     
+  Calculate the following derivatives.
+  <ol class="number"><li id="ite3.16"> <span class="math"></span><script type="math/tex">f''(x)</script>, where <span class="math"></span><script type="math/tex">f(x) = x^2 \exp(-2x)</script>
+    </li><li id="ite3.17"> <span class="math"></span><script type="math/tex">g''(y)</script>, where <span class="math"></span><script type="math/tex">g(y) = (1-3y^3)^7</script>
+    </li><li id="ite3.18"> <span class="math"></span><script type="math/tex">\displaystyle\frac{\mathrm{d}^2y}{\mathrm{d}x^2}</script>, where  <span class="math"></span><script type="math/tex">y = \sqrt[6]{x}</script>
   </li></ol>
-</div><div style="margin-top:20px"></div><span id="env2.12"></span><div class="exercise" data-count="2.12">     
-  Calculate the derivatives of the following expressions:
-  <ol class="number"><li id="ite2.20"> <span class="math"></span><script type="math/tex"> \frac{\sqrt{x} - 1}{x^2} </script>
-    </li><li id="ite2.21"> <span class="math"></span><script type="math/tex"> \frac{x-2}{x+2} </script>
-        </li><li id="ite2.22"> <span class="math"></span><script type="math/tex"> \frac{2x-3}{5x+4} </script>
-  </li></ol>
-</div><div style="margin-top:20px"></div></div></body>
+</div><div style="margin-top:20px"></div><span id="env3.8"></span><div class="exercise" data-count="3.8">     
+  Calculate the second order derivative of <span class="math"></span><script type="math/tex">f(x) g(x)</script>.<div style="margin-top:20px"></div>Compare with the expansion of <span class="math"></span><script type="math/tex">(f+g)^2</script>.
+  In what way are the two expressions similar?
+  Can you explain why?<div style="margin-top:20px"></div><a href="#322f3d7f-d3d9-48ec-b11c-8e8e9756ddae" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=322f3d7f-d3d9-48ec-b11c-8e8e9756ddae class = "collapse Hint envbuttons">    
+    It may be easier to compare the two expressions if you write <span class="math"></span><script type="math/tex">f^2</script> as <span class="math"></span><script type="math/tex">f^2\cdot g^0</script> and
+    <span class="math"></span><script type="math/tex">f(x)</script> as <span class="math"></span><script type="math/tex">f^{(0)}(x)</script>, i.e. <span class="math"></span><script type="math/tex">f(x)</script> differentiated zero times.
+    </div>
+</div><div style="margin-top:20px"></div><span id="env3.9"></span><div class="exercise" data-count="3.9">     
+  Two variables, <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script>, are connected by the equation <span class="math"></span><script type="math/tex">3x^2 - 7y^2 = a</script>, where <span class="math"></span><script type="math/tex">a</script> is an arbitrary constant.
+  <ol class="number"><li id="ite3.19"> Assume that the equation above defines <span class="math"></span><script type="math/tex">y</script> as a function of <span class="math"></span><script type="math/tex">x</script> and find <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script>.
+    </li><li id="ite3.20"> For <span class="math"></span><script type="math/tex">a = 2</script> the values of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> that satisfy the equation are shown as the curve in the figure below.
+      Find the value of <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> in the blue point, where <span class="math"></span><script type="math/tex">y = 1</script>.
+    </li><li id="ite3.21"> What happens to <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> in the two black points, where <span class="math"></span><script type="math/tex">y = 0</script>?
+  </li></ol><div style="margin-top:20px"></div><div class="centerimg"><img src="img/week3/figure_3_1.png" ></div>
+</div><div style="margin-top:20px"></div><span id="env3.10"></span><div class="exercise" data-count="3.10">     
+  A curve is described by the equation <span class="math"></span><script type="math/tex">x^4 + y^2 - 2x^2 = 0</script>. The curve is shown in the figure below.
+  <ol class="number"><li id="ite3.22"> Determine <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> expressed in terms of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script>.
+    </li><li id="ite3.23"> Find the points <span class="math"></span><script type="math/tex">(x, y)</script> where <span class="math"></span><script type="math/tex">x = \pm 1</script> and determine the value of <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> in these points.
+    </li><li id="ite3.24"> What does the tangent look like in the point where <span class="math"></span><script type="math/tex">x = \sqrt{2}</script>?
+    </li><li id="ite3.25"> Find the value of <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> in the point where <span class="math"></span><script type="math/tex">x = \tfrac{1}{2}</script> and <span class="math"></span><script type="math/tex">y > 0</script>.
+    </li><li id="ite3.26"> Write down the equation for the tangent in this point.
+    </li><li id="ite3.27"> Determine <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> in the point <span class="math"></span><script type="math/tex">(x, y) = (0,0)</script> (difficult).
+      <a href="#16d08591-dbbe-4d72-8d2a-20a3b6bfcc76" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=16d08591-dbbe-4d72-8d2a-20a3b6bfcc76 class = "collapse Hint envbuttons">    
+        Use the equation for the curve to express <span class="math"></span><script type="math/tex">y</script> in terms of <span class="math"></span><script type="math/tex">x</script>.
+        <a href="#dc1c2c4d-454e-405c-9e73-f561b4309d2c" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=dc1c2c4d-454e-405c-9e73-f561b4309d2c class = "collapse Hint envbuttons">    
+          Insert this expression for <span class="math"></span><script type="math/tex">y</script> in the expression for <span class="math"></span><script type="math/tex">\frac{\mathrm{d} y}{\mathrm{d} x}</script> and simplify.
+          Finally, set <span class="math"></span><script type="math/tex">x = 0</script>.
+          </div>
+        </div>
+                                                                    </li></ol><div style="margin-top:20px"></div><div class="centerimg"><img src="img/week3/figure_3_2.png" ></div>
+</div><div style="margin-top:20px"></div>
+</div></body>

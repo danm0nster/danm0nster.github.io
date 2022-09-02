@@ -81,7 +81,28 @@
   inputLocation: ".sage",
   evalButtonText: "Compute",
   linked: true,
-  languages : ["sage", "python", "macaulay2"],
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  evalButtonText: "Compute",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
   hide : ["permalink"]
   });
 </script>
@@ -114,54 +135,86 @@
 
 
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week1.html#ade9fdde-1585-4b9f-a293-245fe9a0c30a"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week1.html#3e8f9d6a-3570-4601-8c38-6385855399b2">1.1 Readings</a></li><li><a href="week1.html#fbfcc6a3-0a49-46fc-b195-12168f68a714">1.2 Notes</a></li><li><a href="week1.html#b4aa27c2-c576-45f6-bda2-7e6db655cb6a">1.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#5cf5c7c3-a221-4422-943a-023acc4b9dcf"><b>2</b> Course week 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week2.html#3b061581-d36c-4420-888d-d6a11bb110ea">2.1 Readings</a></li><li><a href="week2.html#d1f80e84-7ae3-4032-a10a-e05a1d1adca0">2.2 Notes</a></li><li><a href="week2.html#826e37d4-276b-41a8-b0a8-09e18c8d4742">2.3 Exercises</a></li></ul><li><a class="kap" href="week3.html#c6b3aff3-a65c-4744-baea-a80a863660ed"><b>3</b> Course week 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week3.html#e7e50ff9-53dc-4efc-bb07-eb2a1dbb08f5">3.1 Readings</a></li><li><a href="week3.html#d8723e4d-81a6-4067-b72f-b167db4477a3">3.2 Notes</a></li><li><a href="week3.html#064ffbf3-3f29-4ec1-835e-7b0a0e168224">3.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#1cab76df-6c1f-4269-97d3-913bd9e644e3"><b>4</b> Course week 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week4.html#e9e3f107-9353-463e-8f1f-90d8701a2e42">4.1 Readings</a></li><li><a href="week4.html#e2b13c57-125a-4b49-b7ae-f1dadc1aab14">4.2 Notes</a></li><li><a href="week4.html#e9125768-4c42-4aa9-b513-a48379376255">4.3 Exercises</a></li></ul><li><a class="kap" href="week5.html#31447400-27fd-4e0a-a936-9c426c4e6150"><b>5</b> Course week 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week5.html#2ce57338-0ab8-4e51-b08a-9dfc14d9bb57">5.1 Readings</a></li><li><a href="week5.html#60d0f788-a28e-4e0e-9327-a532af384d7f">5.2 Notes</a></li><li><a href="week5.html#dd466ea5-61fb-4f89-92a1-1ec213627a27">5.3 Problems</a></li></ul><li><a class="kap" href="week6.html#84794e13-345a-4a67-a7ae-a7a9f2957e4a"><b>6</b> Course week 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week6.html#5e8a55bc-803f-456a-ab1e-e255424d3de6">6.1 Readings</a></li><li><a href="week6.html#35236a36-20aa-45cb-ab7a-d1f1f46554b6">6.2 Notes</a></li><li><a href="week6.html#5437230b-1b3f-44df-a713-c8f7dff773fe">6.3 Problems</a></li></ul><li><a class="kap" href="week7.html#7a0c3419-2033-4ce4-8561-0c5890ac3cd7"><b>7</b> Course week 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week7.html#d8454813-a7a5-4977-837e-9d8382a1040d">7.1 Readings</a></li><li><a href="week7.html#ba52119d-7914-4c5a-8caa-d13683596e97">7.2 Notes</a></li><li><a href="week7.html#39bdf93d-3aa0-457d-a829-854463c948b5">7.3 Problems</a></li></ul><li><a class="kap" href="week8.html#49e213be-2913-4afa-b7b2-ea04f67ea89c"><b>8</b> Course week 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week8.html#b1e14976-1fcb-4270-b5fb-347583d1c2f2">8.1 Readings</a></li><li><a href="week8.html#272c17a8-c212-469d-842b-a9e894dca522">8.2 Notes</a></li><li><a href="week8.html#2f4084a5-e1f5-42ec-a4e8-816e55f67622">8.3 Problems</a></li></ul><li><a class="kap" href="week9.html#6517137a-c4e4-4c2b-b92c-de3c3db12ab4"><b>9</b> Course week 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week9.html#a60083f0-748e-42a0-9aba-9d1e491a7c09">9.1 Readings</a></li><li><a href="week9.html#76531cf8-843d-4cdc-ba33-706a04d3a439">9.2 Notes</a></li><li><a href="week9.html#6807aabe-0b51-4bd8-a408-cd5ad883324e">9.3 Problems</a></li></ul><li><a class="kap" href="week10.html#c81373a9-2039-4028-b05a-da8bdecca3b5"><b>10</b> Course week 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week10.html#41a16482-80a2-4034-a7ac-be925fe75b9b">10.1 Readings</a></li><li><a href="week10.html#8c03b83c-6f24-43a1-97ac-bc913e6ad0ad">10.2 Notes</a></li><li><a href="week10.html#327d913c-ccd8-4496-8cfb-3cc8c146f536">10.3 Problems</a></li></ul><li><a class="kap" href="week11.html#2b15962b-3b74-47ef-a261-d949374e9f5f"><b>11</b> Course week 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week11.html#bd3fa005-75a5-4896-b686-4aa858f6e20d">11.1 Readings</a></li><li><a href="week11.html#466c9810-ae81-4d49-90be-07b1ff06618a">11.2 Notes</a></li><li><a href="week11.html#a5339f3f-b11c-42cc-b13d-a866cdbdd1da">11.3 Problems</a></li></ul><li><a class="kap" href="week12.html#bd434007-7626-4ad3-a484-7a61df60ff22"><b>12</b> Course week 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week12.html#a238fe24-fe02-4cd3-b068-ea96d14ee154">12.1 Readings</a></li><li><a href="week12.html#6be39035-ac32-419c-89fe-4706f191932b">12.2 Notes</a></li><li><a href="week12.html#d5dcc183-139e-40be-935d-ad5136c52b89">12.3 Problems</a></li></ul><li><a class="kap" href="week13.html#3c22a0f6-fd4d-4578-96b6-09f919ed39b6"><b>13</b> Course week 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week13.html#842c295e-d46f-4777-bd11-76f95fb787d1">13.1 Readings</a></li><li><a href="week13.html#5ab885ae-05b4-4ccb-a35c-f176134b17e6">13.2 Notes</a></li><li><a href="week13.html#df558661-7a19-4f6e-8a74-e5762d9f0b86">13.3 Problems</a></li></ul><li><a class="kap" href="week14.html#50a0cba7-209f-42dd-8220-c56fc06d93e0"><b>14</b> Course week 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week14.html#b3006160-9d82-4697-8851-d585c3f026f4">14.1 Readings</a></li><li><a href="week14.html#1f5509c4-635f-44f3-8642-d76c3888eadc">14.2 Notes</a></li><li><a href="week14.html#1e8b7ad4-b844-4026-bd0b-470e6d479294">14.3 Problems</a></li></ul><li><a class="kap" href="week15.html#1cbc5649-3c69-4d4b-bf4d-b4f63072f3a1"><b>15</b> Course week 15</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week15.html#be9c784b-de99-48be-a939-26aa26c5dc43">15.1 Readings</a></li><li><a href="week15.html#c3c9f638-0a97-41ac-b116-eb251629edd4">15.2 Notes</a></li><li><a href="week15.html#9a187305-b39d-4caf-8139-78c766d46ed9">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="84794e13-345a-4a67-a7ae-a7a9f2957e4a">6<span style="float:right;">Course week 6</span></h1><div style="margin-top:20px"></div><span id="sec6.1"></span><h2 id="5e8a55bc-803f-456a-ab1e-e255424d3de6">6.1 Readings</h2>
-Read sections 15.3 and 17.1 in the textbook.<div style="margin-top:20px"></div><span id="sec6.2"></span><h2 id="35236a36-20aa-45cb-ab7a-d1f1f46554b6">6.2 Notes</h2>
-<b>Chain rules</b>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#adb4c6a5-642f-4a05-b2af-b2d148402401"><b>1</b> Course week 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#b5a476a4-c095-4cb9-81c3-b5c0ef87657c">1.1 Readings</a></li><li><a href="introduction.html#636f678c-0d2a-439f-95e4-b5a1760999c4">1.2 Notes</a></li><li><a href="introduction.html#ac88c764-cbdc-4a40-94ea-289b94a37e53">1.3 Exercises</a></li></ul><li><a class="kap" href="week1.html#a0c39654-e1d3-47fd-9e9d-1b54ea8a7ca2"><b>2</b> Course week 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#02b15ef4-5795-4deb-8b47-ebe6628efd71">2.1 Readings</a></li><li><a href="week1.html#219a783e-eae8-4bcf-ba90-a8bcac536d42">2.2 Notes</a></li><li><a href="week1.html#06c7526b-8569-4e81-9a94-e5f3a7fac811">2.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#0120fed8-1a40-43ba-b412-eefba6d6b990"><b>3</b> Course week 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#bc79b158-c50c-42c8-a122-b9fd08aec1fe">3.1 Readings</a></li><li><a href="week2.html#fe8c2e6b-94ef-4bb7-9692-0103a6c66c33">3.2 Notes</a></li><li><a href="week2.html#af99bf75-129f-476d-af92-f38fe8e68a71">3.3 Exercises</a></li></ul><li><a class="kap" href="week3.html#21e818a8-af15-48b0-905f-e78ca76d6c67"><b>4</b> Course week 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#7032b66b-4422-452e-a4fc-57444c502273">4.1 Readings</a></li><li><a href="week3.html#0157e14b-87a8-4554-9509-5c930edc7911">4.2 Notes</a></li><li><a href="week3.html#67b43382-a733-4641-9395-e8164396446e">4.3 Exercises</a></li></ul><li><a class="kap" href="week4.html#110e3cc4-9600-4493-9de7-2c27599a76c0"><b>5</b> Course week 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#fdf7f223-6785-49f8-902c-d714419432a9">5.1 Readings</a></li><li><a href="week4.html#e9643acd-552d-4023-be18-ddd68b0b5685">5.2 Notes</a></li><li><a href="week4.html#2aa7673a-ee38-48f9-b612-ec86f6822f2f">5.3 Problems</a></li></ul><li><a class="kap" href="week5.html#94f5aef0-2e5f-4edc-a3ec-8e9b8d4e68d9"><b>6</b> Course week 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#76e5c44f-5be8-4e54-aad3-4ea138cda96c">6.1 Readings</a></li><li><a href="week5.html#0e7fb3c4-ac67-45b7-b201-7babf72d542e">6.2 Notes</a></li><li><a href="week5.html#b0ca638d-2345-4128-aba3-ab781ecc405d">6.3 Problems</a></li></ul><li><a class="kap" href="week6.html#84e67c0a-3b2f-41a9-8efe-eca54b64defe"><b>7</b> Course week 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#7ae43de3-2e5e-4d9c-b6e8-c441631620db">7.1 Readings</a></li><li><a href="week6.html#d376aff4-14fa-4236-ad1c-0855f4518a93">7.2 Notes</a></li><li><a href="week6.html#84eb9656-f409-40e5-81e2-044e0bac2715">7.3 Problems</a></li></ul><li><a class="kap" href="week7.html#09836f72-60d6-4e4c-8174-737c43904e2d"><b>8</b> Course week 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#bbb23f8a-bc7e-4411-816b-405a59a9d88c">8.1 Readings</a></li><li><a href="week7.html#0616fcf8-0ed8-4bb1-ac38-c96c1d54eebb">8.2 Notes</a></li><li><a href="week7.html#28480a56-85f3-478f-9ef3-becfaa493fe6">8.3 Problems</a></li></ul><li><a class="kap" href="week8.html#5bed6df8-1e80-4f55-8840-70e1d345c4b7"><b>9</b> Course week 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#5432ed01-a884-4823-8e66-d908ba46f643">9.1 Readings</a></li><li><a href="week8.html#3a53af4d-7b93-458c-9cb3-a2cab57490b0">9.2 Notes</a></li><li><a href="week8.html#4574537a-4964-466a-9240-ca6429905e03">9.3 Problems</a></li></ul><li><a class="kap" href="week9.html#d044b7b3-a138-4828-866e-6cbb6ab84268"><b>10</b> Course week 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#2213dfe9-a4c6-4778-a0cb-723de1560dcf">10.1 Readings</a></li><li><a href="week9.html#6c721f74-bc2f-47db-a24c-b38da8b22807">10.2 Notes</a></li><li><a href="week9.html#ca426ad5-f021-4f0a-a8cf-9c8fd407eb17">10.3 Problems</a></li></ul><li><a class="kap" href="week10.html#4695c819-63dd-40f5-8066-f97ff8255488"><b>11</b> Course week 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#f576973a-7804-4d9c-b26d-37607d4abe0d">11.1 Readings</a></li><li><a href="week10.html#e4f580c1-63c2-42ab-adfd-daa1930e0b93">11.2 Notes</a></li><li><a href="week10.html#179eee3b-7899-4d2e-abb3-3dbb58f9bbfe">11.3 Problems</a></li></ul><li><a class="kap" href="week11.html#2b84f827-149d-423a-9e34-32750b1581e0"><b>12</b> Course week 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#1f127011-6b88-40bb-a050-bc45439290eb">12.1 Readings</a></li><li><a href="week11.html#b983468b-18d7-4f0f-9320-969a054d448f">12.2 Notes</a></li><li><a href="week11.html#cf5f3030-94bb-478f-a79c-3bb99de00467">12.3 Problems</a></li></ul><li><a class="kap" href="week12.html#817f0a2d-a5fa-42e7-a335-66147c5fe722"><b>13</b> Course week 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#d1e1ee1d-0e09-42c4-b449-f3b04850d5e2">13.1 Readings</a></li><li><a href="week12.html#b652c0ae-f654-4cd8-8f31-d49777981daa">13.2 Notes</a></li><li><a href="week12.html#c5ff3abf-23ed-418b-b182-bccc9d85dc29">13.3 Problems</a></li></ul><li><a class="kap" href="week13.html#d2868791-e317-4196-a6d7-05ccccb58f13"><b>14</b> Course week 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#526e2d8a-abd4-46fc-8ce3-dd33ea6cf946">14.1 Readings</a></li><li><a href="week13.html#a36d28a1-d375-4dd5-8d42-a7a6dc02c64a">14.2 Notes</a></li><li><a href="week13.html#9d52b8b6-0c3e-4e7d-a97a-7585e6b00f6f">14.3 Problems</a></li></ul><li><a class="kap" href="week14.html#c9b32c60-cb50-461b-bc86-d1f493dfc75f"><b>15</b> Course week 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#099c0ba8-242a-4206-b771-1115d88c80ac">15.1 Readings</a></li><li><a href="week14.html#764563a0-bfc5-4489-a9d5-981a9b62a609">15.2 Notes</a></li><li><a href="week14.html#0288e6ef-a5e0-41c4-9047-e57dab927d49">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="84e67c0a-3b2f-41a9-8efe-eca54b64defe">7<span style="float:right;">Course week 6</span></h1><div style="margin-top:20px"></div><span id="sec7.1"></span><h2 id="7ae43de3-2e5e-4d9c-b6e8-c441631620db">7.1 Readings</h2><div style="margin-top:20px"></div>Read sections 14.7-14.8 and 17.2-17.3 in the book.<div style="margin-top:20px"></div><span id="sec7.2"></span><h2 id="d376aff4-14fa-4236-ad1c-0855f4518a93">7.2 Notes</h2>
+<b>Slope of a level curve</b>
 <div class="frameit">
-The chain rule for the composite function of two variables <span class="math"></span><script type="math/tex">F(x,y)</script>, where <span class="math"></span><script type="math/tex">x=f(t)</script> and <span class="math"></span><script type="math/tex">y=g(t)</script> is: 
-<div class="math"></div><script type="math/tex; mode=display">\frac{dF}{dt} = F'_1(x,y)f'(t) + F'_2(x,y)g'(t)</script><div style="margin-top:20px"></div>In Leibniz's notation:
-<div class="math"></div><script type="math/tex; mode=display">\frac{dF}{dt} = \frac{\partial F}{\partial x}\frac{dx}{dt} + \frac{\partial F}{\partial y}\frac{dy}{dt}</script><div style="margin-top:20px"></div>This can be extended from one variable (<span class="math"></span><script type="math/tex">t</script>) to two variables (<span class="math"></span><script type="math/tex">t</script> and <span class="math"></span><script type="math/tex">s</script>) to give the composite function:
+    If <span class="math"></span><script type="math/tex">F(x,y)=c</script> and <span class="math"></span><script type="math/tex">F_2'(x,y) \neq 0</script>, one has<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display"> y' = - \frac{F_1'(x,y)}{F_2'(x,y)} </script>    
+</div><div style="margin-top:20px"></div><b>Theorem 17.1.1</b>
+<div class="frameit">
+A differentiable function <span class="math"></span><script type="math/tex">z=f(x,y)</script> can have a maximum or minimum at an interior point <span class="math"></span><script type="math/tex">(x_0, y_0)</script> of its domain only if it is a <em>critical point</em> in the sense that the pair <span class="math"></span><script type="math/tex">(x,y)=(x_0,y_0)</script> satisfies the following two first-order conditions (FOCs):
 <div class="math"></div><script type="math/tex; mode=display">
-z = F(x,y), \qquad x = f(t,s), \quad y=g(t,s)
-</script><div style="margin-top:20px"></div>The chain rule for this case is:
-<div class="math"></div><script type="math/tex; mode=display">
-\frac{\partial z}{\partial t} = \frac{\partial F}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial F}{\partial y}\frac{\partial y}{\partial t}
+    f_1'(x,y) = 0
 </script>
 <div class="math"></div><script type="math/tex; mode=display">
-    \frac{\partial z}{\partial s} = \frac{\partial F}{\partial x} \frac{\partial x}{\partial s} + \frac{\partial F}{\partial y} \frac{\partial y}{\partial s}
+    f_2'(x,y) = 0
 </script>
-</div><div style="margin-top:20px"></div><span id="sec6.3"></span><h2 id="5437230b-1b3f-44df-a713-c8f7dff773fe">6.3 Problems</h2>
-<span id="env6.1"></span><div class="exercise" data-count="6.1">     
-A function of two variables is given by the expression 
+</div><div style="margin-top:20px"></div><span id="sec7.3"></span><h2 id="84eb9656-f409-40e5-81e2-044e0bac2715">7.3 Problems</h2><div style="margin-top:20px"></div><span id="env7.1"></span><div class="exercise" data-count="7.1">     
+Use the general chain rule for differentiation of composite functions to find
+<span class="math"></span><script type="math/tex">\frac{\partial w}{\partial t}</script> and <span class="math"></span><script type="math/tex">\frac{\partial w}{\partial s}</script>
+for: 
 <div class="math"></div><script type="math/tex; mode=display">
-    f(x,y) = \sqrt{9+2\ln(x-2) + 2\ln(y-2)}
+w=2xy^{2}z^{2}+yz
 </script>
-What is the domain?
-</div><div style="margin-top:20px"></div><span id="env6.2"></span><div class="exercise" data-count="6.2">     
-    A function of two variables is given by the expression 
+where <span class="math"></span><script type="math/tex">x=t^{2},y=s</script> and <span class="math"></span><script type="math/tex">z=t-s</script>
+</div><div style="margin-top:20px"></div><span id="env7.2"></span><div class="exercise" data-count="7.2">     
+Let a function of two variables, where <span class="math"></span><script type="math/tex">y</script> is implicitly a function
+of <span class="math"></span><script type="math/tex">x</script>, be given as: 
 <div class="math"></div><script type="math/tex; mode=display">
-    f(x,y) = \frac{1}{e^{2x+2y}-4}
+6x^{3}-8y^{2}+2xy=0
 </script>
-What is the domain?
-</div><div style="margin-top:20px"></div><span id="env6.3"></span><div class="exercise" data-count="6.3">     
-    Find all the first- and second-order partial derivatives of:
+Find <span class="math"></span><script type="math/tex">\frac{dy}{dx}</script> by using the formula in the notes. 
+</div><div style="margin-top:20px"></div><span id="env7.3"></span><div class="exercise" data-count="7.3">     
+Let a function of two variables be given as: 
 <div class="math"></div><script type="math/tex; mode=display">
-    z = x^4-3x^3y+\ln(x)
+F(x,y)=4xe^{3y}-5x^{2}y^{3}
 </script>
-</div><div style="margin-top:20px"></div><span id="env6.4"></span><div class="exercise" data-count="6.4">     
-    For <span class="math"></span><script type="math/tex">f(x,y) = x^4e^{2y}+x^2</script>, find the first- and second-order partial derivatives at the point <span class="math"></span><script type="math/tex">(x,y)=(1,0)</script>.
-</div><div style="margin-top:20px"></div><span id="env6.5"></span><div class="exercise" data-count="6.5">     
-    For the function <span class="math"></span><script type="math/tex">z=4xy-7x^2y</script>, where <span class="math"></span><script type="math/tex">x=7t</script> and <span class="math"></span><script type="math/tex">y=6(1-t)</script>, find <span class="math"></span><script type="math/tex">\frac{dz}{dt}</script>. Express your answer in terms of <span class="math"></span><script type="math/tex">t</script>.
-</div><div style="margin-top:20px"></div><span id="env6.6"></span><div class="exercise" data-count="6.6">     
-    For the function <span class="math"></span><script type="math/tex">z=10e^{4x}+8\ln(y)</script>, where <span class="math"></span><script type="math/tex">x=4t^2</script> and <span class="math"></span><script type="math/tex">y=\frac{5}{t}</script>, find <span class="math"></span><script type="math/tex">\frac{dz}{dt}</script>. Express your answer in terms of <span class="math"></span><script type="math/tex">t</script>.
-</div><div style="margin-top:20px"></div><span id="env6.7"></span><div class="exercise" data-count="6.7">     
-    Consider a function <span class="math"></span><script type="math/tex">z=D(p,q)</script>, where <span class="math"></span><script type="math/tex">p=400e^{0.2t}</script> and <span class="math"></span><script type="math/tex">q=50e^{-0.4t}</script>. Find an expression for <span class="math"></span><script type="math/tex">\frac{dz}{dt}</script>.  
-</div><div style="margin-top:20px"></div><span id="env6.8"></span><div class="exercise" data-count="6.8">     
-    For the function <span class="math"></span><script type="math/tex">z=5xy^2-6x^2y</script> where <span class="math"></span><script type="math/tex">x=3s+t</script> and <span class="math"></span><script type="math/tex">y=4s-t</script>, find <span class="math"></span><script type="math/tex">z'_s</script> and <span class="math"></span><script type="math/tex">z'_t</script>.
-</div><div style="margin-top:20px"></div><span id="env6.9"></span><div class="exercise" data-count="6.9">     
-    Consider the function defined by
+Use the formula <span class="math"></span><script type="math/tex">\frac{dy}{dx}=-\frac{F_{1}^{\prime}(x,y)}{F_{2}^{\prime}(x,y)}</script>
+in order to find the level curve for <span class="math"></span><script type="math/tex">F(x,y)=4</script> in the point <span class="math"></span><script type="math/tex">x,y=\left(1,0\right)</script>. 
+</div><div style="margin-top:20px"></div><span id="env7.4"></span><div class="exercise" data-count="7.4">     
+The demand <span class="math"></span><script type="math/tex">x</script> is the quantity of winter jackets that can be sold at price <span class="math"></span><script type="math/tex">p</script>. For the function: 
 <div class="math"></div><script type="math/tex; mode=display">
- w=xy+yz-xz
+x=2p^{3}-4p^{2}+1000
 </script>
-where <span class="math"></span><script type="math/tex">x=4u+2v</script>, <span class="math"></span><script type="math/tex">y=4u-5v</script>, and <span class="math"></span><script type="math/tex">z=uv</script>. Find the expression for <span class="math"></span><script type="math/tex">\frac{\partial w}{\partial u}</script> and <span class="math"></span><script type="math/tex">\frac{\partial w}{\partial v}</script> as functions of <span class="math"></span><script type="math/tex">u</script> and <span class="math"></span><script type="math/tex">v</script>. Then, evaluate <span class="math"></span><script type="math/tex">\frac{\partial w}{\partial u}</script> and <span class="math"></span><script type="math/tex">\frac{\partial w}{\partial v}</script> at the point <span class="math"></span><script type="math/tex">(u,v) = (1,4)</script>.
+find the instantaneous change in <span class="math"></span><script type="math/tex">p</script> w.r.t. <span class="math"></span><script type="math/tex">x</script> by implicit differentiation,
+i.e., <span class="math"></span><script type="math/tex">\frac{dp}{dx}</script>
+</div><div style="margin-top:20px"></div><span id="env7.5"></span><div class="exercise" data-count="7.5">     
+Find all critical points of <span class="math"></span><script type="math/tex">f\left(x,y\right)</script> for: 
+<div class="math"></div><script type="math/tex; mode=display">
+f(x,y)=x^{2}-4xy+3y^{2}+6x-8y-8
+</script>
+</div><div style="margin-top:20px"></div><span id="env7.6"></span><div class="exercise" data-count="7.6">     
+Find all the points <span class="math"></span><script type="math/tex">\left(x,y\right)</script> where <span class="math"></span><script type="math/tex">f\left(x,y\right)</script>
+may have a maximum or minimum for the function: 
+<div class="math"></div><script type="math/tex; mode=display">
+f(x,y)=-4x^{2}+10xy+3y^{2}+x-y
+</script>
+</div><div style="margin-top:20px"></div><span id="env7.7"></span><div class="exercise" data-count="7.7">     
+Find all the critical points of <span class="math"></span><script type="math/tex">f\left(x,y\right)</script> for: 
+<div class="math"></div><script type="math/tex; mode=display">
+f(x,y)=\frac{1}{3}x^{3}-4y^{3}-3x+12y-1
+</script>
+</div><div style="margin-top:20px"></div><span id="env7.8"></span><div class="exercise" data-count="7.8">     
+The postal service proviser PostNord 
+<a href="https://www.postnord.dk/en/sending/parcel-services-for-individuals/postpakke-international" target="_blank">requires</a>
+that any box delivered must have
+a length plus circumference totaling no more than 290 cm.
+Find the dimensions of the box with the maximum volume that can be sent.<div style="margin-top:20px"></div><a href="#74644dad-0dbd-4343-b1f6-fd1aff7fb387" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=74644dad-0dbd-4343-b1f6-fd1aff7fb387 class = "collapse Hint envbuttons">    
+    Express the volume, length and circumference in terms of <span class="math"></span><script type="math/tex">x</script>, <span class="math"></span><script type="math/tex">y</script> and <span class="math"></span><script type="math/tex">z</script> as shown in the figure below.<div style="margin-top:20px"></div><a href="#79620e6c-4c1d-4515-a2fd-2acc02cc2160" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=79620e6c-4c1d-4515-a2fd-2acc02cc2160 class = "collapse Hint envbuttons">    
+        For the maximum volume the following relation holds: <span class="math"></span><script type="math/tex">290 \,\mathrm{cm}=</script> length + circumference <span class="math"></span><script type="math/tex">= z + (2x + 2y)</script>.
+      </div>
+  </div>
+<center>
+    <div class="centerimg"><img src="img/week7/box.png" width=50%></div>
+</center>
+</div><div style="margin-top:20px"></div><span id="env7.9"></span><div class="exercise" data-count="7.9">     
+Assume that the annual profit of a firm is given by: 
+<div class="math"></div><script type="math/tex; mode=display">
+P(x,y)=-2x^{2}-3y^{2}+30x+24y-84
+</script>
+where <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script> denote the amount of money (in million DKK) spent
+on product development and advertising, respectively. 
+<ol class="number"><li id="ite7.1"> Find the firm's profit, when <span class="math"></span><script type="math/tex">x=10</script> and <span class="math"></span><script type="math/tex">y=8</script>
+    </li><li id="ite7.2"> Find all possible combinations of <span class="math"></span><script type="math/tex">x</script> and <span class="math"></span><script type="math/tex">y</script>, where the profit
+can be maximized and compute the corresponding profit in these points. 
+</li></ol>
 </div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
