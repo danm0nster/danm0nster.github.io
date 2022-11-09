@@ -26,6 +26,8 @@
 
 
 
+
+
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
@@ -103,9 +105,52 @@
 <script defer src="js/bubble.js"></script>
 
 
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  autoeval: false,
+  quietMode: true,
+  replaceOutput: true,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#0bf2ad9b-1ab4-4b58-a31e-899156403380"><b>1</b> Introduktion</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#69cc3e7e-bab7-433a-bbe4-96ee2f5e184a">1.1 Pensum</a></li><li><a href="introduction.html#4d7fd66e-3b27-41b0-adb3-becf9887a99b">1.2 Noter</a></li><li><a href="introduction.html#aa9c0aa0-5168-463d-b2ca-446c37fa8d50">1.3 Opgaver</a></li></ul><li><a class="kap" href="week1.html#2976e319-61f2-40c9-a449-a81e70c20c37"><b>2</b> Kursusuge 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#50771c9f-7251-4e92-8cb8-6303a192d5e1">2.1 Pensum</a></li><li><a href="week1.html#3e999973-669c-4467-87c0-b71a14991763">2.2 Noter</a></li><li><a href="week1.html#d5ce6637-5320-41e7-b4c2-01c99433079b">2.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#52bcedd4-6239-4090-93d0-d1fb81b0339c"><b>3</b> Kursusuge 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#e087f218-97d6-4375-969b-a805dbea5b5c">3.1 Pensum</a></li><li><a href="week2.html#ab282fde-2a6a-4176-bad6-f0a4e0ce33e0">3.2 Noter</a></li><li><a href="week2.html#34034362-11c8-4cf2-aa63-6040fb812144">3.3 Opgaver</a></li><li><a href="week2.html#d7088604-da5e-4d56-8e01-0fc34a139232">3.4 Feedback</a></li></ul><li><a class="kap" href="week3.html#8cd70b32-6c04-438b-88d1-e80fe5b2e838"><b>4</b> Kursusuge 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#6a41d112-41a1-469a-aa6f-8fe6d9d59c19">4.1 Pensum</a></li><li><a href="week3.html#c29804cf-d46c-4b84-9c41-cf12b459e48b">4.2 Noter</a></li><li><a href="week3.html#9c3cff46-f8fb-4cbc-ad6a-69cbed277126">4.3 Opgaver</a></li><li><a href="week3.html#699e67a3-095f-4dd5-a8f7-f3b5ec2477c7">4.4 Feedback</a></li></ul><li><a class="kap" href="week4.html#21b3828c-6427-420f-897e-282ebaf2132d"><b>5</b> Kursusuge 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#8317917b-2b7d-4dd5-a70c-f0258af6a0d3">5.1 Pensum</a></li><li><a href="week4.html#b20027ef-a910-4a32-b7f0-10b50aafa1e7">5.2 Noter</a></li></ul><li><a class="kap" href="week5.html#fe32856f-a206-41d6-969f-a823badf9250"><b>6</b> Kursusuge 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#91fcb868-6bee-4051-a3f2-cc3e4643b63c">6.1 Pensum</a></li><li><a href="week5.html#25cb3e10-3eef-4d30-8651-959363af842a">6.2 Noter</a></li><li><a href="week5.html#0b08afe8-6ca1-4f51-90f4-db9025074f98">6.3 Opgaver</a></li></ul><li><a class="kap" href="week6.html#30561650-23b8-4338-9db3-cfb8b46d1c63"><b>7</b> Kursusuge 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#a2779fa0-a058-4154-a4bd-ce107f74fb60">7.1 Pensum</a></li><li><a href="week6.html#33b7a953-9785-4b0a-90b3-2463b285eec3">7.2 Noter</a></li><li><a href="week6.html#4a37ee48-b50c-49a3-a733-18dbe66380a1">7.3 Opgaver</a></li></ul><li><a class="kap" href="week7.html#a8abe249-7f35-476c-9652-7b3c1d486666"><b>8</b> Kursusuge 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#ab69669e-62a1-4298-a226-7d7f775c18b7">8.1 Pensum</a></li><li><a href="week7.html#44d51aac-14c8-4de8-b92c-7c8d97939fd6">8.2 Noter</a></li><li><a href="week7.html#10b30d57-8294-4ae7-b77e-80c86e0cc0b0">8.3 Opgaver</a></li></ul><li><a class="kap" href="week8.html#2023edda-fcd7-44fe-b947-97d60defd905"><b>9</b> Kursusuge 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#ab6027f4-16a0-4209-8b43-13a81101a797">9.1 Pensum</a></li><li><a href="week8.html#c455e08e-0cf7-4c80-aa5e-f99de336b6a4">9.2 Noter</a></li></ul><li><a class="kap" href="week9.html#8f4afd5c-e1df-443b-af27-820efa1181e1"><b>10</b> Kursusuge 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#f1664d83-5abc-4f66-90c0-59d0f10a3580">10.1 Pensum</a></li><li><a href="week9.html#6f48109a-709f-4953-9df2-dd3d9389eb2d">10.2 Noter</a></li><li><a href="week9.html#70d0666c-cdf7-4a85-8e8f-5a67ec10fc0e">10.3 Opgaver</a></li></ul><li><a class="kap" href="week10.html#b26e2312-f81e-4722-aefe-f136395cc90d"><b>11</b> Kursusuge 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#47fbcc68-57f1-438d-a9b7-3283578d04f0">11.1 Pensum</a></li><li><a href="week10.html#c57e8da9-d10a-4b27-8c96-0033428adb8d">11.2 Opgaver</a></li></ul><li><a class="kap" href="week11.html#62ae233f-28a2-4e58-95e7-56cecd1de921"><b>12</b> Kursusuge 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#729df8b3-ba33-4356-8fa3-6c44eccd3662">12.1 Pensum</a></li><li><a href="week11.html#4e94803b-c4d2-49bc-a826-57e710cbceb9">12.2 Noter</a></li><li><a href="week11.html#302f9a88-52bf-4a2c-bba3-7cecfee292a4">12.3 Opgaver</a></li></ul><li><a class="kap" href="week12.html#a55621e7-cf0e-4b56-a90d-ca5290759b9c"><b>13</b> Kursusuge 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#d510308d-144e-43c5-972b-31baded83878">13.1 Pensum</a></li><li><a href="week12.html#ce1c57cf-5e58-4f02-929a-e18c26ed35a1">13.2 Noter</a></li><li><a href="week12.html#4f46b9e9-160e-4242-9364-d400e032847f">13.3 Opgaver</a></li></ul><li><a class="kap" href="week13.html#478f6e5d-4208-463b-9417-a1bafb4881cc"><b>14</b> Kursusuge 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#2c022e24-28c0-437f-ad91-f622b9136d97">14.1 Pensum</a></li><li><a href="week13.html#ac5783e6-791f-4016-bad5-6972a2874609">14.2 Noter</a></li><li><a href="week13.html#3a8870d4-ee4e-42aa-9005-22d03772ba8c">14.3 Opgaver</a></li></ul><li><a class="kap" href="week14.html#52887dca-ba88-4e1b-ba27-39d0a49d90da"><b>15</b> Kursusuge 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#678e4741-d0b4-4bcb-b3b5-5d599f62020f">15.1 Pensum</a></li><li><a href="week14.html#9ee9361f-0f99-41ba-9c91-e948e1a3d88b">15.2 Noter</a></li><li><a href="week14.html#193517da-ac5a-4d7e-970f-86b07f524334">15.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="62ae233f-28a2-4e58-95e7-56cecd1de921">12<span style="float:right;">Kursusuge 11</span></h1><div style="margin-top:20px"></div><span id="sec12.1"></span><h2 id="729df8b3-ba33-4356-8fa3-6c44eccd3662">12.1 Pensum</h2>
-Afsnit 10.5-10.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec12.2"></span><h2 id="4e94803b-c4d2-49bc-a826-57e710cbceb9">12.2 Noter</h2>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#8a5284bd-47e7-46ce-b6c4-3026bb72de3d"><b>1</b> Introduktion</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#6e532e7e-c541-4f83-a3a9-89abe3d31d7c">1.1 Pensum</a></li><li><a href="introduction.html#6696e513-3784-43b4-9ffa-9ec14eb4e0d0">1.2 Noter</a></li><li><a href="introduction.html#cc23b33d-4e1a-437a-8e1c-1d3b83b711ff">1.3 Opgaver</a></li></ul><li><a class="kap" href="week1.html#925e6f56-dbae-4bf5-a7b5-b7d65f009817"><b>2</b> Kursusuge 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#59756b1d-2e80-407d-913b-1375638d14dc">2.1 Pensum</a></li><li><a href="week1.html#ca8261d0-9077-463e-8e78-eda7b0ff5917">2.2 Noter</a></li><li><a href="week1.html#2603a65c-24f0-4d4d-86d6-15bf987c5a0e">2.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#0edc52f7-8569-4e9a-86f8-19b726c5a330"><b>3</b> Kursusuge 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#1fa63af5-1002-4fb2-87a7-406cdb5ceaa6">3.1 Pensum</a></li><li><a href="week2.html#b1930c5f-a74d-47b3-be48-931fe948526d">3.2 Noter</a></li><li><a href="week2.html#7111df2d-8f85-47ef-ae54-c0c36671c837">3.3 Opgaver</a></li><li><a href="week2.html#5aba6fec-43ee-4d6d-961d-9365429ac7bc">3.4 Feedback</a></li></ul><li><a class="kap" href="week3.html#cc0dcc20-0cd1-4025-a87d-7ea957e06920"><b>4</b> Kursusuge 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#d36ed190-2e8a-46ae-a3e0-e8fece344b05">4.1 Pensum</a></li><li><a href="week3.html#8006e14a-ff46-40f4-9309-5834f5dbf0de">4.2 Noter</a></li><li><a href="week3.html#03c12c55-5409-4826-a960-8b02d43dc2e2">4.3 Opgaver</a></li><li><a href="week3.html#a8fd7c4e-6f3d-4cfa-aa5b-4666a568b26f">4.4 Feedback</a></li></ul><li><a class="kap" href="week4.html#5bf32d5a-efb5-4a20-b4a7-029274c7183f"><b>5</b> Kursusuge 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#9b5c169d-59eb-41e1-a758-b4dec90a1ef7">5.1 Pensum</a></li><li><a href="week4.html#c707e1bb-3ba2-4d1f-947d-2523a21beaba">5.2 Noter</a></li><li><a href="week4.html#70220878-e981-4bcd-a4ce-6fc1e41011be">5.3 Opgaver</a></li><li><a href="week4.html#b6b8f612-89a3-47d1-864c-781dfd571c95">5.4 Feedback</a></li></ul><li><a class="kap" href="week5.html#3854155b-9e06-45b8-a4de-d6e9c2c7f212"><b>6</b> Kursusuge 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#3028e199-3e08-4c0a-a293-87f1aedaf754">6.1 Pensum</a></li><li><a href="week5.html#d5bafefb-c241-43e2-93e3-13e25f7ecb73">6.2 Noter</a></li><li><a href="week5.html#6421cc2a-6e31-4377-910a-94123622f64e">6.3 Opgaver</a></li><li><a href="week5.html#462690d1-f75f-4aaf-aa45-9471a1b1f574">6.4 Feedback</a></li></ul><li><a class="kap" href="week6.html#2cc274a7-02ee-4a23-906c-e66180aed8a4"><b>7</b> Kursusuge 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#6f5b4d19-4cd0-4344-bba8-1d6cc19224e5">7.1 Pensum</a></li><li><a href="week6.html#1778dd8c-dad4-49dd-814c-5799171e828b">7.2 Noter</a></li><li><a href="week6.html#c0117e27-2637-4d84-a0be-06c10dbd3595">7.3 Opgaver</a></li><li><a href="week6.html#27761e01-8952-495e-b86b-5ab681c38c72">7.4 Feedback</a></li></ul><li><a class="kap" href="week7.html#8587397d-c480-4d7b-a37a-8221aa4c2450"><b>8</b> Kursusuge 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#d5f7ee62-1e9e-4876-9777-872a9bd98d03">8.1 Pensum</a></li><li><a href="week7.html#c4ae13f8-eb46-469a-a4e8-544abdf885c7">8.2 Noter</a></li><li><a href="week7.html#8fc9b47b-3749-41f9-b87a-0fc4bc5be2c9">8.3 Opgaver</a></li><li><a href="week7.html#b5ebd489-1c76-4f0d-acc2-aec5faa67e2e">8.4 Feedback</a></li></ul><li><a class="kap" href="week8.html#09f12395-849d-48bb-8d3f-98fbdc1d6ba1"><b>9</b> Kursusuge 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#2666734a-8a69-487d-a220-868c632bac90">9.1 Pensum</a></li><li><a href="week8.html#faefceb3-b221-44e8-84da-41e60a0428a7">9.2 Noter</a></li><li><a href="week8.html#2a083dae-7045-4857-b304-d94cd4dad3db">9.3 Opgaver</a></li><li><a href="week8.html#c7f0d858-3de8-4a04-b6d9-28994a0c129a">9.4 Feedback</a></li></ul><li><a class="kap" href="week9.html#ead2d19b-0e0b-4525-9607-84eac42fca9e"><b>10</b> Kursusuge 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#e301618f-64e1-45d7-a653-4f15597a07e3">10.1 Pensum</a></li><li><a href="week9.html#b6b4661c-454d-4c96-90c8-c12057c2d034">10.2 Noter</a></li><li><a href="week9.html#9ed79b0f-0f08-4097-8833-c3eefb07814e">10.3 Opgaver</a></li><li><a href="week9.html#0e49dea8-1fb0-464c-bc0e-40c32aced20a">10.4 Feedback</a></li></ul><li><a class="kap" href="week10.html#569541af-0300-4db9-9207-75ee4d9bf15d"><b>11</b> Kursusuge 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#a90bb900-e18b-4652-9d72-287950c4948f">11.1 Pensum</a></li><li><a href="week10.html#9ee24dd8-83c3-4c30-a448-79aa79da4a09">11.2 Opgaver</a></li><li><a href="week10.html#dc07d90a-bda6-4e6e-93b9-10738cf5933d">11.3 Feedback</a></li></ul><li><a class="kap" href="week11.html#db699f2b-b04e-4e5a-bd8e-f49237529d91"><b>12</b> Kursusuge 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#d6bd96b2-7132-4c48-8981-bf8ed2f211ef">12.1 Pensum</a></li><li><a href="week11.html#d0129679-67a4-4d55-bf9d-84b9f4953360">12.2 Noter</a></li><li><a href="week11.html#b2de0c16-af9c-412d-884c-4f10249bd904">12.3 Opgaver</a></li></ul><li><a class="kap" href="week12.html#a55621e7-cf0e-4b56-a90d-ca5290759b9c"><b>13</b> Kursusuge 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#d510308d-144e-43c5-972b-31baded83878">13.1 Pensum</a></li><li><a href="week12.html#ce1c57cf-5e58-4f02-929a-e18c26ed35a1">13.2 Noter</a></li><li><a href="week12.html#4f46b9e9-160e-4242-9364-d400e032847f">13.3 Opgaver</a></li></ul><li><a class="kap" href="week13.html#478f6e5d-4208-463b-9417-a1bafb4881cc"><b>14</b> Kursusuge 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#2c022e24-28c0-437f-ad91-f622b9136d97">14.1 Pensum</a></li><li><a href="week13.html#ac5783e6-791f-4016-bad5-6972a2874609">14.2 Noter</a></li><li><a href="week13.html#3a8870d4-ee4e-42aa-9005-22d03772ba8c">14.3 Opgaver</a></li></ul><li><a class="kap" href="week14.html#52887dca-ba88-4e1b-ba27-39d0a49d90da"><b>15</b> Kursusuge 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#678e4741-d0b4-4bcb-b3b5-5d599f62020f">15.1 Pensum</a></li><li><a href="week14.html#9ee9361f-0f99-41ba-9c91-e948e1a3d88b">15.2 Noter</a></li><li><a href="week14.html#193517da-ac5a-4d7e-970f-86b07f524334">15.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="db699f2b-b04e-4e5a-bd8e-f49237529d91">12<span style="float:right;">Kursusuge 11</span></h1><div style="margin-top:20px"></div><span id="sec12.1"></span><h2 id="d6bd96b2-7132-4c48-8981-bf8ed2f211ef">12.1 Pensum</h2>
+Afsnit 10.5-10.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec12.2"></span><h2 id="d0129679-67a4-4d55-bf9d-84b9f4953360">12.2 Noter</h2>
 <b>Integration af en sum eller forskellen imellem to funktioner</b>
 <div class="math"></div><script type="math/tex; mode=display">
     \int f(x) \pm g(x) dx = \int f(x) \pm \int g(x) dx 
@@ -125,7 +170,17 @@ Afsnit 10.5-10.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec12
 <b>Integration ved substitution (bestemt integral)</b><div style="margin-top:20px"></div>Lad <span class="math"></span><script type="math/tex">u=g(x)</script>, så:
 <div class="math"></div><script type="math/tex; mode=display">
     \int_a^b f(g(x)) g'(x) \, dx = \int_{g(a)}^{g(b)} f(u) \, du
-</script><div style="margin-top:20px"></div><span id="sec12.3"></span><h2 id="302f9a88-52bf-4a2c-bba3-7cecfee292a4">12.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env12.1"></span><div class="exercise" data-count="12.1">     
+</script><div style="margin-top:20px"></div><span id="sec12.3"></span><h2 id="b2de0c16-af9c-412d-884c-4f10249bd904">12.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env12.1"></span><div class="exercise" data-count="12.1">     
+    <div id="quiz1" style="width:100%;"><div class="row quizquestion">
+        Herunder er nogle potentielle skridt, som skal anvendes til partiel integration. Sæt de rigtige skridt i den rigtige rækkefølge for
+        at lave en korrekt opskrift på partiel integration for integralet
+        <div class="math"></div><script type="math/tex; mode=display">
+            \int f(x) g'(x) \, \mathrm{d} x
+        </script><div style="margin-top:20px"></div></div><div class="row"><div class="col-xs-5"><div class="row"><div class="orderquizanswer" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Tjek at den nye integrand er simplere end den originale.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Beregn <span class="math"></span><script type="math/tex">\mathrm{d} u = g'(x) \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Bestem den indre funktion i en sammensat funktion som <span class="math"></span><script type="math/tex">u</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">f(x)</script> som en funktion med en kendt stamfunktion.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">g'(x)</script> om en funktion med en kendt stamfunktion.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Første led er <span class="math"></span><script type="math/tex">f(x) g(x)</script>, hvor <span class="math"></span><script type="math/tex">g'(x)</script> er integreret.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left7" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Andet led er <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left8" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">f(x)</script> som en funktion der kan differentieres.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left9" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Beregn integralet <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div></div></div><div class="col-xs-5"><div class="row"><div class="orderquizanswer empty" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div></div></div></div><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(or (is 586719) (is 856719))"><b class="correct">Korrekt!</b> <div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(or (contains 2) (contains 3))"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Mon du tænker på integration ved substitution?</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Prøv igen!</b></span>
+      </span></span></div>
+</div><div style="margin-top:20px"></div><span id="env12.2"></span><div class="exercise" data-count="12.2">     
 Brug partiel integration til at beregne de følgende ubestemte integraler:
 <ol class="number"><li id="ite12.1"> <div class="math"></div><script type="math/tex; mode=display">
     \int x \ln(x)dx
@@ -137,7 +192,7 @@ Brug partiel integration til at beregne de følgende ubestemte integraler:
     \int \frac{4x+2}{e^x}dx
         </script>
 </li></ol>
-</div><div style="margin-top:20px"></div><span id="env12.2"></span><div class="exercise" data-count="12.2">     
+</div><div style="margin-top:20px"></div><span id="env12.3"></span><div class="exercise" data-count="12.3">     
 Brug partiel integration til at beregne de følgende bestemte integraler:
 <ol class="number"><li id="ite12.4"> <div class="math"></div><script type="math/tex; mode=display">  \int_{-1}^1 x \ln(x+2)dx
     </script>
@@ -146,40 +201,40 @@ Brug partiel integration til at beregne de følgende bestemte integraler:
     </li><li id="ite12.6"> <div class="math"></div><script type="math/tex; mode=display">  \int_0^2 (x-2)e^{x/2}dx
     </script>
 </li></ol>
-</div><div style="margin-top:20px"></div><span id="env12.3"></span><div class="exercise" data-count="12.3">     
+</div><div style="margin-top:20px"></div><span id="env12.4"></span><div class="exercise" data-count="12.4">     
 I sidste uge beregnede du følgende bestemte integral:
 <div class="math"></div><script type="math/tex; mode=display">
-\int_{-4}^{4}(x-1)^3dx
+\int_{-3}^{3}(x-1)^2dx
 </script>
 Prøv denne gang at beregne det igennem integration ved substitution.
-</div><div style="margin-top:20px"></div><span id="env12.4"></span><div class="exercise" data-count="12.4">     
+</div><div style="margin-top:20px"></div><span id="env12.5"></span><div class="exercise" data-count="12.5">     
 Brug integration ved substitution til at beregne det følgende ubestemte integral:
  <div class="math"></div><script type="math/tex; mode=display">
     \int 2x(x^2+1)^2dx
 </script>
-</div><div style="margin-top:20px"></div><span id="env12.5"></span><div class="exercise" data-count="12.5">     
+</div><div style="margin-top:20px"></div><span id="env12.6"></span><div class="exercise" data-count="12.6">     
 Brug integration ved substitution til at beregne det følgende bestemte integral:
 <div class="math"></div><script type="math/tex; mode=display">
     \int_5^8\frac{x}{x-4}dx
 </script>
-</div><div style="margin-top:20px"></div><span id="env12.6"></span><div class="exercise" data-count="12.6">     
+</div><div style="margin-top:20px"></div><span id="env12.7"></span><div class="exercise" data-count="12.7">     
 (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Et integrale er givet ved:
 <div class="math"></div><script type="math/tex; mode=display">
     \int_{0}^{1} x(1+x)^3dx
 </script>
 <ol class="number"><li id="ite12.7"> Beregn integralet.
 </li></ol>
-</div><div style="margin-top:20px"></div><span id="env12.7"></span><div class="exercise" data-count="12.7">     
+</div><div style="margin-top:20px"></div><span id="env12.8"></span><div class="exercise" data-count="12.8">     
 (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Beregn integralet:
 <div class="math"></div><script type="math/tex; mode=display">
     \int x\sqrt{1+x^2}dx
 </script>
-</div><div style="margin-top:20px"></div><span id="env12.8"></span><div class="exercise" data-count="12.8">     
+</div><div style="margin-top:20px"></div><span id="env12.9"></span><div class="exercise" data-count="12.9">     
 (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Beregn integralet:
 <div class="math"></div><script type="math/tex; mode=display">
     \int_0^1 \frac{e^x}{(x+1)^{-2}}dx
 </script>
-</div><div style="margin-top:20px"></div><span id="env12.9"></span><div class="exercise" data-count="12.9">     
+</div><div style="margin-top:20px"></div><span id="env12.10"></span><div class="exercise" data-count="12.10">     
 (Tidligere eksamensopgave)<div style="margin-top:20px"></div><ol class="number"><li id="ite12.8"> Beregn det følgende integral:
     <div class="math"></div><script type="math/tex; mode=display">
         \int_0^1 (e^x+e^{-x})^2dx
@@ -189,4 +244,144 @@ Brug integration ved substitution til at beregne det følgende bestemte integral
         \int \frac{w}{(1-w)^3}dw
     </script>
 </li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.11"></span><div class="exercise" data-count="12.11">     
+    Denne opgave fylder lidt mere end sædvanligt, så klik på knappen herunder for at åbne den.<div style="margin-top:20px"></div><a href="#ac7c3293-f3ec-43db-8e66-bbe34817001f" class ="btn btn-default" data-toggle="collapse">Åbn/Luk</a><div id=ac7c3293-f3ec-43db-8e66-bbe34817001f class="collapse">
+    DR bragte i 2022 <a href="https://www.dr.dk/nyheder/indland/ferievaner-fra-tiden-med-corona-bider-sig-fast-ny-vandrerute-paa-djursland-skal" target="_blank">en nyhed</a>
+    om at danskernes ferievaner havde ændret sig som følge af corona pandemien,
+    og at der, ifølge tal fra Danmarks Statistik, fra maj til december 2022 var 27 procent flere bookinger
+    end for den tilsvarende periode i 2019 (altså før pandemien). Dette er illustreret i nedenstående figur.
+            <div style="margin-top:20px"></div><center>
+      
+     <iframe src="./img/week11/p1.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center><div style="margin-top:20px"></div>En økonom, der er interesseret i at lave en model for markedet for sommerhusudlejning,
+    opstiller en funktion <span class="math"></span><script type="math/tex">f(t)</script> der ser ud til at beskrive antal bookede husuger i 2019.
+    Her er <span class="math"></span><script type="math/tex">t</script> en kontinuert variabel, som kan antage værdier i intervallet <span class="math"></span><script type="math/tex">[0,12]</script>,
+    hvor værdien 0 svarer til starten af året, og værdien 12 svarer til slutningen af året.
+    Nedenfor er vist et plot af denne funktion sammen med data fra 2019 fra figuren ovenfor.<div style="margin-top:20px"></div><center>
+      <div class="centerimg"><img src="img/week11/booked_2019.png" width=50%></div>
+    </center><div style="margin-top:20px"></div><span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+      <b>a)</b> Hvordan kan det samlede antal bookede husuger fra slutningen af maj til slutningen af december udtrykkes ved <span class="math"></span><script type="math/tex">f(t)</script>?
+      </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{0}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">f(12) - f(5)</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="T">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{5}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\lim_{b\to\infty}\int_{5}^{b} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script><div style="margin-top:20px"></div>Nedenfor er vist funktionen <span class="math"></span><script type="math/tex">g(t)</script> som beskriver antallet af bookede husuger i 2022.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_2022.png" width=50%></div>
+      </center><div style="margin-top:20px"></div><b>b)</b> Opskriv et udtryk for det samlede antal bookede husuger i perioden maj til december 2022 fraregnet det samlede antal
+      bookede husuger i den tilsvarende periode i 2019 i modellen baseret på <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>.
+      Redegør for at det svarer til det skraverede areal i figuren nedenfor.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_diff.png" width=50%></div>
+      </center><div style="margin-top:20px"></div><b>f)</b> Formulér følgende udsagn matematisk, udtrykt ved bestemte integraler af funktionerne <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>:
+      <i>fra slutningen af maj til slutningen af december 2022 var der 27 procent flere bookinger end for den tilsvarende periode i 2019</i>.<div style="margin-top:20px"></div><b>g)</b> <em>Frivillig ekstraopgave</em> Prøv selv at finde en funktion, som beskriver de observerede data.
+    Du kan ændre funktionsudtrykket for <span class="math"></span><script type="math/tex">f(t)</script> i feltet nedenfor, og se hvor godt det passer
+    med data fra 2019. Hvad er den bedste funktion, du kan finde? Som en hjælp beregnes summen af kvadrerede afvigelser,
+    som er vist i plottet nedenfor som SSE (Sum of Squared Errors). Med andre ord er opgaven at finde en funktion,
+    med den lavest mulige SSE. <div style="margin-top:20px"></div><a href="#c0393cec-09d7-4517-ad76-435354537dd1" class ="btn btn-default" data-toggle="collapse">Data</a><div id=c0393cec-09d7-4517-ad76-435354537dd1 class="collapse">
+        Her kan du se og downloade de data, som danner grundlag for graferne ovenfor.<div style="margin-top:20px"></div>
+      <link href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css" rel="stylesheet">
+      
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
+      
+      <style>
+      #toolbar {
+        margin: 0;
+      }
+      </style>
+      
+      <div id="toolbar" class="select">
+        <select class="form-control">
+          <option value="">Export Basic</option>
+          <option value="all">Export All</option>
+          <option value="selected">Export Selected</option>
+        </select>
+      </div>
+      
+      </table>
+        <table
+        id="table"
+        data-show-export="true"
+        data-search="true"
+        data-pagination="true"
+        data-side-pagination="client"
+        data-url="./tabledata/booked_table.json"> 
+      
+        <thead>
+          <tr>
+            <th data-field="year" data-sortable="true">Year</th>
+            <th data-field="month" data-sortable="false">Month</th>
+            <th data-field="booked" data-sortable="false">Booked weeks</th>
+          </tr>
+        </thead>
+      </table>
+      
+      <script>
+        var $table = $('#table')
+      
+        $(function() {
+          $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('destroy').bootstrapTable({
+              exportDataType: $(this).val(),
+              exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+              columns: [
+                {
+                  field: 'state',
+                  checkbox: true,
+                  visible: $(this).val() === 'selected'
+                },
+                {
+                  field: 'year',
+                  title: 'År'
+                }, {
+                  field: 'month',
+                  title: 'Måned'
+                }, {
+                  field: 'booked',
+                  title: 'Bookede uger'
+                }
+              ]
+            })
+          }).trigger('change')
+        })
+      </script>
+      
+      </div><div style="margin-top:20px"></div><p><div style="float:right;"><a href="#c90a7e2c-a731-45c7-b251-bd5cb5bb1e26" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="c90a7e2c-a731-45c7-b251-bd5cb5bb1e26" class="collapse">
+      Summen af kvadrerede afvigelser (SSE) er defineret som
+      <div class="math"></div><script type="math/tex; mode=display">\mathrm{SSE} = \sum_{t = 5}^{12} \left(x_t - f(t)\right)^2,</script>
+      hvor <span class="math"></span><script type="math/tex">x_t</script> er det faktiske antal bookede husuger i måned nummer <span class="math"></span><script type="math/tex">t</script> i 2019, og <span class="math"></span><script type="math/tex">f(t)</script> er antal bookede husuger i måned nummer <span class="math"></span><script type="math/tex">t</script>
+      som modelfunktionen <span class="math"></span><script type="math/tex">f(t)</script> beskriver.<div style="margin-top:20px"></div>Den funktion <span class="math"></span><script type="math/tex">f(t)</script> som økonomen fandt giver <span class="math"></span><script type="math/tex">\text{SSE} = 2.58\cdot 10^6</script>.
+    </div>
+    <div class=sage><script type="text/x-sage">
+t = var('t')
+booked_2019 =[(5, 9596), (6, 11141), (7, 28172), (8, 8968), (9, 3316), (10, 1696), (11, 505), (12, 447)]
+def frexp10(x):
+    expo = int(math.floor(math.log10(abs(x))))
+    return x / 10**expo, expo
+@interact
+def booked_function(expression=input_box('25000 - 2000 * t', 'f(t) =', str)):
+    if expression:
+        try:
+            SSE = n(sum([(SR(expression)(t = x) - y)**2 for x, y in booked_2019]))
+            SSE_string = 'SSE\u0024={0:.2f}\\cdot 10^{{{1}}}\u0024'.format(*frexp10(SSE))
+            # SSE_string = 'SSE = {:.2g}'.format(SSE)
+            p1 = plot(SR(expression), (t, 5, 12))
+            p2 = point(booked_2019)
+            p3 = text(SSE_string, (9,2.5e4), horizontal_alignment = 'left', fontsize = 14)
+            (p1 + p2 + p3).show()
+            pretty_print(html('Værdi der kan kopieres: SSE = {}'.format(SSE)))
+        except TypeError:
+            print("Der er et problem med dit funktionsudtryk.")
+    else:
+        print("Vær opmærksom på at dit udtryk kan plottes.")
+    </script></div><div style="margin-top:20px"></div><p><div style="float:right;"><a href="#c8cd9d8b-8e7e-460a-bc7c-29cc08ed6c47" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="c8cd9d8b-8e7e-460a-bc7c-29cc08ed6c47" class="collapse">
+      Der findes selvfølgelig metoder til at finde den funktion af en bestemt type, der bedst beskriver data.
+      Fx. kan man finde den bedste rette linje (lineære funktion) ved hjælp af lineær regression. Det kommer
+      du til at lære meget mere om i faget <em>kvantitativ metode</em> på andet semester.<div style="margin-top:20px"></div>Man skal selvfølgelig passe på ikke at overfitte, se figuren nedenfor fra <a href="xkcd" target="_blank">https://xkcd.com/2048</a>.
+      <center>
+        <div class="centerimg"><img src="img/week11/curve_fitting.png" ></div>
+      </center>
+    </div>
+    </div>
 </div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
