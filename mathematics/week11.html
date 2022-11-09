@@ -75,42 +75,6 @@
 <script async defer src="https://hypothes.is/embed.js"></script>
 
 
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-
-<script>
-  window.MathJax = 1 /* Disable MathJax */
-  sagecell.makeSagecell({
-  inputLocation: ".sage",
-  evalButtonText: "Compute",
-  linked: true,
-  languages : ["sage", "python", "macaulay2", "r"],
-  hide : ["permalink"]
-  });
-  sagecell.makeSagecell({
-  inputLocation: ".sageM2",
-  evalButtonText: "Compute",
-  linked: true,
-  languages : ["macaulay2", "sage", "python", "r"],
-  hide : ["permalink"]
-  });
-  sagecell.makeSagecell({
-  inputLocation: ".sagepython",
-  evalButtonText: "Compute",
-  linked: true,
-  languages : ["python", "sage", "macaulay2", "r"],
-  hide : ["permalink"]
-  });
-  sagecell.makeSagecell({
-  inputLocation: ".sageR",
-  evalButtonText: "Compute",
-  linked: true,
-  languages : ["r", "python", "sage", "macaulay2"],
-  hide : ["permalink"]
-  });
-</script>
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
@@ -136,9 +100,52 @@
 <script defer src="js/bubble.js"></script>
 
 
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  autoeval: false,
+  quietMode: true,
+  replaceOutput: true,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
 </head>
-<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#ca0ad135-890a-4af5-9144-24a9771d59f5"><b>1</b> Introduction</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#68e9ad3b-e53a-450a-948e-324238ee1ffe">1.1 Readings</a></li><li><a href="introduction.html#f1aaccb5-7534-4567-a9fa-9451645ee543">1.2 Notes</a></li><li><a href="introduction.html#5ec5decd-f1eb-481c-a874-c6f7b1186b30">1.3 Exercises</a></li></ul><li><a class="kap" href="week1.html#36b98189-3096-466f-b3ea-4eef07896881"><b>2</b> Course week 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#5f080e34-0bc3-481e-bc02-391017951f2c">2.1 Readings</a></li><li><a href="week1.html#fc5c0fa3-eb25-43e8-a7a7-ff83896cc0cf">2.2 Notes</a></li><li><a href="week1.html#c18d5761-0646-4e08-9404-62d25ee76e80">2.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#5b087876-d619-4801-9568-d2158bcaee0a"><b>3</b> Course week 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#ccc40677-5632-4398-b559-bb5dea127420">3.1 Readings</a></li><li><a href="week2.html#1c8d5274-6a3a-4668-a002-1210287a590f">3.2 Notes</a></li><li><a href="week2.html#167bd63b-f28a-4ab5-9b18-110c4a218134">3.3 Exercises</a></li><li><a href="week2.html#49e76b97-15ac-419e-acec-6e3cac7df996">3.4 Feedback</a></li></ul><li><a class="kap" href="week3.html#a1c6d21c-8d39-4ab8-992a-4173db285656"><b>4</b> Course week 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#47a4ae76-6fd7-4d90-9335-e9a5a1b79db0">4.1 Readings</a></li><li><a href="week3.html#ccf6254e-c876-4892-bb33-569c58e7c9b2">4.2 Notes</a></li><li><a href="week3.html#d762b763-e523-45d3-88a9-848124492be7">4.3 Exercises</a></li><li><a href="week3.html#39215aab-4db1-4693-a2e1-6471f8cc4ed2">4.4 Feedback</a></li></ul><li><a class="kap" href="week4.html#4321ea01-e9e1-464e-8513-3f4a46c2f0c0"><b>5</b> Course week 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#105e4a45-8dcf-420b-9045-25fbf4e8be2c">5.1 Readings</a></li><li><a href="week4.html#79e2d22f-534a-41aa-8b09-d25f8d280599">5.2 Notes</a></li><li><a href="week4.html#2dfa0a57-b4e2-41bb-90ff-67f6e25bbe92">5.3 Problems</a></li><li><a href="week4.html#69da15a7-9eda-4214-bb7d-02e61c8b2b4b">5.4 Feedback</a></li></ul><li><a class="kap" href="week5.html#3f0664f2-170d-427d-b914-021498dc5394"><b>6</b> Course week 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#934a8f76-5d26-494e-82b4-abed91ab375b">6.1 Readings</a></li><li><a href="week5.html#5b1dea1b-2897-44de-8977-362dc8332ee9">6.2 Notes</a></li><li><a href="week5.html#487ce40d-f6f3-442d-8e31-029994aeef87">6.3 Problems</a></li><li><a href="week5.html#de231ea2-f25d-4bae-9c0a-16db222c2e84">6.4 Feedback</a></li></ul><li><a class="kap" href="week6.html#52a59b0d-3bef-4405-adae-23e6cd63035e"><b>7</b> Course week 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#ace0d4f4-1e2d-4dff-ae16-5108e50b2c66">7.1 Readings</a></li><li><a href="week6.html#d6ee6a6d-6695-4b1c-af40-ecddac39fe91">7.2 Notes</a></li><li><a href="week6.html#69c3a3d0-aa4f-48bf-81fa-63e4e18ef5dc">7.3 Problems</a></li><li><a href="week6.html#6b8b6d46-543e-4c1c-9dbf-04adddf587b4">7.4 Feedback</a></li></ul><li><a class="kap" href="week7.html#709a4a83-592c-45f2-ada0-84d0ec6d234e"><b>8</b> Course week 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#e6fe6f0c-2aac-45d3-86e9-58c49c918a7a">8.1 Readings</a></li><li><a href="week7.html#3137f058-fa9c-4b22-ab4b-e8333b106cdb">8.2 Notes</a></li><li><a href="week7.html#d08ccdcd-422d-411c-b4f1-d34ec473191a">8.3 Problems</a></li><li><a href="week7.html#c6fe6144-6422-47cd-bbbc-f443fbec7772">8.4 Feedback</a></li></ul><li><a class="kap" href="week8.html#3b734963-bc88-4dc9-bbf9-8c5b5ee057f5"><b>9</b> Course week 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#216cf5fc-d937-4589-b2c6-892c2e5db2a5">9.1 Readings</a></li><li><a href="week8.html#1df5ec06-26b0-484d-9c89-1791d434c863">9.2 Notes</a></li><li><a href="week8.html#302dd66d-94e0-41ee-af69-c820bdb7e5b8">9.3 Problems</a></li><li><a href="week8.html#5617b363-0bf8-48b7-ab58-ac5e71349e66">9.4 Feedback</a></li></ul><li><a class="kap" href="week9.html#ef55d864-14b4-4fba-a4a3-b0ee8aa95c3b"><b>10</b> Course week 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#a25f5596-17f9-4947-8c77-e4c156728f36">10.1 Readings</a></li><li><a href="week9.html#a02d267b-98bb-448f-961e-5b2e0db4b16d">10.2 Notes</a></li><li><a href="week9.html#7ec5882c-9d58-4c8e-80d8-bbdbc83a582c">10.3 Problems</a></li><li><a href="week9.html#0391234b-0796-49ca-9fbd-fe22c2a6e4cf">10.4 Feedback</a></li></ul><li><a class="kap" href="week10.html#0894b775-d10a-44a4-8086-dc8c538f5ba0"><b>11</b> Course week 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#806d7614-3aba-4749-bd14-7bd77cb45951">11.1 Readings</a></li><li><a href="week10.html#3e66677f-64e0-4d5a-9670-85b6e16bf00f">11.2 Notes</a></li><li><a href="week10.html#c2058bb1-103c-49c3-bd25-bfaa5cd53b50">11.3 Problems</a></li><li><a href="week10.html#2032ea7a-7c4a-48e4-b1ac-5dc8209fe6ae">11.4 Feedback</a></li></ul><li><a class="kap" href="week11.html#5f9d6fbb-80d0-4327-bf81-ccc99e7cdac8"><b>12</b> Course week 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#ab4b5245-032d-4d21-bd58-7e5dd500e1d6">12.1 Readings</a></li><li><a href="week11.html#97a4131f-ade0-4801-8bf3-7c55b535f68e">12.2 Notes</a></li><li><a href="week11.html#fe19a6be-331a-47b5-b9ec-d5b27b677099">12.3 Problems</a></li></ul><li><a class="kap" href="week12.html#780ded84-7d82-4e9a-a190-99756a8485f3"><b>13</b> Course week 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#b814bd8c-0864-42f3-88e1-b328fa9f2ac0">13.1 Readings</a></li><li><a href="week12.html#a13a7dcb-5dc2-46ff-8913-2622fc086b7a">13.2 Notes</a></li><li><a href="week12.html#bae59986-b9a2-424b-b69c-276159d93d5a">13.3 Problems</a></li></ul><li><a class="kap" href="week13.html#32786427-9610-4e67-ab37-7fe1d4d5ae2d"><b>14</b> Course week 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#4d0512dd-4ba6-4419-8c7c-0f811191591e">14.1 Readings</a></li><li><a href="week13.html#1e4646d6-e3bd-42f8-8bad-536b324d9f97">14.2 Notes</a></li><li><a href="week13.html#d41d01c2-fbfa-4707-8460-9e8e433b4478">14.3 Problems</a></li></ul><li><a class="kap" href="week14.html#76f83bc9-d515-4826-8323-feb0d4ff09ce"><b>15</b> Course week 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#40576c87-1239-4db3-96a8-18bd47ff473f">15.1 Readings</a></li><li><a href="week14.html#e6382427-26be-43c5-b984-6cd69ced53e3">15.2 Notes</a></li><li><a href="week14.html#7dae9120-636c-4e1d-a4b1-c873db601e33">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="5f9d6fbb-80d0-4327-bf81-ccc99e7cdac8">12<span style="float:right;">Course week 11</span></h1><div style="margin-top:20px"></div><span id="sec12.1"></span><h2 id="ab4b5245-032d-4d21-bd58-7e5dd500e1d6">12.1 Readings</h2>
-Read sections 10.5-10.6 in the textbook.<div style="margin-top:20px"></div><span id="sec12.2"></span><h2 id="97a4131f-ade0-4801-8bf3-7c55b535f68e">12.2 Notes</h2>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#ca0ad135-890a-4af5-9144-24a9771d59f5"><b>1</b> Introduction</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#68e9ad3b-e53a-450a-948e-324238ee1ffe">1.1 Readings</a></li><li><a href="introduction.html#f1aaccb5-7534-4567-a9fa-9451645ee543">1.2 Notes</a></li><li><a href="introduction.html#5ec5decd-f1eb-481c-a874-c6f7b1186b30">1.3 Exercises</a></li></ul><li><a class="kap" href="week1.html#36b98189-3096-466f-b3ea-4eef07896881"><b>2</b> Course week 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#5f080e34-0bc3-481e-bc02-391017951f2c">2.1 Readings</a></li><li><a href="week1.html#fc5c0fa3-eb25-43e8-a7a7-ff83896cc0cf">2.2 Notes</a></li><li><a href="week1.html#c18d5761-0646-4e08-9404-62d25ee76e80">2.3 Exercises</a></li></ul><li><a class="kap" href="week2.html#5b087876-d619-4801-9568-d2158bcaee0a"><b>3</b> Course week 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#ccc40677-5632-4398-b559-bb5dea127420">3.1 Readings</a></li><li><a href="week2.html#1c8d5274-6a3a-4668-a002-1210287a590f">3.2 Notes</a></li><li><a href="week2.html#167bd63b-f28a-4ab5-9b18-110c4a218134">3.3 Exercises</a></li><li><a href="week2.html#49e76b97-15ac-419e-acec-6e3cac7df996">3.4 Feedback</a></li></ul><li><a class="kap" href="week3.html#a1c6d21c-8d39-4ab8-992a-4173db285656"><b>4</b> Course week 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#47a4ae76-6fd7-4d90-9335-e9a5a1b79db0">4.1 Readings</a></li><li><a href="week3.html#ccf6254e-c876-4892-bb33-569c58e7c9b2">4.2 Notes</a></li><li><a href="week3.html#d762b763-e523-45d3-88a9-848124492be7">4.3 Exercises</a></li><li><a href="week3.html#39215aab-4db1-4693-a2e1-6471f8cc4ed2">4.4 Feedback</a></li></ul><li><a class="kap" href="week4.html#4321ea01-e9e1-464e-8513-3f4a46c2f0c0"><b>5</b> Course week 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#105e4a45-8dcf-420b-9045-25fbf4e8be2c">5.1 Readings</a></li><li><a href="week4.html#79e2d22f-534a-41aa-8b09-d25f8d280599">5.2 Notes</a></li><li><a href="week4.html#2dfa0a57-b4e2-41bb-90ff-67f6e25bbe92">5.3 Problems</a></li><li><a href="week4.html#69da15a7-9eda-4214-bb7d-02e61c8b2b4b">5.4 Feedback</a></li></ul><li><a class="kap" href="week5.html#3f0664f2-170d-427d-b914-021498dc5394"><b>6</b> Course week 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#934a8f76-5d26-494e-82b4-abed91ab375b">6.1 Readings</a></li><li><a href="week5.html#5b1dea1b-2897-44de-8977-362dc8332ee9">6.2 Notes</a></li><li><a href="week5.html#487ce40d-f6f3-442d-8e31-029994aeef87">6.3 Problems</a></li><li><a href="week5.html#de231ea2-f25d-4bae-9c0a-16db222c2e84">6.4 Feedback</a></li></ul><li><a class="kap" href="week6.html#52a59b0d-3bef-4405-adae-23e6cd63035e"><b>7</b> Course week 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#ace0d4f4-1e2d-4dff-ae16-5108e50b2c66">7.1 Readings</a></li><li><a href="week6.html#d6ee6a6d-6695-4b1c-af40-ecddac39fe91">7.2 Notes</a></li><li><a href="week6.html#69c3a3d0-aa4f-48bf-81fa-63e4e18ef5dc">7.3 Problems</a></li><li><a href="week6.html#6b8b6d46-543e-4c1c-9dbf-04adddf587b4">7.4 Feedback</a></li></ul><li><a class="kap" href="week7.html#709a4a83-592c-45f2-ada0-84d0ec6d234e"><b>8</b> Course week 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#e6fe6f0c-2aac-45d3-86e9-58c49c918a7a">8.1 Readings</a></li><li><a href="week7.html#3137f058-fa9c-4b22-ab4b-e8333b106cdb">8.2 Notes</a></li><li><a href="week7.html#d08ccdcd-422d-411c-b4f1-d34ec473191a">8.3 Problems</a></li><li><a href="week7.html#c6fe6144-6422-47cd-bbbc-f443fbec7772">8.4 Feedback</a></li></ul><li><a class="kap" href="week8.html#3b734963-bc88-4dc9-bbf9-8c5b5ee057f5"><b>9</b> Course week 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#216cf5fc-d937-4589-b2c6-892c2e5db2a5">9.1 Readings</a></li><li><a href="week8.html#1df5ec06-26b0-484d-9c89-1791d434c863">9.2 Notes</a></li><li><a href="week8.html#302dd66d-94e0-41ee-af69-c820bdb7e5b8">9.3 Problems</a></li><li><a href="week8.html#5617b363-0bf8-48b7-ab58-ac5e71349e66">9.4 Feedback</a></li></ul><li><a class="kap" href="week9.html#ef55d864-14b4-4fba-a4a3-b0ee8aa95c3b"><b>10</b> Course week 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#a25f5596-17f9-4947-8c77-e4c156728f36">10.1 Readings</a></li><li><a href="week9.html#a02d267b-98bb-448f-961e-5b2e0db4b16d">10.2 Notes</a></li><li><a href="week9.html#7ec5882c-9d58-4c8e-80d8-bbdbc83a582c">10.3 Problems</a></li><li><a href="week9.html#0391234b-0796-49ca-9fbd-fe22c2a6e4cf">10.4 Feedback</a></li></ul><li><a class="kap" href="week10.html#0894b775-d10a-44a4-8086-dc8c538f5ba0"><b>11</b> Course week 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#806d7614-3aba-4749-bd14-7bd77cb45951">11.1 Readings</a></li><li><a href="week10.html#3e66677f-64e0-4d5a-9670-85b6e16bf00f">11.2 Notes</a></li><li><a href="week10.html#c2058bb1-103c-49c3-bd25-bfaa5cd53b50">11.3 Problems</a></li><li><a href="week10.html#2032ea7a-7c4a-48e4-b1ac-5dc8209fe6ae">11.4 Feedback</a></li></ul><li><a class="kap" href="week11.html#3d442a21-5d0b-4105-8b99-adbce984ea1a"><b>12</b> Course week 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#bbc0668e-6162-488e-86be-205d88e0f9f8">12.1 Readings</a></li><li><a href="week11.html#eede2d35-5fb1-4ef9-9b26-0c5114f0dc0b">12.2 Notes</a></li><li><a href="week11.html#d61493ec-0fa3-46cc-8d27-ecdcaeb59178">12.3 Problems</a></li></ul><li><a class="kap" href="week12.html#780ded84-7d82-4e9a-a190-99756a8485f3"><b>13</b> Course week 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#b814bd8c-0864-42f3-88e1-b328fa9f2ac0">13.1 Readings</a></li><li><a href="week12.html#a13a7dcb-5dc2-46ff-8913-2622fc086b7a">13.2 Notes</a></li><li><a href="week12.html#bae59986-b9a2-424b-b69c-276159d93d5a">13.3 Problems</a></li></ul><li><a class="kap" href="week13.html#32786427-9610-4e67-ab37-7fe1d4d5ae2d"><b>14</b> Course week 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#4d0512dd-4ba6-4419-8c7c-0f811191591e">14.1 Readings</a></li><li><a href="week13.html#1e4646d6-e3bd-42f8-8bad-536b324d9f97">14.2 Notes</a></li><li><a href="week13.html#d41d01c2-fbfa-4707-8460-9e8e433b4478">14.3 Problems</a></li></ul><li><a class="kap" href="week14.html#76f83bc9-d515-4826-8323-feb0d4ff09ce"><b>15</b> Course week 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#40576c87-1239-4db3-96a8-18bd47ff473f">15.1 Readings</a></li><li><a href="week14.html#e6382427-26be-43c5-b984-6cd69ced53e3">15.2 Notes</a></li><li><a href="week14.html#7dae9120-636c-4e1d-a4b1-c873db601e33">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="3d442a21-5d0b-4105-8b99-adbce984ea1a">12<span style="float:right;">Course week 11</span></h1><div style="margin-top:20px"></div><span id="sec12.1"></span><h2 id="bbc0668e-6162-488e-86be-205d88e0f9f8">12.1 Readings</h2>
+Read sections 10.5-10.6 in the textbook.<div style="margin-top:20px"></div><span id="sec12.2"></span><h2 id="eede2d35-5fb1-4ef9-9b26-0c5114f0dc0b">12.2 Notes</h2>
 <b>Integration of a sum or difference of two functions</b>
 <div class="math"></div><script type="math/tex; mode=display">
     \int f(x) \pm g(x) \, {\mathrm{d}}x = \int f(x) \pm \int g(x) \, {\mathrm{d}}x 
@@ -156,18 +163,20 @@ Read sections 10.5-10.6 in the textbook.<div style="margin-top:20px"></div><span
 <b>Integration by substitution (definite integral)</b><div style="margin-top:20px"></div>Let <span class="math"></span><script type="math/tex">u=g(x)</script>, then:
 <div class="math"></div><script type="math/tex; mode=display">
     \int_a^b f(g(x)) g'(x) \, {\mathrm{d}}x = \int_{g(a)}^{g(b)} f(u) \, {\mathrm{d}}u
-</script><div style="margin-top:20px"></div><span id="sec12.3"></span><h2 id="fe19a6be-331a-47b5-b9ec-d5b27b677099">12.3 Problems</h2><div style="margin-top:20px"></div><span id="env12.1"></span><div class="exercise" data-count="12.1">     
+</script><div style="margin-top:20px"></div><span id="sec12.3"></span><h2 id="d61493ec-0fa3-46cc-8d27-ecdcaeb59178">12.3 Problems</h2><div style="margin-top:20px"></div><span id="env12.1"></span><div class="exercise" data-count="12.1">     
     <div id="quiz1" style="width:100%;"><div class="row quizquestion">
         Below are some potential steps to apply in integration by parts for an indefinite integral. Arrange
-        them in order by dragging and dropping from the left to the right to give a correct recipe for integration by parts.<div style="margin-top:20px"></div></div><div class="row"><div class="col-xs-5"><div class="row"><div class="orderquizanswer" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Check that the new integrand is simpler than the original.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Compute <span class="math"></span><script type="math/tex">\mathrm{d} u = g'(x) \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify the inner function in a composite function as <span class="math"></span><script type="math/tex">u</script>.<div style="margin-top:20px"></div>          
+        them in order by dragging and dropping from the left to the right to give a correct recipe for integration by parts for the integral
+        <div class="math"></div><script type="math/tex; mode=display">
+            \int f(x) g'(x) \, \mathrm{d} x
+        </script><div style="margin-top:20px"></div></div><div class="row"><div class="col-xs-5"><div class="row"><div class="orderquizanswer" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Check that the new integrand is simpler than the original.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Compute <span class="math"></span><script type="math/tex">\mathrm{d} u = g'(x) \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify the inner function in a composite function as <span class="math"></span><script type="math/tex">u</script>.<div style="margin-top:20px"></div>          
       </div><div class="orderquizanswer" id="dq1_left4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">f(x)</script> as a function whose indefinite integral is known.<div style="margin-top:20px"></div>    
       </div><div class="orderquizanswer" id="dq1_left5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">g'(x)</script> as a function whose indefinite integral is known.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       The first term is <span class="math"></span><script type="math/tex">f(x) g(x)</script>, where <span class="math"></span><script type="math/tex">g'(x)</script> has been integrated.<div style="margin-top:20px"></div>    
         
       </div><div class="orderquizanswer" id="dq1_left7" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       The second term is <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left8" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">f(x)</script> as a function whose derivative can be computed.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left9" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Solve the integral <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div></div></div><div class="col-xs-5"><div class="row"><div class="orderquizanswer empty" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div></div></div></div><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(or (is 586719) (is 856719))"><b class="correct">Korrekt!</b> 
-      Yes, precisely<div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(contains 1)"><b class="wrong">Forkert.</b> 
-      Why ?<div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(and (contains 2)(contains 3))"><b class="wrong">Forkert.</b> 
-      Please check?<div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
-      Try again!
+      <span style="color:green;"><b>Correct!</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(or (contains 2) (contains 3))"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Wrong. Are you thinking of integration by substitution?</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Wrong. Try again!</b></span>
       </span></span></div>
 </div><div style="margin-top:20px"></div><span id="env12.2"></span><div class="exercise" data-count="12.2">     
 Use integration by parts to evaluate the following indefinite integrals:
@@ -184,7 +193,7 @@ Use integration by parts to evaluate the following definite integrals:
 </div><div style="margin-top:20px"></div><span id="env12.4"></span><div class="exercise" data-count="12.4">     
 Last week you found the following definite integral:
 <div class="math"></div><script type="math/tex; mode=display">
-\int_{-4}^{4}(x-1)^3\, {\mathrm{d}}x
+\int_{-3}^{3}(x-1)^2\, {\mathrm{d}}x
 </script>
 This time find the integral by using integration by substitution.
 </div><div style="margin-top:20px"></div><span id="env12.5"></span><div class="exercise" data-count="12.5">     
@@ -220,4 +229,145 @@ Use integration by substitution to evaluate the following definite integral:
     </li><li id="ite12.9"> Evaluate the following integral:
     <span class="math"></span><script type="math/tex">\displaystyle \int \frac{w}{(1-w)^3}\, {\mathrm{d}}w </script>
 </li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.11"></span><div class="exercise" data-count="12.11">     
+    This exercise is a little longer than usual, so click the button below to open it.<div style="margin-top:20px"></div><a href="#723f2b64-8542-4549-bb08-c4d8f40c6296" class ="btn btn-default" data-toggle="collapse">Open/Close</a><div id=723f2b64-8542-4549-bb08-c4d8f40c6296 class="collapse">
+    In 2022 the Danish broadcaster, DR, featured an <a href="https://www.dr.dk/nyheder/indland/ferievaner-fra-tiden-med-corona-bider-sig-fast-ny-vandrerute-paa-djursland-skal" target="_blank">article</a>
+    with the news that the Danes' vacation habits had changed as a consequence of the covid-19 pandemic,
+    and that, according to numbers from Statistics Denmark, there had been 27 % fewer bookings of vacation homes
+    than the corresponding period in 2019 (before the pandemic). This is illustrated in the figure below.
+            <div style="margin-top:20px"></div><center>
+      
+     <iframe src="./img/week11/p1.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center><div style="margin-top:20px"></div>An economist who is interested in modelling the market for vacation houses, constructs
+    a function <span class="math"></span><script type="math/tex">f(t)</script> that seems to describe the number of booked house-weeks in 2019.
+    Here, <span class="math"></span><script type="math/tex">t</script> is time as a continuous variable that can assume values in the interval <span class="math"></span><script type="math/tex">[0, 12]</script>,
+    where the value 0 corresponds the beginning of the year and the value 12 corresponds to the
+    end of the year. Below is shown a plot of this function along with the data points for 2019
+    from the figure above.<div style="margin-top:20px"></div><center>
+      <div class="centerimg"><img src="img/week11/booked_2019.png" width=50%></div>
+    </center><div style="margin-top:20px"></div><span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+      <b>a)</b> How can the total number of booked house-weeks from the end of May to the end of December be expressed in terms of <span class="math"></span><script type="math/tex">f(t)</script>?
+      </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{0}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">f(12) - f(5)</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="T">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{5}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\lim_{b\to\infty}\int_{5}^{b} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script><div style="margin-top:20px"></div>Below is a plot of the function <span class="math"></span><script type="math/tex">g(t)</script> which describes the number of booked house-weeks in 2022.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_2022.png" width=50%></div>
+      </center><div style="margin-top:20px"></div><b>b)</b> Create an expression for the total number of booked house-weeks in the period from May to December 2022 minus the corresponding number for 2019 using the functions <span class="math"></span><script type="math/tex">f(t)</script> and <span class="math"></span><script type="math/tex">g(t)</script>. Explain why it corresponds to the coloured area in the figure below.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_diff.png" width=50%></div>
+      </center>'<div style="margin-top:20px"></div><b>c)</b> Formulate the following statement mathematically by using definite integrals and the functions <span class="math"></span><script type="math/tex">f(t)</script> and <span class="math"></span><script type="math/tex">g(t)</script>:
+      <i>From May to December 2022 there were 27 percent fewer bookings than for the corresponding period in 2019</i>.<div style="margin-top:20px"></div>                                                
+    <b>d)</b> <em>Voluntary extra question</em>. Try to construct a function that describes the observed data from 2019. An initial (but bad) guess has been given,
+    and you can change the expression for <span class="math"></span><script type="math/tex">f(t)</script> in the input form below. First you have to press Start in order to start the interactive plot.
+    What is the best function you can find? You can use powers (type <tt>t^2</tt> for <span class="math"></span><script type="math/tex">t^2</script>), exponentials (type <tt>exp(t)</tt> for <span class="math"></span><script type="math/tex">e^t</script>), logarithms (type <tt>log(t)</tt> for <span class="math"></span><script type="math/tex">\ln t</script>) etc. Remember to use an asterisk (<tt>*</tt>) for multiplication.
+    To help you find the best function the sum of squared errors (SSE) are printed, and the goal is to find the smallest possible value of SSE.<div style="margin-top:20px"></div>If you want to see the data behind the plot, click here:
+    <a href="#677f588d-3a3c-4bae-90dc-82fa97c06aa9" class ="btn btn-default" data-toggle="collapse">Data</a><div id=677f588d-3a3c-4bae-90dc-82fa97c06aa9 class="collapse">
+        Her kan du se og downloade de data, som danner grundlag for graferne ovenfor.<div style="margin-top:20px"></div>
+      <link href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css" rel="stylesheet">
+      
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
+      
+      <style>
+      #toolbar {
+        margin: 0;
+      }
+      </style>
+      
+      <div id="toolbar" class="select">
+        <select class="form-control">
+          <option value="">Export Basic</option>
+          <option value="all">Export All</option>
+          <option value="selected">Export Selected</option>
+        </select>
+      </div>
+      
+      </table>
+        <table
+        id="table"
+        data-show-export="true"
+        data-search="true"
+        data-pagination="true"
+        data-side-pagination="client"
+        data-url="./tabledata/booked_table.json"> 
+      
+        <thead>
+          <tr>
+            <th data-field="year" data-sortable="true">Year</th>
+            <th data-field="month" data-sortable="false">Month</th>
+            <th data-field="booked" data-sortable="false">Booked weeks</th>
+          </tr>
+        </thead>
+      </table>
+      
+      <script>
+        var $table = $('#table')
+      
+        $(function() {
+          $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('destroy').bootstrapTable({
+              exportDataType: $(this).val(),
+              exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+              columns: [
+                {
+                  field: 'state',
+                  checkbox: true,
+                  visible: $(this).val() === 'selected'
+                },
+                {
+                  field: 'year',
+                  title: 'Year'
+                }, {
+                  field: 'month',
+                  title: 'Month'
+                }, {
+                  field: 'booked',
+                  title: 'Booked weeks'
+                }
+              ]
+            })
+          }).trigger('change')
+        })
+      </script>
+      
+      </div><div style="margin-top:20px"></div><p><div style="float:right;"><a href="#eef24f10-fa2a-463b-8369-de6606f4d361" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="eef24f10-fa2a-463b-8369-de6606f4d361" class="collapse">
+      The sum of squared errors (SSE) is defined as
+      <div class="math"></div><script type="math/tex; mode=display">\mathrm{SSE} = \sum_{t = 5}^{12} \left(y_t - f(t)\right)^2,</script>
+      where <span class="math"></span><script type="math/tex">y_t</script> is the actual number of booked house-weeks in month <span class="math"></span><script type="math/tex">t</script> and <span class="math"></span><script type="math/tex">f(t)</script> is the number predicted by the model function <span class="math"></span><script type="math/tex">f(t)</script>.<div style="margin-top:20px"></div>The function <span class="math"></span><script type="math/tex">f(t)</script> found by the economist gives <span class="math"></span><script type="math/tex">\text{SSE} = 2.58\cdot 10^6</script>.
+    </div>
+    <div class=sage><script type="text/x-sage">
+t = var('t')
+booked_2019 =[(5, 9596), (6, 11141), (7, 28172), (8, 8968), (9, 3316), (10, 1696), (11, 505), (12, 447)]
+def frexp10(x):
+    expo = int(math.floor(math.log10(abs(x))))
+    return x / 10**expo, expo
+@interact
+def booked_function(expression=input_box('25000 - 2000 * t', 'f(t) =', str)):
+    if expression:
+        try:
+            SSE = n(sum([(SR(expression)(t = x) - y)**2 for x, y in booked_2019]))
+            SSE_string = 'SSE\u0024={0:.2f}\\cdot 10^{{{1}}}\u0024'.format(*frexp10(SSE))
+            # SSE_string = 'SSE = {:.2g}'.format(SSE)
+            p1 = plot(SR(expression), (t, 5, 12))
+            p2 = point(booked_2019)
+            p3 = text(SSE_string, (9,2.5e4), horizontal_alignment = 'left', fontsize = 14)
+            (p1 + p2 + p3).show()
+            pretty_print(html('Value you can copy: SSE = {}'.format(SSE)))
+        except TypeError:
+            print("There is a problem with your function expression.")
+    else:
+        print("Make sure your expression can be plotted.")
+    </script></div>
+    <p><div style="float:right;"><a href="#cc94fccc-c77a-4f97-b299-7966d4578828" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="cc94fccc-c77a-4f97-b299-7966d4578828" class="collapse">
+        There are, of course, mathematical methods to find the function of a particular type that best describes data.
+        One well-known example is linear regression which finds the best line (linear function) for a data set. You will
+        learn much more about regression in the course <em>Quantitative Methods</em> in your second semester.<div style="margin-top:20px"></div>One has to take care not to succomb to over fitting, that is tailoring the function too much to the data at
+        hand. See the figure below from <a href="xkcd" target="_blank">https://xkcd.com/2048</a>.
+      <center>
+        <div class="centerimg"><img src="img/week11/curve_fitting.png" ></div>
+      </center>
+    </div>
+    </div>
 </div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
