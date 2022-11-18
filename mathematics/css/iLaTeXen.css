@@ -299,6 +299,10 @@ figcaption {
   display: none;
 }
 
+.formatquizanswer {
+  padding: 20px;
+}
+
 .formatquiz-numbers .result .correct {
   color: green;
 }
