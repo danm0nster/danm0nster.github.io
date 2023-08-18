@@ -1,0 +1,82 @@
+[
+    {
+        "month": "May",
+        "booked": 9596,
+        "year": "2019"
+    },
+    {
+        "month": "June",
+        "booked": 11141,
+        "year": "2019"
+    },
+    {
+        "month": "July",
+        "booked": 28172,
+        "year": "2019"
+    },
+    {
+        "month": "August",
+        "booked": 8968,
+        "year": "2019"
+    },
+    {
+        "month": "September",
+        "booked": 3316,
+        "year": "2019"
+    },
+    {
+        "month": "October",
+        "booked": 1696,
+        "year": "2019"
+    },
+    {
+        "month": "November",
+        "booked": 505,
+        "year": "2019"
+    },
+    {
+        "month": "December",
+        "booked": 447,
+        "year": "2019"
+    },
+    {
+        "month": "May",
+        "booked": 12677,
+        "year": "2022"
+    },
+    {
+        "month": "June",
+        "booked": 15140,
+        "year": "2022"
+    },
+    {
+        "month": "July",
+        "booked": 33209,
+        "year": "2022"
+    },
+    {
+        "month": "August",
+        "booked": 10790,
+        "year": "2022"
+    },
+    {
+        "month": "September",
+        "booked": 5066,
+        "year": "2022"
+    },
+    {
+        "month": "October",
+        "booked": 2323,
+        "year": "2022"
+    },
+    {
+        "month": "November",
+        "booked": 1037,
+        "year": "2022"
+    },
+    {
+        "month": "December",
+        "booked": 693,
+        "year": "2022"
+    }
+]
