@@ -1,0 +1,399 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  autoeval: false,
+  quietMode: true,
+  replaceOutput: true,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#2135256f-868d-43a3-86ca-315f18221629"><b>1</b> Introduktion</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="introduction.html#5e71ad86-ab9d-4729-9a1c-9d6ce0adb450">1.1 Pensum</a></li><li><a href="introduction.html#f5b7b322-304b-4e41-bb3c-8dd79a353994">1.2 Noter</a></li><li><a href="introduction.html#2c544977-8dfe-4aa7-acbc-1e54c84f4434">1.3 Opgaver</a></li></ul><li><a class="kap" href="week1.html#e875523c-413a-4a47-8f7e-d6fbceec566e"><b>2</b> Kursusuge 1</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week1.html#6f261583-ab63-4c7f-bafa-c9e57ede3e1f">2.1 Pensum</a></li><li><a href="week1.html#7733eb77-2dea-4e16-adad-d38fd842d441">2.2 Noter</a></li><li><a href="week1.html#77577875-1728-4b5c-8856-31714e0ff979">2.3 Opgaver</a></li></ul><li><a class="kap" href="week2.html#685c067c-60b9-4a95-91f0-6bea73b8707b"><b>3</b> Kursusuge 2</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week2.html#e9493a02-1a37-4445-8f93-f72cfdb32dd7">3.1 Pensum</a></li><li><a href="week2.html#114978a0-2d8d-4e07-9b21-89105740f426">3.2 Noter</a></li><li><a href="week2.html#ad1b0d9f-993b-471a-9e26-4d494e5fc0c9">3.3 Opgaver</a></li><li><a href="week2.html#3d67df96-6e85-4a14-a39d-bc43ced984db">3.4 Feedback</a></li></ul><li><a class="kap" href="week3.html#8c0ee23a-88c8-4d35-b07c-cd6896b3843e"><b>4</b> Kursusuge 3</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week3.html#e93c3ec6-9604-4b0b-80ca-a9ef0d3475db">4.1 Pensum</a></li><li><a href="week3.html#970a8829-e6cd-4d4a-8fa6-93fcbd7b1bc2">4.2 Noter</a></li><li><a href="week3.html#0c58b38d-edb2-4b96-9083-d5766e87708a">4.3 Opgaver</a></li><li><a href="week3.html#a8a79404-d07c-4989-a43e-da831d818c13">4.4 Feedback</a></li></ul><li><a class="kap" href="week4.html#ed8c302c-5c24-4f74-88cf-464c7aca6696"><b>5</b> Kursusuge 4</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week4.html#e4448450-7529-4999-8b12-662ff01d523e">5.1 Pensum</a></li><li><a href="week4.html#0384f9f3-bb2a-4fc5-9bcc-26a115536ae7">5.2 Noter</a></li><li><a href="week4.html#882fa85b-409c-4025-ace0-9ea35de815ee">5.3 Opgaver</a></li><li><a href="week4.html#71f4b02f-5643-41ad-92d9-40ac2bafd1df">5.4 Feedback</a></li></ul><li><a class="kap" href="week5.html#b323b05b-4bea-4cfd-8c77-69e8703dc71a"><b>6</b> Kursusuge 5</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week5.html#8cdcff75-2120-4545-a81f-1501e9fc2a46">6.1 Pensum</a></li><li><a href="week5.html#e867903b-8fbf-40e9-9bcc-7c038c000800">6.2 Noter</a></li><li><a href="week5.html#0dad181e-3a14-410a-b7e0-3948a2308ed2">6.3 Opgaver</a></li><li><a href="week5.html#b051bc1d-0d77-470e-a15f-5a7745174f26">6.4 Feedback</a></li></ul><li><a class="kap" href="week6.html#9ce186cc-14d3-4868-8c41-8767f7a2320b"><b>7</b> Kursusuge 6</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week6.html#5b61f87c-dd2a-463c-a2e4-ef366e383716">7.1 Pensum</a></li><li><a href="week6.html#aabb3a2d-190f-4e81-a202-2e8367f5c0ca">7.2 Noter</a></li><li><a href="week6.html#9e5da5e4-dd31-4c08-8801-eabaa9676d00">7.3 Opgaver</a></li><li><a href="week6.html#57fe1c47-b72d-4b50-b702-b0f6dd1534ae">7.4 Feedback</a></li></ul><li><a class="kap" href="week7.html#978fc4d7-cbe4-42bd-9afa-f6c83c91fa36"><b>8</b> Kursusuge 7</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week7.html#6781bf3d-8681-4a23-8b5b-db9ec54108ca">8.1 Pensum</a></li><li><a href="week7.html#1f8bb3d0-1e5b-4e52-ad26-9ddb661d6c1f">8.2 Noter</a></li><li><a href="week7.html#30aaeed8-1907-4081-b69a-fe404b4939ee">8.3 Opgaver</a></li><li><a href="week7.html#aeaa3b29-994a-489e-bc88-64807997b957">8.4 Feedback</a></li></ul><li><a class="kap" href="week8.html#b5135c74-a3c3-4e1c-9609-cb4e49553e45"><b>9</b> Kursusuge 8</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week8.html#a137f0d2-a33f-4a6b-8d57-4fe5c4428327">9.1 Pensum</a></li><li><a href="week8.html#8b63b599-5795-4e02-a5ad-e02d4f527251">9.2 Noter</a></li><li><a href="week8.html#dce38640-f444-49e9-81c7-d139e5099750">9.3 Opgaver</a></li><li><a href="week8.html#7fbbd93e-26af-4615-8953-5751c6b9b638">9.4 Feedback</a></li></ul><li><a class="kap" href="week9.html#286b4146-8cf2-42d2-bb99-025f414a208f"><b>10</b> Kursusuge 9</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week9.html#56e4f74e-61f4-480d-8007-e0b59e0cd89b">10.1 Pensum</a></li><li><a href="week9.html#530601d5-e090-4a0e-a3c8-082888f9b0f6">10.2 Noter</a></li><li><a href="week9.html#434d7886-368b-44c9-b3c6-76cb22a518af">10.3 Opgaver</a></li><li><a href="week9.html#96169601-21a5-4533-be7b-c883c3a3d0bb">10.4 Feedback</a></li></ul><li><a class="kap" href="week10.html#e34f6e5d-9173-4690-8358-225c2218c415"><b>11</b> Kursusuge 10</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week10.html#df95039b-ef26-438c-81ef-a7530607f3e2">11.1 Pensum</a></li><li><a href="week10.html#2c84a2d9-3948-43c6-b024-24f9097937e0">11.2 Opgaver</a></li><li><a href="week10.html#a7a5e61d-2579-4081-9df7-5f2f8654f92f">11.3 Feedback</a></li></ul><li><a class="kap" href="week11.html#19f6fa9c-12f1-4862-9c02-6c6e4025f07b"><b>12</b> Kursusuge 11</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week11.html#82a7aa17-bf21-4f16-9267-cbed3844de86">12.1 Pensum</a></li><li><a href="week11.html#e5456e13-72dc-44f4-a468-1eb23d84c08a">12.2 Noter</a></li><li><a href="week11.html#4f883b13-0453-446f-8498-13a651e93106">12.3 Opgaver</a></li><li><a href="week11.html#e0662083-3c4d-4d9b-82de-555eb46e4d5d">12.4 Feedback</a></li></ul><li><a class="kap" href="week12.html#74c4c57d-d67f-44fa-8e5d-c00c5688137c"><b>13</b> Kursusuge 12</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week12.html#12a669a5-1009-449f-a161-546f7107517c">13.1 Pensum</a></li><li><a href="week12.html#5165812e-63c3-482d-b349-2a7927d7ba0f">13.2 Noter</a></li><li><a href="week12.html#adafce3a-4736-46d1-9ceb-e81517eefda0">13.3 Opgaver</a></li><li><a href="week12.html#0eb0c129-6cea-46af-874a-a5d585f2963e">13.4 Feedback</a></li></ul><li><a class="kap" href="week13.html#c3557f90-691f-4402-b804-d91fbf30ccf3"><b>14</b> Kursusuge 13</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week13.html#c156a204-1334-4cd7-a8cc-528adfa60529">14.1 Pensum</a></li><li><a href="week13.html#80b1d830-4dfd-4e9b-ab71-99f0e37177e0">14.2 Noter</a></li><li><a href="week13.html#9fa3a156-7acd-4586-a3c0-f721d08051c1">14.3 Opgaver</a></li><li><a href="week13.html#3c65ee19-9bf3-48d6-8f8d-d8b694482ca8">14.4 Feedback</a></li></ul><li><a class="kap" href="week14.html#38b80030-20dc-4438-84fe-368cb22ae716"><b>15</b> Kursusuge 14</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week14.html#ff8c8470-04a3-4127-bf7f-d3d4d3954f49">15.1 Pensum</a></li><li><a href="week14.html#5b20dab0-64c3-4835-8e7d-7376ea06f4c4">15.2 Noter</a></li><li><a href="week14.html#fd704736-313c-45a0-8600-5dd10cb8b867">15.3 Opgaver</a></li><li><a href="week14.html#fd0b35b2-6834-4fbd-8167-e9ed95ffd7a1">15.4 Feedback</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="19f6fa9c-12f1-4862-9c02-6c6e4025f07b">12<span style="float:right;">Kursusuge 11</span></h1><div style="margin-top:20px"></div><span id="sec12.1"></span><h2 id="82a7aa17-bf21-4f16-9267-cbed3844de86">12.1 Pensum</h2>
+Afsnit 10.5-10.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec12.2"></span><h2 id="e5456e13-72dc-44f4-a468-1eb23d84c08a">12.2 Noter</h2>
+<b>Integration af en sum eller forskellen imellem to funktioner</b>
+<div class="math"></div><script type="math/tex; mode=display">
+    \int f(x) \pm g(x) {\mathrm{d}}x = \int f(x) \pm \int g(x) {\mathrm{d}}x 
+</script>
+<b>Partiel integration (ubestemt integral)</b>
+<div class="math"></div><script type="math/tex; mode=display">
+    \int f(x)g'(x) \, {\mathrm{d}}x  = f(x)g(x) - \int f'(x)g(x) \, {\mathrm{d}}x
+</script>
+<b>Partiel integration (bestemt integral)</b>
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_a^b f(x)g'(x) \, {\mathrm{d}}x  = \bigg|_a^b f(x)g(x) - \int_a^b f'(x)g(x) \, {\mathrm{d}}x
+</script>
+<b>Integration ved substitution (ubestemt integral)</b><div style="margin-top:20px"></div>Lad <span class="math"></span><script type="math/tex">u=g(x)</script>, så:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int f(g(x)) g'(x) \, {\mathrm{d}}x = \int f(u) \, du
+</script>
+<b>Integration ved substitution (bestemt integral)</b><div style="margin-top:20px"></div>Lad <span class="math"></span><script type="math/tex">u=g(x)</script>, så:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_a^b f(g(x)) g'(x) \, {\mathrm{d}}x = \int_{g(a)}^{g(b)} f(u) \, du
+</script><div style="margin-top:20px"></div><span id="sec12.3"></span><h2 id="4f883b13-0453-446f-8498-13a651e93106">12.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env12.1"></span><div class="exercise" data-count="12.1">     
+    <div id="quiz1" style="width:100%;"><div class="row quizquestion">
+        Herunder er nogle potentielle skridt, som skal anvendes til partiel integration. Sæt de rigtige skridt i den rigtige rækkefølge for
+        at lave en korrekt opskrift på partiel integration for integralet
+        <div class="math"></div><script type="math/tex; mode=display">
+            \int f(x) g'(x) \, \mathrm{d} x
+        </script><div style="margin-top:20px"></div></div><div class="row"><div class="col-xs-5"><div class="row"><div class="orderquizanswer" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Tjek at den nye integrand er simplere end den originale.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Beregn <span class="math"></span><script type="math/tex">\mathrm{d} u = g'(x) \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Bestem den indre funktion i en sammensat funktion som <span class="math"></span><script type="math/tex">u</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">f(x)</script> som en funktion med en kendt stamfunktion.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">g'(x)</script> som en funktion med en kendt stamfunktion.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Første led er <span class="math"></span><script type="math/tex">f(x) g(x)</script>, hvor <span class="math"></span><script type="math/tex">g'(x)</script> er integreret.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left7" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Andet led er <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left8" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identificér <span class="math"></span><script type="math/tex">f(x)</script> som en funktion der kan differentieres.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left9" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Beregn integralet <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div></div></div><div class="col-xs-5"><div class="row"><div class="orderquizanswer empty" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div></div></div></div><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(or (is 586719) (is 856719))"><b class="correct">Korrekt!</b> <div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(or (contains 2) (contains 3))"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Mon du tænker på integration ved substitution?</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Forkert.</b> 
+      <span style="color:red;"><b>Prøv igen!</b></span>
+      </span></span></div>
+</div><div style="margin-top:20px"></div><span id="env12.2"></span><div class="exercise" data-count="12.2">     
+Brug partiel integration til at beregne de følgende ubestemte integraler:
+<ol class="number"><li id="ite12.1"> <div class="math"></div><script type="math/tex; mode=display">
+    \int x \ln(x){\mathrm{d}}x
+        </script>
+</li><li id="ite12.2"> <div class="math"></div><script type="math/tex; mode=display">
+    \int 4x e^{4x}{\mathrm{d}}x
+        </script>
+</li><li id="ite12.3"> <div class="math"></div><script type="math/tex; mode=display">
+    \int \frac{4x+2}{e^x}{\mathrm{d}}x
+        </script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.3"></span><div class="exercise" data-count="12.3">     
+Brug partiel integration til at beregne de følgende bestemte integraler:
+<ol class="number"><li id="ite12.4"> <div class="math"></div><script type="math/tex; mode=display">  \int_{-1}^1 x \ln(x+2){\mathrm{d}}x
+    </script>
+    </li><li id="ite12.5"> <div class="math"></div><script type="math/tex; mode=display">  \int_0^1 x^2e^x{\mathrm{d}}x
+    </script>
+    </li><li id="ite12.6"> <div class="math"></div><script type="math/tex; mode=display">  \int_0^2 (x-2)e^{x/2}{\mathrm{d}}x
+    </script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.4"></span><div class="exercise" data-count="12.4">     
+I sidste uge beregnede du følgende bestemte integral:
+<div class="math"></div><script type="math/tex; mode=display">
+\int_{-3}^{3}(x-1)^2{\mathrm{d}}x
+</script>
+Prøv denne gang at beregne det igennem integration ved substitution.
+</div><div style="margin-top:20px"></div><span id="env12.5"></span><div class="exercise" data-count="12.5">     
+Brug integration ved substitution til at beregne det følgende ubestemte integral:
+ <div class="math"></div><script type="math/tex; mode=display">
+    \int 2x(x^2+1)^2{\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env12.6"></span><div class="exercise" data-count="12.6">     
+Brug integration ved substitution til at beregne det følgende bestemte integral:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_5^8\frac{x}{x-4}{\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env12.7"></span><div class="exercise" data-count="12.7">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>Et integrale er givet ved:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_{0}^{1} x(1+x)^3{\mathrm{d}}x
+</script>
+<ol class="number"><li id="ite12.7"> Beregn integralet.
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.8"></span><div class="exercise" data-count="12.8">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>Beregn integralet:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int x\sqrt{1+x^2}{\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env12.9"></span><div class="exercise" data-count="12.9">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>Beregn integralet:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_0^1 \frac{e^x}{(x+1)^{-2}}{\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env12.10"></span><div class="exercise" data-count="12.10">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div><ol class="number"><li id="ite12.8"> Beregn det følgende integral:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \int_0^1 (e^x+e^{-x})^2{\mathrm{d}}x
+    </script>
+    </li><li id="ite12.9"> Beregn det følgende integral:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \int \frac{w}{(1-w)^3}dw
+    </script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env12.11"></span><div class="exercise" data-count="12.11">     
+    Denne opgave fylder lidt mere end sædvanligt, så klik på knappen herunder for at åbne den.<div style="margin-top:20px"></div><a href="#7a7e6464-d69e-42f1-a7a3-a80e094a8682" class ="btn btn-default" data-toggle="collapse">Åbn/Luk</a><div id=7a7e6464-d69e-42f1-a7a3-a80e094a8682 class="collapse">
+    DR bragte i 2022 <a href="https://www.dr.dk/nyheder/indland/ferievaner-fra-tiden-med-corona-bider-sig-fast-ny-vandrerute-paa-djursland-skal" target="_blank">en nyhed</a>
+    om at danskernes ferievaner havde ændret sig som følge af corona pandemien,
+    og at der, ifølge tal fra Danmarks Statistik, fra maj til december 2022 var 27 procent flere bookinger
+    end for den tilsvarende periode i 2019 (altså før pandemien). Dette er illustreret i nedenstående figur.
+            <div style="margin-top:20px"></div><center>
+      
+     <iframe src="./img/week11/p1.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center><div style="margin-top:20px"></div>En økonom, der er interesseret i at lave en model for markedet for sommerhusudlejning,
+    opstiller en funktion <span class="math"></span><script type="math/tex">f(t)</script> der ser ud til at beskrive antal bookede husuger i 2019.
+    Her er <span class="math"></span><script type="math/tex">t</script> en kontinuert variabel, som kan antage værdier i intervallet <span class="math"></span><script type="math/tex">[0,12]</script>,
+    hvor værdien 0 svarer til starten af året, og værdien 12 svarer til slutningen af året.
+    Nedenfor er vist et plot af denne funktion sammen med data fra 2019 fra figuren ovenfor.<div style="margin-top:20px"></div><center>
+      <div class="centerimg"><img src="img/week11/booked_2019.png" width=50%></div>
+    </center><div style="margin-top:20px"></div><span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+      <b>a)</b> Hvordan kan det samlede antal bookede husuger fra slutningen af maj til slutningen af december udtrykkes ved <span class="math"></span><script type="math/tex">f(t)</script>?
+      </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{0}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">f(12) - f(5)</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="T">
+      <div class="math"></div><script type="math/tex; mode=display">\int_{5}^{12} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div><div class="col-xs-5 quizanswer" datav="F">
+      <div class="math"></div><script type="math/tex; mode=display">\lim_{b\to\infty}\int_{5}^{b} f(t) \, \mathrm{d}t</script><div style="margin-top:20px"></div></div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz2, quizbutton1);});</script><div style="margin-top:20px"></div>Nedenfor er vist funktionen <span class="math"></span><script type="math/tex">g(t)</script> som beskriver antallet af bookede husuger i 2022.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_2022.png" width=50%></div>
+      </center><div style="margin-top:20px"></div><b>b)</b> Opskriv et udtryk for det samlede antal bookede husuger i perioden maj til december 2022 fraregnet det samlede antal
+      bookede husuger i den tilsvarende periode i 2019 i modellen baseret på <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>.
+      Redegør for at det svarer til det skraverede areal i figuren nedenfor.<div style="margin-top:20px"></div><center>
+        <div class="centerimg"><img src="img/week11/booked_diff.png" width=50%></div>
+      </center><div style="margin-top:20px"></div><b>c)</b> Formulér følgende udsagn matematisk, udtrykt ved bestemte integraler af funktionerne <span class="math"></span><script type="math/tex">f(t)</script> og <span class="math"></span><script type="math/tex">g(t)</script>:
+      <i>fra slutningen af maj til slutningen af december 2022 var der 27 procent flere bookinger end for den tilsvarende periode i 2019</i>.<div style="margin-top:20px"></div><b>d)</b> <em>Frivillig ekstraopgave</em>. Prøv selv at finde en funktion, som beskriver de observerede data fra 2019. Et (dårligt) gæt
+    er allerede lavet i feltet nedenfor lige over plottet. Du skal trykke Start for at starte det interaktive plot.
+    Du kan ændre funktionsudtrykket for <span class="math"></span><script type="math/tex">f(t)</script> i feltet nedenfor, og se hvor godt det passer
+    med data. Hvad er den bedste funktion, du kan finde? Du kan bruge potenser (skriv <tt>t^2</tt> for <span class="math"></span><script type="math/tex">t^2</script>),
+    eksponentialfunktioner (skriv <tt>exp(t)</tt> for <span class="math"></span><script type="math/tex">e^t</script>), logaritmer (skriv <tt>log(t)</tt> for <span class="math"></span><script type="math/tex">\ln t</script>) etc. Husk at brug en asterisk
+    (<tt>*</tt>) til multiplikation. Som en hjælp beregnes summen af kvadrerede afvigelser,
+    som er vist i plottet nedenfor som SSE (Sum of Squared Errors). Med andre ord er opgaven at finde en funktion,
+    med den lavest mulige SSE. <div style="margin-top:20px"></div>Hvis du vil se de underliggende data, kan du klikke på knappen her:
+    <a href="#2a148cb0-3ec6-4abf-a858-a2cf2b2343a9" class ="btn btn-default" data-toggle="collapse">Data</a><div id=2a148cb0-3ec6-4abf-a858-a2cf2b2343a9 class="collapse">      
+      
+      <link href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css" rel="stylesheet">
+      
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/tableExport.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF/jspdf.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.10.21/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+      <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
+      
+      <style>
+      #toolbar {
+        margin: 0;
+      }
+      </style>
+      
+      <div id="toolbar" class="select">
+        <select class="form-control">
+          <option value="">Export Basic</option>
+          <option value="all">Export All</option>
+          <option value="selected">Export Selected</option>
+        </select>
+      </div>
+      
+      </table>
+        <table
+        id="table"
+        data-show-export="true"
+        data-search="true"
+        data-pagination="true"
+        data-side-pagination="client"
+        data-url="./tabledata/booked_table.json"> 
+      
+        <thead>
+          <tr>
+            <th data-field="year" data-sortable="true">Year</th>
+            <th data-field="month" data-sortable="false">Month</th>
+            <th data-field="booked" data-sortable="false">Booked weeks</th>
+          </tr>
+        </thead>
+      </table>
+      
+      <script>
+        var $table = $('#table')
+      
+        $(function() {
+          $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('destroy').bootstrapTable({
+              exportDataType: $(this).val(),
+              exportTypes: ['json', 'xml', 'csv', 'txt', 'sql', 'excel', 'pdf'],
+              columns: [
+                {
+                  field: 'state',
+                  checkbox: true,
+                  visible: $(this).val() === 'selected'
+                },
+                {
+                  field: 'year',
+                  title: 'År'
+                }, {
+                  field: 'month',
+                  title: 'Måned'
+                }, {
+                  field: 'booked',
+                  title: 'Bookede uger'
+                }
+              ]
+            })
+          }).trigger('change')
+        })
+      </script>
+      
+      </div><div style="margin-top:20px"></div><p><div style="float:right;"><a href="#230ff386-7ef1-4014-9e62-50b1e149c19d" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="230ff386-7ef1-4014-9e62-50b1e149c19d" class="collapse">
+      Summen af kvadrerede afvigelser (SSE) er defineret som
+      <div class="math"></div><script type="math/tex; mode=display">\mathrm{SSE} = \sum_{t = 5}^{12} \left(y_t - f(t)\right)^2,</script>
+      hvor <span class="math"></span><script type="math/tex">y_t</script> er det faktiske antal bookede husuger i måned nummer <span class="math"></span><script type="math/tex">t</script> i 2019, og <span class="math"></span><script type="math/tex">f(t)</script> er antal bookede husuger i måned nummer <span class="math"></span><script type="math/tex">t</script>
+      som modelfunktionen <span class="math"></span><script type="math/tex">f(t)</script> beskriver.<div style="margin-top:20px"></div>Den funktion <span class="math"></span><script type="math/tex">f(t)</script> som økonomen fandt giver <span class="math"></span><script type="math/tex">\text{SSE} = 2.58\cdot 10^6</script>.
+    </div>
+    <div class=sage><script type="text/x-sage">
+t = var('t')
+booked_2019 =[(5, 9596), (6, 11141), (7, 28172), (8, 8968), (9, 3316), (10, 1696), (11, 505), (12, 447)]
+def frexp10(x):
+    expo = int(math.floor(math.log10(abs(x))))
+    return x / 10**expo, expo
+@interact
+def booked_function(expression=input_box('25000 - 2000 * t', 'f(t) =', str)):
+    if expression:
+        try:
+            SSE = n(sum([(SR(expression)(t = x) - y)**2 for x, y in booked_2019]))
+            SSE_string = 'SSE\u0024={0:.2f}\\cdot 10^{{{1}}}\u0024'.format(*frexp10(SSE))
+            # SSE_string = 'SSE = {:.2g}'.format(SSE)
+            p1 = plot(SR(expression), (t, 5, 12))
+            p2 = point(booked_2019)
+            p3 = text(SSE_string, (9,2.5e4), horizontal_alignment = 'left', fontsize = 14)
+            (p1 + p2 + p3).show()
+            pretty_print(html('Værdi der kan kopieres: SSE = {}'.format(SSE)))
+        except TypeError:
+            print("Der er et problem med dit funktionsudtryk.")
+    else:
+        print("Vær opmærksom på at dit udtryk kan plottes.")
+    </script></div><div style="margin-top:20px"></div>Hvis du vil deltage i konkurrencen om en plade chokolade, kan du kopiere dit udtryk for <span class="math"></span><script type="math/tex">f(t)</script> og din værdi for SSE
+    og sætte dem ind i <a href="https://survey.au.dk/LinkCollector?key=YP5DU5KTLJ95" target="_blank">denne formular</a>.<div style="margin-top:20px"></div><p><div style="float:right;"><a href="#ad4c0562-332a-411c-9a9a-60803449cd60" class="btn btn-default"data-toggle="collapse"><span class="glyphicon glyphicon-eye-open"></span><span class="glyphicon glyphicon-eye-open"></span></a></div><div style="clear: both;"></div></p><div id="ad4c0562-332a-411c-9a9a-60803449cd60" class="collapse">
+      Der findes selvfølgelig metoder til at finde den funktion af en bestemt type, der bedst beskriver data.
+      Fx. kan man finde den bedste rette linje (lineære funktion) ved hjælp af lineær regression. Det kommer
+      du til at lære meget mere om i faget <em>kvantitativ metode</em> på andet semester.<div style="margin-top:20px"></div>Man skal selvfølgelig passe på ikke at overfitte, se figuren nedenfor fra <a href="xkcd" target="_blank">https://xkcd.com/2048</a>.
+      <center>
+        <div class="centerimg"><img src="img/week11/curve_fitting.png" ></div>
+      </center>
+    </div>
+    </div>
+</div><div style="margin-top:20px"></div><span id="sec12.4"></span><h2 id="e0662083-3c4d-4d9b-82de-555eb46e4d5d">12.4 Feedback</h2>
+Vi vil gerne vide hvilke opgaver der har hulpet dig mest med matematisk <em>forståelse</em> og med matematiske <em>færdigheder</em>.<div style="margin-top:20px"></div>Eksempler på matematisk forståelse kan være en aha!-oplevelse af indsigt, at forstå et begreb ved at se det på forskellige måder, eller gennem at tænke over hvorfor et svar var rigtigt eller forkert.
+Eksempler på matematiske færdigheder kan være at kunne lave en ny type beregning eller analyse, eller at blive hurtigere eller mere sikker til at anvende en metode.<div style="margin-top:20px"></div>Dine svar er anonyme.<div style="margin-top:20px"></div>
+  <div class="strawpoll-embed" id="strawpoll_BDyNjaOKJyR" style="height: 1156px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_BDyNjaOKJyR" src="https://strawpoll.com/embed/polls/BDyNjaOKJyR" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+
+  <div class="strawpoll-embed" id="strawpoll_61gDBqRKzyw" style="height: 1156px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDBqRKzyw" src="https://strawpoll.com/embed/polls/61gDBqRKzyw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
