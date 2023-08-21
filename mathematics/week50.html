@@ -1,0 +1,458 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week36.html#b0c1963f-43fd-4e3d-a8cd-164f2121f418"><b>1</b> Week 36</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week36.html#8f1bf040-f1b9-4810-9ed4-6a5ae1a78ef5">1.1 Readings for this week's lectures</a></li><li><a href="week36.html#e2087cc2-9298-44e0-b074-fe29b8f17750">1.2 Readings for this week's exercises</a></li><li><a href="week36.html#5027db04-444e-47d5-a66b-5e55e6542407">1.3 Notes</a></li><li><a href="week36.html#f32c1e4d-0e97-4b05-846b-7c6ded984e2b">1.4 Exercises</a></li></ul><li><a class="kap" href="week37.html#d9ebc1f0-f96c-43a5-b679-2c75992c2d9e"><b>2</b> Week 37</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week37.html#50608fa5-d847-415b-8a71-0d983bdba677">2.1 Readings for this week's lectures</a></li><li><a href="week37.html#d0b3173b-d65f-4ae2-83c7-459f173f1bbf">2.2 Readings for this week's exercises</a></li><li><a href="week37.html#08ef9798-eeee-4f7f-a9a3-0b73bf4aa092">2.3 Notes</a></li><li><a href="week37.html#75fee723-413e-43fb-a403-a2d2a21eac02">2.4 Exercises</a></li></ul><li><a class="kap" href="week38.html#50bcf46c-2fb8-45cd-80c4-f5a62a3a884e"><b>3</b> Week 38</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week38.html#45930cce-0010-422d-99df-95f4e833d46c">3.1 Readings for this week's lectures</a></li><li><a href="week38.html#a12cbf50-25e8-4de4-a54f-e221a8172030">3.2 Readings for this week's exercises</a></li><li><a href="week38.html#5d4dce91-45f4-4641-8ab3-deb98784182e">3.3 Notes</a></li><li><a href="week38.html#b94ebe1b-3abb-4bda-8b69-dee530a4dbe1">3.4 Exercises</a></li></ul><li><a class="kap" href="week39.html#19d8edb7-e2cf-45f5-b6b7-6ed130973613"><b>4</b> Week 39</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week39.html#2f643408-d302-4748-b070-e76709a74f78">4.1 Readings for this week's lectures</a></li><li><a href="week39.html#6b1d946e-14ae-4d1a-ba15-0f877dde3711">4.2 Readings for this week's exercises</a></li><li><a href="week39.html#28a7b895-e4ad-487d-8f12-8669cabab1e3">4.3 Notes</a></li><li><a href="week39.html#526a30b6-f3e9-4e90-bb87-87615b502d1c">4.4 Exercises</a></li></ul><li><a class="kap" href="week40.html#193f001d-b3cc-4f85-ae93-c836da3522ae"><b>5</b> Week 40</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week40.html#e914bf60-f2cd-45e4-ba4b-56049d988538">5.1 Readings for this week's lectures</a></li><li><a href="week40.html#3df130f1-a085-4215-8066-9c4c3c9eef10">5.2 Readings for this week's exercises</a></li><li><a href="week40.html#bdf5670d-5cbe-434e-b9fa-b92efcdc2287">5.3 Notes</a></li><li><a href="week40.html#8d7276bb-222a-4a98-95bd-5cb4c7d0d573">5.4 Problems</a></li></ul><li><a class="kap" href="week41.html#5c22a408-8d91-40f4-bee8-e1e054f7a029"><b>6</b> Week 41</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week41.html#9adf1b50-8b68-4078-a58f-45ac439b37cb">6.1 Readings for this week's lectures</a></li><li><a href="week41.html#b34726f8-301d-4614-b16c-9dc1b88364b5">6.2 Readings for this week's exercises</a></li><li><a href="week41.html#18477b3b-a409-4329-8da6-d5504642c2a0">6.3 Notes</a></li><li><a href="week41.html#2e65244d-851c-43d7-9fb0-63147cf50237">6.4 Problems</a></li></ul><li><a class="kap" href="week42.html#dc646f63-3ec3-4e7e-86d8-200784d9861a"><b>7</b> Week 42</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week42.html#0fffd667-0ed8-4daa-84e0-8ce93a81ed80">7.1 Readings for this week's lectures</a></li><li><a href="week42.html#12b60224-0983-4230-8d59-0c245a108754">7.2 Readings for this week's exercises</a></li><li><a href="week42.html#acd9d87e-ba19-40ee-96b3-034e47bc01e6">7.3 Notes</a></li><li><a href="week42.html#86bf3494-53a2-4b60-8922-7b4048741325">7.4 Problems</a></li></ul><li><a class="kap" href="week43.html#d644dce3-5b88-4cdd-aaec-c032e19e691d"><b>8</b> Week 43</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week43.html#ae1edd13-c427-4e14-aaa6-62a072d9ba3c">8.1 Readings for this week's lectures</a></li><li><a href="week43.html#1675dc8c-43d5-43b9-8382-3acaf3002fa0">8.2 Readings for this week's exercises</a></li><li><a href="week43.html#5755b1a9-afaa-4c40-813d-30ceada8d750">8.3 Notes</a></li><li><a href="week43.html#9489be06-f0cf-4b9a-8eb9-831caf6c5ab3">8.4 Problems</a></li></ul><li><a class="kap" href="week44.html#d27ed6c8-91f7-44e4-b9c7-10dbda3b9833"><b>9</b> Week 44</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week44.html#7b61af0d-5c3e-4a70-9632-8e0b2011f0e6">9.1 Readings for this week's lectures</a></li><li><a href="week44.html#05a21b52-6dc2-43c2-899d-5d6dd2ce2386">9.2 Readings for this week's exercises</a></li><li><a href="week44.html#ff35c4e2-74ab-40ac-aadb-c5a73e87ad86">9.3 Notes</a></li><li><a href="week44.html#410fe7a7-598c-43b3-b499-08c8b76a7428">9.4 Problems</a></li></ul><li><a class="kap" href="week45.html#b35fb239-b668-4a14-ae33-63aaca60cf24"><b>10</b> Week 45</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week45.html#58af0ccc-57d4-4388-b5c5-95563ada1031">10.1 Readings for this week's lectures</a></li><li><a href="week45.html#6014b0cd-3239-4a1c-b610-07b5e2023aa7">10.2 Readings for this week's exercises</a></li><li><a href="week45.html#139d4f38-356b-4522-8d63-df9c9b9b09e0">10.3 Notes</a></li><li><a href="week45.html#a5b69048-02be-4c92-9bf4-7a1645da6aff">10.4 Problems</a></li></ul><li><a class="kap" href="week46.html#fa73655a-7ce2-44a1-8b0c-d9b15246da54"><b>11</b> Week 46</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week46.html#f2c7b3c8-efa0-4649-9a73-c80684b68eb2">11.1 Readings for this week's lectures</a></li><li><a href="week46.html#7adf284a-5212-4317-aa45-f51aadc77441">11.2 Readings for this week's exercises</a></li><li><a href="week46.html#5a8fb07e-af44-4e51-beaf-68fd8e29f755">11.3 Notes</a></li><li><a href="week46.html#a0c3026f-a7aa-4442-9e3d-8bf5dafcf3f6">11.4 Problems</a></li></ul><li><a class="kap" href="week47.html#c7ec465c-9954-4111-b45e-ea49827267fa"><b>12</b> Week 47</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week47.html#2b0c1763-8d6c-4c19-a48e-145494c24fe9">12.1 Readings for this week's lectures</a></li><li><a href="week47.html#a1aeefa2-32e2-47be-ae76-ebfe9b30f3a1">12.2 Readings for this week's exercises</a></li><li><a href="week47.html#ce8794b5-e874-4561-8d75-c7aca7f02acf">12.3 Notes</a></li><li><a href="week47.html#add6dcc9-5d67-4c8c-8937-5f59e7233269">12.4 Problems</a></li></ul><li><a class="kap" href="week48.html#5357d4bc-34e9-487c-801c-e63536e5a64e"><b>13</b> Week 48</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week48.html#5a20e48e-86ab-49da-bd99-f1dd8859a547">13.1 Readings for this week's lectures</a></li><li><a href="week48.html#3256aebc-a09a-448f-9c36-203b51928354">13.2 Readings for this week's exercises</a></li><li><a href="week48.html#aba67129-14d0-4993-8e1f-2bb79612e784">13.3 Notes</a></li><li><a href="week48.html#6a917094-56e5-4669-a48d-f41be249c4d3">13.4 Problems</a></li></ul><li><a class="kap" href="week49.html#2d826e2c-cf7d-4d86-a607-237a9885c072"><b>14</b> Week 49</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week49.html#f736589a-2c03-45c7-b4be-4bc57d24d919">14.1 Readings for this week's lectures</a></li><li><a href="week49.html#7bc81d03-af13-42ba-9eb9-8574bce100d6">14.2 Readings for this week's exercises</a></li><li><a href="week49.html#5b3109cb-b05e-4a6e-bb20-b44f85c30376">14.3 Notes</a></li><li><a href="week49.html#89305af1-a3c0-4d15-9f03-c37945bdf80e">14.4 Problems</a></li><li><a href="week49.html#f908ea1e-08de-40f5-910b-c60a63317c50">14.5 Feedback</a></li></ul><li><a class="kap" href="week50.html#3239cd1f-8254-424b-8aa8-1a494316f659"><b>15</b> Week 50</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week50.html#e40eac80-766f-4869-90ec-828ce962f808">15.1 Readings for this week's exercises</a></li><li><a href="week50.html#f4d15877-c356-4d61-a3c9-5b0b89fe3221">15.2 Notes</a></li><li><a href="week50.html#56862c41-deb1-43f6-a1ff-b3e8bd5e242d">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="3239cd1f-8254-424b-8aa8-1a494316f659">15<span style="float:right;">Week 50</span></h1><div style="margin-top:20px"></div><span id="sec15.1"></span><h2 id="e40eac80-766f-4869-90ec-828ce962f808">15.1 Readings for this week's exercises</h2>
+Read sections 13.2, 13.4, and 13.6 in the textbook.<div style="margin-top:20px"></div><span id="sec15.2"></span><h2 id="f4d15877-c356-4d61-a3c9-5b0b89fe3221">15.2 Notes</h2>
+<b>The determinant of a <span class="math"></span><script type="math/tex">\mathbf{3\times 3}</script> matrix</b>
+<div class="frameit">
+    The denominator in the solution for <span class="math"></span><script type="math/tex">x_1</script> is <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert</script>, which can be expressed in terms of determinants of order 2:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \vert\mathbf{A}\vert =
+        a_{11}
+        \begin{vmatrix}
+            a_{22} & a_{23} \\
+            a_{32} & a_{33}
+        \end{vmatrix}
+        -a_{12}
+        \begin{vmatrix}
+            a_{21} & a_{23} \\
+            a_{31} & a_{33}
+        \end{vmatrix}
+        +a_{13}
+        \begin{vmatrix}
+            a_{21} & a_{22} \\
+            a_{31} & a_{32}
+        \end{vmatrix}
+    </script><div style="margin-top:20px"></div>This is called the cofactor expansion of <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert</script> after the first row <span class="math"></span><script type="math/tex">\begin{pmatrix}a_{11} & a_{12} & a_{13}\end{pmatrix}</script>.
+</div><div style="margin-top:20px"></div><b>Cramer's rule for <span class="math"></span><script type="math/tex">\mathbf{n=3}</script></b>
+<div class="frameit">
+    The numerators in the solutions for <span class="math"></span><script type="math/tex">x_1</script>, <span class="math"></span><script type="math/tex">x_2</script> and <span class="math"></span><script type="math/tex">x_3</script> can also be written as determinants:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        x_1   = \frac{            \begin{vmatrix}
+                b_{1} & a_{12} & a_{13} \\
+                b_{2} & a_{22} & a_{23} \\
+                b_{3} & a_{32} & a_{33}
+            \end{vmatrix}        }{\vert\mathbf{A}\vert}
+        \quad
+        x_2   = \frac{            \begin{vmatrix}
+                a_{11} & b_{1} & a_{13} \\
+                a_{21} & b_{2} & a_{23} \\
+                a_{31} & b_{3} & a_{33}
+            \end{vmatrix}        }{\vert\mathbf{A}\vert}
+        \quad
+        x_3   = \frac{            \begin{vmatrix}
+                a_{11} & a_{12} & b_{1} \\
+                a_{21} & a_{22} & b_{2} \\
+                a_{31} & a_{32} & b_{3}
+            \end{vmatrix}        }{\vert\mathbf{A}\vert}
+    </script><div style="margin-top:20px"></div>This is Cramer's rule for 3 equations with 3 unknowns (<span class="math"></span><script type="math/tex">n=3</script>).
+</div><div style="margin-top:20px"></div><b>The inverse matrix</b>
+<div class="frameit">
+    The <em>inverse matrix</em> of <span class="math"></span><script type="math/tex">\mathbf{A}</script> is written <span class="math"></span><script type="math/tex">\mathbf{A}^{-1}</script> and is defined by
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{A}^{-1}\mathbf{A} = \mathbf{A}\mathbf{A}^{-1} = \mathbf{I}
+    </script><div style="margin-top:20px"></div>Only quadratic matrices have an inverse, and only if
+    <div class="math"></div><script type="math/tex; mode=display">\vert\mathbf{A}\vert\neq 0</script><div style="margin-top:20px"></div>We write a system of <span class="math"></span><script type="math/tex">n</script> equations with <span class="math"></span><script type="math/tex">n</script> unknowns as the matrix equation:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{Ax=b}
+    </script>
+    If we know the inverse matrix of <span class="math"></span><script type="math/tex">\mathbf{A}</script> then we can solve the equation as<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{x}=\mathbf{A}^{-1}\mathbf{b}
+    </script><div style="margin-top:20px"></div>This is the solution by matrix inversion. Then, we can find the inverse of a <span class="math"></span><script type="math/tex">2\times 2</script> matrix:<div style="margin-top:20px"></div>Let
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{A}  =
+        \begin{pmatrix}
+            a_{11} & a_{12} \\
+            a_{21} & a_{22}
+        \end{pmatrix}
+    </script>
+    If <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert \neq 0</script>, then
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{A}^{-1}  = \frac{1}{\vert\mathbf{A}\vert}
+        \begin{pmatrix}
+            a_{22}  & -a_{12} \\
+            -a_{21} & a_{11}
+        \end{pmatrix}
+    </script>
+    <em>Note:</em> we can find the inverse of a <span class="math"></span><script type="math/tex">3\times 3</script> matrix or higher, but it is more complicated.
+</div><div style="margin-top:20px"></div><span id="sec15.3"></span><h2 id="56862c41-deb1-43f6-a1ff-b3e8bd5e242d">15.3 Problems</h2><div style="margin-top:20px"></div><span id="env15.1"></span><div class="exercise" data-count="15.1">     
+    A simple model to forecast the weather is based on the probability for rain or sunshine tomorrow, given knowledge of the weather today. Assume that if it rains today there is a 70% probability of rain tomorrow, and if today is sunny there is a 60% probability of sunshine tomorrow.
+    <ol class="number"><li id="ite15.1"> Construct a matrix <span class="math"></span><script type="math/tex">\mathbf{P}</script> where the first column indicates rain today and the second culumn indicates sunhine today. The first row indicates rain tomorrow and the second row indicates sunshine tomorrow. A matrix element in <span class="math"></span><script type="math/tex">\mathbf{P}</script> is the probability that the weather tomorrow corresponds to the row, assuming that the weather today is given by the column.
+              <div class="math"></div><script type="math/tex; mode=display">
+                  \textbf{P}=
+                  \begin{array}{rc}                                    & \begin{array}{c}\text{rain today}\phantom{x}\text{sun today}\end{array} \\
+             \begin{array}{r}\text{rain tomorrow}\\\text{sun tomorrow}\end{array}\hspace{-1em} &
+             \begin{pmatrix}\quad p_{11}\quad&\quad p_{12}\quad\\p_{21}&p_{22}\end{pmatrix}              &
+                  \end{array}
+              </script>
+              Write the probabilities as a fraction or in decimal, but not in percent. A probability of 50% should be written as 1/2 or 0.5.
+              <a href="#bc77d5ce-6138-489e-bcfc-9c36d35d62d2" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=bc77d5ce-6138-489e-bcfc-9c36d35d62d2 class = "collapse Hint envbuttons">    
+                  You can assume that the weather on a given day can be classified as either sunshine or rain. The probabilities for these two outcomes on a given day must therefore sum to 1, irrespective of whether the weather on the day before was sunny or rainy.
+                </div>
+              <div id="quiz1">    <div class="row quizquestion">        
+                  Construct <span class="math"></span><script type="math/tex">\mathbf{P}</script>.
+                      </div>    <div class="row formatquizanswer">        <b>Your answer:</b> It is a        <select class="formatquiz-type" onchange="formatQuizChangeType(1)">            <option value="none" selected></option>            <option value="scalar">Scalar</option>            <option value="columnvector">Column vector</option>            <option value="rowvector">Row vector</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            which is        </span>        <span class="formatquiz-vector hidden">            with            <select onchange="formatQuizChangeMatrixSize(1)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            entries        </span>        <span class="formatquiz-matrix hidden">            with dimensions            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            given by            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(1, formatQuizProgram1)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Correct!</b>                </span>                <span class="wrong hidden">                    <b>Wrong.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram1(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.7));
+   result = result && (equals(matrix[0][1], 0.4));
+   result = result && (equals(matrix[1][0], 0.3));
+   result = result && (equals(matrix[1][1], 0.6));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.2"> The weather today can be described as a column vector, <span class="math"></span><script type="math/tex">\mathbf{w}</script>, which is one of:
+              <div class="math"></div><script type="math/tex; mode=display">
+                  \text{rain:}\, \begin{pmatrix}1\\ 0\end{pmatrix} \quad
+                  \text{sunshine:}\, \begin{pmatrix}0\\ 1\end{pmatrix}.
+              </script>
+              Explain why  <span class="math"></span><script type="math/tex">\mathbf{Pw}</script> can be interpreted as a vector indicating the probability of the weather tomorrow.
+              <div id="quiz2">    <div class="row quizquestion">        
+                  Calculate <span class="math"></span><script type="math/tex">\mathbf{Pw}</script>, assuming today is a rainy day.
+                      </div>    <div class="row formatquizanswer">        <b>Your answer:</b> It is a        <select class="formatquiz-type" onchange="formatQuizChangeType(2)">            <option value="none" selected></option>            <option value="scalar">Scalar</option>            <option value="columnvector">Column vector</option>            <option value="rowvector">Row vector</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            which is        </span>        <span class="formatquiz-vector hidden">            with            <select onchange="formatQuizChangeMatrixSize(2)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            entries        </span>        <span class="formatquiz-matrix hidden">            with dimensions            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            given by            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(2, formatQuizProgram2)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Correct!</b>                </span>                <span class="wrong hidden">                    <b>Wrong.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram2(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.7));
+   result = result && (equals(matrix[1][0], 0.3));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.3">  Which expression results in a column vector where the elements are the probabilities of rain and sunshine, respectively, the day after tomorrow, when <span class="math"></span><script type="math/tex">\mathbf{w}</script> is the vector indicating observed the weather today?
+              <span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
+                  Choose among the following options:
+                  </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+                  <span class="math"></span><script type="math/tex">\mathbf{w'Pw}</script>
+                  </div><div class="col-xs-5 quizanswer" datav="F">
+                  <span class="math"></span><script type="math/tex">\mathbf{Pw^2}</script>
+                  </div><div class="col-xs-5 quizanswer" datav="F">
+                  <span class="math"></span><script type="math/tex">\mathbf{PwP}</script>
+                  </div><div class="col-xs-5 quizanswer" datav="T">
+                  <span class="math"></span><script type="math/tex">\mathbf{P^2w}</script>
+              </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz3, quizbutton1);});</script>
+        </li><li id="ite15.4">  Use matrix multiplication to calculate the vector expressing the probability of the weather the day after tomorrow, assuming that it rains today. The calculation  may be easier if you write the matrix elements as fractions, i.e., write, e.g., <span class="math"></span><script type="math/tex">\frac{5}{10}</script> instead of 0.5.
+              <div id="quiz4">    <div class="row quizquestion">        
+                  Calculate the matrix product identified above, assuming rain today.
+                      </div>    <div class="row formatquizanswer">        <b>Your answer:</b> It is a        <select class="formatquiz-type" onchange="formatQuizChangeType(4)">            <option value="none" selected></option>            <option value="scalar">Scalar</option>            <option value="columnvector">Column vector</option>            <option value="rowvector">Row vector</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            which is        </span>        <span class="formatquiz-vector hidden">            with            <select onchange="formatQuizChangeMatrixSize(4)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            entries        </span>        <span class="formatquiz-matrix hidden">            with dimensions            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            given by            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(4, formatQuizProgram4)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Correct!</b>                </span>                <span class="wrong hidden">                    <b>Wrong.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram4(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.61));
+   result = result && (equals(matrix[1][0], 0.39));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.5"> What is the probability of sunshine the day after tomorrow, assuming that it is raining today?
+              <div id="quiz5">    <div class="row quizquestion">        
+                  Use a fraction or decimal number in your answer.
+                      </div>    <div class="row formatquizanswer">        <b>Your answer:</b> It is a        <select class="formatquiz-type" onchange="formatQuizChangeType(5)">            <option value="none" selected></option>            <option value="scalar">Scalar</option>            <option value="columnvector">Column vector</option>            <option value="rowvector">Row vector</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            which is        </span>        <span class="formatquiz-vector hidden">            with            <select onchange="formatQuizChangeMatrixSize(5)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            entries        </span>        <span class="formatquiz-matrix hidden">            with dimensions            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            given by            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(5, formatQuizProgram5)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Correct!</b>                </span>                <span class="wrong hidden">                    <b>Wrong.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram5(matrix) {
+   if (matrixUID(matrix) != matrixUID(1, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.39));
+   return result;
+}
+            </script>        </span>    </div></div>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.2"></span><div class="exercise" data-count="15.2">     
+    A Danish company transports products and materials back and forth between a factory in Denmark and a factory in Southern Europe. The goods must be quality checked somewhere in Germany as part of the transit between Denmark and Southern Europe.<div style="margin-top:20px"></div>The factory in Denmark can be placed either in Vejle og in Esbjerg. The goods must be quality controlled in either Hamburg, Frankfurt or Berlin. The factory in Southern Europe can be placed either in Bilbao, Toulouse, Milan or Porto.<div style="margin-top:20px"></div>The company wants to place the factories in such a way that the number of usable freight train connections between the cities is as high as possible (given a stop in one the German cities).<div style="margin-top:20px"></div>The number of train connections between the Danish cities and the German cities is represented by the <span class="math"></span><script type="math/tex">2 \times 3</script> matrix <span class="math"></span><script type="math/tex">\textbf{A}</script>, given by:<div style="margin-top:20px"></div>        <div class="math"></div><script type="math/tex; mode=display">
+        \textbf{A}=
+        \begin{array}{rc}
+            & \begin{array}{c}\text{Berlin}\phantom{x}\text{Frankfurt}\phantom{x}\text{Hamburg}
+            \end{array} \\
+            \begin{array}{r}
+                \text{Esbjerg} \\
+                \text{Vejle}
+            \end{array}\hspace{-1em} &
+            \begin{pmatrix}
+                \phantom{Be}0\phantom{lin} & \phantom{Fr}2\phantom{urt} & \phantom{Ha}1\phantom{org} \\
+                \phantom{Be}3\phantom{lin} & \phantom{Fr}3\phantom{urt} & \phantom{Ha}1\phantom{org}
+            \end{pmatrix}              &
+        \end{array}
+    </script><div style="margin-top:20px"></div>                                
+    For example there are <span class="math"></span><script type="math/tex">2</script> train connections between Esbjerg and Frankfurt, but none between Esbjerg and Berlin.<div style="margin-top:20px"></div>In a similar way the <span class="math"></span><script type="math/tex">3 \times 4</script> matrix <span class="math"></span><script type="math/tex">\textbf{B}</script> represents the train connections between the German and Southern European cities:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \textbf{B}=
+        \begin{array}{rc}
+            & \begin{array}{c}\text{Bilbao}\phantom{x}\text{Milan}\phantom{x}\text{Porto}\phantom{x}\text{Toulouse}
+            \end{array} \\
+            \begin{array}{r}
+                \text{Berlin}    \\
+                \text{Frankfurt} \\
+                \text{Hamburg}
+            \end{array}\hspace{-1em} &
+            \begin{pmatrix}
+                \phantom{Bi}2 & \phantom{Mil}3\phantom{no} & \phantom{P}0\phantom{to} & \phantom{T}1\phantom{use} \\
+                \phantom{Bl}4 & \phantom{Mil}1\phantom{no} & \phantom{P}2\phantom{to} & \phantom{T}3\phantom{use} \\
+                \phantom{Bi}0 & \phantom{Mil}2\phantom{no} & \phantom{P}1\phantom{to} & \phantom{T}2\phantom{use} \\
+            \end{pmatrix}              &
+        \end{array}
+    </script><div style="margin-top:20px"></div>                                    
+    The total number of possible train connections between the Danish and Southern European cities are now given by the elements of the matrix <span class="math"></span><script type="math/tex">\textbf{C}=\textbf{AB}</script>. <span class="math"></span><script type="math/tex">\textbf{C}</script> is a <span class="math"></span><script type="math/tex">2 \times 4</script> matrix given by:
+    <div class="math"></div><script type="math/tex; mode=display">
+    \textbf{C}=
+    \begin{array}{rc}
+        & \begin{array}{c}\text{Bilbao}\phantom{x}\text{Milan}\phantom{x}\text{Porto}\phantom{x}\text{Toulouse}
+        \end{array} \\
+        \begin{array}{r}
+            \text{Esbjerg} \\
+            \text{Vejle}
+        \end{array}\hspace{-1em} &
+        \begin{pmatrix}
+            \phantom{Bi}\phantom{a} & \phantom{Mil}\phantom{a}\phantom{no} & \phantom{P}5\phantom{to}           & \phantom{T}\phantom{a}\phantom{use} \\
+            \phantom{Bl}\phantom{a} & \phantom{Mi}14\phantom{no}           & \phantom{P}\phantom{a}\phantom{to} & \phantom{T}\phantom{a}\phantom{use} \\
+        \end{pmatrix}              &
+    \end{array}
+</script><div style="margin-top:20px"></div>                                        
+    For example, there are 5 ways to transport goods between Esbjerg and Porto.
+    <ol class="number"><li id="ite15.6"> Insert the missing matrix elements in <span class="math"></span><script type="math/tex">\textbf{C}</script>
+        </li><li id="ite15.7"> Where does the company place its two factories?     </li></ol><div style="margin-top:20px"></div>The company gets news of rumors that the mayors of Frankfurt and Milan are planning more freight trains between their respective cities, and realise that the optimal placement of the two factories may now be Vejle and Milan.<div style="margin-top:20px"></div><ol class="number" start = "3"><li id="ite15.8"> What is the minimum number of train connections between Frankfurt and Milan that makes Vejle and Milan the optimal locations for the two factories?
+                  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.3"></span><div class="exercise" data-count="15.3">     
+    Evaluate the determinant:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \begin{vmatrix}
+            5 & 3 & 1 \\
+            3 & 4 & 2 \\
+            5 & 6 & 1
+        \end{vmatrix}
+    </script>
+</div><div style="margin-top:20px"></div><span id="env15.4"></span><div class="exercise" data-count="15.4">     
+    Use Cramer's rule to solve the system of equations, if possible:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x_1 - x_2 + x_3  & = 2  \\
+        x_1 + x_2 - x_3  & = 0  \\
+        -x_1 - x_2 - x_3 & = -6
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.5"></span><div class="exercise" data-count="15.5">     
+    Use Cramer's rule to solve the system of equations, if possible:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x_1 - x_2         & = 0 \\
+        x_1 + 3x_2 + 2x_3 & = 0 \\
+        x_1 + 2x_2 + x_3  & = 0
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.6"></span><div class="exercise" data-count="15.6">     
+    Use Cramer's rule to solve the system of equations, if possible:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x +3y -2z   & = 1  \\
+        3x -2y + 5z & = 14 \\
+        2x -5y + 3z & = 1
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.7"></span><div class="exercise" data-count="15.7">     
+    Show that
+    <span class="math"></span><script type="math/tex">
+        \begin{pmatrix}
+            3 & \phantom{-}0 \\
+            2 & -1
+        \end{pmatrix}^{-1}
+        =
+        \begin{pmatrix}
+            1/3 & \phantom{-}0 \\
+            2/3 & -1
+        \end{pmatrix}</script>
+</div><div style="margin-top:20px"></div><span id="env15.8"></span><div class="exercise" data-count="15.8">     
+    <div id="quiz6">    <div class="row quizquestion">        
+        Let <span class="math"></span><script type="math/tex">\mathbf{B} = \begin{pmatrix} 4 & 7 \\ 3 & 5 \end{pmatrix}</script>. Find <span class="math"></span><script type="math/tex">\mathbf{A}</script> so that <span class="math"></span><script type="math/tex">\mathbf{AB} = \mathbf{BA} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Your answer:</b> It is a        <select class="formatquiz-type" onchange="formatQuizChangeType(6)">            <option value="none" selected></option>            <option value="scalar">Scalar</option>            <option value="columnvector">Column vector</option>            <option value="rowvector">Row vector</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            which is        </span>        <span class="formatquiz-vector hidden">            with            <select onchange="formatQuizChangeMatrixSize(6)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            entries        </span>        <span class="formatquiz-matrix hidden">            with dimensions            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            given by            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(6, formatQuizProgram6)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Correct!</b>                </span>                <span class="wrong hidden">                    <b>Wrong.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram6(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], -5));
+   result = result && (equals(matrix[0][1], 7));
+   result = result && (equals(matrix[1][0], 3));
+   result = result && (equals(matrix[1][1], -4));
+   return result;
+}
+            </script>        </span>    </div></div>
+</div><div style="margin-top:20px"></div><span id="env15.9"></span><div class="exercise" data-count="15.9">     
+    Find the inverse of the matrix, if it exists:
+    <span class="math"></span><script type="math/tex">
+        \begin{pmatrix}
+            9 & 6 \\
+            3 & 5
+        \end{pmatrix}</script>
+</div><div style="margin-top:20px"></div><span id="env15.10"></span><div class="exercise" data-count="15.10">     
+    Find the inverse of the matrix, if it exists:
+    <span class="math"></span><script type="math/tex">
+        \begin{pmatrix}
+            4 & -4 \\
+            2 & -2
+        \end{pmatrix}</script>
+</div><div style="margin-top:20px"></div><span id="env15.11"></span><div class="exercise" data-count="15.11">     
+    Solve the linear system by using the inverse matrix:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        2x - 3y & = 3 \\
+        3x - 4y & = 5
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.12"></span><div class="exercise" data-count="15.12">     
+    Solve the linear system by using the inverse matrix:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        4x_1 + 5x_2 & = 9  \\
+        4x_1 + 8x_2 & = 24
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.13"></span><div class="exercise" data-count="15.13">     
+    (Previous exam problem)<div style="margin-top:20px"></div>Consider the following system of equations, where <span class="math"></span><script type="math/tex">\alpha</script> is a scalar (real number).
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x_1 - x_2 - x_3        & = 1 \\
+        \alpha x_1 + x_2 + x_3 & = 0 \\
+        5x_1 - 4x_2 - 3x_3     & = 2
+    \end{aligned}</script>
+    <ol class="number"><li id="ite15.9"> Determine <b>A</b>, <b>x</b> and <b>b</b> so that the system of equations can be written in matrix form as <span class="math"></span><script type="math/tex">\textbf{Ax} = \textbf{b}</script>
+        </li><li id="ite15.10"> Find the value(s) of <span class="math"></span><script type="math/tex">\alpha</script> where the system of equations <i>does not</i> have a unique solution.
+        </li><li id="ite15.11"> Use Cramer's rule to find the solution to the system of equations for <span class="math"></span><script type="math/tex">\alpha = 0</script>.
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.14"></span><div class="exercise" data-count="15.14">     
+    (Previous exam problem)<div style="margin-top:20px"></div>Consider the following system of equations:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        3x_1 - x_2 - x_3 & = 5 \\
+        2x_1 +x_2 - 2x_3 & = 0 \\
+        x_1 + 3x_2 + x_3 & = 1
+    \end{aligned}</script>
+    <ol class="number"><li id="ite15.12"> Determine <b>A</b>, <b>x</b>, and <b>b</b>, so that the system of equations can be written in matrix form as:
+              <div class="math"></div><script type="math/tex; mode=display">
+                  \textbf{Ax}= \textbf{b}
+              </script>
+              (Note that you have answered this sub-problem in exercise <a href="week48.html#env13.14">13.14</a>).
+        </li><li id="ite15.13"> Determine whether the system of equations has a unique solution.
+        </li><li id="ite15.14"> Compute <b>CA</b> and <b>AD</b>, where
+              <span class="math"></span><script type="math/tex">
+                  \textbf{C} =
+                  \begin{pmatrix}
+                      \phantom{-}7 & -2           & 3 \\
+                      -4           & \phantom{-}4 & 4 \\
+                      \phantom{-}5 & -10          & 5
+                  \end{pmatrix}
+              </script> and
+              <span class="math"></span><script type="math/tex">
+                  \textbf{D} =
+                  \begin{pmatrix}
+                      \phantom{-}5 & 24 & 28 \\
+                      20           & 12 & 24 \\
+                      -5           & 20 & 0
+                  \end{pmatrix}
+              </script><div style="margin-top:20px"></div>(Note that you have answered this sub-problem in exercise <a href="week48.html#env13.14">13.14</a>).
+        </li><li id="ite15.15"> Find the scalar <span class="math"></span><script type="math/tex">\alpha</script> so that <span class="math"></span><script type="math/tex">\alpha\textbf{C} = \textbf{A}^{-1}</script> (Hint: use that <span class="math"></span><script type="math/tex">\textbf{A}^{-1}\textbf{A} = \textbf{I}</script>).
+        </li><li id="ite15.16"> Find the vector <b>x</b> that is a solution to the matrix equation <span class="math"></span><script type="math/tex">\textbf{Ax}=\textbf{b}</script>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.15"></span><div class="exercise" data-count="15.15">     
+    (Previous exam problem)<div style="margin-top:20px"></div>A vector <span class="math"></span><script type="math/tex">\mathbf{v}</script> and two matrices <span class="math"></span><script type="math/tex">\mathbf{U}</script> and <span class="math"></span><script type="math/tex">\mathbf{W}</script> are given by
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{U} =
+        \begin{pmatrix}
+            1        & \sqrt{2} \\
+            \sqrt{2} & 1
+        \end{pmatrix},
+        \qquad
+        \mathbf{v} =
+        \begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix},
+        \qquad
+        \mathbf{W} =
+        \begin{pmatrix}
+            w_{11} & w_{12} \\
+            w_{21} & w_{22}
+        \end{pmatrix},
+    </script>
+    where the elements in <span class="math"></span><script type="math/tex">\mathbf{v}</script> are real variables and the elements in <span class="math"></span><script type="math/tex">\mathbf{W}</script> are real constants.<div style="margin-top:20px"></div><ol class="number"><li id="ite15.17"> Find the inverse matrix of <span class="math"></span><script type="math/tex">\mathbf{U}</script>.
+        </li><li id="ite15.18"> Calculate <span class="math"></span><script type="math/tex">\mathbf{v'Wv}</script>, where <span class="math"></span><script type="math/tex">\mathbf{v'}</script> is the transpose of <span class="math"></span><script type="math/tex">\mathbf{v}</script>.
+        </li><li id="ite15.19"> Assume that <span class="math"></span><script type="math/tex">\mathbf{W}</script> is symmetric and determine <span class="math"></span><script type="math/tex">\mathbf{W}</script> (i.e. all elements in <span class="math"></span><script type="math/tex">\mathbf{W}</script>), so that
+              <div class="math"></div><script type="math/tex; mode=display">
+                  \mathbf{v'Wv}  = (x - y)^2.
+              </script>
+    </li></ol>
+</div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
