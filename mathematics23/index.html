@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week36.html#b0c1963f-43fd-4e3d-a8cd-164f2121f418"><b>1</b> Week 36</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week36.html#8f1bf040-f1b9-4810-9ed4-6a5ae1a78ef5">1.1 Readings for this week's lectures</a></li><li><a href="week36.html#e2087cc2-9298-44e0-b074-fe29b8f17750">1.2 Readings for this week's exercises</a></li><li><a href="week36.html#5027db04-444e-47d5-a66b-5e55e6542407">1.3 Notes</a></li><li><a href="week36.html#f32c1e4d-0e97-4b05-846b-7c6ded984e2b">1.4 Exercises</a></li></ul><li><a class="kap" href="week37.html#d9ebc1f0-f96c-43a5-b679-2c75992c2d9e"><b>2</b> Week 37</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week37.html#50608fa5-d847-415b-8a71-0d983bdba677">2.1 Readings for this week's lectures</a></li><li><a href="week37.html#d0b3173b-d65f-4ae2-83c7-459f173f1bbf">2.2 Readings for this week's exercises</a></li><li><a href="week37.html#08ef9798-eeee-4f7f-a9a3-0b73bf4aa092">2.3 Notes</a></li><li><a href="week37.html#75fee723-413e-43fb-a403-a2d2a21eac02">2.4 Exercises</a></li></ul><li><a class="kap" href="week38.html#50bcf46c-2fb8-45cd-80c4-f5a62a3a884e"><b>3</b> Week 38</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week38.html#45930cce-0010-422d-99df-95f4e833d46c">3.1 Readings for this week's lectures</a></li><li><a href="week38.html#a12cbf50-25e8-4de4-a54f-e221a8172030">3.2 Readings for this week's exercises</a></li><li><a href="week38.html#5d4dce91-45f4-4641-8ab3-deb98784182e">3.3 Notes</a></li><li><a href="week38.html#b94ebe1b-3abb-4bda-8b69-dee530a4dbe1">3.4 Exercises</a></li></ul><li><a class="kap" href="week39.html#19d8edb7-e2cf-45f5-b6b7-6ed130973613"><b>4</b> Week 39</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week39.html#2f643408-d302-4748-b070-e76709a74f78">4.1 Readings for this week's lectures</a></li><li><a href="week39.html#6b1d946e-14ae-4d1a-ba15-0f877dde3711">4.2 Readings for this week's exercises</a></li><li><a href="week39.html#28a7b895-e4ad-487d-8f12-8669cabab1e3">4.3 Notes</a></li><li><a href="week39.html#526a30b6-f3e9-4e90-bb87-87615b502d1c">4.4 Exercises</a></li></ul><li><a class="kap" href="week40.html#193f001d-b3cc-4f85-ae93-c836da3522ae"><b>5</b> Week 40</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week40.html#e914bf60-f2cd-45e4-ba4b-56049d988538">5.1 Readings for this week's lectures</a></li><li><a href="week40.html#3df130f1-a085-4215-8066-9c4c3c9eef10">5.2 Readings for this week's exercises</a></li><li><a href="week40.html#bdf5670d-5cbe-434e-b9fa-b92efcdc2287">5.3 Notes</a></li><li><a href="week40.html#8d7276bb-222a-4a98-95bd-5cb4c7d0d573">5.4 Problems</a></li></ul><li><a class="kap" href="week41.html#5c22a408-8d91-40f4-bee8-e1e054f7a029"><b>6</b> Week 41</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week41.html#9adf1b50-8b68-4078-a58f-45ac439b37cb">6.1 Readings for this week's lectures</a></li><li><a href="week41.html#b34726f8-301d-4614-b16c-9dc1b88364b5">6.2 Readings for this week's exercises</a></li><li><a href="week41.html#18477b3b-a409-4329-8da6-d5504642c2a0">6.3 Notes</a></li><li><a href="week41.html#2e65244d-851c-43d7-9fb0-63147cf50237">6.4 Problems</a></li></ul><li><a class="kap" href="week42.html#dc646f63-3ec3-4e7e-86d8-200784d9861a"><b>7</b> Week 42</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week42.html#0fffd667-0ed8-4daa-84e0-8ce93a81ed80">7.1 Readings for this week's lectures</a></li><li><a href="week42.html#12b60224-0983-4230-8d59-0c245a108754">7.2 Readings for this week's exercises</a></li><li><a href="week42.html#acd9d87e-ba19-40ee-96b3-034e47bc01e6">7.3 Notes</a></li><li><a href="week42.html#86bf3494-53a2-4b60-8922-7b4048741325">7.4 Problems</a></li></ul><li><a class="kap" href="week43.html#d644dce3-5b88-4cdd-aaec-c032e19e691d"><b>8</b> Week 43</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week43.html#ae1edd13-c427-4e14-aaa6-62a072d9ba3c">8.1 Readings for this week's lectures</a></li><li><a href="week43.html#1675dc8c-43d5-43b9-8382-3acaf3002fa0">8.2 Readings for this week's exercises</a></li><li><a href="week43.html#5755b1a9-afaa-4c40-813d-30ceada8d750">8.3 Notes</a></li><li><a href="week43.html#9489be06-f0cf-4b9a-8eb9-831caf6c5ab3">8.4 Problems</a></li></ul><li><a class="kap" href="week44.html#d27ed6c8-91f7-44e4-b9c7-10dbda3b9833"><b>9</b> Week 44</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week44.html#7b61af0d-5c3e-4a70-9632-8e0b2011f0e6">9.1 Readings for this week's lectures</a></li><li><a href="week44.html#05a21b52-6dc2-43c2-899d-5d6dd2ce2386">9.2 Readings for this week's exercises</a></li><li><a href="week44.html#ff35c4e2-74ab-40ac-aadb-c5a73e87ad86">9.3 Notes</a></li><li><a href="week44.html#410fe7a7-598c-43b3-b499-08c8b76a7428">9.4 Problems</a></li></ul><li><a class="kap" href="week45.html#b35fb239-b668-4a14-ae33-63aaca60cf24"><b>10</b> Week 45</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week45.html#58af0ccc-57d4-4388-b5c5-95563ada1031">10.1 Readings for this week's lectures</a></li><li><a href="week45.html#6014b0cd-3239-4a1c-b610-07b5e2023aa7">10.2 Readings for this week's exercises</a></li><li><a href="week45.html#139d4f38-356b-4522-8d63-df9c9b9b09e0">10.3 Notes</a></li><li><a href="week45.html#a5b69048-02be-4c92-9bf4-7a1645da6aff">10.4 Problems</a></li></ul><li><a class="kap" href="week46.html#fa73655a-7ce2-44a1-8b0c-d9b15246da54"><b>11</b> Week 46</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week46.html#f2c7b3c8-efa0-4649-9a73-c80684b68eb2">11.1 Readings for this week's lectures</a></li><li><a href="week46.html#7adf284a-5212-4317-aa45-f51aadc77441">11.2 Readings for this week's exercises</a></li><li><a href="week46.html#5a8fb07e-af44-4e51-beaf-68fd8e29f755">11.3 Notes</a></li><li><a href="week46.html#a0c3026f-a7aa-4442-9e3d-8bf5dafcf3f6">11.4 Problems</a></li></ul><li><a class="kap" href="week47.html#c7ec465c-9954-4111-b45e-ea49827267fa"><b>12</b> Week 47</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week47.html#2b0c1763-8d6c-4c19-a48e-145494c24fe9">12.1 Readings for this week's lectures</a></li><li><a href="week47.html#a1aeefa2-32e2-47be-ae76-ebfe9b30f3a1">12.2 Readings for this week's exercises</a></li><li><a href="week47.html#ce8794b5-e874-4561-8d75-c7aca7f02acf">12.3 Notes</a></li><li><a href="week47.html#add6dcc9-5d67-4c8c-8937-5f59e7233269">12.4 Problems</a></li></ul><li><a class="kap" href="week48.html#5357d4bc-34e9-487c-801c-e63536e5a64e"><b>13</b> Week 48</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week48.html#5a20e48e-86ab-49da-bd99-f1dd8859a547">13.1 Readings for this week's lectures</a></li><li><a href="week48.html#3256aebc-a09a-448f-9c36-203b51928354">13.2 Readings for this week's exercises</a></li><li><a href="week48.html#aba67129-14d0-4993-8e1f-2bb79612e784">13.3 Notes</a></li><li><a href="week48.html#6a917094-56e5-4669-a48d-f41be249c4d3">13.4 Problems</a></li></ul><li><a class="kap" href="week49.html#2d826e2c-cf7d-4d86-a607-237a9885c072"><b>14</b> Week 49</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week49.html#f736589a-2c03-45c7-b4be-4bc57d24d919">14.1 Readings for this week's lectures</a></li><li><a href="week49.html#7bc81d03-af13-42ba-9eb9-8574bce100d6">14.2 Readings for this week's exercises</a></li><li><a href="week49.html#5b3109cb-b05e-4a6e-bb20-b44f85c30376">14.3 Notes</a></li><li><a href="week49.html#89305af1-a3c0-4d15-9f03-c37945bdf80e">14.4 Problems</a></li><li><a href="week49.html#f908ea1e-08de-40f5-910b-c60a63317c50">14.5 Feedback</a></li></ul><li><a class="kap" href="week50.html#3239cd1f-8254-424b-8aa8-1a494316f659"><b>15</b> Week 50</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week50.html#e40eac80-766f-4869-90ec-828ce962f808">15.1 Readings for this week's exercises</a></li><li><a href="week50.html#f4d15877-c356-4d61-a3c9-5b0b89fe3221">15.2 Notes</a></li><li><a href="week50.html#56862c41-deb1-43f6-a1ff-b3e8bd5e242d">15.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><br><br><h1 text-align:center;><div class="centerimg"><img src="img/Aarhus_BBB_pos_UK.png" width="40%"></div>
+    Mathematics
+</h1><h2 text-align:center;>Dan Mønster</h2><div style="margin-top:20px"></div><center>
+    <b>Autumn 2023</b>
+</center><div style="margin-top:20px"></div><p style="margin-bottom: 2cm;"></p><div style="margin-top:20px"></div><p style="margin-left: 3cm; margin-right: 3cm;">
+This is the online companion site for the first semester Mathematics course
+for bachelor students in Economics and Business Administration (BSc) at Aarhus BSS.
+To navigate the site and see the material, click the 
+navigation button at the top left — the three vertical bars.<div style="margin-top:20px"></div><div class="centerimg"><img src="img/max_contour_constraints.png" width="70%"></div>
+</p><div style="margin-top:20px"></div>
+
+<div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>

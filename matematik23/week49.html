@@ -1,0 +1,492 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week36.html#31e02e67-0dcf-4bd0-9907-d0abe8f6eb45"><b>1</b> Uge 36</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week36.html#93609360-d96d-4e4d-850f-4265c5b17443">1.1 Pensum til denne uges forelæsning</a></li><li><a href="week36.html#400b6116-9962-461e-b381-3181c61b9948">1.2 Pensum til denne uges opgaver</a></li><li><a href="week36.html#2df251b1-03f7-4a7d-9c30-2424deae7352">1.3 Noter</a></li><li><a href="week36.html#1edd445b-ff3d-4b28-8bb1-9f0b4e71338a">1.4 Opgaver</a></li></ul><li><a class="kap" href="week37.html#582b981b-c819-464a-8238-e7d0bc464314"><b>2</b> Uge 37</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week37.html#0aedc016-b39e-438a-8e11-edc52b50ad9b">2.1 Pensum til denne uges forelæsning</a></li><li><a href="week37.html#d057370e-b783-48fd-b0b0-3a7887bd3486">2.2 Pensum til denne uges opgaver</a></li><li><a href="week37.html#058a8f61-3272-42b9-b062-b367e163ba65">2.3 Noter</a></li><li><a href="week37.html#f32d11b1-e3bc-4e36-8b95-b45ce22ab1dc">2.4 Opgaver</a></li></ul><li><a class="kap" href="week38.html#ffb90e2b-9702-4f42-af41-ae3f06a9266d"><b>3</b> Uge 38</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week38.html#6ffac758-d80e-4803-842a-e008e51af5aa">3.1 Pensum til denne uges forelæsning</a></li><li><a href="week38.html#a532fe69-81bf-45ab-94a1-d8a67cdf5b9c">3.2 Pensum til denne uges opgaver</a></li><li><a href="week38.html#f935e532-224a-4393-a45a-f24bd540e90c">3.3 Noter</a></li><li><a href="week38.html#4f103ea6-16dc-4736-b6b6-628564d5bc56">3.4 Opgaver</a></li></ul><li><a class="kap" href="week39.html#103ca9ad-09a1-47ff-a646-83a7cb2d9c69"><b>4</b> Uge 39</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week39.html#6b55df02-af4f-44ec-81ca-8add32fad736">4.1 Pensum til denne uges forelæsning</a></li><li><a href="week39.html#b5133a4a-4a43-4392-aa01-3e54111053dd">4.2 Pensum til denne uges opgaver</a></li><li><a href="week39.html#5a47518a-e65a-4baa-8336-afa04df5bf75">4.3 Noter</a></li><li><a href="week39.html#12061e9a-b8f6-45d2-8e52-7b9774981949">4.4 Opgaver</a></li></ul><li><a class="kap" href="week40.html#042540c9-ed9f-4070-b988-831acfca0b12"><b>5</b> Uge 40</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week40.html#57041607-65d5-4201-8c2a-384ef881d7d2">5.1 Pensum til denne uges forelæsning</a></li><li><a href="week40.html#f07447a3-043f-4fb9-adb6-46f03195a161">5.2 Pensum til denne uges opgaver</a></li><li><a href="week40.html#a2b62a1e-d8ef-47c1-92eb-68e9bbf9a40d">5.3 Noter</a></li><li><a href="week40.html#438af5b0-8f06-4758-8f30-14e8271d7819">5.4 Opgaver</a></li></ul><li><a class="kap" href="week41.html#f81d4bb7-880b-4c62-a7f5-1fa9c85095ae"><b>6</b> Uge 41</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week41.html#4d1b6611-da6e-4443-b056-2c2a891731e1">6.1 Pensum til denne uges forelæsning</a></li><li><a href="week41.html#b97451cd-1b2b-40ba-bd78-801971f553ef">6.2 Pensum til denne uges opgaver</a></li><li><a href="week41.html#e0db21c3-237b-454d-81cf-ed88370b4d31">6.3 Noter</a></li><li><a href="week41.html#7cfcca73-1cd8-4d5d-ab30-01832ab4d823">6.4 Opgaver</a></li></ul><li><a class="kap" href="week42.html#0b0f8477-3073-43e5-9562-5be62e777b2b"><b>7</b> Uge 42</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week42.html#0d97f8f2-db6c-448f-8af5-63d96d52031f">7.1 Pensum til denne uges forelæsning</a></li><li><a href="week42.html#9b7aa15f-2357-43c7-8729-41a8b4ab62f6">7.2 Pensum til denne uges opgaver</a></li><li><a href="week42.html#d6bf0b8a-ca6c-4892-a5e6-b148e52d262e">7.3 Noter</a></li><li><a href="week42.html#0e777341-5939-4aa6-914d-12488cc92bb5">7.4 Opgaver</a></li></ul><li><a class="kap" href="week43.html#c9f98509-5b6e-4346-877a-368cf7df4cbc"><b>8</b> Uge 43</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week43.html#32df3ef6-e9a2-4876-973c-2bd8b5e94340">8.1 Pensum til denne uges forelæsning</a></li><li><a href="week43.html#12c795aa-ac14-49a1-b8b4-770fcd02a782">8.2 Pensum til denne uges opgaver</a></li><li><a href="week43.html#9839427e-f3c1-48de-8579-5ac5f65b0aea">8.3 Noter</a></li><li><a href="week43.html#48379109-6c44-4061-a37e-f6f5159af34d">8.4 Opgaver</a></li></ul><li><a class="kap" href="week44.html#aa020c28-755e-4366-aabb-7784d4be8065"><b>9</b> Uge 44</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week44.html#6dc65026-c9ba-4516-91b8-64b9d8f0752f">9.1 Pensum til denne uges forelæsning</a></li><li><a href="week44.html#be9a056f-bd69-43f2-90ff-c01a7ba22bcd">9.2 Pensum til denne uges opgaver</a></li><li><a href="week44.html#b20d39f5-1ba8-43e2-b54e-4c256f4268f8">9.3 Noter</a></li><li><a href="week44.html#1ae69e05-cb3e-4c20-9792-9b8a4ba377dd">9.4 Opgaver</a></li></ul><li><a class="kap" href="week45.html#be089edc-86a5-458b-bbd2-eeff24a8f4de"><b>10</b> Uge 45</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week45.html#d2d70add-0488-4b35-aac5-4f288da33370">10.1 Pensum til denne uges forelæsning</a></li><li><a href="week45.html#a1d91a19-31ba-4c9c-ab18-c68ecd9f018a">10.2 Pensum til denne uges opgaver</a></li><li><a href="week45.html#b216e537-e0b5-401c-9143-6b619cb72620">10.3 Noter</a></li><li><a href="week45.html#fc623f43-42c2-486a-8e4d-81978c754f3c">10.4 Opgaver</a></li></ul><li><a class="kap" href="week46.html#7b87d4a8-8a17-4279-b1a7-7162ff9bcdc9"><b>11</b> Uge 46</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week46.html#ed5f4a64-0db0-4aaf-97f3-6ce11e3159ec">11.1 Pensum til denne uges forelæsning</a></li><li><a href="week46.html#3b1c384f-88de-4a23-91f6-3bdec58d5d9c">11.2 Pensum til denne uges opgaver</a></li><li><a href="week46.html#02345a1d-0a10-4cad-bb54-8d2fe35a9995">11.3 Opgaver</a></li></ul><li><a class="kap" href="week47.html#aa985b94-8cb3-4c02-9c73-f95cb6760c01"><b>12</b> Uge 47</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week47.html#caa482ea-eb13-4cbb-9b5e-ac0cf89fb3e3">12.1 Pensum til denne uges forelæsning</a></li><li><a href="week47.html#b70a6e1e-fe3d-44bb-a1f7-bf35243b91ee">12.2 Pensum til denne uges opgaver</a></li><li><a href="week47.html#c33ee923-5356-4ec8-bc67-eddc10fa4655">12.3 Noter</a></li><li><a href="week47.html#36c901ef-4001-474e-ad8d-91721e584e45">12.4 Opgaver</a></li></ul><li><a class="kap" href="week48.html#5961ac46-cf8d-46e2-96b0-f463469d1bfa"><b>13</b> Uge 48</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week48.html#58e20f88-16d4-48e0-99dc-c7b612c211d4">13.1 Pensum til denne uges forelæsning</a></li><li><a href="week48.html#c964c93d-7f8f-446b-a94e-ec70256f484e">13.2 Pensum til denne uges opgaver</a></li><li><a href="week48.html#6fcbdf29-6c58-4ae2-9010-592d76582fac">13.3 Noter</a></li><li><a href="week48.html#9c2371c1-921e-426d-9ebf-3da127954b98">13.4 Opgaver</a></li></ul><li><a class="kap" href="week49.html#1a93b8fd-0518-452c-8808-264f3c0e10b8"><b>14</b> Uge 49</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week49.html#71679df0-175e-4be1-a5ff-3af8ef938662">14.1 Pensum til denne uges forelæsning</a></li><li><a href="week49.html#a72ffef0-dc79-4107-a70c-3d02540f5dfd">14.2 Pensum til denne uges opgaver</a></li><li><a href="week49.html#aa311f3c-c3b0-4b09-9d1d-60db96bcb711">14.3 Noter</a></li><li><a href="week49.html#cc289cd6-2adb-406d-90b7-8e5ae7a7c6a8">14.4 Opgaver</a></li></ul><li><a class="kap" href="week50.html#833ba8a7-fa80-4e4e-a7d8-210ba98dc2c5"><b>15</b> Uge 50</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week50.html#cd750a09-1bff-46d5-90e5-cdc4c7d84bdf">15.1 Pensum til denne uges opgaver</a></li><li><a href="week50.html#9dac8553-2109-4510-aad4-6c44115d68e4">15.2 Noter</a></li><li><a href="week50.html#7aa9bd49-5291-40f0-acc6-475fda708f26">15.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="1a93b8fd-0518-452c-8808-264f3c0e10b8">14<span style="float:right;">Uge 49</span></h1>
+<span id="sec14.1"></span><h2 id="71679df0-175e-4be1-a5ff-3af8ef938662">14.1 Pensum til denne uges forelæsning</h2>
+Afsnit 12.7, 13.1 og 13.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec14.2"></span><h2 id="a72ffef0-dc79-4107-a70c-3d02540f5dfd">14.2 Pensum til denne uges opgaver</h2>
+Afsnit 12.1–12.3 og 12.5–12.6 i lærebogen.<div style="margin-top:20px"></div><span id="sec14.3"></span><h2 id="aa311f3c-c3b0-4b09-9d1d-60db96bcb711">14.3 Noter</h2>
+<b>Matrixoperationer</b>
+<div class="frameit">
+To matricer er lig hinanden hvis de har samme dimension og <em>alle</em> deres elementer er ens. Ellers er de forskellige.<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+\mathbf{A} &= \mathbf{B} \quad\Longleftrightarrow\quad  a_{ij} = b_{ij} \medspace \text{for alle kombinationer af} \medspace i, j\\
+\mathbf{A} &\neq \mathbf{B} \quad\Longleftrightarrow\quad  a_{ij} \neq b_{ij} \medspace \text{for mindst én kombination af} \medspace i, j
+\end{aligned}</script><div style="margin-top:20px"></div>En sum af to matricer med samme dimension fås ved at lægge elementerne på samme plads sammen:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+\mathbf{C} = \mathbf{A} + \mathbf{B} \quad\Longleftrightarrow\quad c_{ij}=a_{ij}+b_{ij}
+</script><div style="margin-top:20px"></div>Hvis <span class="math"></span><script type="math/tex">\mathbf{A}</script> er en matrix med dimension <span class="math"></span><script type="math/tex">m\times n</script>, og <span class="math"></span><script type="math/tex">\mathbf{B}</script> er en matrix med dimension <span class="math"></span><script type="math/tex">n\times p</script>, så defineres matrixproduktet <span class="math"></span><script type="math/tex">\mathbf{C=AB}</script> ved:
+<div class="math"></div><script type="math/tex; mode=display">
+c_{ij} = \sum_{k=1}^n a_{ik}b_{kj}
+</script> 
+</div><div style="margin-top:20px"></div><b>Regler for matrix multiplikation</b>
+<div class="frameit">
+    <ol class="number"><li id="ite14.1"> <span class="math"></span><script type="math/tex">(\mathbf{A}\mathbf{B})\mathbf{C} = \mathbf{A}(\mathbf{B}\mathbf{C}) </script>
+        </li><li id="ite14.2"> <span class="math"></span><script type="math/tex">\mathbf{A}(\mathbf{B}+\mathbf{C}) = \mathbf{AB} + \mathbf{AC} </script>
+        </li><li id="ite14.3"> <span class="math"></span><script type="math/tex">\mathbf{(A+B)C = AC+BC}</script>
+        </li><li id="ite14.4"> <span class="math"></span><script type="math/tex">(\alpha\mathbf{A})\mathbf{B} = \mathbf{A}(\alpha\mathbf{B}) = \alpha\mathbf{AB}</script>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="sec14.4"></span><h2 id="cc289cd6-2adb-406d-90b7-8e5ae7a7c6a8">14.4 Opgaver</h2><div style="margin-top:20px"></div><span id="env14.1"></span><div class="exercise" data-count="14.1">     
+    <div class="frameit">
+        To matricer er givet ved:
+        <div class="math"></div><script type="math/tex; mode=display">
+    \textbf{A} = 
+     \begin{pmatrix}
+      0 & \phantom{-}2 \\
+     1 & \phantom{-}3 
+     \end{pmatrix}, \quad
+    \textbf{B} = 
+     \begin{pmatrix}
+      1 & \phantom{-}4 \\
+     5 & -4 
+     \end{pmatrix}
+    </script>
+    <div id="quiz1">    <div class="row quizquestion">        
+        1. Udregn <span class="math"></span><script type="math/tex">\textbf{A}+\textbf{B}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(1)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(1)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(1, formatQuizProgram1)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram1(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 1));
+   result = result && (equals(matrix[0][1], 6));
+   result = result && (equals(matrix[1][0], 6));
+   result = result && (equals(matrix[1][1], -1));
+   return result;
+}
+            </script>        </span>    </div></div><div style="margin-top:20px"></div><div id="quiz2">    <div class="row quizquestion">        
+        2. Udregn <span class="math"></span><script type="math/tex">3\textbf{A}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(2)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(2)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(2, formatQuizProgram2)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram2(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0));
+   result = result && (equals(matrix[0][1], 6));
+   result = result && (equals(matrix[1][0], 3));
+   result = result && (equals(matrix[1][1], 9));
+   return result;
+}
+            </script>        </span>    </div></div>
+    </div>
+    </div><div style="margin-top:20px"></div><span id="env14.2"></span><div class="exercise" data-count="14.2">     
+    <div class="frameit">
+        To matricer er givet ved
+        <div class="math"></div><script type="math/tex; mode=display">
+        \textbf{A} = 
+         \begin{pmatrix}
+          4 & \phantom{-}3 & \phantom{-}1  \\
+         8 & -2 & -6 
+         \end{pmatrix}, \quad
+        \textbf{B} = 
+         \begin{pmatrix}
+        0 & 4 & 6 \\
+        2 & 5 & 9
+         \end{pmatrix}
+        </script>
+        <div id="quiz3">    <div class="row quizquestion">        
+            1. Udregn <span class="math"></span><script type="math/tex">\textbf{A}+\textbf{B}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(3)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(3)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(3)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(3)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(3, formatQuizProgram3)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram3(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 4));
+   result = result && (equals(matrix[0][1], 7));
+   result = result && (equals(matrix[0][2], 7));
+   result = result && (equals(matrix[1][0], 10));
+   result = result && (equals(matrix[1][1], 3));
+   result = result && (equals(matrix[1][2], 3));
+   return result;
+}
+            </script>        </span>    </div></div>
+        <div id="quiz4">    <div class="row quizquestion">        
+            2. Udregn <span class="math"></span><script type="math/tex">\textbf{A}-\textbf{B}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(4)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(4)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(4, formatQuizProgram4)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram4(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 4));
+   result = result && (equals(matrix[0][1], -1));
+   result = result && (equals(matrix[0][2], -5));
+   result = result && (equals(matrix[1][0], 6));
+   result = result && (equals(matrix[1][1], -7));
+   result = result && (equals(matrix[1][2], -15));
+   return result;
+}
+            </script>        </span>    </div></div>
+        <div id="quiz5">    <div class="row quizquestion">        
+            3. Udregn <span class="math"></span><script type="math/tex">4\textbf{A}-2\textbf{B}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(5)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(5)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(5, formatQuizProgram5)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram5(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 16));
+   result = result && (equals(matrix[0][1], 4));
+   result = result && (equals(matrix[0][2], -8));
+   result = result && (equals(matrix[1][0], 28));
+   result = result && (equals(matrix[1][1], -18));
+   result = result && (equals(matrix[1][2], -42));
+   return result;
+}
+            </script>        </span>    </div></div>
+    </div>
+    </div><div style="margin-top:20px"></div><span id="env14.3"></span><div class="exercise" data-count="14.3">     
+        Hvis det er muligt, udregn produkterne <b>AB</b> og <b>BA</b>, når <b>A</b> og <b>B</b> er defineret som:
+        <ol class="number"><li id="ite14.5">  <span class="math"></span><script type="math/tex"> \textbf{A} = 
+         \begin{pmatrix}
+          0 & -2 \\
+         3 & \phantom{-}1 
+         \end{pmatrix}</script>
+        og 
+            <span class="math"></span><script type="math/tex">\textbf{B} = 
+         \begin{pmatrix}
+          -1 & 4 \\
+         \phantom{-}1 & 5 
+         \end{pmatrix}</script>
+            </li><li id="ite14.6">  <span class="math"></span><script type="math/tex">
+        \textbf{A} = 
+         \begin{pmatrix}
+          8 & 3 & -2  \\
+         1 & 0 & \phantom{-}4 
+         \end{pmatrix}
+        </script>
+        og 
+            <span class="math"></span><script type="math/tex">
+        \textbf{B} = 
+         \begin{pmatrix}
+        2 & -2 \\
+        4 & \phantom{-}3 \\
+        1 & -5
+         \end{pmatrix}
+        </script>
+            </li><li id="ite14.7"> <span class="math"></span><script type="math/tex"> \textbf{A} = 
+         \begin{pmatrix}
+          -1 & 0 \\
+         \phantom{-}2 & 4 
+         \end{pmatrix}</script>
+        og  <span class="math"></span><script type="math/tex">
+        \textbf{B} = 
+         \begin{pmatrix}
+        \phantom{-}3 & 1 \\
+        -1 & 1 \\
+        \phantom{-}0 & 2
+         \end{pmatrix}
+        </script>
+            </li><li id="ite14.8"> <span class="math"></span><script type="math/tex">
+        \textbf{A} = 
+         \begin{pmatrix}
+        \phantom{-} 0\\
+        -2 \\
+        \phantom{-}4
+         \end{pmatrix}
+        </script> og <span class="math"></span><script type="math/tex">
+        \textbf{B} = 
+         \begin{pmatrix}
+          0 & -2 & 3
+         \end{pmatrix}
+        </script>
+        </li></ol>
+    </div><div style="margin-top:20px"></div><span id="env14.4"></span><div class="exercise" data-count="14.4">     
+        To virksomheder, A og B, konkurrerer om markedsandele på telemarkedet. I starten har A en tredjedel af markedet og B har to tredjedele. Men danskerne skifter teleudbyder ret ofte, så i løbet af det næste år, og hvert efterfølgende år, sker der følgende:<div style="margin-top:20px"></div><ul><li> A beholder 90% af sine kunder og mister 10% til B
+            </li><li> B beholder 60% af sine kunder og mister 40% til A
+        </li></ul><div style="margin-top:20px"></div>Vi kan repræsentere markedsandelene af de to virksomheder med en markedsandels-vektor, som er givet som en søjlevektor <span class="math"></span><script type="math/tex">\mathbf{s}</script>. Definitionen af en markedsandels-vektor er en søjlevektor med ikke-negative indgange der summer til 1. Vi definerer matricen <span class="math"></span><script type="math/tex">\mathbf{T}</script> og den oprindelige markedsandels-vektor, <span class="math"></span><script type="math/tex">\mathbf{s}</script>, som<div style="margin-top:20px"></div><span class="math"></span><script type="math/tex">
+        \displaystyle\textbf{T} = 
+         \begin{pmatrix} \displaystyle
+          \frac{9}{10} & \displaystyle\frac{2}{5} \\[12pt]
+         \displaystyle \frac{1}{10} & \displaystyle \frac{3}{5} 
+         \end{pmatrix}
+        </script>
+        og
+         <span class="math"></span><script type="math/tex">
+        \displaystyle\textbf{s} = 
+         \begin{pmatrix} \displaystyle
+          \frac{1}{3}  \\[12pt]
+         \displaystyle \frac{2}{3}
+         \end{pmatrix}
+        </script><div style="margin-top:20px"></div>Bemærk at hvert element af <span class="math"></span><script type="math/tex">\mathbf{T}</script>, <span class="math"></span><script type="math/tex">t_{ij}</script>, er givet som andelen af <span class="math"></span><script type="math/tex">j</script>'s kunder der bliver <span class="math"></span><script type="math/tex">i's</script> kunder året efter. <span class="math"></span><script type="math/tex">\mathbf{T}</script> er dermed en såkaldt overgangsmatrix.<div style="margin-top:20px"></div><ol class="number"><li id="ite14.9"> Vis at <span class="math"></span><script type="math/tex">\mathbf{Ts}</script> er en markedsandels-vektor.
+            </li><li id="ite14.10"> Beregn <span class="math"></span><script type="math/tex">\mathbf{T}^2\mathbf{s}</script> og fortolk dette matrixprodukt. Her er <span class="math"></span><script type="math/tex">\mathbf{T}^2\mathbf{s}</script> det samme som <span class="math"></span><script type="math/tex">\mathbf{TTs}</script>.
+        </li></ol>
+    </div><div style="margin-top:20px"></div><span id="env14.5"></span><div class="exercise" data-count="14.5">     
+        I et lands økonomi er der tre vigtige sektorer: <span class="math"></span><script type="math/tex">x, y</script> og <span class="math"></span><script type="math/tex">z</script>. For at kunne producere hvert deres output er disse sektorer afhængige af input fra de to andre sektorer og fra sektoren selv. Størrelsen på disse inputs og outputs mellem sektorerne i millarder er vist i nedenstående figur, som ikke medtager den del som eksporteres eller anvendes uden for de tre sektorer.
+        <ol class="number"><li id="ite14.11"> Opstil en matrix <span class="math"></span><script type="math/tex">\mathbf{B}</script> hvor rækker og søjler svarer til <span class="math"></span><script type="math/tex">x</script>, <span class="math"></span><script type="math/tex">y</script> og <span class="math"></span><script type="math/tex">z</script> og et element angiver hvor meget sektoren i rækken giver som input til sektoren i søjlen.
+                                            </li></ol>
+        <div class="centerimg"><img src="img/week49/input_output_model.png" width="50%"></div>
+    </div><div style="margin-top:20px"></div><span id="env14.6"></span><div class="exercise" data-count="14.6">     
+    Skriv det følgende ligningssystem i matrix-form:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        2x_1 - 5x_2 &= 3 \\
+            5x_1 +8x_2 &= 5
+    \end{aligned}</script>
+    </div><div style="margin-top:20px"></div><span id="env14.7"></span><div class="exercise" data-count="14.7">     
+    Skriv det følgende ligningssystem i matrix-form:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x + y + z + t &= a \\
+         x + 3y + 2z + 4t &= b \\
+          x + 4y + 8z  &= c \\
+           2x + z - t &= d
+    \end{aligned}</script>
+    </div><div style="margin-top:20px"></div><span id="env14.8"></span><div class="exercise" data-count="14.8">     
+    (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Lad et ligningssystem være:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        3x_1 - x_2 - x_3 &= 5 \\
+            2x_1 +x_2 - 2x_3 &= 0 \\
+            x_1 + 3x_2 + x_3 = 1
+    \end{aligned}</script>
+    <ol class="number"><li id="ite14.12"> Find <b>A</b>, <b>x</b>, og <b>b</b>, så ligningssystemet kan skrives som:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \textbf{Ax}= \textbf{b}
+    </script>
+        </li><li id="ite14.13"> Find <b>CA</b> og <b>AD</b>, når
+        <span class="math"></span><script type="math/tex">
+    \textbf{C} = 
+     \begin{pmatrix}
+      \phantom{-}7 & -2 & 3  \\
+     -4 & \phantom{-}4 & 4 \\
+     \phantom{-}5 & -10 & 5
+     \end{pmatrix}
+    </script> og 
+    <span class="math"></span><script type="math/tex">
+    \textbf{D} = 
+     \begin{pmatrix}
+      \phantom{-}5 & 24 & 28  \\
+     20 & 12 & 24 \\
+     -5 & 20 & 0
+     \end{pmatrix}
+    </script>
+    </li></ol>
+    </div><div style="margin-top:20px"></div><span id="env14.9"></span><div class="exercise" data-count="14.9">     <div style="margin-top:20px"></div><em>Tidligere eksamensopgave.</em><div style="margin-top:20px"></div>En virksomhed producerer tre produkter, A, B og C. Efterspørgslen på de tre produkter er funktioner af nogle markedsparametre (konstanter) <span class="math"></span><script type="math/tex">k_A</script>, <span class="math"></span><script type="math/tex">k_B</script> og <span class="math"></span><script type="math/tex">k_C</script> samt priserne på de tre produkter <span class="math"></span><script type="math/tex">x_A</script>, <span class="math"></span><script type="math/tex">x_B</script> og <span class="math"></span><script type="math/tex">x_C</script>. Disse efterspørgselsfunktioner er:
+    <ul><li> Produkt A: <span class="math"></span><script type="math/tex">\quad k_A - 2x_A + x_C</script>
+    </li><li> Produkt B: <span class="math"></span><script type="math/tex">\quad k_B + 2x_A - 2x_B + 2x_C</script>
+    </li><li> Produkt C: <span class="math"></span><script type="math/tex">\quad k_C + x_A + x_B - 2x_C</script>
+    </li></ul><div style="margin-top:20px"></div>Udbuddet af de tre produkter er givet ved følgende funktioner:
+    <ul><li> Produkt A: <span class="math"></span><script type="math/tex">\quad 3x_A -6</script>
+    </li><li> Produkt B: <span class="math"></span><script type="math/tex">\quad x_B -9</script>
+    </li><li> Produkt C: <span class="math"></span><script type="math/tex">\quad 2x_C - 9</script>
+    </li></ul><div style="margin-top:20px"></div><ol class="number"><li id="ite14.14"> Opstil et system af ligninger, der udtrykker ligevægtsbetingelserne i markedet, altså hvor udbud er lig efterspørgsel for hvert af de tre produkter.
+        </li><li id="ite14.15"> Bestem <span class="math"></span><script type="math/tex">\mathbf{A}</script>, <span class="math"></span><script type="math/tex">\mathbf{x}</script> og <span class="math"></span><script type="math/tex">\mathbf{b}</script> så systemet af ligninger kan skrives på matrixform som
+        <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{Ax} = \mathbf{b}
+        </script>
+    </li></ol>
+    </div><div style="margin-top:20px"></div>                            <div style="margin-top:20px"></div><span id="env14.10"></span><div class="exercise" data-count="14.10">     
+    To matricer <b>A</b> og <b>B</b> er givet ved:
+    <span class="math"></span><script type="math/tex">
+        \textbf{A} =
+        \begin{pmatrix*}[r]
+            3 & -5 & 7  \\
+            -3 & 1 & 2 \\
+            4 & -9 & 4
+        \end{pmatrix*}
+    </script> og
+    <span class="math"></span><script type="math/tex">
+        \textbf{B} =
+        \begin{pmatrix*}[r]
+            2 & 1 & 0 \\
+            3 & 2 & -2 \\
+            0 & 2 & -2
+        \end{pmatrix*}.
+    </script>
+    <div id="quiz6">    <div class="row quizquestion">        
+        1. Beregn <b>AB</b>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(6)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(6)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(6, formatQuizProgram6)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram6(matrix) {
+   if (matrixUID(matrix) != matrixUID(3, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], -9));
+   result = result && (equals(matrix[0][1], 7));
+   result = result && (equals(matrix[0][2], -4));
+   result = result && (equals(matrix[1][0], -3));
+   result = result && (equals(matrix[1][1], 3));
+   result = result && (equals(matrix[1][2], -6));
+   result = result && (equals(matrix[2][0], -19));
+   result = result && (equals(matrix[2][1], -6));
+   result = result && (equals(matrix[2][2], 10));
+   return result;
+}
+            </script>        </span>    </div></div>
+    <div id="quiz7">    <div class="row quizquestion">        
+        2. Beregn <b>BA</b>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(7)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(7)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(7)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(7)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(7, formatQuizProgram7)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram7(matrix) {
+   if (matrixUID(matrix) != matrixUID(3, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 3));
+   result = result && (equals(matrix[0][1], -9));
+   result = result && (equals(matrix[0][2], 16));
+   result = result && (equals(matrix[1][0], -5));
+   result = result && (equals(matrix[1][1], 5));
+   result = result && (equals(matrix[1][2], 17));
+   result = result && (equals(matrix[2][0], -14));
+   result = result && (equals(matrix[2][1], 20));
+   result = result && (equals(matrix[2][2], -4));
+   return result;
+}
+            </script>        </span>    </div></div>
+</div><div style="margin-top:20px"></div><span id="env14.11"></span><div class="exercise" data-count="14.11">     
+    <div id="quiz8">    <div class="row quizquestion">        
+        Brug nedenstående matricer til at beregne <span class="math"></span><script type="math/tex">\textbf{C}(\textbf{A}-\textbf{B})</script>.<div style="margin-top:20px"></div><span class="math"></span><script type="math/tex">
+            \textbf{A} =
+            \begin{pmatrix}
+                2 & 5 & -4           \\
+                4 & 0 & \phantom{-}9
+            \end{pmatrix}
+        </script>, <span class="math"></span><script type="math/tex">
+            \textbf{B} =
+            \begin{pmatrix}
+                1 & 6 & -4           \\
+                3 & 7 & \phantom{-}0
+            \end{pmatrix}
+        </script>
+        og
+        <span class="math"></span><script type="math/tex">
+            \textbf{C} =
+            \begin{pmatrix}
+                4 & -6           \\
+                2 & \phantom{-}1 \\
+                4 & -7
+            \end{pmatrix}
+        </script>
+            </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(8)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(8)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(8)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(8)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(8, formatQuizProgram8)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram8(matrix) {
+   if (matrixUID(matrix) != matrixUID(3, 3)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], -2));
+   result = result && (equals(matrix[0][1], 38));
+   result = result && (equals(matrix[0][2], -54));
+   result = result && (equals(matrix[1][0], 3));
+   result = result && (equals(matrix[1][1], -9));
+   result = result && (equals(matrix[1][2], 9));
+   result = result && (equals(matrix[2][0], -3));
+   result = result && (equals(matrix[2][1], 45));
+   result = result && (equals(matrix[2][2], -63));
+   return result;
+}
+            </script>        </span>    </div></div>
+</div><div style="margin-top:20px"></div><span id="env14.12"></span><div class="exercise" data-count="14.12">     
+    (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Lad
+    <span class="math"></span><script type="math/tex"> \textbf{A} =
+        \begin{pmatrix}
+            5 & 3 \\
+            0 & 5
+        \end{pmatrix}</script>,
+    <span class="math"></span><script type="math/tex"> \textbf{B} =
+        \begin{pmatrix}
+            -8           & 0 & 7 \\
+            \phantom{-}1 & 3 & 2
+        \end{pmatrix}</script>,
+    og
+    <span class="math"></span><script type="math/tex">
+        \textbf{C} =
+        \begin{pmatrix}
+            1 & 0 \\
+            0 & 3 \\
+            7 & 1
+        \end{pmatrix}
+    </script><div style="margin-top:20px"></div>Vis at <span class="math"></span><script type="math/tex">(\textbf{AB})\textbf{C} = \textbf{A}(\textbf{BC})</script>
+</div><div style="margin-top:20px"></div><span id="env14.13"></span><div class="exercise" data-count="14.13">     
+    <div id="quiz9">    <div class="row quizquestion">        
+        Hvis <b>A</b> er en kvadratisk matrix, så er <span class="math"></span><script type="math/tex">\textbf{A}^2=\textbf{AA}</script>.
+        Lad: <span class="math"></span><script type="math/tex">
+            \textbf{A} =
+            \begin{pmatrix}
+                8 & 4 \\
+                0 & 2
+            \end{pmatrix}
+        </script>.
+        Find <span class="math"></span><script type="math/tex">\textbf{A}^2</script>.
+            </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(9)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(9)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(9)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(9)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(9, formatQuizProgram9)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram9(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 64));
+   result = result && (equals(matrix[0][1], 40));
+   result = result && (equals(matrix[1][0], 0));
+   result = result && (equals(matrix[1][1], 4));
+   return result;
+}
+            </script>        </span>    </div></div>
+</div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>
