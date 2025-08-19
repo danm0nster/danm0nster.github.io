@@ -1,0 +1,583 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week36.html#fe101347-241d-4a93-bae8-20ddc0a32214"><b>1</b> Uge 36</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week36.html#62315215-b27d-4abf-9f40-9bba6c6cd734">1.1 Pensum til denne uges forelæsning</a></li><li><a href="week36.html#b1c20669-ba5d-46eb-b644-f04204bb7879">1.2 Pensum til denne uges opgaver</a></li><li><a href="week36.html#7d4dec65-029e-4cd3-a80c-0e8a29b550d0">1.3 Noter</a></li><li><a href="week36.html#15ee7eb5-bfe4-42a7-bba2-5345810b30b1">1.4 Opgaver</a></li></ul><li><a class="kap" href="week37.html#b559f1f3-e024-4ea3-8967-5ab371ac0841"><b>2</b> Uge 37</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week37.html#767323fe-be20-4afe-ad43-f3200b328edf">2.1 Pensum til denne uges forelæsning</a></li><li><a href="week37.html#7bd02587-408d-4a3c-83f7-c34b911e68a8">2.2 Pensum til denne uges opgaver</a></li><li><a href="week37.html#da26efac-9935-4646-87b9-fdff38d6b852">2.3 Noter</a></li><li><a href="week37.html#d8122f14-5e45-49bd-adc9-a9b00efe1e8d">2.4 Opgaver</a></li></ul><li><a class="kap" href="week38.html#96fdca21-2fe1-40f1-8dcd-dc12dcba0251"><b>3</b> Uge 38</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week38.html#45d6513c-1c76-4d6b-8757-02d583090633">3.1 Pensum til denne uges forelæsning</a></li><li><a href="week38.html#847ab6f3-b59c-4039-bbc4-2f45276168e3">3.2 Pensum til denne uges opgaver</a></li><li><a href="week38.html#ed65c15c-d915-4c2e-bef0-f017e1e01116">3.3 Noter</a></li><li><a href="week38.html#7572602d-5e4c-4836-9f76-227357a5ae9e">3.4 Opgaver</a></li></ul><li><a class="kap" href="week39.html#f21121b4-5889-4b47-aead-b1b0e0487793"><b>4</b> Uge 39</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week39.html#3b37b143-ce38-441f-8835-297ebfb98171">4.1 Pensum til denne uges forelæsning</a></li><li><a href="week39.html#727e38bb-312e-47b3-967b-3c695075a4a1">4.2 Pensum til denne uges opgaver</a></li><li><a href="week39.html#77d286ac-1b8d-4e0c-9ea3-7ee58be467be">4.3 Noter</a></li><li><a href="week39.html#55e58c4f-a433-4740-9bea-3c280e7470e4">4.4 Opgaver</a></li></ul><li><a class="kap" href="week40.html#1f61fb65-e90e-4f12-a79c-731dcc94edb5"><b>5</b> Uge 40</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week40.html#02a949b0-cb04-4c9c-88bb-17768376cb27">5.1 Pensum til denne uges forelæsning</a></li><li><a href="week40.html#5f6eb5f8-750a-4cf3-a09f-a9f1c85c9517">5.2 Pensum til denne uges opgaver</a></li><li><a href="week40.html#0088eaea-a8dc-4219-aa52-57a2c7c2ff45">5.3 Noter</a></li><li><a href="week40.html#0b20822d-384f-42e2-919d-2a410f4ef364">5.4 Opgaver</a></li></ul><li><a class="kap" href="week41.html#c2832733-36a6-4688-9999-028faa34c70c"><b>6</b> Uge 41</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week41.html#a9c42dc9-69e9-4aa1-81b3-c535cdf714e7">6.1 Pensum til denne uges forelæsning</a></li><li><a href="week41.html#f7d57294-3bdc-47de-bed3-a27e75d591de">6.2 Pensum til denne uges opgaver</a></li><li><a href="week41.html#8292a3e3-e955-4f3b-9050-f8911ab79f44">6.3 Noter</a></li><li><a href="week41.html#e800b87e-66a4-45c7-8531-cce48d52c9a1">6.4 Opgaver</a></li></ul><li><a class="kap" href="week42.html#9669adf1-489e-40ae-8161-0ef66bdb00db"><b>7</b> Uge 42</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week42.html#1edb8e6a-eb93-4f0a-8cf8-88f2636a4faa">7.1 Pensum til denne uges forelæsning</a></li><li><a href="week42.html#bd5f0dc0-07be-4e79-8105-1e2102f38f65">7.2 Pensum til denne uges opgaver</a></li><li><a href="week42.html#16c36c2a-db85-4a1b-9360-00afe9806115">7.3 Noter</a></li><li><a href="week42.html#373ec2e1-1841-4073-b8e8-c2bc12a4a992">7.4 Opgaver</a></li></ul><li><a class="kap" href="week43.html#99e7f751-5223-4568-943a-3dca7342ced7"><b>8</b> Uge 43</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week43.html#bdf734c2-a6b9-4407-b52d-96630ee60585">8.1 Pensum til denne uges forelæsning</a></li><li><a href="week43.html#2437a63d-803a-444e-a3c6-a5c682f1ed41">8.2 Pensum til denne uges opgaver</a></li><li><a href="week43.html#5699f15d-160a-4d43-905f-875abe0e7d87">8.3 Noter</a></li><li><a href="week43.html#aaed7241-a289-4234-97d7-700d80ddb0ca">8.4 Opgaver</a></li></ul><li><a class="kap" href="week44.html#ad18ee03-d7ff-4d98-8847-577d9d044454"><b>9</b> Uge 44</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week44.html#a9067089-1d79-49c3-bb8d-7c7b9724f597">9.1 Pensum til denne uges forelæsning</a></li><li><a href="week44.html#1cce96c4-413f-4e11-89bd-fda5c142e574">9.2 Pensum til denne uges opgaver</a></li><li><a href="week44.html#04420991-a6cd-4240-a7c4-ea4e6d6dbc32">9.3 Noter</a></li><li><a href="week44.html#4d24c86a-def6-4fae-81f8-1871a80cbca6">9.4 Opgaver</a></li></ul><li><a class="kap" href="week45.html#8e7adfca-a188-49ff-a2d3-3dc07a750911"><b>10</b> Uge 45</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week45.html#ebbb267e-e41e-4efe-a741-4d5c52842073">10.1 Pensum til denne uges forelæsning</a></li><li><a href="week45.html#7b5cac15-cbca-465c-80fe-c4bf1a8befe3">10.2 Pensum til denne uges opgaver</a></li><li><a href="week45.html#4fc49a3b-269a-4156-9eb6-dee7c3ecda16">10.3 Noter</a></li><li><a href="week45.html#26a1b856-9fcf-4e18-a0a9-df5786e370f7">10.4 Opgaver</a></li></ul><li><a class="kap" href="week46.html#6d630cc3-9b72-417f-9851-7e00553b6749"><b>11</b> Uge 46</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week46.html#50f7e66c-2f60-4cf4-bc72-c4d6090715aa">11.1 Pensum til denne uges forelæsning</a></li><li><a href="week46.html#5a03f051-8130-4750-8613-b4973370c65d">11.2 Pensum til denne uges opgaver</a></li><li><a href="week46.html#ba9aaa03-95ff-47a3-ac92-80bb9a1fb88e">11.3 Opgaver</a></li></ul><li><a class="kap" href="week47.html#6ce0d9da-db98-4f4c-a4f2-ae13a9c5d37a"><b>12</b> Uge 47</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week47.html#997f773b-8cfc-4023-a2a0-e59e4cd93432">12.1 Pensum til denne uges forelæsning</a></li><li><a href="week47.html#6a724bbc-9453-4e64-b7c6-98b76b5a3bf9">12.2 Pensum til denne uges opgaver</a></li><li><a href="week47.html#f855e492-6926-414d-b6c4-c7aa3dad8a4f">12.3 Noter</a></li><li><a href="week47.html#6718b30b-8840-4438-97c7-81d8e009ffb6">12.4 Opgaver</a></li></ul><li><a class="kap" href="week48.html#15fe79bf-85be-434e-aff6-d3921c51ac9d"><b>13</b> Uge 48</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week48.html#00a980ff-b206-46dc-aa13-bac2b33e4e9e">13.1 Pensum til denne uges forelæsning</a></li><li><a href="week48.html#46a0fc38-57fb-4332-a712-46782df498bf">13.2 Pensum til denne uges opgaver</a></li><li><a href="week48.html#1d5fd037-d40f-4cb1-bc94-99b3c878b79d">13.3 Noter</a></li><li><a href="week48.html#55d47430-6d4f-4037-80fb-bb9d75f901cd">13.4 Opgaver</a></li></ul><li><a class="kap" href="week49.html#ef1130f2-78bb-4840-9bf7-8af323800799"><b>14</b> Uge 49</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week49.html#aaeee02c-93db-4138-84f4-cf1893198ea5">14.1 Pensum til denne uges forelæsning</a></li><li><a href="week49.html#3d9b2eb1-2523-4dc1-9cdd-98a8b3e925d8">14.2 Pensum til denne uges opgaver</a></li><li><a href="week49.html#ec84dc2c-7d0f-41b7-900b-95d300661cda">14.3 Noter</a></li><li><a href="week49.html#da976e73-c79f-4878-9a36-373efcfe222e">14.4 Opgaver</a></li></ul><li><a class="kap" href="week50.html#7b8acdc2-83a5-40f6-94bd-10b126436840"><b>15</b> Uge 50</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week50.html#22a49456-293e-4ef0-b730-0ec8e1455164">15.1 Pensum til denne uges opgaver</a></li><li><a href="week50.html#67d1b9a1-8f17-4007-9740-6b2840d95404">15.2 Noter</a></li><li><a href="week50.html#0c775d9e-2ac4-4b1c-99be-6e67177c5f9d">15.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="7b8acdc2-83a5-40f6-94bd-10b126436840">15<span style="float:right;">Uge 50</span></h1>
+Der er ingen forelæsninger i denne uge, kun øvelsestimer.<div style="margin-top:20px"></div><span id="sec15.1"></span><h2 id="22a49456-293e-4ef0-b730-0ec8e1455164">15.1 Pensum til denne uges opgaver</h2>
+Afsnit 13.1 og 13.6  i lærebogen.<div style="margin-top:20px"></div><span id="sec15.2"></span><h2 id="67d1b9a1-8f17-4007-9740-6b2840d95404">15.2 Noter</h2><div style="margin-top:20px"></div><b>Transponering</b>
+<div class="frameit">
+    Transponering er en operation, som bytter om på rækker og søjler i en matrix. Den transponerede af en matrix
+    <span class="math"></span><script type="math/tex">\mathbf{A}</script> kaldes <span class="math"></span><script type="math/tex">\mathbf{A}'</script> (eller <span class="math"></span><script type="math/tex">\mathbf{A}^\text{T}</script>).<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{A} =
+        \begin{pmatrix}
+            a_{11} & a_{12} & \cdots & a_{1n} \\
+            a_{21} & a_{22} & \cdots & a_{2n} \\
+            \vdots & \vdots &        & \vdots \\
+            a_{m1} & a_{m2} & \cdots & a_{mn}
+        \end{pmatrix}
+        \qquad
+        \mathbf{A'} =
+        \begin{pmatrix}
+            a_{11} & a_{21} & \cdots & a_{m1} \\
+            a_{12} & a_{22} & \cdots & a_{m2} \\
+            \vdots & \vdots &        & \vdots \\
+            a_{1n} & a_{2n} & \cdots & a_{mn}
+        \end{pmatrix}
+    </script><div style="margin-top:20px"></div>Bemærk: For ikke-kvadratiske matricer ændrer transponering på dimensionerne.
+</div><div style="margin-top:20px"></div><b>Determinanten</b>
+<div class="frameit">
+    Determinanten til en kvadratisk matrix <span class="math"></span><script type="math/tex">\mathbf{A}</script> er givet ved elementer i <span class="math"></span><script type="math/tex">\mathbf{A}</script>. For en <span class="math"></span><script type="math/tex">2 \times 2</script> matrix er determinanten:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \det\mathbf{A} = \vert\mathbf{A}\vert =
+        \begin{vmatrix}
+            a_{11} & a_{12} \\
+            a_{21} & a_{22}
+        \end{vmatrix}
+        =a_{11}a_{22}-a_{21}a_{12}.
+    </script><div style="margin-top:20px"></div>Hvis <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert \neq 0</script> har ligningssystemet <span class="math"></span><script type="math/tex">\mathbf{Ax} = \mathbf{b}</script> én løsning. Er derimod <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert = 0</script> er der enten ingen løsning eller uendeligt mange løsninger.
+</div><div style="margin-top:20px"></div><b>Cramers regel</b>
+<div class="frameit">
+    Løsningen til <span class="math"></span><script type="math/tex">\mathbf{Ax} = \mathbf{b}</script> kan skrives som en brøk hvor både tæller og nævner er en determinant. For 2 ligninger med 2 ubekendte er løsningen for <span class="math"></span><script type="math/tex">x_1</script> og <span class="math"></span><script type="math/tex">x_2</script>:
+    <div class="math"></div><script type="math/tex; mode=display">
+        x_1   = \frac{            \begin{vmatrix}
+                b_{1} & a_{12} \\
+                b_{2} & a_{22}
+            \end{vmatrix}        }{\vert\mathbf{A}\vert},
+        \qquad
+        x_2   = \frac{            \begin{vmatrix}
+                a_{11} & b_{1} \\
+                a_{21} & b_{2}
+            \end{vmatrix}        }{\vert\mathbf{A}\vert}.
+    </script>
+</div><div style="margin-top:20px"></div>
+
+<div style="margin-top:20px"></div>
+
+<b>Den inverse matrix</b>
+<div class="frameit">
+Den <em>inverse matrix</em> til <span class="math"></span><script type="math/tex">\mathbf{A}</script> kaldes <span class="math"></span><script type="math/tex">\mathbf{A}^{-1}</script> og er defineret ved
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{A}^{-1}\mathbf{A} = \mathbf{A}\mathbf{A}^{-1} = \mathbf{I}
+</script><div style="margin-top:20px"></div>Kun kvadratiske matricer har en invers, og kun hvis 
+<div class="math"></div><script type="math/tex; mode=display">\vert\mathbf{A}\vert\neq 0</script><div style="margin-top:20px"></div>Vi skriver et system af <span class="math"></span><script type="math/tex">n</script> ligninger med <span class="math"></span><script type="math/tex">n</script> ubekendte på matrixform:
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{Ax=b}
+</script>
+Hvis vi kender den inverse matrix til <span class="math"></span><script type="math/tex">\mathbf{A}</script> kan vi løse ligningen ovenfor således:
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}
+</script>
+Dette er løsning vha. matrixinversion. Vi kan beregne den inverse af en <span class="math"></span><script type="math/tex">2\times 2</script> matrix:<div style="margin-top:20px"></div>Lad
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{A}  = 
+\begin{pmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{pmatrix}
+</script>
+Hvis <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert \neq 0</script> gælder
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{A}^{-1}  = \frac{1}{\vert\mathbf{A}\vert}
+\begin{pmatrix}
+a_{22} & -a_{12} \\
+-a_{21} & a_{11}
+\end{pmatrix}
+</script>
+<em>Bemærk:</em> vi kan finde den inverse af en <span class="math"></span><script type="math/tex">3\times 3</script> matrix eller større, men det er mere kompliceret.
+</div><div style="margin-top:20px"></div><span id="sec15.3"></span><h2 id="0c775d9e-2ac4-4b1c-99be-6e67177c5f9d">15.3 Opgaver</h2><div style="margin-top:20px"></div><span id="env15.1"></span><div class="exercise" data-count="15.1">     
+    Find den transponerede af følgende matricer:
+    <span class="math"></span><script type="math/tex">
+        \textbf{A} =
+        \begin{pmatrix}
+            3 & -8           \\
+            1 & \phantom{-}6 \\
+            4 & -9
+        \end{pmatrix}
+    </script>, <span class="math"></span><script type="math/tex"> \textbf{B} =
+        \begin{pmatrix}
+            0 \\
+            1 \\
+            1 \\
+            7
+        \end{pmatrix}</script>, og
+    <span class="math"></span><script type="math/tex">
+        \textbf{C} =
+        \begin{pmatrix}
+            2 & -3 & 5 & 9
+        \end{pmatrix}
+    </script>
+</div><div style="margin-top:20px"></div><span id="env15.2"></span><div class="exercise" data-count="15.2">     
+    Vis at matricerne
+    <span class="math"></span><script type="math/tex">
+        \textbf{A} =
+        \begin{pmatrix}
+            3 & \phantom{-}2 & 3 \\
+            2 & -1           & 1 \\
+            3 & \phantom{-}1 & 0
+        \end{pmatrix}
+    </script> og
+    <span class="math"></span><script type="math/tex">
+        \textbf{B} =
+        \begin{pmatrix}
+            0 & 4  & 8  \\
+            4 & 0  & 13 \\
+            8 & 13 & 0
+        \end{pmatrix}
+    </script> begge er symmetriske.
+</div><div style="margin-top:20px"></div><span id="env15.3"></span><div class="exercise" data-count="15.3">     
+    Danmark, Norge og Sverige har en del samhandel. Alle lande køber varer og tjenesteydelser af de andre (importerer) og sælger varer og tjenesteydelser til de andre (eksporterer).<div style="margin-top:20px"></div>Deres samhandel kan udtrykkes med en matrix <span class="math"></span><script type="math/tex">\textbf{A}</script>, hvor <span class="math"></span><script type="math/tex">
+        \textbf{A} =
+        \begin{pmatrix}
+            a_{11} & a_{12} & a_{13} \\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+        \end{pmatrix}
+    </script><div style="margin-top:20px"></div>Her betegner <span class="math"></span><script type="math/tex">a_{ij}</script> hvor meget land <span class="math"></span><script type="math/tex">i</script> eksporterer til land <span class="math"></span><script type="math/tex">j</script> målt i milliarder kroner. Hvis f.eks. <span class="math"></span><script type="math/tex">a_{13}=5</script> betyder det at land 1 eksporterer for 5 milliarder kroner til land 3.<div style="margin-top:20px"></div><ol class="number"><li id="ite15.1"> Hvilke værdier har elementerne på diagonalen (hvor <span class="math"></span><script type="math/tex">i=j</script>) i <span class="math"></span><script type="math/tex">\textbf{A}</script>?
+        </li><li id="ite15.2"> Er det rimeligt at antage at <span class="math"></span><script type="math/tex">\textbf{A}</script> er symmetrisk? Begrund dit svar.
+        </li><li id="ite15.3"> Handelsministeren i land 1 vil gerne have en søjlevektor med tre indgange, hvor den <span class="math"></span><script type="math/tex">i'te</script> indgang er værdien af den samlede handel mellem land 1 og land <span class="math"></span><script type="math/tex">i</script> (import + eksport). Hvilke(t) af de nedenstående udtryk giver en sådan vektor? Begrund dit svar.
+              <ul><li> <span class="math"></span><script type="math/tex">2\textbf{A}</script>
+                  </li><li> <span class="math"></span><script type="math/tex">\textbf{A}'</script>
+                  </li><li> <span class="math"></span><script type="math/tex">(\textbf{A} + \textbf{A}')
+                            \begin{pmatrix}
+                                1 \\
+                                0 \\
+                                0
+                            \end{pmatrix}
+                        </script>
+                  </li><li> <span class="math"></span><script type="math/tex">(\textbf{A} + \textbf{A}') </script>
+                  </li><li> <span class="math"></span><script type="math/tex">\textbf{A}\textbf{A}' </script>
+                  </li><li> <span class="math"></span><script type="math/tex">(\textbf{A} + \textbf{A}')
+                            \begin{pmatrix}
+                                0 \\
+                                1 \\
+                                1
+                            \end{pmatrix}
+                        </script>
+              </li></ul>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.4"></span><div class="exercise" data-count="15.4">     
+    Find værdien af determinanten:
+    <span class="math"></span><script type="math/tex">
+        \begin{vmatrix}
+            4 & 6 \\
+            2 & 0
+        \end{vmatrix}
+    </script>
+</div><div style="margin-top:20px"></div><span id="env15.5"></span><div class="exercise" data-count="15.5">     
+    Find værdien af determinanten:
+    <span class="math"></span><script type="math/tex">
+        \begin{vmatrix}
+            8 & 9 \\
+            5 & 4
+        \end{vmatrix}
+    </script>
+</div><div style="margin-top:20px"></div><span id="env15.6"></span><div class="exercise" data-count="15.6">     
+    Betragt følgende tre systemer af to ligninger med to ubekendte:
+    <span id="equ15.1"></span><div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        2x + 3y & =  3  \\
+        x - y   & = - 1
+    \end{aligned}\tag{15.1}</script>
+    <span id="equ15.2"></span><div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        3x + 2y + 1        & = 0   \\
+        -\tfrac{3}{2}x - y & = - 2
+    \end{aligned}\tag{15.2}</script>
+    <span id="equ15.3"></span><div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        y - \tfrac{2}{3}x & = 2 \\
+        4x - 6y + 12      & = 0
+    \end{aligned}\tag{15.3}</script>
+    <ol class="number"><li id="ite15.4"> Opskriv hvert af de tre ligningssystemer på matrixform <span class="math"></span><script type="math/tex">\mathbf{Ax} = \mathbf{b}</script>.
+        </li><li id="ite15.5"> Beregn for hvert af de tre ligningssystemer <span class="math"></span><script type="math/tex">\vert\mathbf{A}\vert</script>.
+        </li><li id="ite15.6"> Angiv for hvert af de tre ligningssystemer det tilhørende plot nedenfor.
+        </li><li id="ite15.7"> Hvor mange løsninger er der til hvert af de tre ligningssystemer?
+    </li></ol>
+    <div class="centerimg"><img src="img/week49/two_equations.png" width="80%"></div>
+</div><div style="margin-top:20px"></div><span id="env15.7"></span><div class="exercise" data-count="15.7">     
+    Brug Cramers regel til at løse ligningerne (hvis muligt):
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        3x-8y & = 8 \\
+        x-2y  & = 5
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.8"></span><div class="exercise" data-count="15.8">     
+    Brug Cramers regel til at løse ligningerne (hvis muligt):
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        x+3y  & = 1  \\
+        3x-2y & = 14
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.9"></span><div class="exercise" data-count="15.9">     
+    (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Lad a og b være konstanter. Brug Cramers regel til at løse ligningerne for de to ubekendte variable, <span class="math"></span><script type="math/tex">x</script> og <span class="math"></span><script type="math/tex">y</script>:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        ax-by & = 1 \\
+        bx+ay & = 2
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.10"></span><div class="exercise" data-count="15.10">     
+    (Tidligere eksamensopgave)<div style="margin-top:20px"></div>Tre matricer <span class="math"></span><script type="math/tex">\mathbf{A}</script>,  <span class="math"></span><script type="math/tex">\mathbf{B}</script> og  <span class="math"></span><script type="math/tex">\mathbf{C}</script> er givet ved
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{A} = \left(\begin{array}{rr}
+                0 & -1 \\
+                1 & 0
+            \end{array}\right), \qquad
+        \mathbf{B} = \left(\begin{array}{rr}
+                -1 & 0  \\
+                0  & -1
+            \end{array}\right), \qquad
+        \mathbf{C} = \left(\begin{array}{rr}
+                0  & 1 \\
+                -1 & 0
+            \end{array}\right).
+    </script>
+    <ol class="alpha"><li id="ite15.8"> Vis at <span class="math"></span><script type="math/tex">\mathbf{AB} = \mathbf{C}</script> og <span class="math"></span><script type="math/tex">\mathbf{BC} = \mathbf{A}</script>.
+        </li><li id="ite15.9"> Beregn matrixproduktet <span class="math"></span><script type="math/tex">\mathbf{CA}</script>.
+    </li></ol><div style="margin-top:20px"></div>Matricerne <span class="math"></span><script type="math/tex">\mathbf{A}</script>, <span class="math"></span><script type="math/tex">\mathbf{B}</script> og  <span class="math"></span><script type="math/tex">\mathbf{C}</script> er specialtilfælde af den generelle form
+    <div class="math"></div><script type="math/tex; mode=display">
+        \mathbf{D} = \left(\begin{array}{rr}
+                {\alpha} & {\beta}  \\
+                -{\beta} & {\alpha}
+            \end{array}\right)
+    </script>
+    hvor <span class="math"></span><script type="math/tex">\alpha</script> og <span class="math"></span><script type="math/tex">\beta</script> er skalare konstanter (reelle tal).<div style="margin-top:20px"></div><ol class="alpha" start = "3"><li id="ite15.10"> Find værdierne af <span class="math"></span><script type="math/tex">\alpha</script> og <span class="math"></span><script type="math/tex">\beta</script>, der sikrer at <span class="math"></span><script type="math/tex">\mathbf{D}</script> opfylder ligningen <span class="math"></span><script type="math/tex">\mathbf{D}^2 =  \mathbf{I}</script>, hvor  <span class="math"></span><script type="math/tex"> \mathbf{I}</script> er identitetsmatricen.
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.11"></span><div class="exercise" data-count="15.11">     
+    En simpel model for at forudsige vejret bygger på sandsynligheden for regnvejr eller solskinsvejr i morgen givet vejret i dag. Antag, at hvis det er regnvejr i dag, er sandsynligheden for at det regner i morgen 70%, mens det omvendt gælder, at hvis det er solskinsvejr i dag, er sandsynligheden for solskinsvejr i morgen 60%.
+    <ol class="number"><li id="ite15.11"> Opstil en matrix <span class="math"></span><script type="math/tex">\mathbf{P}</script> hvor første søjle svarer til at vejret i dag er regnvejr og anden søjle svarer til at vejret i dag er solskinsvejr. Første række svarer til at vejret i morgen er regnvejr og anden række svarer til at vejret i morgen er solskinsvejr. Et matrixelement i <span class="math"></span><script type="math/tex">\mathbf{P}</script> er sandsynligheden for at vejret i morgen svarer til rækken, givet at vejret i dag svarer til søjlen. 
+        <div class="math"></div><script type="math/tex; mode=display">
+            \textbf{P}=
+            \begin{array}{rc} &\begin{array}{c}\text{regn i dag}\phantom{x}\text{sol i dag}\end{array}\\
+            \begin{array}{r}\text{regn i morgen}\\\text{sol i morgen}\end{array}\hspace{-1em} &
+            \begin{pmatrix}\quad p_{11}\quad&\quad p_{12}\quad\\p_{21}&p_{22}\end{pmatrix}&
+            \end{array}
+        </script>
+        Angiv sandsynlighederne som brøk eller decimaltal, ikke i procent. Decimaltal skal skrives med punktum, ikke komma. En sandsynlighed på 50% skal f.eks. skrives som 1/2 eller 0.5, ikke som 50 eller 0,5.
+        <a href="#3a8c87dd-39cf-4e2a-aa85-48ed48bb5298" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=3a8c87dd-39cf-4e2a-aa85-48ed48bb5298 class = "collapse Hint envbuttons">    Du kan antage at det hver dag enten er regnvejr eller solskin. Sandsynlighederne for disse udfald på en given dag skal derfor summere til 1 uanset om det dagen før var en regnvejrsdag eller en solskinsdag.
+          </div>
+        <div id="quiz1">    <div class="row quizquestion">        
+            Opstil <span class="math"></span><script type="math/tex">\mathbf{P}</script>.
+                </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(1)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(1)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(1)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(1, formatQuizProgram1)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram1(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.7));
+   result = result && (equals(matrix[0][1], 0.4));
+   result = result && (equals(matrix[1][0], 0.3));
+   result = result && (equals(matrix[1][1], 0.6));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.12"> Vejret i dag kan beskrives ved en søjlevektor, <span class="math"></span><script type="math/tex">\mathbf{w}</script>, som er en af disse:
+            <div class="math"></div><script type="math/tex; mode=display">
+            \text{regnvejr:}\, \begin{pmatrix}1\\ 0\end{pmatrix} \quad
+            \text{solskinsvejr:}\, \begin{pmatrix}0\\ 1\end{pmatrix}.
+            </script>
+            Forklar hvorfor <span class="math"></span><script type="math/tex">\mathbf{Pw}</script> kan tolkes som en vektor, der angiver sandsynligheden for vejret i morgen.
+            <div id="quiz2">    <div class="row quizquestion">        
+                Beregn <span class="math"></span><script type="math/tex">\mathbf{Pw}</script> i det tilfælde hvor det er regnvejr i dag.
+                    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(2)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(2)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(2)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(2, formatQuizProgram2)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram2(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.7));
+   result = result && (equals(matrix[1][0], 0.3));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.13">   Hvilket udtryk angiver en søjlevektor, hvor elementerne er sandsynlighederne for hhv. regnvejr og solskinsvejr i overmorgen, når <span class="math"></span><script type="math/tex">\mathbf{w}</script> er søjlevektoren for vejret i dag?
+            <span id="{labelname}"></span><div id="quiz3" style="width:100%;"><div class="row quizquestion">
+                    Vælg blandt følgende svarmuligheder:
+                </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+                    <span class="math"></span><script type="math/tex">\mathbf{w'Pw}</script>
+                </div><div class="col-xs-5 quizanswer" datav="F"> 
+                    <span class="math"></span><script type="math/tex">\mathbf{Pw^2}</script>
+                </div><div class="col-xs-5 quizanswer" datav="F">
+                    <span class="math"></span><script type="math/tex">\mathbf{PwP}</script>
+                </div><div class="col-xs-5 quizanswer" datav="T">
+                    <span class="math"></span><script type="math/tex">\mathbf{P^2w}</script>
+            </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz3, quizbutton1);});</script>
+        </li><li id="ite15.14"> Brug matrixmultiplikation til at beregne vektoren der udtrykker sandsynligheden for vejret i overmorgen, hvis det er regnvejr i dag. Til beregningerne kan det være en fordel at skrive matrixelementerne som brøker, altså f.eks. skrive <span class="math"></span><script type="math/tex">\frac{5}{10}</script> i stedet for 0.5. 
+        <div id="quiz4">    <div class="row quizquestion">        
+            Beregn matrixproduktet du fandt ovenfor.
+                </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(4)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(4)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(4)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(4, formatQuizProgram4)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram4(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.61));
+   result = result && (equals(matrix[1][0], 0.39));
+   return result;
+}
+            </script>        </span>    </div></div>
+        </li><li id="ite15.15"> Hvad er sandsynligheden for at det er solskinsvejr i overmorgen, hvis det er regnvejr i dag?
+        <div id="quiz5">    <div class="row quizquestion">        
+             Angiv svaret som brøk eller decimaltal.
+                </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(5)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(5)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(5)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(5, formatQuizProgram5)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram5(matrix) {
+   if (matrixUID(matrix) != matrixUID(1, 1)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], 0.39));
+   return result;
+}
+            </script>        </span>    </div></div>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.12"></span><div class="exercise" data-count="15.12">     
+En dansk virksomhed skal have sendt varer frem og tilbage med tog mellem en fabrik i Danmark og en fabrik i Sydeuropa. Varerne skal kvalitetstjekkes et sted i Tyskland indimellem transporten mellem Danmark og Sydeuropa.<div style="margin-top:20px"></div>Fabrikken i Danmark kan ligge enten i Vejle eller Esbjerg. Varerne skal kvalitetstjekkes enten i Hamborg, Frankfurt eller Berlin. Fabrikken i Sydeuropa kan ligge enten i Bilbao, Toulouse, Milano eller Porto.<div style="margin-top:20px"></div>Virksomheden er interesseret i at lægge fabrikkerne det sted hvor der er det størst mulige antal togforbindelser mellem byerne (givet et stop i en af de tyske byer).<div style="margin-top:20px"></div>Antallet af togforbindelser mellem de danske byer og de tyske repræsenteres ved <span class="math"></span><script type="math/tex">2 \times 3</script> matricen  <span class="math"></span><script type="math/tex">\textbf{A}</script>, givet ved:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+\textbf{A}=
+\begin{array}{rc}
+    &\begin{array}{c}\text{Berlin}\phantom{x}\text{Frankfurt}\phantom{x}\text{Hamborg}
+\end{array}\\
+\begin{array}{r}
+    \text{Esbjerg}\\
+    \text{Vejle}
+\end{array}\hspace{-1em} &
+\begin{pmatrix}
+    \phantom{Be}0\phantom{lin} & \phantom{Fr}2\phantom{urt} & \phantom{Ha}1\phantom{org}\\
+    \phantom{Be}3\phantom{lin} & \phantom{Fr}3\phantom{urt} & \phantom{Ha}1\phantom{org}
+\end{pmatrix}&
+\end{array}
+</script><div style="margin-top:20px"></div>
+ Her er der altså f.eks. <span class="math"></span><script type="math/tex">2</script> togforbindelser mellem Esbjerg og Frankfurt men ingen mellem Esbjerg og Berlin.<div style="margin-top:20px"></div>På samme måde repræsenterer <span class="math"></span><script type="math/tex">3 \times 4</script>-matricen <span class="math"></span><script type="math/tex">\textbf{B}</script> togforbindelserne mellem de tyske byer og de sydeuropæiske byer:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+ \textbf{B}=
+ \begin{array}{rc}
+     &\begin{array}{c}\text{Bilbao}\phantom{x}\text{Milano}\phantom{x}\text{Porto}\phantom{x}\text{Toulouse}
+ \end{array}\\
+ \begin{array}{r}
+     \text{Berlin}\\
+     \text{Frankfurt}\\
+     \text{Hamborg}
+ \end{array}\hspace{-1em} &
+ \begin{pmatrix}
+     \phantom{Bi}2 & \phantom{Mil}3\phantom{no} & \phantom{P}0\phantom{to} & \phantom{T}1\phantom{use}\\
+     \phantom{Bl}4 & \phantom{Mil}1\phantom{no} & \phantom{P}2\phantom{to} & \phantom{T}3\phantom{use}\\
+     \phantom{Bi}0 & \phantom{Mil}2\phantom{no} & \phantom{P}1\phantom{to} & \phantom{T}2\phantom{use}\\
+ \end{pmatrix}&
+ \end{array}
+</script><div style="margin-top:20px"></div><div style="margin-top:20px"></div>Der gælder nu at <span class="math"></span><script type="math/tex">\textbf{C}=\textbf{AB}</script> betegner det totale mulige antal togforbindelser mellem de danske byer og de sydeuropæiske byer. <span class="math"></span><script type="math/tex">\textbf{C}</script> er en <span class="math"></span><script type="math/tex">2 \times 4</script>-matrix givet ved:<div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+ \textbf{C}=
+ \begin{array}{rc}
+     &\begin{array}{c}\text{Bilbao}\phantom{x}\text{Milano}\phantom{x}\text{Porto}\phantom{x}\text{Toulouse}
+ \end{array}\\
+ \begin{array}{r}
+     \text{Esbjerg}\\
+     \text{Vejle}
+ \end{array}\hspace{-1em} &
+ \begin{pmatrix}
+     \phantom{Bi}\phantom{a} & \phantom{Mil}\phantom{a}\phantom{no} & \phantom{P}5\phantom{to} & \phantom{T}\phantom{a}\phantom{use}\\
+     \phantom{Bl}\phantom{a} & \phantom{Mi}14\phantom{no} & \phantom{P}\phantom{a}\phantom{to} & \phantom{T}\phantom{a}\phantom{use}\\
+ \end{pmatrix}&
+ \end{array}
+</script><div style="margin-top:20px"></div>    
+    Altså er der f.eks. 5 måder at transportere varer mellem Esbjerg og Porto på.<div style="margin-top:20px"></div><ol class="number"><li id="ite15.16"> Udfyld de manglende elementer i <span class="math"></span><script type="math/tex">\textbf{C}</script>
+     </li><li id="ite15.17"> Hvor vælger virksomheden at lægge sine fabrikker? </li></ol><div style="margin-top:20px"></div>Virksomheden hører nu rygter om at borgmestrene i Frankfurt og Milano overvejer at indsætte flere toge mellem deres byer. Virksomheden indser at de nye optimale placeringer af fabrikker nu måske bliver Vejle og Milano. <div style="margin-top:20px"></div><ol class="number" start = "3"><li id="ite15.18"> Hvor mange togforbindelser skal der mindst være mellem Frankfurt og Milano før det bliver optimalt at lægge fabrikkerne i Vejle og Milano i stedet for det svar du fik i 2)?
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+
+
+
+<span id="env15.13"></span><div class="exercise" data-count="15.13">     
+Vis at
+    <span class="math"></span><script type="math/tex">
+ \begin{pmatrix}
+  3 & \phantom{-}0  \\
+ 2 & -1 
+ \end{pmatrix}^{-1}
+= 
+\begin{pmatrix}
+  1/3 & \phantom{-}0  \\
+ 2/3 & -1 
+ \end{pmatrix}</script> 
+</div><div style="margin-top:20px"></div><span id="env15.14"></span><div class="exercise" data-count="15.14">     
+<div id="quiz6">    <div class="row quizquestion">        
+    Lad <span class="math"></span><script type="math/tex">\mathbf{B} = \begin{pmatrix} 4 & 7 \\ 3 & 5 \end{pmatrix}</script>. Find <span class="math"></span><script type="math/tex">\mathbf{A}</script> så der gælder at <span class="math"></span><script type="math/tex">\mathbf{AB} = \mathbf{BA} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}</script>.<div style="margin-top:20px"></div>    </div>    <div class="row formatquizanswer">        <b>Dit svar:</b> Det er en        <select class="formatquiz-type" onchange="formatQuizChangeType(6)">            <option value="none" selected></option>            <option value="scalar">Skalar</option>            <option value="columnvector">Søjlevektor</option>            <option value="rowvector">Rækkevektor</option>            <option value="matrix">Matrix</option>        </select>        <span class="formatquiz-scalar hidden">            som er        </span>        <span class="formatquiz-vector hidden">            med            <select onchange="formatQuizChangeMatrixSize(6)">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            indgange        </span>        <span class="formatquiz-matrix hidden">            med størrelse            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixrows">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>            x            <select onchange="formatQuizChangeMatrixSize(6)" class="matrixcolumns">                <option value="none" selected></option>                <option value="1">1</option>                <option value="2">2</option>                <option value="3">3</option>                <option value="4">4</option>            </select>        </span>        <span class="formatquiz-numbers hidden">            givet ved            <table class="number-table">            </table>            <input type="button" value="Check" onclick="formatQuizCheckAnswer(6, formatQuizProgram6)">            <span class="result">                <span class="number-errors">                </span>                <span class="correct hidden">                    <b>Korrekt!</b>                </span>                <span class="wrong hidden">                    <b>Forkert.</b>                </span>            </span>            <script type="text/javascript">                function formatQuizProgram6(matrix) {
+   if (matrixUID(matrix) != matrixUID(2, 2)) return false;
+   var result = true;
+   result = result && (equals(matrix[0][0], -5));
+   result = result && (equals(matrix[0][1], 7));
+   result = result && (equals(matrix[1][0], 3));
+   result = result && (equals(matrix[1][1], -4));
+   return result;
+}
+            </script>        </span>    </div></div>
+</div><div style="margin-top:20px"></div><span id="env15.15"></span><div class="exercise" data-count="15.15">     
+Find den inverse til den pågældende matrix (hvis muligt): 
+<span class="math"></span><script type="math/tex">
+ \begin{pmatrix}
+  9 & 6  \\
+ 3 & 5 
+ \end{pmatrix}</script> 
+</div><div style="margin-top:20px"></div><span id="env15.16"></span><div class="exercise" data-count="15.16">     
+Find den inverse til den pågældende matrix (hvis muligt): 
+<span class="math"></span><script type="math/tex">
+ \begin{pmatrix}
+  4 & -4  \\
+ 2 & -2 
+ \end{pmatrix}</script> 
+</div><div style="margin-top:20px"></div><span id="env15.17"></span><div class="exercise" data-count="15.17">     
+Løs ligningerne ved at bruge den inverse matrix:
+<div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+    2x - 3y  &= 3 \\
+    3x - 4y  &= 5 
+\end{aligned}</script>
+</div><div style="margin-top:20px"></div><span id="env15.18"></span><div class="exercise" data-count="15.18">     
+Løs ligningerne ved at bruge den inverse matrix:
+<div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+    4x_1 + 5x_2   &= 9 \\
+    4x_1 + 8x_2 &= 24 
+\end{aligned}</script>
+</div><div style="margin-top:20px"></div>
+
+<span id="env15.19"></span><div class="exercise" data-count="15.19">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>Betragt følgende ligningssystem
+<div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+    3x_1 - x_2 - x_3 &= 5 \\
+        2x_1 +x_2 - 2x_3 &= 0 \\
+        x_1 + 3x_2 + x_3 = 1
+\end{aligned}</script>
+<ol class="number"><li id="ite15.19"> Bestem <b>A</b>, <b>x</b>, og <b>b</b>, så systemet af ligninger kan skrives på matrixform som:
+<div class="math"></div><script type="math/tex; mode=display">
+    \textbf{Ax}= \textbf{b}
+</script>
+(Bemærk at du har lavet denne underopgave i opgave <a href="week49.html#env14.8">14.8</a>).
+    </li><li id="ite15.20"> Beregn <b>CA</b> og <b>AD</b>, hvor 
+    <span class="math"></span><script type="math/tex">
+\textbf{C} = 
+ \begin{pmatrix}
+  \phantom{-}7 & -2 & 3  \\
+ -4 & \phantom{-}4 & 4 \\
+ \phantom{-}5 & -10 & 5
+ \end{pmatrix}
+</script> and 
+<span class="math"></span><script type="math/tex">
+\textbf{D} = 
+ \begin{pmatrix}
+  \phantom{-}5 & 24 & 28  \\
+ 20 & 12 & 24 \\
+ -5 & 20 & 0
+ \end{pmatrix}
+</script><div style="margin-top:20px"></div>(Bemærk at du har lavet denne underopgave i opgave <a href="week49.html#env14.8">14.8</a>).
+</li><li id="ite15.21"> Bestem skalaren <span class="math"></span><script type="math/tex">\alpha</script> så <span class="math"></span><script type="math/tex">\alpha\textbf{C} = \mathbf{A}^{-1}</script> (Hint: Benyt at <span class="math"></span><script type="math/tex">\mathbf{A}^{-1}\mathbf{A} = \mathbf{I}</script>).
+</li><li id="ite15.22"> Find den vektor <span class="math"></span><script type="math/tex">\mathbf{x}</script> som er løsning til matrixligningen <span class="math"></span><script type="math/tex">\mathbf{Ax}=\mathbf{b}</script>.
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env15.20"></span><div class="exercise" data-count="15.20">     
+(Tidligere eksamensopgave)<div style="margin-top:20px"></div>En vektor <span class="math"></span><script type="math/tex">\mathbf{v}</script> og to matricer <span class="math"></span><script type="math/tex">\mathbf{U}</script> og <span class="math"></span><script type="math/tex">\mathbf{W}</script>  er givet ved
+<div class="math"></div><script type="math/tex; mode=display">
+\mathbf{U} = 
+\begin{pmatrix}
+ 1 & \sqrt{2} \\
+ \sqrt{2} & 1
+\end{pmatrix},
+\qquad
+\mathbf{v} = 
+\begin{pmatrix}
+ x \\
+ y
+\end{pmatrix},
+\qquad
+\mathbf{W} = 
+\begin{pmatrix}
+ w_{11} & w_{12} \\
+ w_{21} & w_{22}
+\end{pmatrix},
+</script>
+hvor elementerne i <span class="math"></span><script type="math/tex">\mathbf{v}</script> er reelle variable og elementer i <span class="math"></span><script type="math/tex">\mathbf{W}</script> er reelle konstanter.<div style="margin-top:20px"></div><ol class="number"><li id="ite15.23"> Find den inverse matrix til <span class="math"></span><script type="math/tex">\mathbf{U}</script>.
+ </li><li id="ite15.24"> Beregn <span class="math"></span><script type="math/tex">\mathbf{v'Wv}</script>, hvor <span class="math"></span><script type="math/tex">\mathbf{v'}</script> er den transponerede til <span class="math"></span><script type="math/tex">\mathbf{v}</script>.
+ </li><li id="ite15.25"> Antag at <span class="math"></span><script type="math/tex">\mathbf{W}</script> er symmetrisk og bestem <span class="math"></span><script type="math/tex">\mathbf{W}</script> (dvs. alle elementerne i <span class="math"></span><script type="math/tex">\mathbf{W}</script>), så der gælder at
+ <div class="math"></div><script type="math/tex; mode=display">
+  \mathbf{v'Wv}  = (x - y)^2.
+ </script>
+</li></ol>
+</div><div style="margin-top:20px"></div></div></body><div style="margin-top:20px"></div>

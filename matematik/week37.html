@@ -1,0 +1,400 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXda.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+ 
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  autoeval: false,
+  quietMode: true,
+  replaceOutput: true,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="week36.html#fe101347-241d-4a93-bae8-20ddc0a32214"><b>1</b> Uge 36</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="week36.html#62315215-b27d-4abf-9f40-9bba6c6cd734">1.1 Pensum til denne uges forelæsning</a></li><li><a href="week36.html#b1c20669-ba5d-46eb-b644-f04204bb7879">1.2 Pensum til denne uges opgaver</a></li><li><a href="week36.html#7d4dec65-029e-4cd3-a80c-0e8a29b550d0">1.3 Noter</a></li><li><a href="week36.html#15ee7eb5-bfe4-42a7-bba2-5345810b30b1">1.4 Opgaver</a></li></ul><li><a class="kap" href="week37.html#b559f1f3-e024-4ea3-8967-5ab371ac0841"><b>2</b> Uge 37</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="week37.html#767323fe-be20-4afe-ad43-f3200b328edf">2.1 Pensum til denne uges forelæsning</a></li><li><a href="week37.html#7bd02587-408d-4a3c-83f7-c34b911e68a8">2.2 Pensum til denne uges opgaver</a></li><li><a href="week37.html#da26efac-9935-4646-87b9-fdff38d6b852">2.3 Noter</a></li><li><a href="week37.html#d8122f14-5e45-49bd-adc9-a9b00efe1e8d">2.4 Opgaver</a></li></ul><li><a class="kap" href="week38.html#96fdca21-2fe1-40f1-8dcd-dc12dcba0251"><b>3</b> Uge 38</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="week38.html#45d6513c-1c76-4d6b-8757-02d583090633">3.1 Pensum til denne uges forelæsning</a></li><li><a href="week38.html#847ab6f3-b59c-4039-bbc4-2f45276168e3">3.2 Pensum til denne uges opgaver</a></li><li><a href="week38.html#ed65c15c-d915-4c2e-bef0-f017e1e01116">3.3 Noter</a></li><li><a href="week38.html#7572602d-5e4c-4836-9f76-227357a5ae9e">3.4 Opgaver</a></li></ul><li><a class="kap" href="week39.html#f21121b4-5889-4b47-aead-b1b0e0487793"><b>4</b> Uge 39</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="week39.html#3b37b143-ce38-441f-8835-297ebfb98171">4.1 Pensum til denne uges forelæsning</a></li><li><a href="week39.html#727e38bb-312e-47b3-967b-3c695075a4a1">4.2 Pensum til denne uges opgaver</a></li><li><a href="week39.html#77d286ac-1b8d-4e0c-9ea3-7ee58be467be">4.3 Noter</a></li><li><a href="week39.html#55e58c4f-a433-4740-9bea-3c280e7470e4">4.4 Opgaver</a></li></ul><li><a class="kap" href="week40.html#1f61fb65-e90e-4f12-a79c-731dcc94edb5"><b>5</b> Uge 40</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="week40.html#02a949b0-cb04-4c9c-88bb-17768376cb27">5.1 Pensum til denne uges forelæsning</a></li><li><a href="week40.html#5f6eb5f8-750a-4cf3-a09f-a9f1c85c9517">5.2 Pensum til denne uges opgaver</a></li><li><a href="week40.html#0088eaea-a8dc-4219-aa52-57a2c7c2ff45">5.3 Noter</a></li><li><a href="week40.html#0b20822d-384f-42e2-919d-2a410f4ef364">5.4 Opgaver</a></li></ul><li><a class="kap" href="week41.html#c2832733-36a6-4688-9999-028faa34c70c"><b>6</b> Uge 41</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="week41.html#a9c42dc9-69e9-4aa1-81b3-c535cdf714e7">6.1 Pensum til denne uges forelæsning</a></li><li><a href="week41.html#f7d57294-3bdc-47de-bed3-a27e75d591de">6.2 Pensum til denne uges opgaver</a></li><li><a href="week41.html#8292a3e3-e955-4f3b-9050-f8911ab79f44">6.3 Noter</a></li><li><a href="week41.html#e800b87e-66a4-45c7-8531-cce48d52c9a1">6.4 Opgaver</a></li></ul><li><a class="kap" href="week42.html#9669adf1-489e-40ae-8161-0ef66bdb00db"><b>7</b> Uge 42</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="week42.html#1edb8e6a-eb93-4f0a-8cf8-88f2636a4faa">7.1 Pensum til denne uges forelæsning</a></li><li><a href="week42.html#bd5f0dc0-07be-4e79-8105-1e2102f38f65">7.2 Pensum til denne uges opgaver</a></li><li><a href="week42.html#16c36c2a-db85-4a1b-9360-00afe9806115">7.3 Noter</a></li><li><a href="week42.html#373ec2e1-1841-4073-b8e8-c2bc12a4a992">7.4 Opgaver</a></li></ul><li><a class="kap" href="week43.html#99e7f751-5223-4568-943a-3dca7342ced7"><b>8</b> Uge 43</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="week43.html#bdf734c2-a6b9-4407-b52d-96630ee60585">8.1 Pensum til denne uges forelæsning</a></li><li><a href="week43.html#2437a63d-803a-444e-a3c6-a5c682f1ed41">8.2 Pensum til denne uges opgaver</a></li><li><a href="week43.html#5699f15d-160a-4d43-905f-875abe0e7d87">8.3 Noter</a></li><li><a href="week43.html#aaed7241-a289-4234-97d7-700d80ddb0ca">8.4 Opgaver</a></li></ul><li><a class="kap" href="week44.html#ad18ee03-d7ff-4d98-8847-577d9d044454"><b>9</b> Uge 44</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="week44.html#a9067089-1d79-49c3-bb8d-7c7b9724f597">9.1 Pensum til denne uges forelæsning</a></li><li><a href="week44.html#1cce96c4-413f-4e11-89bd-fda5c142e574">9.2 Pensum til denne uges opgaver</a></li><li><a href="week44.html#04420991-a6cd-4240-a7c4-ea4e6d6dbc32">9.3 Noter</a></li><li><a href="week44.html#4d24c86a-def6-4fae-81f8-1871a80cbca6">9.4 Opgaver</a></li></ul><li><a class="kap" href="week45.html#8e7adfca-a188-49ff-a2d3-3dc07a750911"><b>10</b> Uge 45</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="week45.html#ebbb267e-e41e-4efe-a741-4d5c52842073">10.1 Pensum til denne uges forelæsning</a></li><li><a href="week45.html#7b5cac15-cbca-465c-80fe-c4bf1a8befe3">10.2 Pensum til denne uges opgaver</a></li><li><a href="week45.html#4fc49a3b-269a-4156-9eb6-dee7c3ecda16">10.3 Noter</a></li><li><a href="week45.html#26a1b856-9fcf-4e18-a0a9-df5786e370f7">10.4 Opgaver</a></li></ul><li><a class="kap" href="week46.html#6d630cc3-9b72-417f-9851-7e00553b6749"><b>11</b> Uge 46</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="week46.html#50f7e66c-2f60-4cf4-bc72-c4d6090715aa">11.1 Pensum til denne uges forelæsning</a></li><li><a href="week46.html#5a03f051-8130-4750-8613-b4973370c65d">11.2 Pensum til denne uges opgaver</a></li><li><a href="week46.html#ba9aaa03-95ff-47a3-ac92-80bb9a1fb88e">11.3 Opgaver</a></li></ul><li><a class="kap" href="week47.html#6ce0d9da-db98-4f4c-a4f2-ae13a9c5d37a"><b>12</b> Uge 47</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="week47.html#997f773b-8cfc-4023-a2a0-e59e4cd93432">12.1 Pensum til denne uges forelæsning</a></li><li><a href="week47.html#6a724bbc-9453-4e64-b7c6-98b76b5a3bf9">12.2 Pensum til denne uges opgaver</a></li><li><a href="week47.html#f855e492-6926-414d-b6c4-c7aa3dad8a4f">12.3 Noter</a></li><li><a href="week47.html#6718b30b-8840-4438-97c7-81d8e009ffb6">12.4 Opgaver</a></li></ul><li><a class="kap" href="week48.html#15fe79bf-85be-434e-aff6-d3921c51ac9d"><b>13</b> Uge 48</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="week48.html#00a980ff-b206-46dc-aa13-bac2b33e4e9e">13.1 Pensum til denne uges forelæsning</a></li><li><a href="week48.html#46a0fc38-57fb-4332-a712-46782df498bf">13.2 Pensum til denne uges opgaver</a></li><li><a href="week48.html#1d5fd037-d40f-4cb1-bc94-99b3c878b79d">13.3 Noter</a></li><li><a href="week48.html#55d47430-6d4f-4037-80fb-bb9d75f901cd">13.4 Opgaver</a></li></ul><li><a class="kap" href="week49.html#ef1130f2-78bb-4840-9bf7-8af323800799"><b>14</b> Uge 49</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="week49.html#aaeee02c-93db-4138-84f4-cf1893198ea5">14.1 Pensum til denne uges forelæsning</a></li><li><a href="week49.html#3d9b2eb1-2523-4dc1-9cdd-98a8b3e925d8">14.2 Pensum til denne uges opgaver</a></li><li><a href="week49.html#ec84dc2c-7d0f-41b7-900b-95d300661cda">14.3 Noter</a></li><li><a href="week49.html#da976e73-c79f-4878-9a36-373efcfe222e">14.4 Opgaver</a></li></ul><li><a class="kap" href="week50.html#7b8acdc2-83a5-40f6-94bd-10b126436840"><b>15</b> Uge 50</a></li><a href="#kap15" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap15" class="collapse"><li><a href="week50.html#22a49456-293e-4ef0-b730-0ec8e1455164">15.1 Pensum til denne uges opgaver</a></li><li><a href="week50.html#67d1b9a1-8f17-4007-9740-6b2840d95404">15.2 Noter</a></li><li><a href="week50.html#0c775d9e-2ac4-4b1c-99be-6e67177c5f9d">15.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="b559f1f3-e024-4ea3-8967-5ab371ac0841">2<span style="float:right;">Uge 37</span></h1>
+<span id="sec2.1"></span><h2 id="767323fe-be20-4afe-ad43-f3200b328edf">2.1 Pensum til denne uges forelæsning</h2>
+Sektion 6.8 – 6.11 og 8.5 i lærebogen.<div style="margin-top:20px"></div><span id="sec2.2"></span><h2 id="7bd02587-408d-4a3c-83f7-c34b911e68a8">2.2 Pensum til denne uges opgaver</h2>
+Sektion 6.1 – 6.7 i lærebogen.<div style="margin-top:20px"></div><span id="sec2.3"></span><h2 id="da26efac-9935-4646-87b9-fdff38d6b852">2.3 Noter</h2>
+Nogle vigtige resultater, som kan være nyttige i forbindelse med denne
+uges opgaver er gengivet nedenfor.<div style="margin-top:20px"></div><b>Regler for grænseværdier</b>
+<div class="frameit">
+  Lad <span class="math"></span><script type="math/tex">\displaystyle A = \lim_{x \to a} f(x)</script> og <span class="math"></span><script type="math/tex">\displaystyle B = \lim_{x \to a} g(x)</script>. Så gælder:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \lim_{x \to a} \left( f(x) \pm g(x) \right) &= A \pm B \\
+        \lim_{x \to a} \left( f(x) g(x) \right) &= AB \\
+        \lim_{x \to a} \frac{f(x)}{g(x)} &= \frac{A}{B}, \quad \text{hvis~} B \neq 0 \\
+        \lim_{x \to a} \left( f(x) \right)^r &= A^r
+      \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Lighed af grænseværdier</b>
+<div class="frameit">
+  Hvis to funktioner <span class="math"></span><script type="math/tex">f(x)</script> og <span class="math"></span><script type="math/tex">g(x)</script> opfylder <span class="math"></span><script type="math/tex">f(x) = g(x)</script> i en omegn af <span class="math"></span><script type="math/tex">a</script>, men ikke nødvendigvis i <span class="math"></span><script type="math/tex">x = a</script>,
+  og en af grænseværdierne for <span class="math"></span><script type="math/tex">x \to a</script> eksisterer, så gælder:
+    <div class="math"></div><script type="math/tex; mode=display">
+      \lim_{x \to a} f(x) = \lim_{x \to a} g(x)
+    </script>
+</div><div style="margin-top:20px"></div><b>Differentialkvotienter af udvalgte funktioner</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \underline{f(x)} \qquad {}& \underline{f'(x)} \qquad {}& \underline{\text{Note}}\\
+        x^a \qquad {}& a x^{a-1} \qquad {}& \\
+        e^x \qquad {}& e^x \quad {}& \\
+        \ln(x) \qquad {}& 1/x \quad {}& x > 0 \\
+        e^{ax} \qquad {}& ae^{ax} \quad {}& \\
+        a^{x} \qquad {}& \ln(a) a^{x} \quad {}& a > 0
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Regneregler for differentialkvotienter</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A + f(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} = f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A \cdot f(x) \right) =  A \frac{\mathrm{d}f}{\mathrm{d}x} = A f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) \pm g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} \pm \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x) \pm g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} g(x) + f(x) \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x)g(x) + f(x)g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( \frac{f(x)}{g(x)}\right) = \frac{\frac{\mathrm{d}f}{\mathrm{d}x} g(x) - f(x) \frac{\mathrm{d}g}{\mathrm{d}x}}{(g(x))^2} = \frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Ligningen for tangenten i et punkt</b>
+<div class="frameit">
+  Ligningen for tangenten til grafen for <span class="math"></span><script type="math/tex">f(x)</script> i punktet <span class="math"></span><script type="math/tex">(x_0, f(x_0))</script> er givet ved udtrykket
+    <span id="equ2.1"></span><div class="math"></div><script type="math/tex; mode=display">
+      y = f(x_0) + f'(x_0) (x - x_0)
+    \tag{2.1}</script>
+</div><div style="margin-top:20px"></div><span id="sec2.4"></span><h2 id="d8122f14-5e45-49bd-adc9-a9b00efe1e8d">2.4 Opgaver</h2><div style="margin-top:20px"></div><span id="env2.1"></span><a class="Exerciseno" data-count="2.1"></a><a href="#87ecc869-72fe-42ce-b7a4-79baccadb61e" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=87ecc869-72fe-42ce-b7a4-79baccadb61e class = "collapse Exercise envbuttons">  
+  Formålet med denne opgave er at illustrere at tangenten er grænsen for sekanten, når <span class="math"></span><script type="math/tex">h \to 0</script>.<div style="margin-top:20px"></div>Definitionen på differentialkvotienten <span class="math"></span><script type="math/tex">f'(x_0)</script> er nedenstående grænseværdi af Newton-kvotienten
+  <span id="equ2.2"></span><div class="math"></div><script type="math/tex; mode=display">
+    f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+  \tag{2.2}</script>
+  Men hvad betyder det? Vi kan tolke Newton-kvotienten geometrisk som hældningen på linjen gennem punkterne
+  <div class="math"></div><script type="math/tex; mode=display">
+    (x_0, f(x_0)) \quad \text{og}\quad (x_0 + h, f(x_0 + h)).
+  </script>
+  Denne linje kaldes sekanten.
+  Differentialkvotienten er så grænsen hvor de to punkter kommer infinitesimalt tæt på hinanden, altså grænsen <span class="math"></span><script type="math/tex">h \to 0</script>.<div style="margin-top:20px"></div>Lad os kigge på en bestemt funktion, nemlig
+  <div class="math"></div><script type="math/tex; mode=display">
+    f(x) = -x^3 + 5x^2 + 2.
+  </script>
+  Hvis vi ønsker at beregne <span class="math"></span><script type="math/tex">f'(2)</script> kan vi altså benytte ligning <a href=#equ2.2 class="labelref">2.2</a> med <span class="math"></span><script type="math/tex">x_0 = 2</script>.
+  I stedet for at beregne grænseværdien, kan vi udforske problemet numerisk, fx med en lommeregner,
+  og beregne sekantens hældning for forskellige værdier af <span class="math"></span><script type="math/tex">h</script>, som bliver mindre og mindre. <div style="margin-top:20px"></div>Nedenfor er vist et interaktivt plot, hvor du kan plotte sekanten for forskellige værdier af <span class="math"></span><script type="math/tex">h</script>. I plottet
+  vises også hældningen af sekanten, altså værdien af Newton-kvotienten. Du ændrer <span class="math"></span><script type="math/tex">h</script> ved at trække i punktet
+  <span class="math"></span><script type="math/tex">x = x_0 + h</script>.<div style="margin-top:20px"></div><ol class="number"><li id="ite2.1"> Beskriv hvad der sker, når <span class="math"></span><script type="math/tex">h</script> bliver mindre og mindre
+      </li><li id="ite2.2"> Beregn <span class="math"></span><script type="math/tex">f'(x)</script> ved brug af regneregler for differentialkvotienter
+      </li><li id="ite2.3"> Beregn værdien <span class="math"></span><script type="math/tex">f'(2)</script>
+      </li><li id="ite2.4"> Sammenlign værdien fra plottet for den mindste værdi af <span class="math"></span><script type="math/tex">h</script> med den eksakte værdi for <span class="math"></span><script type="math/tex">f'(2)</script>
+      </li><li id="ite2.5"> Plottet er lavet så du ikke kan sætte <span class="math"></span><script type="math/tex">h = 0</script> Hvorfor? Hvad ville der ske hvis <span class="math"></span><script type="math/tex">h=0</script>?
+  </li></ol>
+  Netop fordi vi ikke blot kan sætte <span class="math"></span><script type="math/tex">h = 0</script> i Newton-kvotienten har vi brug for
+  at tage grænseværdien. Differentialregning er en smart måde at beregne disse grænseværdier
+  uden at vi hver gang behøver at gå tilbage til ligning <a href=#equ2.2 class="labelref">2.2</a>.<div style="margin-top:20px"></div><center>
+  
+    <link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+       <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>
+       <div id="plotbox" class="jxgbox" style="width:500px; height:500px;"></div>
+        <script type="text/javascript">
+    board = JXG.JSXGraph.initBoard('plotbox', {
+      boundingbox: [-1, 24, 6, -4], 
+      axis: true,
+      showClearTrace: true,
+      showFullscreen: false, /* does not work in qadil */
+      showCopyright: false});
+  
+  var pol = function(x){
+    return -x*x*x + 5*x*x + 2;
+  }
+  var graph = board.create('functiongraph', [pol], {strokeWidth: 2, name:"f", withLabel: true});
+  
+  var x0 = board.create('glider', [2, 0, board.defaultAxes.x], {name: 'x_0', size:4});
+  var fx0 = board.create('point', [
+                  function() { return x0.X(); }, 
+                  function() { return pol(x0.X()); }
+            ], {name: '', color: 'grey', fixed: true, size:3});
+  var x = board.create('glider', [5, 0, board.defaultAxes.x], {name: 'x', size:4});
+  var fx = board.create('point', [
+                  function() { return x.X(); }, 
+                  function() { return pol(x.X()); }
+            ], {name: '', color: 'grey', fixed: true, size:3});
+  var line = board.create('line',[fx0, fx],{strokeColor:'blue',dash:2});
+  /*
+  // Move this to another linked board and plot secant slope as function of h
+  var f1 = board.create('point', [
+          function() { return x.X(); },
+          function() { return (fx.Y()-fx0.Y())/(fx.X()-fx0.X() + 0.0000001); }],
+          { size: 1, name: 'f_1', color: 'black', fixed: true, trace: true});
+  
+  */
+  var hTxt = board.create('text', [0.5, -2, function() { 
+          return 'h = ' + (fx.X() - fx0.X()).toFixed(5);
+  }]);
+  var secTxt = board.create('text', [0.5, -3, function() { 
+    return 'Sekantens hældning = ' + ((fx.Y() - fx0.Y()) / (fx.X() - fx0.X())).toFixed(3);
+      }]);
+  
+  </script>
+  <div style="margin-top:20px"></div></center>
+</div><div style="margin-top:20px"></div>
+<span id="env2.2"></span><a class="Exerciseno" data-count="2.2"></a><a href="#7a84d460-76d3-44f7-b51a-24beb52c96c9" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=7a84d460-76d3-44f7-b51a-24beb52c96c9 class = "collapse Exercise envbuttons">  
+  I denne opgave ser vi på samme funktion som i opgave <a href=#env2.1 class="labelref">2.1</a>.<div style="margin-top:20px"></div>Prøv at zoome ind på punktet <span class="math"></span><script type="math/tex">(2, f(2))</script>. Hvis du kommer tæt nok på er kurven umulig at skelne fra en ret linje. Dette
+  gælder for alle kontinuerte funktioner. Den rette linje du ser når du zoomer nok ind er identisk med tangenten (i grænsen
+  hvor du har zoomet uendeligt).<div style="margin-top:20px"></div>Du kan zoome i grafen nedenfor ved at markere et område (træk og slip). Du kan zoome helt ud igen ved at dobbelt-klikke
+  på grafen.
+<center>
+  
+ <iframe src="./img/week37/diff_zoom.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center>
+</div><div style="margin-top:20px"></div>
+
+<span id="env2.3"></span><div class="exercise" data-count="2.3">     
+  a) Find hældningen af kurven i punktet <span class="math"></span><script type="math/tex">(3, f(3))</script>.
+  <div class="centerimg"><img src="img/week37/exercise_1.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+    b) Hvor har kurven en hældning på nul?
+    </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <span class="math"></span><script type="math/tex">x = 0</script> og <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script> og <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.4"></span><div class="exercise" data-count="2.4">     
+  En funktion <span class="math"></span><script type="math/tex">f(x)</script> og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> har funktionsværdierne
+  <div class="math"></div><script type="math/tex; mode=display">
+    \begin{array}{rl}
+      f(-1) &=& 0.65 \\
+      f'(-1) &=& 0.45
+    \end{array}
+  </script>
+  Hvad er ligningen for tangenten til kurven i punktet <span class="math"></span><script type="math/tex">(-1, f(-1))</script>, som er vist i figuren nedenfor?
+  <div class="centerimg"><img src="img/week37/exercise_2.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.5"></span><div class="exercise" data-count="2.5">     
+Tangenten til kurven for funktionen <span class="math"></span><script type="math/tex">f(x)</script> i punktet <span class="math"></span><script type="math/tex">(2, f(2))</script> er givet ved ligningen
+  <div class="math"></div><script type="math/tex; mode=display">
+    y = 2.1 x - 3.1
+  </script>
+  Hvad er værdierne for <span class="math"></span><script type="math/tex">f(2)</script> og <span class="math"></span><script type="math/tex">f'(2)</script>?
+  <div class="centerimg"><img src="img/week37/exercise_3.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env2.6"></span><div class="exercise" data-count="2.6">     
+  Grafen nedenfor viser kurven for en funktion <span class="math"></span><script type="math/tex">f(x)</script>.
+  <div class="centerimg"><img src="img/week37/exercise_4a.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+    Hvilke(n) af nedenstående grafer viser differentialkvotienten for <span class="math"></span><script type="math/tex">f(x)</script>?
+    </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4c.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <div class="centerimg"><img src="img/week37/exercise_4b.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4e.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4d.png" width="75%"></div>
+    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div><span id="env2.7"></span><div class="exercise" data-count="2.7">     
+  Figuren nedenfor viser grafen for en funktion <span class="math"></span><script type="math/tex">f(x)</script> (blå kurve) og dens afledede <span class="math"></span><script type="math/tex">f'(x)</script> (stiplet rød kurve).
+  <div class="centerimg"><img src="img/week37/exercise_5.png" width="50%"></div>
+  Find ligningen for tangenten til <span class="math"></span><script type="math/tex">f(x)</script> for <span class="math"></span><script type="math/tex">x = 4</script>.<div style="margin-top:20px"></div><a href="#278fcd23-4a50-4fc5-bcae-77fb47902cc2" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=278fcd23-4a50-4fc5-bcae-77fb47902cc2 class = "collapse Hint envbuttons">    
+    Hvad er værdierne af <span class="math"></span><script type="math/tex">f(4)</script> og <span class="math"></span><script type="math/tex">f'(4)</script>?<div style="margin-top:20px"></div><a href="#31047a8b-6ff2-4a9d-9f02-06bf106f2b9d" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=31047a8b-6ff2-4a9d-9f02-06bf106f2b9d class = "collapse Hint envbuttons">    
+      Benyt ligning <a href=#equ2.1 class="labelref">2.1</a>.
+      </div>
+    </div>
+</div><div style="margin-top:20px"></div>
+<span id="env2.8"></span><div class="exercise" data-count="2.8">     
+  Find nedenstående grænseværdier
+  <ol class="number"><li id="ite2.6"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to -3} \left( x^2 + 4x + 2 \right)</script>
+    </li><li id="ite2.7"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3/2} \left( (x - \frac{2}{3}) (x + \frac{1}{2}) \right)</script>
+    </li><li id="ite2.8"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 0} \left( \sqrt{(2-x)(8+x)} + \frac{1}{x-2} \right)</script>
+    </li><li id="ite2.9"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3} \frac{2x^2-2x-2}{x+2} </script>
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+<span id="env2.9"></span><div class="exercise" data-count="2.9">     
+  Beregn grænseværdien
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim_{x \to 2} \frac{3x^2 - 3x - 6}{2x^2 + 2x - 12}
+  </script>
+  <a href="#34c78323-6da6-413c-828b-92ced4eccf4d" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=34c78323-6da6-413c-828b-92ced4eccf4d class = "collapse Hint envbuttons">    
+    Er du sikker på at du ikke vil prøve selv, først? Brug hints med omtanke!<div style="margin-top:20px"></div><a href="#299599f5-a3cd-4798-8400-aa67bfc25550" class ="btn btn-default" data-toggle="collapse">Ja, vis mig et hint, jeg sidder fast!</a><div id=299599f5-a3cd-4798-8400-aa67bfc25550 class="collapse">
+      Benyt resultatet <em>lighed af grænseværdier</em> ovenfor. Tænk over hvordan du kan omskrive tæller og nævner.<div style="margin-top:20px"></div><a href="#788a47a9-a27e-49a0-95b9-5fa031d3d0e5" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=788a47a9-a27e-49a0-95b9-5fa031d3d0e5 class = "collapse Hint envbuttons">    
+      Omskriv tæller og nævner ved at faktorisere (se formel <a href="week36.html#equ1.5">(1.5)</a> i boksen <em>Andengradsligning</em> i afsnit <a href="week36.html#sec1.3.1">1.3.1</a>).
+      </div>
+    </div>
+    </div>
+</div><div style="margin-top:20px"></div>
+
+<span id="env2.10"></span><div class="exercise" data-count="2.10">     
+Differentiér følgende funktioner
+<ol class="number"><li id="ite2.10"> <span class="math"></span><script type="math/tex">f(x) = 3x^6</script>
+  </li><li id="ite2.11"> <span class="math"></span><script type="math/tex">g(x) = x^{3/2}</script>
+  </li><li id="ite2.12"> <span class="math"></span><script type="math/tex">h(y) = \frac{2}{3} y^{-3}</script>
+  </li><li id="ite2.13"> <span class="math"></span><script type="math/tex">q(x) = 1 / (x^{-7/3})</script>
+  </li><li id="ite2.14"> <span class="math"></span><script type="math/tex">p(x) = \displaystyle\frac{\sqrt[4]{x}}{7}</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.11"></span><div class="exercise" data-count="2.11">     
+  Udregn differentialkvotienterne af følgende funktioner
+  <ol class="number"><li id="ite2.15"> <span class="math"></span><script type="math/tex">f(x) = 2ax^3</script>, hvor <span class="math"></span><script type="math/tex">a</script> er en konstant.
+    </li><li id="ite2.16"> <span class="math"></span><script type="math/tex">f(z) = 2\sqrt{z} - \frac{1}{7}z^5</script>. 
+    </li><li id="ite2.17"> <span class="math"></span><script type="math/tex">f(x) = ax^2 + bx + c</script>, hvor <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> og <span class="math"></span><script type="math/tex">c</script> er konstanter.
+    </li><li id="ite2.18"> <span class="math"></span><script type="math/tex">g(y) = 5y^3 - 3y^2</script>.
+     </li></ol>
+  </div><div style="margin-top:20px"></div>
+<span id="env2.12"></span><div class="exercise" data-count="2.12">     
+Beregn <span class="math"></span><script type="math/tex">y'(x)</script> når <span class="math"></span><script type="math/tex">y</script> er givet ved:
+<ol class="number"><li id="ite2.19"> <span class="math"></span><script type="math/tex">y = 5x^2 - 3x + 7</script>
+  </li><li id="ite2.20"> <span class="math"></span><script type="math/tex">y = x^7 + 3 \sqrt{x} + \frac{1}{2 \sqrt{x}}</script>
+  </li><li id="ite2.21"> <span class="math"></span><script type="math/tex">y = x \cdot (x -2x^{-1})</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.13"></span><div class="exercise" data-count="2.13">     
+  Beregn den afledede af følgende funktioner:
+  <a href="#f53a08fd-fef8-46e8-b1a4-1fa30ee997c6" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=f53a08fd-fef8-46e8-b1a4-1fa30ee997c6 class = "collapse Hint envbuttons">    
+   Her skal produktreglen bruges. Det kan tit være en god idé at starte med at skrive op hvad de fire størrelser, 
+   <span class="math"></span><script type="math/tex">f(x), g(x), f'(x)</script> og <span class="math"></span><script type="math/tex">g'(x)</script> der indgår i reglen, og beregne de afledede. F.eks. i opgave 1 nedenunder er det oplagt at se <span class="math"></span><script type="math/tex">10x^3</script>
+   som den første funktion og <span class="math"></span><script type="math/tex">1-\sqrt{x}</script> som den anden funktion. De afledede er hhv. <span class="math"></span><script type="math/tex">30x^2</script> og <span class="math"></span><script type="math/tex">-\frac{1}{2 \sqrt{x}}</script>.
+    </div>
+  <ol class="number"><li id="ite2.22"> <span class="math"></span><script type="math/tex">f(x) = 10x^3 (1 - \sqrt{x})</script>
+    </li><li id="ite2.23"> <span class="math"></span><script type="math/tex">g(x) = (2x - x^2)(x^3 + x^2) + 1000</script>
+    </li><li id="ite2.24"> <span class="math"></span><script type="math/tex">h(x) = (x + 2)\cdot (\sqrt{x} -3x)</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env2.14"></span><div class="exercise" data-count="2.14">     
+  Beregn differentialkvotienten mht. <span class="math"></span><script type="math/tex">x</script> af nedenstående udtryk:
+  <a href="#be9dc929-d915-453b-bb01-aadfb4ceccd6" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=be9dc929-d915-453b-bb01-aadfb4ceccd6 class = "collapse Hint envbuttons">    
+   Se video for eksempel <a href="https://www.loom.com/share/a34f9761f1194848920c0d067d15cf68" target="_blank">her</a>
+     </div>
+  <ol class="number"><li id="ite2.25"> <span class="math"></span><script type="math/tex">\displaystyle \frac{\sqrt{x} - 1}{x^2}</script>
+    </li><li id="ite2.26"> <span class="math"></span><script type="math/tex">\displaystyle \frac{x-2}{x+2}</script>
+        </li><li id="ite2.27"> <span class="math"></span><script type="math/tex">\displaystyle \frac{2x-3}{5x+4}</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+</div></body>
