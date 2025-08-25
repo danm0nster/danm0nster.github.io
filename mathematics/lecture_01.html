@@ -1,0 +1,343 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#c161af24-8694-4104-a696-4ae562e4bff5"><b>0</b> Introduction</a></li><a href="#kap0" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap0" class="collapse"><li><a href="introduction.html#4d559dff-934f-47ac-8be6-173af8790bf8">0.1 Readings for the brush-up course</a></li><li><a href="introduction.html#f493be4c-d830-4686-b136-dc439c33c072">0.2 Exercises</a></li></ul><li><a class="kap" href="lecture_01.html#b1d5633f-8f5b-4521-88eb-76eeb734e2db"><b>1</b> Lecture 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="lecture_01.html#79cd1c0c-b8ad-47ad-b4e6-a769e82e3273">1.1 Readings for this lecture</a></li><li><a href="lecture_01.html#58d02e91-573e-4699-ab3e-6fd66b3b21d1">1.2 Notes</a></li><li><a href="lecture_01.html#64611562-f47f-40da-82ad-af7053313a01">1.3 Exercises</a></li></ul><li><a class="kap" href="lecture_02.html#415fd494-29e1-4416-932e-9dafa35b2847"><b>2</b> Lecture 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="lecture_02.html#12d4e179-5815-444a-baf6-6e7997d4c396">2.1 Readings for this lecture</a></li><li><a href="lecture_02.html#bc653c4b-8374-43b5-90ee-6dc4e065faba">2.2 Notes</a></li><li><a href="lecture_02.html#0a0103e3-e694-479c-97f4-205990199a56">2.3 Exercises</a></li></ul><li><a class="kap" href="lecture_03.html#90d307f8-c797-4372-9074-40242f4746d9"><b>3</b> Lecture 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="lecture_03.html#6e766928-fd73-4a86-8c0d-c8bd3a056f1c">3.1 Readings for this lecture</a></li><li><a href="lecture_03.html#e4802776-b48d-46bb-a452-3dbe83375cb5">3.2 Notes</a></li><li><a href="lecture_03.html#7a7f0741-4a89-4abe-ae1e-99636e9ddf16">3.3 Exercises</a></li></ul><li><a class="kap" href="lecture_04.html#a38525ae-98ad-411b-ac1c-de396f2d910a"><b>4</b> Lecture 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="lecture_04.html#f1314d5a-206f-4c0f-9934-fd8ebdffea1a">4.1 Readings for this lecture</a></li><li><a href="lecture_04.html#e09baa02-771c-4a42-a75b-5ef4e2f19c19">4.2 Notes</a></li><li><a href="lecture_04.html#e6d0842f-c877-4cc4-bc0e-08fa796c3ae0">4.3 Problems</a></li></ul><li><a class="kap" href="lecture_05.html#fe218857-d481-4f91-b3f3-2fa2b95c5fcd"><b>5</b> Lecture 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="lecture_05.html#f2c1a3f0-e49a-41a9-8d96-a8280046b12f">5.1 Readings for this lecture</a></li><li><a href="lecture_05.html#7a2a1cdb-ce12-4a6b-91de-e188a93246f1">5.2 Notes</a></li><li><a href="lecture_05.html#0318bab7-db17-4106-a1a1-2f8b4da00d0e">5.3 Problems</a></li></ul><li><a class="kap" href="lecture_06.html#3d2795b2-ce1e-4e73-b922-4cc84aedaba7"><b>6</b> Lecture 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="lecture_06.html#6c4eec53-7793-496c-8771-46af14ec24c5">6.1 Readings for this lecture</a></li><li><a href="lecture_06.html#c5826c96-bb3c-4e6d-8a3e-a1eba2e3939a">6.2 Notes</a></li><li><a href="lecture_06.html#1d36acb0-fa5c-432d-b6d1-206e047644cf">6.3 Problems</a></li></ul><li><a class="kap" href="lecture_07.html#076b6524-82a1-4e75-aa20-216468d4d411"><b>7</b> Lecture 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="lecture_07.html#f10f6818-2eff-49cd-8f9c-08c39d1954e4">7.1 Readings for this lecture</a></li><li><a href="lecture_07.html#e6b18a21-7f57-487c-8318-43e91d3987c9">7.2 Notes</a></li><li><a href="lecture_07.html#bebb9433-7936-4b0f-b503-04430c2422cc">7.3 Problems</a></li></ul><li><a class="kap" href="lecture_08.html#d68bb6d7-3fa6-4db9-8a26-126f6e298b59"><b>8</b> Lecture 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="lecture_08.html#6bf495fc-b1a1-4c28-9459-4e6132ff21b4">8.1 Readings for this lecture</a></li><li><a href="lecture_08.html#185bb55a-9578-42b6-8d1e-28b8cf3bac18">8.2 Notes</a></li><li><a href="lecture_08.html#4149816c-04b0-4a88-a3eb-1388f7f92d8f">8.3 Problems</a></li></ul><li><a class="kap" href="lecture_09.html#07ffed50-58aa-4309-aa65-b198f38324b5"><b>9</b> Lecture 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="lecture_09.html#07a946a4-5259-4f65-9f67-0e891f8027b0">9.1 Readings for this lecture</a></li><li><a href="lecture_09.html#72f114e5-5ec1-4319-b53e-2e044772c094">9.2 Notes</a></li><li><a href="lecture_09.html#b539ab10-535a-4e7c-98a3-89023ffc5249">9.3 Problems</a></li></ul><li><a class="kap" href="lecture_10.html#d3e1dd60-4d94-484f-ac9e-9fb47bc2d95b"><b>10</b> Lecture 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="lecture_10.html#b90c7b29-5580-42b2-933c-e082bf9ae15c">10.1 Readings for this lecture</a></li><li><a href="lecture_10.html#5adfe6b2-07aa-4d60-b7cd-2037f97d71a2">10.2 Notes</a></li><li><a href="lecture_10.html#9c3e9669-3b56-4c09-a40e-17930f9b95ab">10.3 Problems</a></li></ul><li><a class="kap" href="lecture_11.html#156a40a4-5e68-42de-ba9a-7431729c6a76"><b>11</b> Lecture 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="lecture_11.html#63b910c0-820b-4889-8d89-5bec1fe9c24c">11.1 Readings for this lecture</a></li><li><a href="lecture_11.html#99cb2ccc-4cdf-456e-9886-d04991ce9c5c">11.2 Notes</a></li><li><a href="lecture_11.html#5025ff81-4174-4d7c-83e3-89b5deb61595">11.3 Problems</a></li></ul><li><a class="kap" href="lecture_12.html#1587b444-d3c6-4fbc-a453-f0056510a002"><b>12</b> Lecture 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="lecture_12.html#66cdbce3-7764-4224-b1d2-5ab26c9fa7e2">12.1 Readings for this lecture</a></li><li><a href="lecture_12.html#90dd6a0d-3e25-463f-b2f7-2beab254882f">12.2 Notes</a></li><li><a href="lecture_12.html#36df86d5-5e1a-4b7e-a0a7-a1930ea6ec92">12.3 Problems</a></li></ul><li><a class="kap" href="lecture_13.html#8fd8b5bd-8fd3-49e4-bf16-b312af82b60f"><b>13</b> Lecture 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="lecture_13.html#08f41455-1a28-4595-acdc-ec1443e412fd">13.1 Readings for this lecture</a></li><li><a href="lecture_13.html#b31ff0ce-485e-4504-b511-6c03f22b4ab5">13.2 Notes</a></li><li><a href="lecture_13.html#35109e25-c0e7-464c-a63b-a3aec3392eb6">13.3 Problems</a></li></ul><li><a class="kap" href="lecture_14.html#5c7bf2af-50ec-43d2-a452-047953692acb"><b>14</b> Lecture 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="lecture_14.html#161b0e6a-90f0-40f9-8b8d-caabd9130007">14.1 Readings for this lecture</a></li><li><a href="lecture_14.html#a78c0c9b-225f-4cfc-89cb-0b1a10632d54">14.2 Notes</a></li><li><a href="lecture_14.html#1cd44725-d297-4bf4-8372-a853d9aee1c5">14.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="b1d5633f-8f5b-4521-88eb-76eeb734e2db">1<span style="float:right;">Lecture 1</span></h1>
+<span id="sec1.1"></span><h2 id="79cd1c0c-b8ad-47ad-b4e6-a769e82e3273">1.1 Readings for this lecture</h2><div style="margin-top:20px"></div>Sections 6.1 – 6.7 in the textbook.<div style="margin-top:20px"></div><span id="sec1.2"></span><h2 id="58d02e91-573e-4699-ab3e-6fd66b3b21d1">1.2 Notes</h2>
+Below, you will find some important results from last week's curriculum which
+might prove useful when you work on this week's problems (further below).<div style="margin-top:20px"></div><b>Rules for limits</b>
+<div class="frameit">
+  If <span class="math"></span><script type="math/tex">\displaystyle A = \lim_{x \to a} f(x)</script> and <span class="math"></span><script type="math/tex">\displaystyle B = \lim_{x \to a} g(x)</script>, then the following rules apply:
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \lim_{x \to a} \left( f(x) \pm g(x) \right) &= A \pm B \\
+        \lim_{x \to a} \left( f(x) g(x) \right) &= AB \\
+        \lim_{x \to a} \frac{f(x)}{g(x)} &= \frac{A}{B}, \quad \text{if~} B \neq 0 \\
+        \lim_{x \to a} \left( f(x) \right)^r &= A^r
+      \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Equality of limits</b>
+<div class="frameit">
+  If two functions <span class="math"></span><script type="math/tex">f(x)</script> and <span class="math"></span><script type="math/tex">g(x)</script> satisfy <span class="math"></span><script type="math/tex">f(x) = g(x)</script> for <span class="math"></span><script type="math/tex">x</script> close to <span class="math"></span><script type="math/tex">a</script>, but not necessarily at <span class="math"></span><script type="math/tex">x=a</script>,
+  and if one of the limits exist, then:
+    <div class="math"></div><script type="math/tex; mode=display">
+      \lim_{x \to a} f(x) = \lim_{x \to a} g(x)
+    </script>
+</div><div style="margin-top:20px"></div><b>Derivatives of selected functions</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+        \underline{f(x)} \qquad {}& \underline{f'(x)} \qquad {}& \underline{\text{Note}}\\
+        x^a \qquad {}& a x^{a-1} \qquad {}& \\
+        e^x \qquad {}& e^x \quad {}& \\
+        \ln(x) \qquad {}& 1/x \quad {}& x > 0 \\
+        e^{ax} \qquad {}& ae^{ax} \quad {}& \\
+        a^{x} \qquad {}& \ln(a) a^{x} \quad {}& a > 0
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Rules for derivatives</b>
+<div class="frameit">
+    <div class="math"></div><script type="math/tex; mode=display">\begin{aligned}
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A + f(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} = f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( A \cdot f(x) \right) =  A \frac{\mathrm{d}f}{\mathrm{d}x} = A f'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) \pm g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} \pm \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x) \pm g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( f(x) g(x) \right) =  \frac{\mathrm{d}f}{\mathrm{d}x} g(x) + f(x) \frac{\mathrm{d}g}{\mathrm{d}x} = f'(x)g(x) + f(x)g'(x)\\[3ex]
+      {}&\frac{\mathrm{d}\phantom{x}}{\mathrm{d}x} \left( \frac{f(x)}{g(x)}\right) = \frac{\frac{\mathrm{d}f}{\mathrm{d}x} g(x) - f(x) \frac{\mathrm{d}g}{\mathrm{d}x}}{(g(x))^2} = \frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}
+    \end{aligned}</script>
+</div><div style="margin-top:20px"></div><b>Equation for the tangent to a curve in a point</b>
+<div class="frameit">
+  The equation for the tangent to the graph of <span class="math"></span><script type="math/tex">f(x)</script> in the point <span class="math"></span><script type="math/tex">(x_0, f(x_0))</script>  is given
+  by the equation
+    <span id="equ1.1"></span><div class="math"></div><script type="math/tex; mode=display">
+      y = f(x_0) + f'(x_0) (x - x_0)
+    \tag{1.1}</script>
+</div><div style="margin-top:20px"></div><span id="sec1.3"></span><h2 id="64611562-f47f-40da-82ad-af7053313a01">1.3 Exercises</h2><div style="margin-top:20px"></div><span id="env1.1"></span><a class="Exerciseno" data-count="1.1"></a><a href="#27868dd8-87db-46b6-8533-4c9553017882" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=27868dd8-87db-46b6-8533-4c9553017882 class = "collapse Exercise envbuttons">  
+  The pupose of this exercise is to illustrate that the tangent is the limit of a secant when <span class="math"></span><script type="math/tex">h \to 0</script>.<div style="margin-top:20px"></div>The definition of the derivative <span class="math"></span><script type="math/tex">f'(x_0)</script> is the limit of the Newton quotient
+  <span id="equ1.2"></span><div class="math"></div><script type="math/tex; mode=display">
+    f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+  \tag{1.2}</script>
+  But what does that mean graphically? We can interpret the Newton quotient as the slope of the straight line
+  through the points
+  <div class="math"></div><script type="math/tex; mode=display">
+    (x_0, f(x_0)) \quad \text{and}\quad (x_0 + h, f(x_0 + h)).
+  </script>
+  This line is called a secant. We obtain the derivative in <span class="math"></span><script type="math/tex">x_0</script> when the point <span class="math"></span><script type="math/tex">x_0 + h</script> comes infinitesimally close to <span class="math"></span><script type="math/tex">x_0</script>, i.e., the limit <span class="math"></span><script type="math/tex">h \to 0</script>.<div style="margin-top:20px"></div>Consider a particular function:
+  <div class="math"></div><script type="math/tex; mode=display">
+    f(x) = -x^3 + 5x^2 + 2.
+  </script>
+  In order to calculate <span class="math"></span><script type="math/tex">f'(2)</script>, we can use equation <a href=#equ1.2 class="labelref">1.2</a> with <span class="math"></span><script type="math/tex">x_0 = 2</script>.
+  Instead of calculating the limit, we can explore the problem graphically for different values of <span class="math"></span><script type="math/tex">h</script>, e.g., by using a calculator or a spreadsheet to calculate the slope of the secant as <span class="math"></span><script type="math/tex">h</script> becomes smaller and smaller.
+  In the interactive plot below, you can see how the secant changes, as you change <span class="math"></span><script type="math/tex">h</script> by pulling the point <span class="math"></span><script type="math/tex">x_0 + h</script> along the <span class="math"></span><script type="math/tex">x</script>-axis. At the same time you can see how the value of the slope of the secant (the Newton quotient) also changes.<div style="margin-top:20px"></div><ol class="number"><li id="ite1.1"> Describe what happens as <span class="math"></span><script type="math/tex">h</script> becomes smaller and smaller
+      </li><li id="ite1.2"> Calculate <span class="math"></span><script type="math/tex">f'(x)</script> by using rules for derivatives
+      </li><li id="ite1.3"> Calculate the value <span class="math"></span><script type="math/tex">f'(2)</script>
+      </li><li id="ite1.4"> Compare the exact value of <span class="math"></span><script type="math/tex">f'(2)</script> to the value in the plot for the smallest value of <span class="math"></span><script type="math/tex">h</script>
+      </li><li id="ite1.5"> The plot has deliberately been made so that you can not set <span class="math"></span><script type="math/tex">h = 0</script>. What would happen if <span class="math"></span><script type="math/tex">h = 0</script>?
+  </li></ol>
+  It is exactly because we cannot set <span class="math"></span><script type="math/tex">h = 0</script> in the Newton quotient, that we need to take the limit. Calculus is a smart and systematic way of taking these limits without having to go back to the definition in equation <a href=#equ1.2 class="labelref">1.2</a> every time.<div style="margin-top:20px"></div><center>
+  
+    <link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+       <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>
+       <div id="plotbox" class="jxgbox" style="width:500px; height:500px;"></div>
+        <script type="text/javascript">
+    board = JXG.JSXGraph.initBoard('plotbox', {
+      boundingbox: [-1, 24, 6, -4], 
+      axis: true,
+      showClearTrace: true,
+      showFullscreen: false, /* does not work in qadil */
+      showCopyright: false});
+  
+  var pol = function(x){
+    return -x*x*x + 5*x*x + 2;
+  }
+  var graph = board.create('functiongraph', [pol], {strokeWidth: 2, name:"f", withLabel: true});
+  
+  var x0 = board.create('glider', [2, 0, board.defaultAxes.x], {name: 'x_0', size:4});
+  var fx0 = board.create('point', [
+                  function() { return x0.X(); }, 
+                  function() { return pol(x0.X()); }
+            ], {name: '', color: 'grey', fixed: true, size:3});
+  var x = board.create('glider', [5, 0, board.defaultAxes.x], {name: 'x', size:4});
+  var fx = board.create('point', [
+                  function() { return x.X(); }, 
+                  function() { return pol(x.X()); }
+            ], {name: '', color: 'grey', fixed: true, size:3});
+  var line = board.create('line',[fx0, fx],{strokeColor:'blue',dash:2});
+  /*
+  // Move this to another linked board and plot secant slope as function of h
+  var f1 = board.create('point', [
+          function() { return x.X(); },
+          function() { return (fx.Y()-fx0.Y())/(fx.X()-fx0.X() + 0.0000001); }],
+          { size: 1, name: 'f_1', color: 'black', fixed: true, trace: true});
+  
+  */
+  var hTxt = board.create('text', [0.5, -2, function() { 
+          return 'h = ' + (fx.X() - fx0.X()).toFixed(5);
+  }]);
+  var secTxt = board.create('text', [0.5, -3, function() { 
+    return 'Slope of secant = ' + ((fx.Y() - fx0.Y()) / (fx.X() - fx0.X())).toFixed(3);
+      }]);
+  
+  </script>
+  <div style="margin-top:20px"></div></center>
+</div><div style="margin-top:20px"></div>
+<span id="env1.2"></span><a class="Exerciseno" data-count="1.2"></a><a href="#b4b00b44-bd42-4935-bae3-3691fed71fe8" class ="btn btn-default Exercisebutton" data-toggle="collapse"></a><div id=b4b00b44-bd42-4935-bae3-3691fed71fe8 class = "collapse Exercise envbuttons">  
+  In this exercise we consider the same function as in exercise <a href=#env1.1 class="labelref">1.1</a>.<div style="margin-top:20px"></div>In the graph below you can zoom in on the curve by marking a rectangular area. Try to zoom in on the point <span class="math"></span><script type="math/tex">(2, f(2))</script>.
+  If you zoom in enough, it will become impossible to distinguish the curve from the tangent (dashed line). This is true
+  for all differentiable functions, so in other words: locally any differentiable function is indistinguishable from a 
+  straight line (which is identican to the tangent when you have zoomed and infinite amount).<div style="margin-top:20px"></div>To go back and start over, simply double click anywhere in the graph.
+<center>
+  
+ <iframe src="./img/week37/diff_zoom.html" title="plot" width=900 height=600 style="border:none;" ></iframe><div style="margin-top:20px"></div></center>
+</div><div style="margin-top:20px"></div><span id="env1.3"></span><div class="exercise" data-count="1.3">     
+  a) Find the slope of the curve at the point <span class="math"></span><script type="math/tex">(3, f(3))</script>.
+  <div class="centerimg"><img src="img/week37/exercise_1.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz1" style="width:100%;"><div class="row quizquestion">
+    b) Where does the curve have a slope of zero?
+    </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <span class="math"></span><script type="math/tex">x = 0</script> and <span class="math"></span><script type="math/tex">x = 1.333\ldots</script>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <span class="math"></span><script type="math/tex">x \approx -1.72</script> and <span class="math"></span><script type="math/tex">x = 1.666\ldots</script>
+    </div></div></div><button id="quizbutton1" class = "btn btn-default">Check</button><script>$("#quizbutton1").click(function(){quizshowanswers(quiz1, quizbutton1);});</script>
+</div><div style="margin-top:20px"></div><span id="env1.4"></span><div class="exercise" data-count="1.4">     
+  A function <span class="math"></span><script type="math/tex">f(x)</script> and its derivative <span class="math"></span><script type="math/tex">f'(x)</script> have the particular values
+  <div class="math"></div><script type="math/tex; mode=display">
+    \begin{array}{rl}
+      f(-1) &=& 0.65 \\
+      f'(-1) &=& 0.45
+    \end{array}
+  </script>
+  What is the equation for the tangent to the graph at the point <span class="math"></span><script type="math/tex">(-1, f(-1))</script> shown in the figure below?
+  <div class="centerimg"><img src="img/week37/exercise_2.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env1.5"></span><div class="exercise" data-count="1.5">     
+  The tangent to the graph for the function <span class="math"></span><script type="math/tex">f(x)</script> at the point <span class="math"></span><script type="math/tex">(2, f(2))</script> is given by the equation
+  <div class="math"></div><script type="math/tex; mode=display">
+    y = 2.1 x - 3.1
+  </script>
+  What are the values of <span class="math"></span><script type="math/tex">f(2)</script> and <span class="math"></span><script type="math/tex">f'(2)</script>?
+  <div class="centerimg"><img src="img/week37/exercise_3.png" width="50%"></div>
+</div><div style="margin-top:20px"></div><span id="env1.6"></span><div class="exercise" data-count="1.6">     
+  The plot below shows the graph for a function <span class="math"></span><script type="math/tex">f(x)</script>
+  <div class="centerimg"><img src="img/week37/exercise_4a.png" width="50%"></div>
+  <span id="{labelname}"></span><div id="quiz2" style="width:100%;"><div class="row quizquestion">
+    Which of the following graphs shows a plot of the derivative of <span class="math"></span><script type="math/tex">f(x)</script>?
+    </div><div class="row quizboxes"><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4c.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="T">
+    <div class="centerimg"><img src="img/week37/exercise_4b.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4e.png" width="75%"></div>
+    </div><div class="col-xs-5 quizanswer" datav="F">
+    <div class="centerimg"><img src="img/week37/exercise_4d.png" width="75%"></div>
+    </div></div></div><button id="quizbutton2" class = "btn btn-default">Check</button><script>$("#quizbutton2").click(function(){quizshowanswers(quiz2, quizbutton2);});</script>
+</div><div style="margin-top:20px"></div><span id="env1.7"></span><div class="exercise" data-count="1.7">     
+  The figure below shows the graphs for a function <span class="math"></span><script type="math/tex">f(x)</script> (solid blue) and its derivative <span class="math"></span><script type="math/tex">f'(x)</script> (dashed red).
+  <div class="centerimg"><img src="img/week37/exercise_5.png" width="50%"></div>
+  Find the equation for the tangent to <span class="math"></span><script type="math/tex">f(x)</script> for <span class="math"></span><script type="math/tex">x = 4</script>.<div style="margin-top:20px"></div><a href="#e260f626-1a78-42b1-aca7-f06fb3351440" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=e260f626-1a78-42b1-aca7-f06fb3351440 class = "collapse Hint envbuttons">    
+    What are the values of <span class="math"></span><script type="math/tex">f(4)</script> and <span class="math"></span><script type="math/tex">f'(4)</script>?<div style="margin-top:20px"></div><a href="#df1fc93c-dc29-40ea-9aa7-7e769349a537" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=df1fc93c-dc29-40ea-9aa7-7e769349a537 class = "collapse Hint envbuttons">    
+      Use equation <a href=#equ1.1 class="labelref">1.1</a>.
+      </div>
+    </div>
+</div><div style="margin-top:20px"></div><span id="env1.8"></span><div class="exercise" data-count="1.8">     
+  Find the limits below.
+  <ol class="number"><li id="ite1.6"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to -3} \left( x^2 + 4x + 2 \right)</script>
+    </li><li id="ite1.7"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3/2} \left( (x - \frac{2}{3}) (x + \frac{1}{2}) \right)</script>
+    </li><li id="ite1.8"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 0} \left( \sqrt{(2-x)(8+x)} + \frac{1}{x-2} \right)</script>
+    </li><li id="ite1.9"> <span class="math"></span><script type="math/tex">\displaystyle \lim_{x \to 3} \frac{2x^2-2x-2}{x+2} </script>
+  </li></ol>
+</div><div style="margin-top:20px"></div>
+<span id="env1.9"></span><div class="exercise" data-count="1.9">     
+  Calculate the limit
+  <div class="math"></div><script type="math/tex; mode=display">
+    \lim_{x \to 2} \frac{3x^2 - 3x - 6}{2x^2 + 2x - 12}
+  </script>
+  <a href="#d5858d5e-577f-4188-b437-698e7b84a9f9" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=d5858d5e-577f-4188-b437-698e7b84a9f9 class = "collapse Hint envbuttons">    
+    Are you sure you don't want to think about it first? Use hints only when you need them!<div style="margin-top:20px"></div><a href="#4e1e0db8-a067-4b67-86ed-238cb661f7b0" class ="btn btn-default" data-toggle="collapse">Yes, I'm stuck. Show me the hint!</a><div id=4e1e0db8-a067-4b67-86ed-238cb661f7b0 class="collapse">
+      Use the result <em>equality of limits</em> above. Think about how you can rewrite the numerator and denominator.<div style="margin-top:20px"></div><a href="#b49ff68f-9699-4fe4-b2e0-2de8d5c1ad0a" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=b49ff68f-9699-4fe4-b2e0-2de8d5c1ad0a class = "collapse Hint envbuttons">    
+      Rewrite both the numerator and the denominator by factorising (see equation <a href="introduction.html#equ0.5">(0.5)</a> in the box <em>Quadratic Equations</em> in section <a href="introduction.html#sec0.1.1">0.1.1</a>).
+      </div>
+    </div>
+    </div>
+</div><div style="margin-top:20px"></div>
+
+<span id="env1.10"></span><div class="exercise" data-count="1.10">     
+Calculate the derivatives of the following functions:
+<ol class="number"><li id="ite1.10"> <span class="math"></span><script type="math/tex">f(x) = 3x^6</script>
+  </li><li id="ite1.11"> <span class="math"></span><script type="math/tex">g(x) = x^{3/2}</script>
+  </li><li id="ite1.12"> <span class="math"></span><script type="math/tex">h(y) = \frac{2}{3} y^{-3}</script>
+  </li><li id="ite1.13"> <span class="math"></span><script type="math/tex">q(x) = 1 / (x^{-7/3})</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env1.11"></span><div class="exercise" data-count="1.11">     
+  Calculate the derivatives of the following functions:
+  <ol class="number"><li id="ite1.14"> <span class="math"></span><script type="math/tex">f(x) = 2ax^3</script>, where <span class="math"></span><script type="math/tex">a</script> is a constant.
+    </li><li id="ite1.15"> <span class="math"></span><script type="math/tex">f(z) = 2\sqrt{z} - \frac{1}{7}z^5</script>. 
+    </li><li id="ite1.16"> <span class="math"></span><script type="math/tex">f(x) = ax^2 + bx + c</script>, where <span class="math"></span><script type="math/tex">a</script>, <span class="math"></span><script type="math/tex">b</script> and <span class="math"></span><script type="math/tex">c</script> are constants.
+    </li><li id="ite1.17"> <span class="math"></span><script type="math/tex">g'(y)</script>, where <span class="math"></span><script type="math/tex">g(y) = 5y^3 - 3y^2</script>.
+    </li><li id="ite1.18"> <span class="math"></span><script type="math/tex">h(y) = \exp (-10 y)</script>.
+  </li></ol>
+  </div><div style="margin-top:20px"></div>
+<span id="env1.12"></span><div class="exercise" data-count="1.12">     
+Calculate <span class="math"></span><script type="math/tex">y'(x)</script> when <span class="math"></span><script type="math/tex">y</script> is given by:
+<ol class="number"><li id="ite1.19"> <span class="math"></span><script type="math/tex">y = 5x^2 - 3x + 7</script>
+  </li><li id="ite1.20"> <span class="math"></span><script type="math/tex">y = x^7 + 3 \sqrt{x} + \frac{1}{2 \sqrt{x}}</script>
+  </li><li id="ite1.21"> <span class="math"></span><script type="math/tex">y = x \cdot (x -2x^{-1})</script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env1.13"></span><div class="exercise" data-count="1.13">     
+  Calculate the derivative of the following functions:
+  <a href="#093595f0-7f1b-42e5-b7e9-b8e103c8e1a6" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=093595f0-7f1b-42e5-b7e9-b8e103c8e1a6 class = "collapse Hint envbuttons">    
+    Use the product rule for derivatives here. It is often a good idea to begin by writing up the four functions
+    <span class="math"></span><script type="math/tex">f(x), g(x), f'(x)</script> and <span class="math"></span><script type="math/tex">g'(x)</script> that are part of the final expression. In problem 1, below, the first function
+    can be chosen as <span class="math"></span><script type="math/tex">10x^3</script> and the second function as <span class="math"></span><script type="math/tex">1-\sqrt{x}</script>. The derivatives of these are <span class="math"></span><script type="math/tex">30x^2</script> and 
+    <span class="math"></span><script type="math/tex">-\frac{1}{2 \sqrt{x}}</script>, respectively.
+     </div>
+  <ol class="number"><li id="ite1.22"> <span class="math"></span><script type="math/tex">f(x) = 10x^3 (1 - \sqrt{x})</script>
+    </li><li id="ite1.23"> <span class="math"></span><script type="math/tex">f(x) = (2x - x^2)(x^3 + x^2) + 1000</script>
+    </li><li id="ite1.24"> <span class="math"></span><script type="math/tex">f(x) = (x + 2)\cdot (\sqrt{x} -3x)</script>
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env1.14"></span><div class="exercise" data-count="1.14">     
+  Calculate the derivatives of the following expressions:
+  <ol class="number"><li id="ite1.25"> <span class="math"></span><script type="math/tex"> \frac{\sqrt{x} - 1}{x^2} </script>
+    </li><li id="ite1.26"> <span class="math"></span><script type="math/tex"> \frac{x-2}{x+2} </script>
+        </li><li id="ite1.27"> <span class="math"></span><script type="math/tex"> \frac{2x-3}{5x+4} </script>
+  </li></ol>
+</div><div style="margin-top:20px"></div></div></body>

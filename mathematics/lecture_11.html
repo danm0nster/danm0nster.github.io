@@ -1,0 +1,269 @@
+<!doctype html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+<script defer src="js/search.js"></script>
+
+
+<script async defer src="https://hypothes.is/embed.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/openclosebuttons.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/iLaTeXen.css">
+
+<script defer src="js/quiz.js"></script>
+
+<script defer src="js/orderquiz.js"></script>
+
+<script defer src="js/formatquiz.js"></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+
+<script defer src="js/bubble.js"></script>
+
+
+
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<script>
+  window.MathJax = 1 /* Disable MathJax */
+  sagecell.makeSagecell({
+  inputLocation: ".sage",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["sage", "python", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageM2",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["macaulay2", "sage", "python", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sagepython",
+  autoeval: false,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["python", "sage", "macaulay2", "r"],
+  hide : ["editor", "language", "permalink"]
+  });
+  sagecell.makeSagecell({
+  inputLocation: ".sageR",
+  autoeval: false,
+  quietMode: true,
+  replaceOutput: true,
+  evalButtonText: "Start",
+  linked: true,
+  languages : ["r", "python", "sage", "macaulay2"],
+  hide : ["editor", "language", "permalink"]
+  });
+</script>
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduction.html#c161af24-8694-4104-a696-4ae562e4bff5"><b>0</b> Introduction</a></li><a href="#kap0" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap0" class="collapse"><li><a href="introduction.html#4d559dff-934f-47ac-8be6-173af8790bf8">0.1 Readings for the brush-up course</a></li><li><a href="introduction.html#f493be4c-d830-4686-b136-dc439c33c072">0.2 Exercises</a></li></ul><li><a class="kap" href="lecture_01.html#b1d5633f-8f5b-4521-88eb-76eeb734e2db"><b>1</b> Lecture 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="lecture_01.html#79cd1c0c-b8ad-47ad-b4e6-a769e82e3273">1.1 Readings for this lecture</a></li><li><a href="lecture_01.html#58d02e91-573e-4699-ab3e-6fd66b3b21d1">1.2 Notes</a></li><li><a href="lecture_01.html#64611562-f47f-40da-82ad-af7053313a01">1.3 Exercises</a></li></ul><li><a class="kap" href="lecture_02.html#415fd494-29e1-4416-932e-9dafa35b2847"><b>2</b> Lecture 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="lecture_02.html#12d4e179-5815-444a-baf6-6e7997d4c396">2.1 Readings for this lecture</a></li><li><a href="lecture_02.html#bc653c4b-8374-43b5-90ee-6dc4e065faba">2.2 Notes</a></li><li><a href="lecture_02.html#0a0103e3-e694-479c-97f4-205990199a56">2.3 Exercises</a></li></ul><li><a class="kap" href="lecture_03.html#90d307f8-c797-4372-9074-40242f4746d9"><b>3</b> Lecture 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="lecture_03.html#6e766928-fd73-4a86-8c0d-c8bd3a056f1c">3.1 Readings for this lecture</a></li><li><a href="lecture_03.html#e4802776-b48d-46bb-a452-3dbe83375cb5">3.2 Notes</a></li><li><a href="lecture_03.html#7a7f0741-4a89-4abe-ae1e-99636e9ddf16">3.3 Exercises</a></li></ul><li><a class="kap" href="lecture_04.html#a38525ae-98ad-411b-ac1c-de396f2d910a"><b>4</b> Lecture 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="lecture_04.html#f1314d5a-206f-4c0f-9934-fd8ebdffea1a">4.1 Readings for this lecture</a></li><li><a href="lecture_04.html#e09baa02-771c-4a42-a75b-5ef4e2f19c19">4.2 Notes</a></li><li><a href="lecture_04.html#e6d0842f-c877-4cc4-bc0e-08fa796c3ae0">4.3 Problems</a></li></ul><li><a class="kap" href="lecture_05.html#fe218857-d481-4f91-b3f3-2fa2b95c5fcd"><b>5</b> Lecture 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="lecture_05.html#f2c1a3f0-e49a-41a9-8d96-a8280046b12f">5.1 Readings for this lecture</a></li><li><a href="lecture_05.html#7a2a1cdb-ce12-4a6b-91de-e188a93246f1">5.2 Notes</a></li><li><a href="lecture_05.html#0318bab7-db17-4106-a1a1-2f8b4da00d0e">5.3 Problems</a></li></ul><li><a class="kap" href="lecture_06.html#3d2795b2-ce1e-4e73-b922-4cc84aedaba7"><b>6</b> Lecture 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="lecture_06.html#6c4eec53-7793-496c-8771-46af14ec24c5">6.1 Readings for this lecture</a></li><li><a href="lecture_06.html#c5826c96-bb3c-4e6d-8a3e-a1eba2e3939a">6.2 Notes</a></li><li><a href="lecture_06.html#1d36acb0-fa5c-432d-b6d1-206e047644cf">6.3 Problems</a></li></ul><li><a class="kap" href="lecture_07.html#076b6524-82a1-4e75-aa20-216468d4d411"><b>7</b> Lecture 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="lecture_07.html#f10f6818-2eff-49cd-8f9c-08c39d1954e4">7.1 Readings for this lecture</a></li><li><a href="lecture_07.html#e6b18a21-7f57-487c-8318-43e91d3987c9">7.2 Notes</a></li><li><a href="lecture_07.html#bebb9433-7936-4b0f-b503-04430c2422cc">7.3 Problems</a></li></ul><li><a class="kap" href="lecture_08.html#d68bb6d7-3fa6-4db9-8a26-126f6e298b59"><b>8</b> Lecture 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="lecture_08.html#6bf495fc-b1a1-4c28-9459-4e6132ff21b4">8.1 Readings for this lecture</a></li><li><a href="lecture_08.html#185bb55a-9578-42b6-8d1e-28b8cf3bac18">8.2 Notes</a></li><li><a href="lecture_08.html#4149816c-04b0-4a88-a3eb-1388f7f92d8f">8.3 Problems</a></li></ul><li><a class="kap" href="lecture_09.html#07ffed50-58aa-4309-aa65-b198f38324b5"><b>9</b> Lecture 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="lecture_09.html#07a946a4-5259-4f65-9f67-0e891f8027b0">9.1 Readings for this lecture</a></li><li><a href="lecture_09.html#72f114e5-5ec1-4319-b53e-2e044772c094">9.2 Notes</a></li><li><a href="lecture_09.html#b539ab10-535a-4e7c-98a3-89023ffc5249">9.3 Problems</a></li></ul><li><a class="kap" href="lecture_10.html#d3e1dd60-4d94-484f-ac9e-9fb47bc2d95b"><b>10</b> Lecture 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="lecture_10.html#b90c7b29-5580-42b2-933c-e082bf9ae15c">10.1 Readings for this lecture</a></li><li><a href="lecture_10.html#5adfe6b2-07aa-4d60-b7cd-2037f97d71a2">10.2 Notes</a></li><li><a href="lecture_10.html#9c3e9669-3b56-4c09-a40e-17930f9b95ab">10.3 Problems</a></li></ul><li><a class="kap" href="lecture_11.html#156a40a4-5e68-42de-ba9a-7431729c6a76"><b>11</b> Lecture 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="lecture_11.html#63b910c0-820b-4889-8d89-5bec1fe9c24c">11.1 Readings for this lecture</a></li><li><a href="lecture_11.html#99cb2ccc-4cdf-456e-9886-d04991ce9c5c">11.2 Notes</a></li><li><a href="lecture_11.html#5025ff81-4174-4d7c-83e3-89b5deb61595">11.3 Problems</a></li></ul><li><a class="kap" href="lecture_12.html#1587b444-d3c6-4fbc-a453-f0056510a002"><b>12</b> Lecture 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="lecture_12.html#66cdbce3-7764-4224-b1d2-5ab26c9fa7e2">12.1 Readings for this lecture</a></li><li><a href="lecture_12.html#90dd6a0d-3e25-463f-b2f7-2beab254882f">12.2 Notes</a></li><li><a href="lecture_12.html#36df86d5-5e1a-4b7e-a0a7-a1930ea6ec92">12.3 Problems</a></li></ul><li><a class="kap" href="lecture_13.html#8fd8b5bd-8fd3-49e4-bf16-b312af82b60f"><b>13</b> Lecture 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="lecture_13.html#08f41455-1a28-4595-acdc-ec1443e412fd">13.1 Readings for this lecture</a></li><li><a href="lecture_13.html#b31ff0ce-485e-4504-b511-6c03f22b4ab5">13.2 Notes</a></li><li><a href="lecture_13.html#35109e25-c0e7-464c-a63b-a3aec3392eb6">13.3 Problems</a></li></ul><li><a class="kap" href="lecture_14.html#5c7bf2af-50ec-43d2-a452-047953692acb"><b>14</b> Lecture 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="lecture_14.html#161b0e6a-90f0-40f9-8b8d-caabd9130007">14.1 Readings for this lecture</a></li><li><a href="lecture_14.html#a78c0c9b-225f-4cfc-89cb-0b1a10632d54">14.2 Notes</a></li><li><a href="lecture_14.html#1cd44725-d297-4bf4-8372-a853d9aee1c5">14.3 Problems</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><div style="margin-top:20px"></div><h1 id="156a40a4-5e68-42de-ba9a-7431729c6a76">11<span style="float:right;">Lecture 11</span></h1>
+<span id="sec11.1"></span><h2 id="63b910c0-820b-4889-8d89-5bec1fe9c24c">11.1 Readings for this lecture</h2>
+Sections 10.5-10.6 in the textbook.<div style="margin-top:20px"></div><span id="sec11.2"></span><h2 id="99cb2ccc-4cdf-456e-9886-d04991ce9c5c">11.2 Notes</h2>
+<div class="frameit">
+    <b>Integration of a sum or difference of two functions</b><div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \int f(x) \pm g(x) \, {\mathrm{d}}x = \int f(x) \pm \int g(x) \, {\mathrm{d}}x 
+    </script>
+</div><div style="margin-top:20px"></div><div class="frameit">
+    <b>Integration by parts (indefinite integral)</b><div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \int f(x)g'(x) \, {\mathrm{d}}x  = f(x)g(x) - \int f'(x)g(x) \, {\mathrm{d}}x
+    </script>
+</div><div style="margin-top:20px"></div><div class="frameit">
+    <b>Integration by parts (definite integral)</b><div style="margin-top:20px"></div><div class="math"></div><script type="math/tex; mode=display">
+        \int_a^b f(x)g'(x) \, {\mathrm{d}}x  = \bigg|_a^b f(x)g(x) - \int_a^b f'(x)g(x) \, {\mathrm{d}}x
+    </script>
+</div><div style="margin-top:20px"></div><div class="frameit">
+    <b>Integration by substitution (indefinite integral)</b><div style="margin-top:20px"></div>Let <span class="math"></span><script type="math/tex">u=g(x)</script>, then:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \int f(g(x)) g'(x) \, {\mathrm{d}}x = \int f(u) \, {\mathrm{d}}u
+    </script>
+</div><div style="margin-top:20px"></div><div class="frameit">
+    <b>Integration by substitution (definite integral)</b><div style="margin-top:20px"></div>Let <span class="math"></span><script type="math/tex">u=g(x)</script>, then:
+    <div class="math"></div><script type="math/tex; mode=display">
+        \int_a^b f(g(x)) g'(x) \, {\mathrm{d}}x = \int_{g(a)}^{g(b)} f(u) \, {\mathrm{d}}u
+    </script>
+</div><div style="margin-top:20px"></div><div class="frameit">
+    <b>Integration by substitution (general method)</b><div style="margin-top:20px"></div>Solve <span class="math"></span><script type="math/tex">\displaystyle\int G(x)\, dx</script> by...
+    <ol class="number"><li id="ite11.1"> choosing a part of the integrand <span class="math"></span><script type="math/tex">u=g(x)</script>
+    </li><li id="ite11.2"> find <span class="math"></span><script type="math/tex">du = g'(x)\, dx</script>
+    </li><li id="ite11.3"> rewrite <span class="math"></span><script type="math/tex">\displaystyle\int G(x)\, dx = \int f(u)\, du</script>
+    </li><li id="ite11.4"> find the indefinite integral <span class="math"></span><script type="math/tex">F(u)</script>
+    </li><li id="ite11.5"> insert <span class="math"></span><script type="math/tex">g(x)</script> again: <span class="math"></span><script type="math/tex">\displaystyle\int G(x)\, dx = F(g(x)) + C</script>
+    </li></ol>
+</div><div style="margin-top:20px"></div><span id="sec11.3"></span><h2 id="5025ff81-4174-4d7c-83e3-89b5deb61595">11.3 Problems</h2><div style="margin-top:20px"></div><span id="env11.1"></span><div class="exercise" data-count="11.1">     
+    <div id="quiz1" style="width:100%;"><div class="row quizquestion">
+        Below are some potential steps to apply in integration by parts for an indefinite integral. Arrange
+        them in order by dragging and dropping from the left to the right to give a correct recipe for integration by parts for the integral
+        <div class="math"></div><script type="math/tex; mode=display">
+            \int f(x) g'(x) \, \mathrm{d} x
+        </script><div style="margin-top:20px"></div></div><div class="row"><div class="col-xs-5"><div class="row"><div class="orderquizanswer" id="dq1_left1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Check that the new integrand is simpler than the original.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Compute <span class="math"></span><script type="math/tex">\mathrm{d} u = g'(x) \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify the inner function in a composite function as <span class="math"></span><script type="math/tex">u</script>.<div style="margin-top:20px"></div>          
+      </div><div class="orderquizanswer" id="dq1_left4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">f(x)</script> as a function whose indefinite integral is known.<div style="margin-top:20px"></div>    
+      </div><div class="orderquizanswer" id="dq1_left5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">g'(x)</script> as a function whose indefinite integral is known.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       The first term is <span class="math"></span><script type="math/tex">f(x) g(x)</script>, where <span class="math"></span><script type="math/tex">g'(x)</script> has been integrated.<div style="margin-top:20px"></div>    
+        
+      </div><div class="orderquizanswer" id="dq1_left7" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       The second term is <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left8" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Identify <span class="math"></span><script type="math/tex">f(x)</script> as a function whose derivative can be computed.<div style="margin-top:20px"></div></div><div class="orderquizanswer" id="dq1_left9" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)">       Solve the integral <span class="math"></span><script type="math/tex">-\displaystyle\int f'(x) g(x) \, \mathrm{d} x</script>.<div style="margin-top:20px"></div></div></div></div><div class="col-xs-5"><div class="row"><div class="orderquizanswer empty" id="dq1_right1" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right2" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right3" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right4" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right5" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div><div class="orderquizanswer empty" id="dq1_right6" draggable="true" ondragstart="orderQuizStartDrag(1, event)" ondragover="orderQuizAllowDrop(1, event)" ondrop="orderQuizDrop(1, event)"></div></div></div></div><span class="orderquizresult" id="dq1_result"><span class="orderquizfeedback hidden" datav="(or (is 586719) (is 856719))"><b class="correct">Correct!</b> 
+      <span style="color:green;"><b>Correct!</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="(or (contains 2) (contains 3))"><b class="wrong">Wrong.</b> 
+      <span style="color:red;"><b>Wrong. Are you thinking of integration by substitution?</b></span><div style="margin-top:20px"></div></span><span class="orderquizfeedback hidden" datav="default"><b class="wrong">Wrong.</b> 
+      <span style="color:red;"><b>Wrong. Try again!</b></span>
+      </span></span></div>
+</div><div style="margin-top:20px"></div><span id="env11.2"></span><div class="exercise" data-count="11.2">     
+Use integration by parts to evaluate the following indefinite integrals:
+<ol class="number"><li id="ite11.6"> <span class="math"></span><script type="math/tex">\displaystyle\int x \ln(x)\, {\mathrm{d}}x </script>
+    </li><li id="ite11.7"> <span class="math"></span><script type="math/tex">\displaystyle\int 4x e^{4x}\, {\mathrm{d}}x </script>
+    </li><li id="ite11.8"> <span class="math"></span><script type="math/tex">\displaystyle\int \frac{4x+2}{e^x}\, {\mathrm{d}}x </script>
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env11.3"></span><div class="exercise" data-count="11.3">     
+  Use integration by parts to evaluate the following definite integrals:
+  <ol class="number"><li id="ite11.9"> <span class="math"></span><script type="math/tex">\displaystyle\int_0^1 x^2e^x\, {\mathrm{d}}x </script>
+    </li><li id="ite11.10"> <span class="math"></span><script type="math/tex">\displaystyle\int_0^2 (x-2)e^{x/2}\, {\mathrm{d}}x </script>
+    </li><li id="ite11.11"> <span class="math"></span><script type="math/tex">\displaystyle\int_{-1}^1 x \ln(x+2)\, {\mathrm{d}}x </script><div style="margin-top:20px"></div><a href="#f7f7c502-499e-465b-bb4d-3c4292efc8fd" class ="btn btn-default Hintbutton"data-toggle="collapse"></a> <div id=f7f7c502-499e-465b-bb4d-3c4292efc8fd class = "collapse Hint envbuttons">    
+            Here you <em>also</em> need to use substitution.
+            </div>
+  </li></ol>
+</div><div style="margin-top:20px"></div><span id="env11.4"></span><div class="exercise" data-count="11.4">     
+Last week (exercise <a href="lecture_10.html#env10.14">10.14</a>) you found the following definite integral:
+<div class="math"></div><script type="math/tex; mode=display">
+\int_{-3}^{3}(x-1)^2\, {\mathrm{d}}x
+</script>
+This time find the integral by using integration by substitution.
+</div><div style="margin-top:20px"></div><span id="env11.5"></span><div class="exercise" data-count="11.5">     
+Use integration by substitution to evaluate the following indefinite integral:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int 2x(x^2+1)^2\, {\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env11.6"></span><div class="exercise" data-count="11.6">     
+Use integration by substitution to evaluate the following definite integral:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_5^8\frac{x}{x-4}\, {\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div><span id="env11.7"></span><div class="exercise" data-count="11.7">     
+(Previous exam problem)<div style="margin-top:20px"></div>An integral is given by:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int_{0}^{1} x(1+x)^3\, {\mathrm{d}}x
+</script>
+<ol class="number"><li id="ite11.12"> Calculate the integral.
+</li></ol>
+</div><div style="margin-top:20px"></div><span id="env11.8"></span><div class="exercise" data-count="11.8">     
+(Previous exam problem)<div style="margin-top:20px"></div>Calculate the integral:
+<div class="math"></div><script type="math/tex; mode=display">
+    \int x\sqrt{1+x^2}\, {\mathrm{d}}x
+</script>
+</div><div style="margin-top:20px"></div>
+    
+    
+        
+    
+      
+      
+      
+      
+    
+    
+      
+    
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+
+          
+    
+
+     
+
+</div></body><div style="margin-top:20px"></div>
