@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+  
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    var tex = document.querySelectorAll('script[type^="math/tex"]');
+
+	for(var i = 0; i < tex.length; ++i)
+	    {
+		var display = tex[i].getAttribute('type').indexOf('mode=display') > -1;
+		
+		var math = tex[i].previousSibling;
+		math.className = 'katex-render';
+		
+		var content = tex[i].textContent;
+		
+		katex.render(content, math, {
+		    /* output: html, */
+		    displayMode: display,
+		    throwOnError: false,
+		    trust: true
+		});
+		
+		tex[i].parentNode.removeChild(tex[i]);
+		
+	    }
+    });
+  </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<script src="js/sidebar.js"></script>
+
+
+
+
+
+
+
+</head>
+<body><div class="sidenav normalwidth"><button style="border:none; background-color: Transparent;" onclick="showhidemenu()" title="Toggle toc"><span style="font-size: 30px;">&#9776;</span></button><button class="openbs" title="Open buttons">+</button><button class="closebs" title="Close buttons">-</button><ul class="leftmenu" style="display: none;"><li><a class="kap" href="introduktion.html#41c6e2e4-4f8b-41f0-8fcd-43e7bb8c7564"><b>0</b> Introduktion</a></li><a href="#kap0" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap0" class="collapse"></ul><li><a class="kap" href="lektion_01.html#727fbec3-4aad-4279-bfeb-09b278ba8c2a"><b>1</b> Lektion 1</a></li><a href="#kap1" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap1" class="collapse"><li><a href="lektion_01.html#f1f6e411-077f-414b-bbfa-59d5f37ea578">1.1 Pensum til denne lektion</a></li><li><a href="lektion_01.html#30c21877-ef2d-49de-aa61-833751ffc670">1.2 Noter</a></li><li><a href="lektion_01.html#a76632d5-54af-4ffb-b6fa-d65339a1c756">1.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_02.html#0974cc82-57c7-41a1-9dfa-e59d0fe04d7b"><b>2</b> Lektion 2</a></li><a href="#kap2" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap2" class="collapse"><li><a href="lektion_02.html#959640d2-4b76-43ca-ace6-58bd1dec58fe">2.1 Pensum til denne lektion</a></li><li><a href="lektion_02.html#6f9ac725-ae77-4d7d-9142-806f252b75bd">2.2 Noter</a></li><li><a href="lektion_02.html#3276038c-4116-4f83-a393-a4aae0096be1">2.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_03.html#b9fd93b9-829e-4575-b0a8-b679f5ca2160"><b>3</b> Lektion 3</a></li><a href="#kap3" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap3" class="collapse"><li><a href="lektion_03.html#5d4adeb5-e961-455e-bad1-2dd0f980f678">3.1 Pensum til denne lektion</a></li><li><a href="lektion_03.html#805cce5b-fb57-4494-8307-e30e24b6866c">3.2 Noter</a></li><li><a href="lektion_03.html#4f45224c-0156-4f2f-8d91-e5f4d0bc49f2">3.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_04.html#455d4257-f8e4-4277-b6a3-c886d304d58c"><b>4</b> Lektion 4</a></li><a href="#kap4" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap4" class="collapse"><li><a href="lektion_04.html#99fff873-6944-496b-b9f5-257881532cc9">4.1 Pensum til denne lektion</a></li><li><a href="lektion_04.html#df8dab1d-f4a4-4071-9e4d-c32254987b7e">4.2 Noter</a></li><li><a href="lektion_04.html#3821b39e-9a88-4e8d-909f-17303f6da65a">4.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_05.html#61a95ebe-335f-46bc-8770-478c098f4d74"><b>5</b> Lektion 5</a></li><a href="#kap5" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap5" class="collapse"><li><a href="lektion_05.html#1f0dd2e9-4446-4a64-a95d-5197e4d642a0">5.1 Pensum til denne lektion</a></li><li><a href="lektion_05.html#e561c4b9-28b4-43ab-8189-0d61f0221bbc">5.2 Noter</a></li><li><a href="lektion_05.html#efc5294c-aa60-4f19-ab4c-a75b45a90a04">5.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_06.html#6b4e9f38-9c9a-4d2a-a6f1-1f93eef24fef"><b>6</b> Lektion 6</a></li><a href="#kap6" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap6" class="collapse"><li><a href="lektion_06.html#1bcf631d-b1e2-44f6-9833-4f06d9bcdcd5">6.1 Pensum til denne lektion</a></li><li><a href="lektion_06.html#4e02b6ec-df40-4e36-a714-abad141acb92">6.2 Noter</a></li><li><a href="lektion_06.html#a13edd17-67cd-4b70-9ee9-363a53489a55">6.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_07.html#945bdb92-044c-4e82-9c92-bebc6bdac0c9"><b>7</b> Lektion 7</a></li><a href="#kap7" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap7" class="collapse"><li><a href="lektion_07.html#db7c7093-230f-4977-a4c0-72c016451ca4">7.1 Pensum til denne lektion</a></li><li><a href="lektion_07.html#5b9349d5-6646-4279-8d2a-599aac96e0de">7.2 Noter</a></li><li><a href="lektion_07.html#d00d3e36-fb98-4049-ad0c-43fc0418cd26">7.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_08.html#a73ccbfe-a5b5-4302-9019-ba9cd9408151"><b>8</b> Lektion 8</a></li><a href="#kap8" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap8" class="collapse"><li><a href="lektion_08.html#3de84cb2-df78-4a2f-b504-324dc539ee71">8.1 Pensum til denne lektion</a></li><li><a href="lektion_08.html#0d72cc7a-4485-4e88-8262-c9ddce37de9c">8.2 Noter</a></li><li><a href="lektion_08.html#bb854c9a-8433-4be5-9ba8-4c70fd27b810">8.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_09.html#13452b14-c387-4006-aba2-2f445f9ed5ca"><b>9</b> Lektion 9</a></li><a href="#kap9" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap9" class="collapse"><li><a href="lektion_09.html#e08d308b-6315-4e70-af43-a2201cacb791">9.1 Pensum til denne lektion</a></li><li><a href="lektion_09.html#7d9501ce-386f-46b3-83a9-d275ef1d8a48">9.2 Noter</a></li><li><a href="lektion_09.html#eacf6bb8-4333-41e2-8c39-870ec6fd86aa">9.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_10.html#f6503979-7233-453e-9ab4-3acd603d92b0"><b>10</b> Lektion 10</a></li><a href="#kap10" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap10" class="collapse"><li><a href="lektion_10.html#1358f0a9-6ac3-49d7-8533-6a8b8ede4234">10.1 Pensum til denne lektion</a></li><li><a href="lektion_10.html#9798abab-e7cf-424f-adad-6ca25009b5e0">10.2 Noter</a></li><li><a href="lektion_10.html#829b978f-c209-4290-af40-c2226855c0cb">10.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_11.html#b4dac58f-c5db-4051-8133-f34eeab9a17c"><b>11</b> Lektion 11</a></li><a href="#kap11" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap11" class="collapse"><li><a href="lektion_11.html#a744ea55-e29c-4ff8-a0fa-b6bcae7dbef2">11.1 Pensum til denne lektion</a></li><li><a href="lektion_11.html#e2f4e175-647f-4f79-b1c4-2c63371721e6">11.2 Noter</a></li><li><a href="lektion_11.html#98ad54c8-5934-4830-a575-7eef5574e599">11.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_12.html#b026dd41-0a47-41c1-a599-cd95340d431a"><b>12</b> Lektion 12</a></li><a href="#kap12" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap12" class="collapse"><li><a href="lektion_12.html#0a2f900f-33a2-4602-a677-eddb258d18d8">12.1 Pensum til denne lektion</a></li><li><a href="lektion_12.html#30b0db3f-119d-4eed-ade8-bb315a9d0bbf">12.2 Noter</a></li><li><a href="lektion_12.html#470c753d-b627-4078-8347-a41a1139971f">12.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_13.html#82f2fcc7-da24-44b6-8eb1-a58041bee2c9"><b>13</b> Lektion 13</a></li><a href="#kap13" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap13" class="collapse"><li><a href="lektion_13.html#85cf6f2b-9bc6-496b-bb56-8f86684501b6">13.1 Pensum til denne lektion</a></li><li><a href="lektion_13.html#105362c1-aa5a-487e-a052-7387f86bbfb3">13.2 Noter</a></li><li><a href="lektion_13.html#2f28eea6-6383-47a9-aa2a-3eff61cd7607">13.3 Opgaver</a></li></ul><li><a class="kap" href="lektion_14.html#d2ab8e7f-9e57-4c67-8d99-cc73fe4672a1"><b>14</b> Lektion 14</a></li><a href="#kap14" data-toggle="collapse"><span class="downtick">&#10095</span></a><ul id="kap14" class="collapse"><li><a href="lektion_14.html#2a76cbd6-2f6e-4241-9e8b-645bd38d0107">14.1 Pensum til denne lektion</a></li><li><a href="lektion_14.html#ea6e5c1c-c013-4a90-a4dd-285e67341c36">14.2 Noter</a></li><li><a href="lektion_14.html#7f03ba2e-4b1e-47fb-9d1b-596726643672">14.3 Opgaver</a></li></ul></ul></div><div class="main normalmargin"><div style="margin-top:20px"></div><br><br><h1 text-align:center;><div class="centerimg"><img src="img/Aarhus_BSS_pos_DK.png" width="40%"></div>
+    Matematik og Statistik
+</h1><h2 text-align:center;>Dan Mønster</h2><div style="margin-top:20px"></div><center>
+    <b>Efterår 2026</b>
+</center><div style="margin-top:20px"></div><p style="margin-bottom: 2cm;"></p><div style="margin-top:20px"></div><p style="margin-left: 3cm; margin-right: 3cm;">
+Denne hjemmeside indeholder online noter, materiale og opgaver til matematikdelen af
+faget <em>Matematik og Statistik</em> på 1. semester af HA og BA SOC uddannelserne på Aarhus BSS.
+Klik på navigationsknappen øverst til venstre (de tre vandrette streger) for
+at vise indholdsfortegnelsen.<div style="margin-top:20px"></div><div class="centerimg"><img src="img/max_contour_constraints.png" width="70%"></div>
+</p><div style="margin-top:20px"></div></div></body>
